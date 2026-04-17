@@ -4,13 +4,6 @@ on:
   push:
     branches: [main]
   pull_request:
-    paths:
-      - 'apps/**'
-      - 'packages/**'
-      - 'pnpm-lock.yaml'
-      - 'package.json'
-      - 'eslint.config.js'
-      - '.github/workflows/web.yml'
 
 concurrency:
   group: web-${{ github.ref }}

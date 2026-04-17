@@ -4,11 +4,6 @@ on:
   push:
     branches: [main]
   pull_request:
-    paths:
-      - 'corpus/**'
-      - 'packages/schema/**'
-      - 'scripts/validate_corpus.py'
-      - '.github/workflows/corpus.yml'
 
 concurrency:
   group: corpus-${{ github.ref }}
