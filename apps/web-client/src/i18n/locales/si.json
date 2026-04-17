@@ -1,0 +1,51 @@
+{
+  "app": {
+    "name": "CropDoc",
+    "tagline": "ශ්‍රී ලංකාවේ ගොවියන්ගේ ජංගම කෘෂි උපදේශක"
+  },
+  "nav": {
+    "map": "සිතියම",
+    "explore": "ගවේෂණය",
+    "scan": "ස්කෑන්",
+    "community": "ප්‍රජාව",
+    "profile": "පැතිකඩ"
+  },
+  "home": {
+    "welcome": "පිළිගනිමු, ගොවියෙනි",
+    "subtitle": "ඔබගේ ස්ථානයට සුදුසු දේ සහ එය හරි ආකාරයට වගා කරන ආකාරය දැනගන්න.",
+    "cta_explore": "බෝග ගවේෂණය කරන්න",
+    "cta_scan": "පැළෑටිය ස්කෑන් කරන්න"
+  },
+  "crops": {
+    "title": "බෝග",
+    "filter_all": "සියල්ල",
+    "filter_field_crop": "කෙත්බිම් බෝග",
+    "filter_vegetable": "එළවළු",
+    "filter_fruit": "පලතුරු",
+    "filter_spice": "කුළුබඩු",
+    "filter_plantation": "වතු බෝග",
+    "filter_medicinal": "ඖෂධීය",
+    "search_placeholder": "සොයන්න: වම්බටු, කරපිංචා, කොලම්බා",
+    "empty": "ගැලපෙන බෝග නොමැත.",
+    "loading": "පූරණය වෙමින්…"
+  },
+  "crop_detail": {
+    "scientific_name": "විද්‍යාත්මක නාමය",
+    "category": "වර්ගය",
+    "family": "කුටුම්බය",
+    "elevation": "උන්නතාංශය",
+    "rainfall": "වර්ෂාපතනය",
+    "temperature": "උෂ්ණත්වය",
+    "soil_ph": "පස pH",
+    "duration": "කාලසීමාව",
+    "yield": "අපේක්ෂිත අස්වැන්න",
+    "also_known_as": "තවත් නම්"
+  },
+  "locale_picker": {
+    "label": "භාෂාව"
+  },
+  "errors": {
+    "api_unreachable": "CropDoc සේවාවට සම්බන්ධ විය නොහැක. එය :8080 හි ධාවනය වෙනවාද?",
+    "generic": "යමක් වැරදී ඇත. නැවත උත්සාහ කරන්න."
+  }
+}

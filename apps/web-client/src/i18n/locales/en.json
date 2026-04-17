@@ -1,0 +1,51 @@
+{
+  "app": {
+    "name": "CropDoc",
+    "tagline": "Your pocket agronomist for Sri Lanka"
+  },
+  "nav": {
+    "map": "Map",
+    "explore": "Explore",
+    "scan": "Scan",
+    "community": "Community",
+    "profile": "Profile"
+  },
+  "home": {
+    "welcome": "Welcome, grower",
+    "subtitle": "Know what grows where you are, and how to grow it well.",
+    "cta_explore": "Explore crops",
+    "cta_scan": "Scan a plant"
+  },
+  "crops": {
+    "title": "Crops",
+    "filter_all": "All",
+    "filter_field_crop": "Field crops",
+    "filter_vegetable": "Vegetables",
+    "filter_fruit": "Fruits",
+    "filter_spice": "Spices",
+    "filter_plantation": "Plantation",
+    "filter_medicinal": "Medicinal",
+    "search_placeholder": "Search crops, e.g. brinjal, vambatu, kathirikkai",
+    "empty": "No crops match your search yet.",
+    "loading": "Loading…"
+  },
+  "crop_detail": {
+    "scientific_name": "Scientific name",
+    "category": "Category",
+    "family": "Family",
+    "elevation": "Elevation",
+    "rainfall": "Rainfall",
+    "temperature": "Temperature",
+    "soil_ph": "Soil pH",
+    "duration": "Duration",
+    "yield": "Expected yield",
+    "also_known_as": "Also known as"
+  },
+  "locale_picker": {
+    "label": "Language"
+  },
+  "errors": {
+    "api_unreachable": "Can't reach the CropDoc service. Is it running on :8080?",
+    "generic": "Something went wrong. Please try again."
+  }
+}

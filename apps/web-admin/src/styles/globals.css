@@ -1,0 +1,31 @@
+@import '@cropdoc/design-tokens/css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+  }
+  /* Minimum tap target = 48x48 on mobile (UX principle: thumb-reach) */
+  @media (pointer: coarse) {
+    button,
+    a,
+    [role='button'] {
+      min-height: 48px;
+      min-width: 48px;
+    }
+  }
+}
