@@ -1,0 +1,26 @@
+{
+  "slug": "coffee",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Coffea arabica",
+  "family": "Rubiaceae",
+  "names": {"en": "Coffee (Arabica)", "si": "Kopi", "ta": "Kappi"},
+  "aliases": ["arabica coffee", "kopi"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "elevation_m": {"min": 800, "max": 1800, "unit": "m (central highlands)"},
+  "rainfall_mm": {"min": 1500, "max": 2750, "unit": "mm"},
+  "temperature_c": {"min": 18, "max": 24, "unit": "°C"},
+  "soil_ph": {"min": 5.0, "max": 6.5},
+  "description": {
+    "en": "Historically Sri Lanka's dominant export crop before tea — coffee peaked at 111,400 ha in 1870, making Ceylon one of the world's top producers. **The 1869 outbreak of coffee leaf rust (*Hemileia vastatrix*) — first observed in Madulsima — devastated the industry within a decade**, prompting the switch to tea. Modern production is a small-scale specialty-coffee revival, mostly arabica in the central highlands at >800 m elevation. Latosolic wet-zone soils support arabica well. Coffee leaf rust persists as a yield-limiting factor, capable of 30–50% yield reduction through defoliation."
+  },
+  "field_provenance": {
+    "elevation_m": {"source_id": "grokipedia_coffee_sl", "source_url": "https://grokipedia.com/page/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "thriving in the cooler, misty elevations of Sri Lanka's central highlands above 800 meters"},
+    "rainfall_mm": {"source_id": "grokipedia_coffee_sl", "source_url": "https://grokipedia.com/page/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Arabica requires average temperatures of 18–24°C and annual rainfall of 1,500–2,750 mm"},
+    "temperature_c": {"source_id": "grokipedia_coffee_sl", "source_url": "https://grokipedia.com/page/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "average temperatures of 18–24°C"},
+    "soil_ph": {"source_id": "grokipedia_coffee_sl", "source_url": "https://grokipedia.com/page/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka's coffee cultivation favors well-drained soils with a pH range of 5 to 6.5"},
+    "description": {"source_id": "wikipedia_coffee_sl", "source_url": "https://en.wikipedia.org/wiki/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Coffee production in Sri Lanka peaked in 1870, with over 111,400 hectares (275,000 acres) being cultivated. However, shortly afterwards, coffee plantations were devastated by the fungal disease Hemileia vastatrix, also known as coffee leaf rust (CLR). The coffee leaf rust fungus, Hemileia vastatrix, was first detected in Ceylon in 1869, initially observed as orange pustules on coffee leaves in the Madulsima region."}
+  }
+}

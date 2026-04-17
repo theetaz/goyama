@@ -1,0 +1,33 @@
+{
+  "slug": "rice-blast-tebuconazole",
+  "version": 1,
+  "status": "draft",
+  "type": "chemical",
+  "target_disease_slugs": ["rice-blast"],
+  "applicable_crop_slugs": ["rice"],
+  "name": {"en": "Tebuconazole 250 g/l EC foliar spray for rice blast"},
+  "description": {
+    "en": "Systemic triazole fungicide recommended by DOA RRDI for rice blast. Apply via knapsack sprayer dissolved in water."
+  },
+  "instructions": {
+    "en": "Dissolve 10 ml in 16 l of water; apply 8–10 tanks per acre."
+  },
+  "chemical": {
+    "active_ingredient": "Tebuconazole",
+    "concentration": "250 g/l",
+    "formulation": "EC",
+    "dosage": "10 ml per 16 l tank; 8–10 tanks per acre",
+    "application_method": "foliar_spray",
+    "pre_harvest_interval_days": 30,
+    "safety_notes": {
+      "en": "Wear PPE; avoid drift to adjacent non-target crops. Honeybee protection: spray during non-flowering hours. Pre-harvest interval to be verified against current DOA registration before publication."
+    }
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": false,
+  "field_provenance": {
+    "instructions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tebuconazole 250g/l EC: dissolve 10 ml in 16 l of water (8-10 tanks per acre)"},
+    "chemical": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tebuconazole 250g/l EC: dissolve 10 ml in 16 l of water (8-10 tanks per acre)", "review_notes": "PHI placeholder 30 days is conservative; agronomist must verify against current Office of the Registrar of Pesticides registration before publish — hard gate per CLAUDE.md."}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "pineapple-mealybug-wilt",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pineapple mealybug wilt-associated virus",
+  "names": {"en": "Pineapple mealybug wilt"},
+  "aliases": ["PMWaV", "PMWV", "MWP", "mealybug wilt of pineapple"],
+  "causal_organism": "viral",
+  "causal_species": "Pineapple mealybug wilt-associated viruses (PMWaVs) — Ampelovirus complex in combination with mealybug feeding",
+  "affected_crop_slugs": ["pineapple"],
+  "affected_parts": ["leaf", "root", "whole_plant"],
+  "transmission": ["insect_vector"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Ant associations amplify spread — ants tend mealybugs and protect them from natural enemies. Sri Lanka is among regions where *Dysmicoccus brevipes* is a serious threat to pineapple production."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Destructive parasitic complex — requires both **PMWaV virus** and **mealybug feeding** (*Dysmicoccus brevipes* pink pineapple mealybug or *D. neobrevipes* grey pineapple mealybug) to express the disease. Symptoms: leaf tips redden and curl downward, roots cease growing, plant wilts and dies within weeks. Pineapple's singular most important disease in Sri Lanka (alongside crown/root rot from *Phytophthora*). **Management**: (a) reduce mealybug populations with selective insecticides; (b) **ant control is critical** — ants shepherd mealybugs and protect them from parasitoids; (c) clean planting material (virus-free vitroplants reduce incidence dramatically); (d) exogenous salicylic acid (SA), acibenzolar-S-methyl (ASM), and methyl salicylate (MeSA) reduce mealybug populations 50–80%; (e) rogue severely affected plants."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "mdpi_pmwv", "source_url": "https://www.mdpi.com/2311-7524/4/4/52", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Mealybug wilt of pineapple (MWP) is a destructive disease worldwide caused by a parasitic complex that includes Pineapple Mealybug Wilt-associated Viruses (PMWaVs) and mealybugs (Dysmicoccus brevipes), which concurrently act as vectors for these viruses"},
+    "description": {"source_id": "mdpi_pmwv_salicylic", "source_url": "https://www.mdpi.com/2311-7524/10/3/227", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Reducing the mealybug population is key to managing MWP. exogenous SA, ASM, and MeSA reducing the population of mealybugs by a minimum of 50% and up to 80%."},
+    "favored_conditions": {"source_id": "aps_pmwv", "source_url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO.1998.88.11.1224", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Closterovirus-like particles associated with mealybug wilt of pineapple were acquired and transmitted by the pink pineapple mealybug, Dysmicoccus brevipes, and the gray pineapple mealybug, D. neobrevipes. the presence of ants was correlated with an increased rate of virus spread"}
+  }
+}

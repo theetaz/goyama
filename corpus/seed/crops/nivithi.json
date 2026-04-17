@@ -1,0 +1,19 @@
+{
+  "slug": "nivithi",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Basella alba",
+  "family": "Basellaceae",
+  "names": {"en": "Malabar spinach", "si": "Nivithi", "ta": "Pasali keerai"},
+  "aliases": ["Basella rubra (red form)", "Ceylon spinach", "vel nivithi", "sudu nivithi", "rathu nivithi"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "duration_days": {"min": 60, "max": 90, "unit": "days to first harvest"},
+  "spacing_cm": {"within_row": 50, "between_row": 100},
+  "field_provenance": {
+    "scientific_name": {"source_id": "biodiversity_lk_nivithi", "source_url": "https://biodiversityofsrilanka.blogspot.com/2016/12/nivithimalabar-spinachbasella-alba.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Basella alba"},
+    "duration_days": {"source_id": "wisdomlib_basella", "source_url": "https://www.wisdomlib.org/science/journal/world-journal-of-pharmaceutical-research/d/doc1384008.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The plant can start producing yield after 2 to 3 months post plantation from seeds"},
+    "spacing_cm": {"source_id": "wisdomlib_basella", "source_url": "https://www.wisdomlib.org/science/journal/world-journal-of-pharmaceutical-research/d/doc1384008.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "proper spacing (100 cm between rows and 50 cm between plants)"}
+  }
+}

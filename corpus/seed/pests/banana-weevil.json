@@ -1,0 +1,25 @@
+{
+  "slug": "banana-weevil",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cosmopolites sordidus",
+  "names": {"en": "Banana weevil / Black weevil"},
+  "aliases": ["banana weevil borer", "black banana weevil"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["banana", "ash-plantain"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 22, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "Nocturnal adults; larvae tunnel in corms and pseudo-stems. Accumulated crop residue and dense ratoon mats favour outbreaks."
+    }
+  },
+  "description": {
+    "en": "Destructive weevil of banana and ash plantain worldwide; larvae tunnel galleries through the rhizome/corm, weakening the mat, reducing bunch weight, and predisposing plants to wind toppling. **Management** centres on aggregation-pheromone mass trapping: **(1S,3R,5R,7S)-sordidin** (commercial: Cosmolure+, Sordilure) combined with banana-tissue kairomones gives synergistic attraction — pseudostem-only traps catch **18× fewer weevils** than pheromone-kairomone combinations. Deploy 4–8 pheromone traps per ha. Complement with: (a) clean planting material (corm-paring to remove grubs); (b) sanitation — chop and dry harvested pseudo-stems; (c) resistant/tolerant cultivars; (d) entomopathogens *Beauveria bassiana* and *Metarhizium* soil drench."
+  },
+  "field_provenance": {
+    "description": {"source_id": "pubmed_sordidin", "source_url": "https://pubmed.ncbi.nlm.nih.gov/10030046/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cosmopolites sordidus produces an aggregation pheromone that attracts both males and females, which has been identified and synthesized and is being recommended as an effective agent in the trapping and control of the weevil. The male-produced aggregation pheromone of C. sordidus has been identified as (1S,3R,5R,7S)-sordidin. The synthetic pheromone, named sordidin or Cosmolure+ (depending on manufacturers), has been found to be successful in mass trappings; capturing 18 times more weevils than conventional pseudostem traps in Uganda"}
+  }
+}

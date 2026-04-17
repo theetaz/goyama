@@ -1,0 +1,24 @@
+{
+  "slug": "red-palm-weevil",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Rhynchophorus ferrugineus",
+  "names": {"en": "Red palm weevil"},
+  "aliases": ["red coconut weevil", "coconut red weevil", "RPW"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["coconut"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Adults attack wounded or young palms, laying eggs in leaf axils or wound sites. Larvae bore into the crown, causing internal damage that is often undetectable externally until advanced."
+    }
+  },
+  "description": {
+    "en": "A major pest of coconut throughout Sri Lanka. Managed via integrated pest management: (a) mass trapping with ferrugineol (aggregation pheromone) + food bait traps — CRI research shows **5 L open plastic buckets baited with ferrugineol-pentanol hung on palm stems at 1.5 m catch significantly more adult weevils than other trap designs, with lure effectiveness up to 12 weeks**; (b) farm sanitation (remove dead palms and decaying organic matter); (c) preventive chemical treatment of crown wounds; (d) filling frond axils of young palms with an insecticide-sand mixture; (e) curative treatment in early-stage infestations. The CRI has also developed a 'Red Weevil Detector' — a low-frequency acoustic amplifier that detects larval feeding sounds inside the palm."
+  },
+  "field_provenance": {
+    "description": {"source_id": "goodhands_rpw", "source_url": "https://goodhands.lk/en/red-coconut-weevil-rhynchophorus-ferrugineus/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "mass trapping adult weevils using ferrugineol-based food baited traps, crop and field sanitation, preventive chemical treatments of wounds, filling frond axils of young palms with mixture of insecticide and sand, and curative treatment of infested palms. 5L open plastic buckets baited with ferrugineol-pentanol and hung on coconut palm stems at a height of 1.5 meters catch significantly more adult weevils than other trap designs, with the effectiveness of these lures persisting for up to 12 weeks under field conditions. The Red Weevil Detector, developed by the Coconut Research Institute, functions as a low-frequency amplifier that can detect the sounds produced by feeding larvae within the palm."}
+  }
+}

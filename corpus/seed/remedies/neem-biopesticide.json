@@ -1,0 +1,23 @@
+{
+  "slug": "neem-biopesticide-spray",
+  "version": 1,
+  "status": "draft",
+  "type": "biological",
+  "target_pest_slugs": ["aphid", "whitefly", "leaf-miner", "chilli-thrips", "red-pumpkin-beetle", "mango-hopper", "fall-armyworm"],
+  "target_disease_slugs": ["powdery-mildew-cucurbits"],
+  "applicable_crop_slugs": ["tomato", "brinjal", "ela-batu", "chilli", "capsicum", "cucumber", "snake-gourd", "pumpkin", "bitter-gourd", "luffa", "kekiri", "mango", "guava", "papaya", "maize", "cabbage", "cauliflower"],
+  "name": {"en": "Neem (Azadirachtin) botanical biopesticide"},
+  "description": {
+    "en": "Broad-spectrum plant-derived biopesticide from *Azadirachta indica*. The active compound **azadirachtin** acts as an antifeedant, repellent, repugnant, and insect-growth-regulator — inhibits oviposition, disrupts moulting, and suppresses sperm production. Low residual, low toxicity to parasitoids/predators/honeybees, and biodegradable — making it compatible with IPM programmes that preserve natural enemies. Used across Sri Lankan vegetable, fruit, and field crops. Multiple DOA-referenced formulations on the market."
+  },
+  "instructions": {
+    "en": "**Azadirachtin 1% EC**: 16 ml per 16 L tank (recommended DOA rate for leaf miner). **Neem seed kernel extract (NSKE) 5%**: crush 50 g neem seed kernel per 1 L water, soak overnight, strain, add a wetting agent, apply as foliar spray. Repeat every 7–14 days under active pest pressure. **Timing**: apply in the cool of early morning or late evening to minimise UV breakdown of azadirachtin. Best used **prophylactically at first sign of infestation** — not after populations peak. Rotate with other MoA groups."
+  },
+  "effectiveness": "medium",
+  "cost_tier": "low",
+  "organic_compatible": true,
+  "field_provenance": {
+    "description": {"source_id": "pmc_neem_biopesticide", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5420583/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Neem (Azadirachta indica) belonging to the Meliaceae family has emerged as a highly potent bio-pesticide. The most prominent constituent of neem is azadirachtin, which has been established as a pivotal insecticidal ingredient. It acts as an antifeedant, repellent, and repugnant agent and induces sterility in insects by preventing oviposition and interrupting sperm production in males. Neem demonstrates strong antifeedant and insect metamorphosis disruptor properties besides lower residual limit and minimal toxicity to parasitoids, predators, and biocontrol agents."},
+    "instructions": {"source_id": "mdpi_leafminer", "source_url": "https://www.mdpi.com/2311-7524/9/2/255", "fetched_at": "2026-04-17T00:00:00Z", "quote": "DOA recommends Azadiractin 1% EC at 16ml/16 liters of water"}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "soursop",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Annona muricata",
+  "family": "Annonaceae",
+  "names": {"en": "Soursop", "si": "Katu Anoda", "ta": "Mullu chitta"},
+  "aliases": ["katu anoda", "katu atha", "graviola", "guanabana"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Introduced to Sri Lanka by Portuguese/Spanish traders in the 16th century from South America. Grows islandwide; best flavour at slightly higher elevations. Non-commercial crop — primarily home-garden. Large spiny fruits with soft white cottony flesh (pineapple-banana flavour). Sri Lanka hosts 4 Annona species: **katu anoda (A. muricata, soursop), matti anoda (A. reticulata, custard apple/bullock's heart), weli anoda (A. squamosa, sugar apple), and cherimoya (A. cherimola)** — none commercially cultivated. Leaves and fruit widely used in traditional medicine."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dilmah_soursop", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/katu-anoda-rata-atta--d65f60431ddf59171da2284818c18774.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Annona muricata"},
+    "description": {"source_id": "peckish_soursop", "source_url": "https://www.peckishme.com/soursop-miracle-fruit/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka houses 4 varieties of Annona species – katu anoda (annona muricata or soursop), matti anoda (annona reticulate, custard apple or bullocks heart), weli anoda (sweetsop, sugar apple, annona squamosa), and the cherimoya (annona cherimola), none of which are commercially grown."}
+  }
+}

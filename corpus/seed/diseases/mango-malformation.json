@@ -1,0 +1,28 @@
+{
+  "slug": "mango-malformation",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Fusarium mangiferae",
+  "names": {"en": "Mango malformation disease"},
+  "aliases": ["MMD", "Fusarium moniliforme (legacy)"],
+  "causal_organism": "fungal",
+  "causal_species": "Fusarium mangiferae (primary); related species in the *Fusarium fujikuroi* complex",
+  "affected_crop_slugs": ["mango"],
+  "affected_parts": ["flower", "stem", "leaf"],
+  "transmission": ["mechanical", "airborne"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Reported in Sri Lanka, India, USA, Oman, Israel, Egypt, Spain, South Africa, Malaysia, China. Mite-borne and graft-borne spread important."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Fungal disease that disrupts normal growth of mango flowers, leaves, and branches. **Vegetative malformation**: bunchy-top of small malformed leaves on short internodes; **floral malformation**: dense, branched, green and sterile panicles that fail to set fruit. *F. mangiferae* is confirmed in Sri Lanka and is the most frequent global cause of MMD. Management: (a) prune shoots carrying malformed panicles to 30–45 cm below the visible infection; (b) deblossom early/infested panicles; (c) sanitation — burn pruned material away from the orchard; (d) restrict grafting material to confirmed-clean mother trees; (e) monitor mite populations (eriophyid mites are suspected vectors)."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "katyayani_mango", "source_url": "https://katyayanikrishidirect.com/blogs/news/management-of-mango-pests-and-diseases", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Mango malformation is a fungal disease caused by the pathogen Fusarium moliliforme, which disrupts the normal growth of mango flowers, leaves and branches"},
+    "description": {"source_id": "tandfonline_mango_malformation", "source_url": "https://www.tandfonline.com/doi/full/10.1080/07391102.2024.2312449", "fetched_at": "2026-04-17T00:00:00Z", "quote": "F. mangiferae has been discovered in Sri Lanka, the USA, Oman, India, Israel, Egypt, Spain, South Africa, Malaysia, and China, which seem to be the most frequent cause of MMD in the world"},
+    "favored_conditions": {"source_id": "katyayani_mango", "source_url": "https://katyayanikrishidirect.com/blogs/news/management-of-mango-pests-and-diseases", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Remedial measures include pruning of shoots bearing malformed panicles and deblossoming of early emerged / infested panicles"}
+  }
+}

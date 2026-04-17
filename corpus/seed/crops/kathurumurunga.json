@@ -1,0 +1,24 @@
+{
+  "slug": "kathurumurunga",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Sesbania grandiflora",
+  "family": "Fabaceae",
+  "names": {"en": "Hummingbird tree / Agathi", "si": "Kathurumurunga", "ta": "Agathi"},
+  "aliases": ["vegetable hummingbird", "katurai", "agati", "agastya", "Ceylon scarlet wisteria"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "spacing_cm": {"within_row": 200, "between_row": 200},
+  "duration_days": {"min": 240, "max": 365, "unit": "days (leaves 8 months; flowers 12 months)"},
+  "expected_yield_kg_per_acre": {"min": 4000, "max": 8000, "unit": "kg/acre of leaves per harvest"},
+  "description": {
+    "en": "Leguminous small tree widely grown on paddy bunds and around home gardens across Sri Lanka's Low and Mid country Wet and Dry regions (hot climates; not successful in cool mountains). Leaves and flowers are both edible curry ingredients. Fixes nitrogen — valued as a green-manure and on-farm fodder. Propagated by seeds, air-layering, or (for the 'Haritha' variety) stem cuttings. DOA recommends 2 × 2 m spacing; leaf harvest starts 8 months after planting, flower harvest at 12 months."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kathurumurunga/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sesbania grandiflora"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kathurumurunga/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Plants should be spaced at 2.0 meters between rows and 2.0 meters within rows"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kathurumurunga/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Leaf harvesting begins approximately 8 months after planting, while flowers become available after one year"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kathurumurunga/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4000 – 8000 kgs/ac of leaves can be harvested at a time"}
+  }
+}

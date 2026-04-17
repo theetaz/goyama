@@ -1,0 +1,33 @@
+{
+  "slug": "at-378",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "At 378",
+  "released_by": "RRDI",
+  "release_year": 2023,
+  "recommended_aez_codes": [],
+  "traits": {
+    "recommendation": "Both Wet and Dry zones"
+  },
+  "field_provenance": {
+    "release_year": {
+      "source_id": "agrimin",
+      "source_url": "https://www.agrimin.gov.lk/web/index.php/en/en/news-scroll/2158-06-07-2023-3e",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Four rice varieties - Ld 376, BG 377, At 378, and BG 381 - have been introduced as high yielding rice varieties."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "agrimin",
+      "source_url": "https://www.agrimin.gov.lk/web/index.php/en/en/news-scroll/2158-06-07-2023-3e",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Can be cultivated in both dry and wet zones, producing 5.3 metric tons of paddy harvest per hectare in the wet zone and 7.3 metric tons in the dry zone",
+      "review_notes": "5.3–7.3 t/ha → 2145–2954 kg/acre."
+    }
+  },
+  "expected_yield_kg_per_acre": {
+    "min": 2145,
+    "max": 2954,
+    "unit": "kg/acre"
+  }
+}

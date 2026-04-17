@@ -1,0 +1,30 @@
+{
+  "slug": "early-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Alternaria solani",
+  "names": {"en": "Early blight"},
+  "aliases": ["Alternaria leaf blight", "target spot (related)"],
+  "causal_organism": "fungal",
+  "causal_species": "Alternaria solani (tomato), A. linariae, A. tomatophila",
+  "affected_crop_slugs": ["tomato", "potato", "brinjal", "ela-batu", "capsicum", "chilli"],
+  "affected_parts": ["leaf", "stem", "fruit"],
+  "transmission": ["seed_borne", "airborne", "splash", "soil_borne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 24, "max": 29, "unit": "°C"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Warm, humid, frequently wet foliage (dew) drives infection. Stressed plants (water, nutrient) are most susceptible."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "The most destructive tomato disease in tropical and subtropical regions; each 1% severity increase reduces yield by ~1.36%, with complete loss possible under severe pressure. Distinguishing symptom: **concentric-ring lesions** ('target spots') on lower leaves that enlarge, yellow, and cause defoliation; sunscald on exposed fruit follows. On potato tubers, dark sunken lesions with corky dry rot. Management: (a) rotate out of solanaceous crops for ≥3 years; (b) resistant cultivars; (c) wider spacing / canopy management for airflow; (d) preventive fungicides — mancozeb, chlorothalonil, azoxystrobin, pyraclostrobin, copper products, ziram, or *Bacillus subtilis* biologicals; (e) monitor during warm damp weather and spray before symptoms worsen."
+  },
+  "confused_with": ["late-blight"],
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "early blight"},
+    "description": {"source_id": "pmc_alternaria", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10933620/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Early blight caused by A. solani is the most destructive disease of tomatoes in the tropical and subtropical regions. Each 1% increase in intensity can reduce yield by 1.36%, and complete crop failure can occur when the disease is most severe. Distinguishing symptoms include leaf spot and defoliation, most pronounced in the lower canopy, with lesions that resemble concentric rings. Fungicides available include azoxystrobin, pyraclostrobin, Bacillus subtilis, chlorothalonil, copper products, hydrogen dioxide, mancozeb, potassium bicarbonate, and ziram."}
+  }
+}

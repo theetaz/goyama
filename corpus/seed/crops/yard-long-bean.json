@@ -1,0 +1,23 @@
+{
+  "slug": "yard-long-bean",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Vigna unguiculata subsp. sesquipedalis",
+  "family": "Fabaceae",
+  "names": {"en": "Yard long bean", "si": "Mae karal", "ta": "Karamani"},
+  "aliases": ["long bean", "bodi", "mae karal", "karamani"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "soil_ph": {"min": 5.6, "max": 7.0},
+  "spacing_cm": {"within_row": 30, "between_row": 90},
+  "seed_rate_kg_per_acre": 7.284,
+  "expected_yield_kg_per_acre": {"min": 4856, "max": 14164, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-yard-long-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vigna unguiculata"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-yard-long-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Soil pH around 5.6 -7 is optimal"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-yard-long-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vine varieties use 30 cm between plants and 90 cm between rows"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-yard-long-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "vine types need 16-20 kg/ha", "review_notes": "18 kg/ha midpoint → 7.284 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-yard-long-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Gannoruwa Hawari produces 35 mt/ha, Gannoruwa A9 yields 21/24 mt/ha, while Polon and Hawari Mae produce 12 mt/ha", "review_notes": "12–35 t/ha range across varieties → 4856–14164 kg/acre."}
+  }
+}

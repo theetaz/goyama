@@ -1,0 +1,23 @@
+{
+  "slug": "papaya",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Carica papaya",
+  "family": "Caricaceae",
+  "names": {"en": "Papaya", "si": "Papol", "ta": "Pappali"},
+  "aliases": ["pawpaw", "papol", "pappali"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "duration_days": {"min": 90, "max": 730, "unit": "days (first fruit in ~3 months for Red Lady; ~2-year productive life)"},
+  "expected_yield_kg_per_acre": {"min": 20234, "max": 48562, "unit": "kg/acre (hybrid Red Lady up to 120 t/ha over 2-year cycle)"},
+  "description": {
+    "en": "Papaya is cultivated on about 4,653 ha in Sri Lanka with annual production ~18,730 t. The hybrid **Red Lady** dominates commercial production: starts bearing in 3 months from planting, ~2-year productive life, 50–120 fruits per tree at 1.5–2 kg average fruit weight, and can reach 120 t/ha over the cycle under optimal management. Vegetative propagation through climate-smart practices has been demonstrated in Sri Lanka (CSIAP programme)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "rg_papaya_redlady", "source_url": "https://www.researchgate.net/publication/322045864_Papaya_performance_under_various_growing_conditions_cv_Red_Lady_786", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Carica papaya"},
+    "duration_days": {"source_id": "csiap_redlady", "source_url": "https://csiap.lk/blognews?id=rlp09april23", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Red Lady papaya... starts bearing fruit in 3 months of planting"},
+    "expected_yield_kg_per_acre": {"source_id": "bighaat_papaya", "source_url": "https://kisanvedika.bighaat.com/papaya-cultivation-practices-for-a-bountiful-harvest/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Red Lady variety has a duration of about 2 years with a potential yield of 120 tons/hectare in 2 years of productive life cycle. One tree can produce 50 to 120 fruits with average fruit weight of 1.5 to 2 kilograms per fruit", "review_notes": "Red Lady 50–120 t/ha over 2 years → 20234–48562 kg/acre total."},
+    "description": {"source_id": "agricol_papaya", "source_url": "https://www.agricolbikaner.org/wp-content/uploads/2020/10/L-14-.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka has 4,653 hectares under papaya cultivation with annual production of 18,730 metric tons"}
+  }
+}

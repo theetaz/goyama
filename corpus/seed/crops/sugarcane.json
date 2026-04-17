@@ -1,0 +1,19 @@
+{
+  "slug": "sugarcane",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Saccharum officinarum",
+  "family": "Poaceae",
+  "names": {"en": "Sugarcane", "si": "Uk", "ta": "Karumbu"},
+  "aliases": ["uk", "karumbu"],
+  "category": "field_crop",
+  "life_cycle": "perennial",
+  "growth_habit": "grass",
+  "description": {
+    "en": "Historically concentrated in the Kanthale region (3,840 ha) before the Kanthale sugar plant was closed during the civil war. The **Sugarcane Research Institute (SRI)** of Sri Lanka released four new varieties in 2023 after 20 years of breeding, with ~10–13% improved sugar recovery, better ratoonability (multi-harvest), and drought tolerance for rain-fed cultivation — three of the four perform well under rain-fed conditions. The **Uksaviya mobile app** helps farmers with disease identification, cultivation advice, and knowledge access."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_sugar_sl", "source_url": "https://en.wikipedia.org/wiki/Sugar_industry_of_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Saccharum officinarum"},
+    "description": {"source_id": "chinimandi_sugarcane", "source_url": "https://www.chinimandi.com/sri-lanka-introduces-sugarcane-variety-with-high-sugar-recovery/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "After 20 years of research, the Sugarcane Research Institute (SRI) of Sri Lanka has introduced four new varieties with improved sugar recovery percentages, cane yield and disease resistance. The four newly introduced varieties have an improved sugar recovery percentage of about 10-13%. three out of the four varieties have high productivity under rainfed conditions, suggesting their improved drought tolerance"}
+  }
+}

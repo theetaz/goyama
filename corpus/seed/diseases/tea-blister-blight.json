@@ -1,0 +1,30 @@
+{
+  "slug": "tea-blister-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Exobasidium vexans",
+  "names": {"en": "Tea blister blight"},
+  "aliases": ["blister blight"],
+  "causal_organism": "fungal",
+  "causal_species": "Exobasidium vexans (obligate biotroph)",
+  "affected_crop_slugs": ["tea"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 17, "max": 22, "unit": "°C"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Cool misty up-country conditions with high humidity drive infection. Sunlight limits development — cloudy rainy weather is most dangerous for young flush."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "The most problematic foliar disease of tea in Sri Lanka, attacking young succulent harvestable leaves and causing **~40% yield loss** under pressure. Lesions start as small translucent spots on young leaves, swell into characteristic convex 'blisters' on the lower leaf surface with a corresponding depression above, then produce a velvety white sporulating layer. TRI management programme, built since 1946: (a) copper-based fungicides — the TRI-pioneered Perenox; modern Champ DP with lower metallic copper content (20–37.5%) recommended 2016–2019; (b) systemic fungicides bitertanol, tridemorph, propiconazole (1984 TRI recommendation); (c) non-pesticidal options — sodium bicarbonate (baking soda) and salicylic acid show statistically significant reduction vs. copper; (d) Trichoderma biocontrol isolates under investigation."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "tri_lk", "source_url": "https://www.tri.lk/plant-pathology/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Exobasidium vexans"},
+    "description": {"source_id": "intechopen_blister", "source_url": "https://www.intechopen.com/chapters/74600", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Blister blight caused by Exobasidium vexans Massee is the most problematic foliar disease in tea in Sri Lanka. The blister blight disease is one such serious foliar tea disease caused by the obligate biotrophic fungus Exobasidium vexans, which primarily infects the young succulent harvestable tea leaves and results in ~40% yield crop loss."},
+    "favored_conditions": {"source_id": "tri_lk", "source_url": "https://www.tri.lk/plant-pathology/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Recommendation of a copper fungicide (Perenox) against control of blister blight causal agent, Exobasidium vexans (1946). Recommendation of three systemic fungicides (bitertanol, tridermorph, propiconazole) for the control of blister blight (1984). bioefficacy and residue trials for granular and liquid copper formulations with lower copper content (20-37.5% metallic copper) & recommendation of Champ DP to manage Blister blight disease (2016-2019)"}
+  }
+}

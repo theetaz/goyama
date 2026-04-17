@@ -1,0 +1,19 @@
+{
+  "slug": "tobacco",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Nicotiana tabacum",
+  "family": "Solanaceae",
+  "names": {"en": "Tobacco", "si": "Dumkola", "ta": "Pugaiyilai"},
+  "aliases": ["Virginia tobacco", "dumkola"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "description": {
+    "en": "Primary tobacco-growing regions in Sri Lanka: **Galewela, Polonnaruwa, Mahiyangana, Ududumbara, Haliela, Buttala**. Virginia tobacco cultivation began in 1937 via the Ceylon Tobacco Company in collaboration with the Department of Agriculture. Almost 100% of tobacco used for cigarette manufacturing in Sri Lanka is cultivated domestically. Domestic tobacco is also used in chewing products and **beedi** (61% of the national tobacco industry by volume, ~2.3 billion sticks). Grown under contract to licensed buyers; shares all solanaceous diseases and pests (aphid, whitefly, TSWV, damping-off, bacterial wilt)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_ceylon_tobacco", "source_url": "https://en.wikipedia.org/wiki/Ceylon_Tobacco_Company", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Nicotiana tabacum"},
+    "description": {"source_id": "ctc_sustainability", "source_url": "https://www.ceylontobaccocompany.com/sustainability-and-responsibility/our-industry", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In 1937, encouraged by the Government of Ceylon and in collaboration with the Department of Agriculture, the Company launched its first scheme to cultivate cured Virginia Tobacco. The island's key tobacco-growing regions are Galewela, Polonnaruwa, Mahiyangana, Ududumbara, Haliela and Buttala, with tobacco fields in these areas producing high-end tobacco of supreme quality. almost 100% of the tobacco used for cigarette manufacturing cultivated in the country."}
+  }
+}

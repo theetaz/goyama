@@ -1,0 +1,24 @@
+{
+  "slug": "pumpkin",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cucurbita maxima",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Pumpkin", "si": "Wattakka", "ta": "Parangikai"},
+  "aliases": ["wattakka", "parangikai"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 500, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "seed_rate_kg_per_acre": 0.405,
+  "expected_yield_kg_per_acre": {"min": 6070, "max": 8094, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cucurbita maxima"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "to an elevation of 500 m in the dry and intermediate zones"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "rich in humus with a pH range of 5.5 – 7.5"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1 kg/ha", "review_notes": "1 kg/ha → 0.405 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Average yields for all varieties vary from 15,000 – 20,000 kg/ha", "review_notes": "15–20 t/ha → 6070–8094 kg/acre."}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "mancozeb-leaf-spot",
+  "version": 1,
+  "status": "draft",
+  "type": "chemical",
+  "target_disease_slugs": ["anthracnose", "early-blight", "late-blight", "powdery-mildew-cucurbits", "downy-mildew-cucurbits"],
+  "applicable_crop_slugs": ["tomato", "potato", "brinjal", "ela-batu", "cucumber", "snake-gourd", "pumpkin", "bitter-gourd", "luffa", "carrot", "beetroot", "cabbage", "cauliflower"],
+  "name": {"en": "Mancozeb 75% WG broad-spectrum protectant fungicide"},
+  "description": {
+    "en": "DOA 2019-cited protectant dithiocarbamate fungicide for foliar fungal diseases (Cercospora, Mycosphaerella, Alternaria, Septoria leaf spots; anthracnose; early/late blight; downy mildew). Purely protective action — apply **before** disease establishes."
+  },
+  "instructions": {
+    "en": "Foliar spray: dissolve 20 g per 10 L water. Application rates: 650–800 g/ha for low-foliage crops, 1,000–1,200 g/ha for high-foliage crops. Repeat at 7–10 day intervals. Tank-mix with a systemic fungicide for late-blight management."
+  },
+  "chemical": {
+    "active_ingredient": "Mancozeb",
+    "concentration": "75%",
+    "formulation": "WG",
+    "dosage": "20 g per 10 L water; 650–1,200 g/ha",
+    "application_method": "foliar_spray",
+    "pre_harvest_interval_days": 14,
+    "safety_notes": {
+      "en": "PHI 14 days. Wear PPE — respirator, gloves, long sleeves. Avoid drift to water bodies. Moderate toxicity to fish."
+    }
+  },
+  "effectiveness": "high",
+  "cost_tier": "low",
+  "organic_compatible": false,
+  "field_provenance": {
+    "instructions": {"source_id": "doa_pest_mgmt_2015", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/06/Introduction_to_book.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "mancozeb 75% WG is recommended at 20 g per 10 liters of water, with application rates of 650-800 g per hectare for low foliage and 1000-1200 g per hectare for high foliage, with a 7-10 day application interval and 14-day PHI"},
+    "chemical": {"source_id": "doa_pest_mgmt_2015", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/06/Introduction_to_book.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "20 g per 10 liters of water, with application rates of 650-800 g per hectare for low foliage and 1000-1200 g per hectare for high foliage, with a 7-10 day application interval and 14-day PHI", "review_notes": "PHI 14 days per DOA; agronomist must verify current ORP registration before publish (hard gate)."}
+  }
+}

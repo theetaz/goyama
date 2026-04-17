@@ -1,0 +1,29 @@
+{
+  "slug": "papaya-ring-spot-virus",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Papaya ringspot virus",
+  "names": {"en": "Papaya ring spot virus"},
+  "aliases": ["PRSV", "papaya ring spot potyvirus", "PRSV-P"],
+  "causal_organism": "viral",
+  "causal_species": "Papaya ringspot virus (Potyvirus; type-P strain infects papaya, type-W cucurbits)",
+  "affected_crop_slugs": ["papaya", "cucumber", "pumpkin", "snake-gourd", "bitter-gourd", "luffa", "kekiri"],
+  "affected_parts": ["leaf", "fruit", "stem", "whole_plant"],
+  "transmission": ["insect_vector", "mechanical"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Transmitted non-persistently by aphids (>20 species) and mechanically via tools and handling. Aphids acquire and transmit virus in seconds; chemical aphid control is therefore ineffective."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Papaya ring spot potyvirus strain P **confirmed present in Sri Lanka**. Symptoms on papaya: prominent **concentric ringspots and greasy streaks on fruit skin**, vein-clearing, severe mosaic with 'shoestring' leaf distortion, stunting, early fruit drop and loss of papain quality. Can cause total crop loss in commercial plantings. **Management is prevention-focused** (no cure once infected): (a) quarantine / geographic displacement of plantings away from mature infected orchards; (b) **roguing** — remove and destroy symptomatic trees immediately; (c) **netting of young plants** during early-growth susceptibility window; (d) **cross-protection** with mild PRSV strains (used in Taiwan, Hawaii); (e) **resistant cultivars** — SunUp and Rainbow (GM) in Hawaii; conventional tolerance breeding in Sri Lanka; (f) sanitation of tools between plants to prevent mechanical spread; (g) control alternate cucurbit hosts near papaya plantings."
+  },
+  "confused_with": ["tylcv"],
+  "field_provenance": {
+    "causal_species": {"source_id": "pmc_prsv_p", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640413/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "There is documented occurrence of papaya ring spot potyvirus strain P in Sri Lanka"},
+    "description": {"source_id": "wikipedia_prsv", "source_url": "https://en.wikipedia.org/wiki/Papaya_ringspot_virus", "fetched_at": "2026-04-17T00:00:00Z", "quote": "There are four main methods of control for PRSV: quarantine and geographic displacement, roguing and netting, cross-protection, and genetic modification of the host plant."},
+    "favored_conditions": {"source_id": "katyayani_prsv", "source_url": "https://katyayanikrishidirect.com/blogs/news/top-tips-to-manage-papaya-ringspot-virus-and-protect-your-crop", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Early detection and removal of infected plants help prevent the spread of the virus to healthy crops. Planting resistant papaya varieties, such as SunUp and Rainbow, show better resistance to PRSV. Cleaning tools, pruning equipment, and other farming implements minimizes the mechanical spread of the virus."}
+  }
+}

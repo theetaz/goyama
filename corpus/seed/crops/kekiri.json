@@ -1,0 +1,28 @@
+{
+  "slug": "kekiri",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cucumis melo",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Kekiri (melon)", "si": "Kekiri", "ta": "Kekiri"},
+  "aliases": ["melon"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 1000, "unit": "m"},
+  "temperature_c": {"min": 30, "max": 35, "unit": "°C"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "spacing_cm": {"within_row": 100, "between_row": 100},
+  "seed_rate_kg_per_acre": 0.202,
+  "expected_yield_kg_per_acre": {"min": 10117, "max": 12141, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cucumis melo"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "up to 1000 m above sea level"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "tropical climates with temperatures of 30-35°C"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "soil pH between 5.5-7.5"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1.0m between rows and within rows"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "500g per hectare", "review_notes": "0.5 kg/ha → 0.202 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "25,000-30,000 kg per hectare", "review_notes": "25–30 t/ha → 10117–12141 kg/acre."}
+  }
+}

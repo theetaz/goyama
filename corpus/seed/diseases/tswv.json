@@ -1,0 +1,30 @@
+{
+  "slug": "tswv",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Tomato spotted wilt virus",
+  "names": {"en": "Tomato spotted wilt virus"},
+  "aliases": ["TSWV", "tospovirus"],
+  "causal_organism": "viral",
+  "causal_species": "Tomato spotted wilt orthotospovirus (Tospoviridae)",
+  "affected_crop_slugs": ["tomato", "capsicum", "chilli", "groundnut", "brinjal", "ela-batu", "lettuce"],
+  "affected_parts": ["leaf", "fruit", "whole_plant"],
+  "transmission": ["insect_vector"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "Transmitted persistently and propagatively by thrips — primarily *Frankliniella occidentalis* and *Thrips tabaci*. Only larval-acquired virus is transmitted by adults. Alternate weed hosts are critical reservoirs."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Confirmed infecting groundnut and tomato in Sri Lanka, with characteristic tospovirus symptoms — **concentric rings on leaves and fruits** — observed in locations including Ambalantota and Gannoruwa. Young leaves may show bronze discolouration, cup-shaped curling, and black streaking on stems; fruits develop chlorotic ringspots and may abort. Management requires **multiple tactics** because resistance (e.g., Sw-5 gene) alone is defeated by resistance-breaking strains: (a) genetic resistance — deploy resistant cultivars in rotation; (b) strict thrips vector control (monitoring + selective insecticides; avoid broad-spectrum that suppresses natural enemies); (c) **weed management** — weeds host both virus and thrips, so eliminating endemic infection is critical; (d) reflective mulches; (e) remove infected plants promptly."
+  },
+  "confused_with": ["early-blight", "tylcv"],
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "viral diseases (TYLCV, CTV, TSWV, CMV)"},
+    "description": {"source_id": "rg_tswv_sri_lanka", "source_url": "https://www.researchgate.net/publication/282054757_Tomato_spotted_wilt_virus_in_Sri_Lanka_emerging_problems_of_tospoviruses", "fetched_at": "2026-04-17T00:00:00Z", "quote": "TSWV has been confirmed to infect groundnut and tomato in Sri Lanka, with characteristic tospovirus symptoms such as concentric rings observed on leaves and fruits of tomato in locations including Ambalantota and Gannoruwa"},
+    "favored_conditions": {"source_id": "pmc_tswv_resistance", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8538096/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "using a single tactic, even a very effective one like host plant resistance, runs the risk of that tactic failing over time. some strains of TSWV have been discovered to overcome resistance genes, such as the Sw-5 resistance gene in tomato. Weeds play a critical role in TSWV epidemiology by serving as reservoirs for the virus and as reproductive hosts for thrips vectors"}
+  }
+}

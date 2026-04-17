@@ -1,0 +1,19 @@
+{
+  "slug": "maize",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Zea mays",
+  "family": "Poaceae",
+  "names": {"en": "Maize / Corn", "si": "Bada iringu", "ta": "Cholam"},
+  "aliases": ["corn", "bada iringu", "cholam"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "grass",
+  "duration_days": {"min": 120, "max": 150, "unit": "days"},
+  "expected_yield_kg_per_acre": {"min": 1660, "max": 1740, "unit": "kg/acre (DOA open-pollinated varieties)"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "harti", "source_url": "http://www.harti.gov.lk/images/download/reasearch_report/2016/182.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Zea mays"},
+    "duration_days": {"source_id": "harti", "source_url": "http://www.harti.gov.lk/images/download/reasearch_report/2016/182.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "life cycle takes 120-150 days from planting to maturity"},
+    "expected_yield_kg_per_acre": {"source_id": "harti", "source_url": "http://www.harti.gov.lk/images/download/reasearch_report/2016/182.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "the average yield level of Badra and Ruwan is 1660 kg/ac and 1740 kg/ac respectively", "review_notes": "DOA OP varieties under-yield compared to commercial Pacific hybrids; hybrid yields can be substantially higher."}
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "sesame",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Sesamum indicum",
+  "family": "Pedaliaceae",
+  "names": {"en": "Sesame", "si": "Thala", "ta": "Ellu"},
+  "aliases": ["thala", "ellu", "gingelly"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "elevation_m": {"min": 0, "max": 1250, "unit": "m"},
+  "temperature_c": {"min": 25, "max": 30, "unit": "°C"},
+  "duration_days": {"min": 70, "max": 100, "unit": "days"},
+  "spacing_cm": {"within_row": 15, "between_row": 30},
+  "seed_rate_kg_per_acre": 2.023,
+  "expected_yield_kg_per_acre": {"min": 567, "max": 729, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sesamum indicum L."},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "from sea level to 1250 meters"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The optimal temperature for sesame cultivation is 25 – 30 0C"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Uma 70-75 days; Malee 80-85 days; ANKSE3 90-100 days", "review_notes": "Across varieties 70–100 days."},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "30 cm between rows and 15 cm between the plants"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "If row seeding – 5 kg/ha", "review_notes": "5 kg/ha → 2.023 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-sesame/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Uma 1600-1700 kg/ha; Malee 1700-1800 kg/ha; ANKSE3 1400-1500 kg/ha", "review_notes": "1400–1800 kg/ha → 567–729 kg/acre."}
+  }
+}

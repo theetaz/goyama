@@ -1,0 +1,23 @@
+{
+  "slug": "curry-leaf",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Murraya koenigii",
+  "family": "Rutaceae",
+  "names": {"en": "Curry leaf", "si": "Karapincha", "ta": "Karuvepillai"},
+  "aliases": ["karapincha", "karuvepillai", "sweet neem"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "temperature_c": {"min": 18, "max": 40, "unit": "°C"},
+  "duration_days": {"min": 365, "max": 1095, "unit": "days to first harvest (1 yr) / primary production (3 yr)"},
+  "description": {
+    "en": "Found in virtually every Sri Lankan home garden — an indispensable culinary herb in Sri Lankan, Indian, and Bangladeshi kitchens. Evergreen small tree; leaves harvestable year-round in warm climates. First harvest possible ~1 year after planting; primary commercial production begins after 3 years. Prefers well-drained soil kept moist, full sun or partial shade, sheltered from wind. Regular pruning promotes bushier growth and higher leaf yield."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_curry_tree", "source_url": "https://en.wikipedia.org/wiki/Curry_tree", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Murraya koenigii"},
+    "temperature_c": {"source_id": "wikipedia_curry_tree", "source_url": "https://en.wikipedia.org/wiki/Curry_tree", "fetched_at": "2026-04-17T00:00:00Z", "quote": "growth is more robust when temperatures are at least 18 °C"},
+    "duration_days": {"source_id": "wikipedia_curry_tree", "source_url": "https://en.wikipedia.org/wiki/Curry_tree", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Leaves can be harvested about one year after planting; primary production starts after three years"},
+    "description": {"source_id": "dilmah_karapincha", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/karapincha--a1ea8ab9a6d5b51b58e475d08f7cacaf.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The curry leaf tree, known as karapincha, is a plant found in almost all home gardens in Sri Lanka and is an indispensable ingredient in local kitchens"}
+  }
+}

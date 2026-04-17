@@ -1,0 +1,20 @@
+{
+  "slug": "lotus",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Nelumbo nucifera",
+  "family": "Nelumbonaceae",
+  "names": {"en": "Sacred lotus", "si": "Nelum", "ta": "Thamarai"},
+  "aliases": ["Indian lotus", "sacred lotus", "nelambu", "nelum"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "water_requirement": "high",
+  "description": {
+    "en": "Sacred cultural/religious plant of Sri Lanka; the scientific binomial name **Nelumbo nucifera comes directly from the Sinhala word *nelum/nelambu***. Marginal aquatic perennial — grows from thickened rhizomes rooted in the mud of ponds, rice-fallow paddy lowlands, and tanks. Leaves circular and peltate (distinguishing from Nymphaea water-lilies). **Lotus root is a popular Sri Lankan vegetable cooked in coconut-milk curries.** Seeds and flowers are also used. Grows best in organically rich loam under calm water up to 6 ft deep in full sun."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_nelumbo", "source_url": "https://en.wikipedia.org/wiki/Nelumbo_nucifera", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Nelumbo nucifera comes from a Sinhalese name for the plant, nelambu or nelum"},
+    "description": {"source_id": "wikipedia_nelumbo", "source_url": "https://en.wikipedia.org/wiki/Nelumbo_nucifera", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The lotus species occurs in Sri Lanka, and this distribution is probably the result of human translocations. Lotus root is a popular vegetable in Sri Lanka, where it is often cooked in coconut milk gravy."}
+  }
+}

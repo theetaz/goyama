@@ -1,0 +1,21 @@
+{
+  "slug": "guava",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Psidium guajava",
+  "family": "Myrtaceae",
+  "names": {"en": "Guava", "si": "Pera", "ta": "Koyya"},
+  "aliases": ["pera", "koyya"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "elevation_m": {"min": 0, "max": 2000, "unit": "m"},
+  "spacing_cm": {"within_row": 550, "between_row": 550},
+  "duration_days": {"min": 2190, "max": 2920, "unit": "days to full bearing (grafted 6–8 years)"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-guava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Psidium guajava"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-guava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "from sea level to 1,500-2,000 meters"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-guava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5-6 meters × 5-6 meters"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-guava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "grafted plants after 6-8 years: 45-50 kg per tree annually", "review_notes": "6–8 years to full bearing → 2190–2920 days."}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "mango-hopper",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Idioscopus spp.",
+  "names": {"en": "Mango hopper"},
+  "aliases": ["Idioscopus niveosparsus", "Idioscopus clypealis", "Amritodus atkinsoni"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["mango"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "Populations peak during flowering and early fruit-setting season. Dense canopies and high humidity accelerate outbreaks."
+    }
+  },
+  "description": {
+    "en": "Three globally economically-important species — *Amritodus atkinsoni*, *Idioscopus clypealis*, *I. niveosparsus* — attack mango mainly at flowering and early fruiting. Nymphs and adults suck phloem sap from twigs, inflorescences, young leaves and fruitlets, causing flower shrivelling, bud abortion and **50%+ yield loss** under heavy pressure. Honeydew secretion promotes sooty mould that further reduces photosynthesis. Management: (a) **Imidacloprid** highest efficacy — 92.5% reduction at 72 h after treatment, 88.6% overall reduction, relatively low toxicity to natural enemies; (b) neem-oil (azadirachtin) reduces 56–60% while preserving beneficials — suitable for organic/eco-friendly programmes; (c) biocontrol predators — *Mallada boninensis*, *Chrysopa lacciperda* (lacewings); egg-parasitoid *Polynema* sp.; (d) canopy pruning for airflow; (e) sanitation — remove fallen inflorescences."
+  },
+  "economic_threshold": {"en": "Monitor flower panicles weekly during flowering; treatment warranted at >5 hoppers per panicle."},
+  "field_provenance": {
+    "description": {"source_id": "pmc_mango_hopper", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4130301/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Three species – Amritodus atkinsoni, Idioscopus clypealis, and Idioscopus niveosparsus – are of global economic importance, attacking trees mainly during flowering and early fruiting. Both nymphs and adults suck phloem sap from twigs, inflorescences, tender leaves, and young fruits. On heavily infested trees, crop losses of 50% or more have been recorded. Imidacloprid showed the highest efficacy in percentage of reduction of hopper population (92.50 ± 9.02) at 72 hours after treatment. Neem oil (azadirachtin-based) achieves 56-60% reduction while preserving natural enemy populations"}
+  }
+}

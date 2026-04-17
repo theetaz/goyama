@@ -1,0 +1,49 @@
+{
+  "version": "v0.0.1-drafts",
+  "generated_at": "2026-04-17T15:41:42.261520+00:00",
+  "include_draft": true,
+  "totals": {
+    "records_in_bundle": 201,
+    "published_in_seed": 0,
+    "drafts_in_seed": 201
+  },
+  "bundles": [
+    {
+      "entity_type": "crops",
+      "file": "crops.jsonl",
+      "records": 98,
+      "sha256": "bda57b3b556d57bd9b18f06e2c416214793e614c3b51bef62b9d088c30a77808"
+    },
+    {
+      "entity_type": "crop_varieties",
+      "file": "crop_varieties.jsonl",
+      "records": 30,
+      "sha256": "51b9f10ac712d8186ef4964940bc8f03e700e6c5ee7173c6674f988fb18c3a81"
+    },
+    {
+      "entity_type": "diseases",
+      "file": "diseases.jsonl",
+      "records": 34,
+      "sha256": "04837eda59b57d15dc4b3b274c2a8f977356cfc901235f87dd6a8c306a52d0df"
+    },
+    {
+      "entity_type": "pests",
+      "file": "pests.jsonl",
+      "records": 28,
+      "sha256": "a506704e6cb6f52d8329add9bb45568bacb16d4903d0138dd311548f5505516f"
+    },
+    {
+      "entity_type": "remedies",
+      "file": "remedies.jsonl",
+      "records": 11,
+      "sha256": "bd47587cb9d4d3128d5303f7b3377c37b51050542dad967c9b89942dbbc2ec06"
+    }
+  ],
+  "licence": {
+    "content": "CC-BY-SA-4.0",
+    "geodata": "ODbL-1.0",
+    "images": "CC-BY-4.0",
+    "code": "MIT"
+  },
+  "notes": "Pre-release drafts bundle. Chemical remedy PHI values, disease-remedy pairings, and any user-facing numeric recommendation require agronomist review before status flips from 'draft' to 'published' per CLAUDE.md hard gate."
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "elephant-foot-yam",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Amorphophallus paeoniifolius",
+  "family": "Araceae",
+  "names": {"en": "Elephant foot yam", "si": "Kidaran", "ta": "Karunai kizhangu"},
+  "aliases": ["kidaran", "suran", "stink lily", "whitespot giant arum"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "description": {
+    "en": "Native to Sri Lanka and Southeast Asia; in Sri Lanka it occurs naturally in wild stands along water bodies and is valued as a traditional tuber vegetable. Tolerates a wide range of soils and adverse weather, making it a low-input option for marginal tropical lands. Propagated by corm setts: harvested corms are stored in ventilated rooms in November, cut into 750–1000 g setts each bearing a portion of the central bud, and planted in February."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_amorphophallus", "source_url": "https://en.wikipedia.org/wiki/Amorphophallus_paeoniifolius", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Amorphophallus paeoniifolius"},
+    "description": {"source_id": "lakpura_efy", "source_url": "https://lakpura.com/pages/elephant-foot-yam", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The plant is native to Sri Lanka and Southeast Asian countries, and while some countries cultivate this plant as a vegetable, in Sri Lanka it is found naturally in wild mostly on strips of land adjacent to water bodies. Kidaran is the local name for Amorphophallus paeoniifolius in Sri Lanka. Amorphophallus is propagated through corm. Corms harvested during November are stored in well ventilated rooms. Before planting during February, the corm is cut into setts of 750-1000 g, each bearing a portion of central bud."}
+  }
+}

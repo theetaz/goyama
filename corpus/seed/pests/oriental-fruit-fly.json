@@ -1,0 +1,24 @@
+{
+  "slug": "oriental-fruit-fly",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Bactrocera dorsalis",
+  "names": {"en": "Oriental fruit fly"},
+  "aliases": ["B. dorsalis", "mango fruit fly", "fruit fly"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["mango", "guava", "papaya", "banana", "dragon-fruit", "sweet-orange", "bitter-gourd", "snake-gourd"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["fruit_piercing", "boring"],
+  "description": {
+    "en": "The most virulent insect pest in Sri Lanka's commercial fruit industry. Females lay eggs beneath fruit skin; larvae tunnel through flesh causing decay and premature fruit drop. Attacks 300+ fruit species worldwide. Management in Sri Lanka centres on methyl eugenol (ME) male-lure traps for monitoring and mass trapping; ME-baited field traps are the standard DOA-recommended detection tool. Continuous ME application significantly reduces fruit infestation versus untreated sites."
+  },
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Populations peak during fruiting seasons of host crops. Warm, humid conditions and fallen/overripe fruit accelerate breeding."
+    }
+  },
+  "field_provenance": {
+    "description": {"source_id": "tare_sljol", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v26i1.5632", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Fruit flies (Diptera: Tephritidae) are considered as the most virulent insect pest group in the fruit industry worldwide, and methyl-eugenol field traps have been used to collect adult fruit flies in Sri Lanka."}
+  }
+}

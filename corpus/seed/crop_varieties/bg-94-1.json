@@ -1,0 +1,28 @@
+{
+  "slug": "bg-94-1",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 94-1",
+  "released_by": "RRDI",
+  "release_year": 1975,
+  "duration_days": 105,
+  "expected_yield_kg_per_acre": {"min": 1659, "max": 1659, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "long medium",
+    "pericarp_color": "white",
+    "head_rice_recovery_pct": 63.8,
+    "disease_resistance": ["blast"],
+    "disease_susceptibility": ["gall-midge"],
+    "pest_susceptibility": ["brown-planthopper"],
+    "recommendation": "General cultivation",
+    "pedigree": "IR 262/Ld 66"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg94-1/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1975"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg94-1/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "105 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg94-1/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4.1 t/ha", "review_notes": "4.1 t/ha → 1659 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg94-1/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Moderately Resistant to blast; Moderately Susceptible to bacterial leaf blight; Susceptible to both gall midge and brown planthopper. Head rice recovery 63.80%. Pedigree: IR 262/Ld 66"}
+  }
+}

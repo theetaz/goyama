@@ -1,0 +1,28 @@
+{
+  "slug": "ginger-soft-rot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pythium aphanidermatum / Fusarium solani",
+  "names": {"en": "Ginger soft rot (rhizome rot)"},
+  "aliases": ["rhizome rot", "ginger rhizome rot", "turmeric rhizome rot"],
+  "causal_organism": "fungal",
+  "causal_species": "Pythium spp. (primary) + Fusarium spp. (secondary)",
+  "affected_crop_slugs": ["ginger", "turmeric"],
+  "affected_parts": ["root", "stem", "whole_plant"],
+  "transmission": ["soil_borne", "waterborne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 24, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Waterlogged soils and poor drainage are principal drivers. Continuous ginger/turmeric cropping on the same bed amplifies inoculum."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "**Responsible for 50–90% of production loss in ginger globally.** Leaves yellow and droop, pseudostems collapse, and rhizomes become water-soaked, soft, and foul-smelling. **DEA Sri Lanka management** (per the ginger page): (a) **seed treatment** — dip rhizomes in **Mancozeb 80% WP at 30 g per 1 L water for 30 minutes** before planting; (b) plant only disease-free healthy rhizomes; (c) maintain proper drainage, raised beds; (d) **soil solarisation** of beds before planting; (e) rotate — no more than two consecutive seasons of ginger/turmeric on the same plot; (f) rogue infected plants; (g) curative drench with **40 g copper oxychloride per 10 L water** OR **1% Bordeaux mixture** applied by watering can to all beds (infected + healthy); repeat after 2 weeks; (h) emerging biocontrol — *Trichoderma harzianum*, *Pseudomonas* spp., *Bacillus subtilis*, *Streptomyces* spp."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "pmc_ginger_softrot", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10395546/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Pythium and Fusarium spp. are of most concern, causing soft rot (rhizome rot) disease, majorly responsible for the downfall in ginger production by 50–90%"},
+    "description": {"source_id": "dea_ginger", "source_url": "https://dea.gov.lk/ginger/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Use of healthy rhizomes in new planting, with seed treatment by dipping seed rhizomes in Mancozeb 80% WP (30g in 1 L water) solution for 30 minutes. 40 g of copper oxy chloride dissolved in 10 liters of water or 1% Bordeaux mixture should be drenched to all beds in the field (both infected and healthy) by using a watering can, repeated after two weeks"}
+  }
+}

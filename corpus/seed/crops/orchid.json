@@ -1,0 +1,18 @@
+{
+  "slug": "orchid",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Orchidaceae (various genera)",
+  "family": "Orchidaceae",
+  "names": {"en": "Orchid", "si": "Orchid mala", "ta": "Orchid"},
+  "aliases": ["Dendrobium", "Phalaenopsis", "Cattleya", "Vanda"],
+  "category": "ornamental",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "description": {
+    "en": "Commercial orchid cultivation in Sri Lanka: **~3–4 ha** across established growers and tissue-culture export labs. Dominant commercial genera: **Dendrobium, Phalaenopsis, Cattleya, Vanda**. Almost all cultivations under shade-netting with mist-irrigation systems. One specialist Sri Lankan tissue-culture lab produces orchid seedlings exclusively for export. Mini-laboratory networks supply village growers. Sri Lanka is a relatively small player vs. Thailand (the world's largest tropical orchid exporter) but exports from the country are growing. The Department of National Botanic Gardens' Orchid Section conducts conservation and varietal work on native species."
+  },
+  "field_provenance": {
+    "description": {"source_id": "fao_cut_flowers_sl", "source_url": "https://www.fao.org/4/ac452e/ac452e08.htm", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Approximately 3-4 hectares of land are under Orchid cultivation at present, with the industry gradually developing to cater to export markets. Almost all cultivations are under shade netting and the majority of growers have developed mist irrigation techniques. In the current floricultural market in Sri Lanka, Orchid has been established well as a cut flower and potted plant, with Dendrobium, Phalanopsis, Cattlya and Vanda being the most popular orchid genera. One of the commercial tissue culture laboratories in Sri Lanka is exclusively for the production of orchids for export."}
+  }
+}

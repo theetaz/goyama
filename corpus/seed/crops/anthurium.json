@@ -1,0 +1,21 @@
+{
+  "slug": "anthurium",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Anthurium andraeanum",
+  "family": "Araceae",
+  "names": {"en": "Anthurium", "si": "Anthurium", "ta": "Anthurium"},
+  "aliases": ["flamingo flower", "tailflower", "painter's palette"],
+  "category": "ornamental",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "elevation_m": {"min": 0, "max": 1500, "unit": "m (texture/quality improves with elevation)"},
+  "description": {
+    "en": "Flagship cut-flower crop of Sri Lanka's floriculture industry. ~10 ha under cultivation producing ~3 million flowers/year (mostly domestic market). **20+ species cultivated in Sri Lanka**; popular hues include red, pink, and the rare/expensive purple (in demand in Nuwara Eliya, Badulla, Kandy). White *A. andraeanum* is favoured for funerals, weddings, and corporate events. Commercial production under green houses, poly-tunnels, or netting. Tissue-culture labs (one specialised Sri Lankan facility) supply large volumes of planting material. Imported hybrid stock sourced from Anthura bv (Netherlands)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "edb_anthurium", "source_url": "https://www.srilankabusiness.com/floriculture/cut-flowers/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Anthurium andrianum"},
+    "elevation_m": {"source_id": "greencountry_anthurium", "source_url": "https://greencountrylk.com/learn-about-anthurium-cultivation/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Anthuriums can be grown at elevations up to 1500 metres above sea level, with texture and the flossiness remarkably enhanced with increase in elevation"},
+    "description": {"source_id": "edb_anthurium", "source_url": "https://www.srilankabusiness.com/floriculture/cut-flowers/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Annual production of anthuriums is around 3 million flowers, the majority of which are sold at the local market. A land area of approximately 10 hectares is under Anthurium cultivation at present. There are over 20 species of anthuriums in Sri Lanka."}
+  }
+}

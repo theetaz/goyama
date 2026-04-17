@@ -1,0 +1,28 @@
+{
+  "slug": "cucumber",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cucumis sativus",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Cucumber", "si": "Pipingna", "ta": "Vellarikkai"},
+  "aliases": ["pipingna", "vellarikkai"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 1000, "unit": "m"},
+  "temperature_c": {"min": 25, "max": 32, "unit": "°C (optimum 30)"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "spacing_cm": {"within_row": 100, "between_row": 100},
+  "seed_rate_kg_per_acre": 0.405,
+  "expected_yield_kg_per_acre": {"min": 6070, "max": 12141, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cucumis sativus"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Can be cultivated up to above 1000 m sea level"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Optimum temperature is 30 O C"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Suitable pH is 5.5-7.5"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1m x 1m as a spacing for mono culture"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1 kg/ha", "review_notes": "1 kg/ha → 0.405 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cucumber/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "15-20 t/ha; hybrids 25-30 t/ha", "review_notes": "15–30 t/ha → 6070–12141 kg/acre."}
+  }
+}

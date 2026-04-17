@@ -1,0 +1,24 @@
+{
+  "slug": "radish",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Raphanus sativus",
+  "family": "Brassicaceae",
+  "names": {"en": "Radish", "si": "Rabu", "ta": "Mullangi"},
+  "aliases": ["rabu", "mullangi"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "default_season": "year_round",
+  "soil_ph": {"min": 6.0, "max": 7.5},
+  "spacing_cm": {"within_row": 10, "between_row": 28},
+  "seed_rate_kg_per_acre": 2.023,
+  "expected_yield_kg_per_acre": {"min": 8094, "max": 20234, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-raddish/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Raphanus sativus L."},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-raddish/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "A pH range of 6.0 – 7.5 is appropriate for cultivation"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-raddish/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "25-30 cm between rows; 10 cm between plants"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-raddish/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5 kg/ha", "review_notes": "5 kg/ha → 2.023 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-raddish/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Japanese Ball: 40-50 t/ha; Beeralu Radish: 20-30 t/ha", "review_notes": "20–50 t/ha across varieties → 8094–20234 kg/acre."}
+  }
+}

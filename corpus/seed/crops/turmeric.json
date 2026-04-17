@@ -1,0 +1,25 @@
+{
+  "slug": "turmeric",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Curcuma longa",
+  "family": "Zingiberaceae",
+  "names": {"en": "Turmeric", "si": "Kaha", "ta": "Manjal"},
+  "aliases": ["kaha", "manjal"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 240, "max": 300, "unit": "days (8–10 months)"},
+  "spacing_cm": {"within_row": 50, "between_row": 50},
+  "expected_yield_kg_per_acre": {"min": 10230, "max": 10230, "unit": "kg/acre fresh rhizome (DOA best-spacing trial)"},
+  "description": {
+    "en": "Primary smallholder spice grown as monocrop or intercrop in Sri Lanka's Wet and Intermediate zones. Major production districts: **Kurunegala, Gampaha, Kalutara, Kandy, Matale, Ampara**. Main planting season March–April; minor season September–October. Harvested 8–10 months after planting — if sown in March–April, ready by December–January. Research in the Dry Zone demonstrated **50 × 50 cm spacing gave highest fresh weight of 252.76 q/ha (= ~25.3 t/ha)** and 71.9 q/ha oven-dry. Sri Lankan turmeric samples have been found to contain higher curcumin (4.48%) than Indian samples (2.42%) in comparative analysis."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea_turmeric", "source_url": "https://www.dea.gov.lk/turmeric/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Curcuma longa"},
+    "duration_days": {"source_id": "atrsj_turmeric", "source_url": "https://atrsj.sljol.info/articles/10.4038/atrsj.v1i2.32", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Harvesting is done after 8-10 months of planting. If planted in March-April, turmeric is ready to be harvested by December-January."},
+    "spacing_cm": {"source_id": "atrsj_turmeric", "source_url": "https://atrsj.sljol.info/articles/10.4038/atrsj.v1i2.32", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The highest fresh weight and oven dry weight of turmeric reached 252.76 q ha⁻¹ and 71.90 q ha⁻¹, respectively in 50×50 cm spacing"},
+    "expected_yield_kg_per_acre": {"source_id": "atrsj_turmeric", "source_url": "https://atrsj.sljol.info/articles/10.4038/atrsj.v1i2.32", "fetched_at": "2026-04-17T00:00:00Z", "quote": "252.76 q ha⁻¹", "review_notes": "252.76 q/ha = 25,276 kg/ha → 10,230 kg/acre fresh rhizome at best 50×50 cm spacing."},
+    "description": {"source_id": "atrsj_turmeric", "source_url": "https://atrsj.sljol.info/articles/10.4038/atrsj.v1i2.32", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Major growing districts in Sri Lanka are Kurunegala, Gampaha, Kalutara, Kandy, Matale and Ampara"}
+  }
+}

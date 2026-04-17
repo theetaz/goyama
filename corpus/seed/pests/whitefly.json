@@ -1,0 +1,26 @@
+{
+  "slug": "whitefly",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Bemisia tabaci",
+  "names": {"en": "Whitefly (silverleaf / tobacco whitefly)"},
+  "aliases": ["silverleaf whitefly", "tobacco whitefly", "Bemisia"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["tomato", "capsicum", "chilli", "brinjal", "ela-batu", "okra", "cucumber", "bitter-gourd", "snake-gourd", "luffa", "pumpkin", "kekiri", "cassava", "passion-fruit"],
+  "life_stages": ["egg", "nymph", "pupa", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 35, "unit": "°C"},
+    "notes": {
+      "en": "Warm, dry conditions; sheltered plant canopies. Populations explode in the dry season and in greenhouse / polytunnel cultivation. Indiscriminate broad-spectrum insecticide use promotes resistance."
+    }
+  },
+  "description": {
+    "en": "Tiny (1 mm) sap-sucking insects on the undersides of leaves that release a white waxy dust on disturbance. Direct feeding causes leaf yellowing, honeydew deposits that support sooty mould, and growth reduction. **More critically, Bemisia tabaci is the vector of several begomoviruses** — tomato yellow leaf curl virus (TYLCV), Sri Lankan cassava mosaic virus (SLCMV), leaf curl viruses of chilli and okra, and cucurbit yellows complexes — making whitefly management the primary lever for controlling these diseases. Management: reflective mulches, yellow sticky traps (4–5 per 100 m² of nursery), insect-proof nursery covers, biological control (*Encarsia formosa*, *Eretmocerus* parasitoids), selective insecticides (rotate MoA groups to delay resistance), and quick removal of alternate-host weeds."
+  },
+  "field_provenance": {
+    "description": {"source_id": "pmc_tylcv", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4684678/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "the silverleaf whitefly, Bemisia tabaci biotype B. Whiteflies can inoculate a tomato plant with TYLCV after 15 min of feeding"},
+    "favored_conditions": {"source_id": "sciencedirect_slcmv", "source_url": "https://www.sciencedirect.com/science/article/pii/S0042682219303320", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Only Asia II 1 whiteflies were able to transmit this virus efficiently among three widely distributed whitefly species in Asia"}
+  }
+}

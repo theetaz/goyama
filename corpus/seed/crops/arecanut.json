@@ -1,0 +1,21 @@
+{
+  "slug": "arecanut",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Areca catechu",
+  "family": "Arecaceae",
+  "names": {"en": "Arecanut", "si": "Puwak", "ta": "Paakku"},
+  "aliases": ["betel nut", "puwak", "paakku"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "expected_yield_kg_per_acre": {"min": 400, "max": 500, "unit": "kg/acre dried Karunka (depending on variety)"},
+  "description": {
+    "en": "A traditional home-garden + commercial palm crop. Primary growing districts: **Kalutara, Kandy, Kegalle, Ratnapura, Badulla, Matale**, with small acreage along Dry-Zone lakes and waterways. Best performance on fertile clay-loam or red-yellow podzolic lateritic soils in high-rainfall Wet and Intermediate Wet zones at low altitudes. The **Central Research Station at Matale** has released three local arecanut selections as new varieties. Other species in use (less popular for consumption): *dothalu*, *Lenatari*, *Indian puwak*, ornamental *Puwak*. Typical yield: ~4 kg of dried areca (Karunka) per tree per year from 4–5 bunches. Essential for betel-chewing culture and export."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea_areca_nut", "source_url": "https://dea.gov.lk/areca-nut/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Areca catechu"},
+    "expected_yield_kg_per_acre": {"source_id": "sriherbs_arecanut", "source_url": "https://www.sriherbs.com/plant/areca-nut-puwak/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Around 4 kg of dried areca (Karunka) can be taken from one tree per year, with usually 4-5 bunches harvested from one tree per year", "review_notes": "4 kg per tree × 100–125 trees/acre (2×2 m to 3×3 m spacing) → approx 400–500 kg/acre/yr."},
+    "description": {"source_id": "sriherbs_arecanut", "source_url": "https://www.sriherbs.com/plant/areca-nut-puwak/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Three local arecanut selections have been released from Central Research Station Matale as new varieties. There are some other species available which are not popular for consumption, including dothalu, Lenatari, Indian puwak and ornamental Puwak. Areca nuts are mainly cultivated in the Wet Zone and Intermediate Wet Zone of Sri Lanka. The main Arecanut growing districts in Sri Lanka are Kalutara, Kandy, Kegalle, Ratnapura, Badulla and Matale."}
+  }
+}

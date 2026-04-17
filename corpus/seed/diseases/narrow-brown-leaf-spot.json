@@ -1,0 +1,27 @@
+{
+  "slug": "narrow-brown-leaf-spot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Sphaerulina oryzina",
+  "names": {"en": "Narrow brown leaf spot (rice)"},
+  "aliases": ["Cercospora janseana", "Cercospora oryzae"],
+  "causal_organism": "fungal",
+  "causal_species": "Sphaerulina oryzina (formerly Cercospora janseana)",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "stem"],
+  "transmission": ["seed_borne", "airborne"],
+  "favored_conditions": {
+    "notes": {
+      "en": "Severity varies year to year and worsens as rice approaches maturity; varietal susceptibility strongly influences development."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Light-to-dark-brown linear lesions 2–10 mm long run parallel to the leaf vein on blades and sheaths. On susceptible varieties lesions coalesce into extensive necrotic regions; a distinctive 'net blotch' pattern can develop on leaf sheaths."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_narrowbrownleafspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sphaerulina oryzina (formerly Cercospora janseana)"},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_narrowbrownleafspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "light to dark brown, linear, and progress parallel to the vein on leaf blades and sheaths, typically 2-10 mm long. On susceptible varieties, these lesions may merge to form extensive necrotic regions."},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_narrowbrownleafspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "severity of the disease varies from year to year and is more severe as rice plants approach maturity"}
+  }
+}

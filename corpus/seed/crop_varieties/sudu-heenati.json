@@ -1,0 +1,19 @@
+{
+  "slug": "sudu-heenati",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Sudu Heenati",
+  "released_by": "Traditional heirloom (Sri Lanka)",
+  "duration_days": 120,
+  "recommended_aez_codes": [],
+  "traits": {
+    "category": "traditional_heirloom",
+    "grain_shape": "heenati (small)",
+    "pericarp_color": "white",
+    "notes": {"en": "White-grain small-grain heirloom; ~4 months usually, longer in Yala season."}
+  },
+  "field_provenance": {
+    "duration_days": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The usual timeline for harvesting this heirloom variety is 4 months but it usually takes longer in the Yala season."}
+  }
+}

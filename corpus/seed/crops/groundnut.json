@@ -1,0 +1,25 @@
+{
+  "slug": "groundnut",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Arachis hypogaea",
+  "family": "Fabaceae",
+  "names": {"en": "Groundnut / Peanut", "si": "Rata kaju", "ta": "Nilakkadalai"},
+  "aliases": ["peanut", "rata kaju", "nilakkadalai"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "soil_ph": {"min": 6.5, "max": 7.0},
+  "duration_days": {"min": 90, "max": 105, "unit": "days"},
+  "spacing_cm": {"within_row": 15, "between_row": 45},
+  "seed_rate_kg_per_acre": 40.5,
+  "expected_yield_kg_per_acre": {"min": 729, "max": 1619, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Arachis hypogaea"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "6.5 – 7.0"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Most varieties mature in 3.5 months; Lanka Jumbo variety takes approximately 3 months", "review_notes": "3–3.5 months → 90–105 days."},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "45 cm between rows, 15 cm between plants"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "100 kg/ha (with pods)", "review_notes": "100 kg/ha → 40.5 kg/acre. Lanka Jumbo/Valav higher at 130 kg/ha."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/field-crops-groundnut-si/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Average yield is 1.8 tons/ha; good management practices yield 2.5-3.0 tons/ha. Lanka Jumbo: 2500-4400 kg/ha", "review_notes": "1.8–4.4 t/ha → 729–1780 kg/acre; using 1.8–4.0 range."}
+  }
+}

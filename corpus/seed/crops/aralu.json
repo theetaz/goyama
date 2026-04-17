@@ -1,0 +1,19 @@
+{
+  "slug": "aralu",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Terminalia chebula",
+  "family": "Combretaceae",
+  "names": {"en": "Chebulic myrobalan / Haritaki", "si": "Aralu", "ta": "Kaduhai"},
+  "aliases": ["haritaki", "myrobalan", "chebule", "Buddha fruit", "kaduhai"],
+  "category": "medicinal",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Ayurvedic medicinal tree naturally distributed only in Sri Lanka's **Intermediate Zone** (planted trees in all agro-climatic zones). **One of the three components of *Thripala* (Triphala)** — the iconic Ayurvedic three-fruit formulation with *Bulu* (*Terminalia bellirica*) and *Nelli* (*Phyllanthus emblica*). Fruit is used for digestion, detoxification, longevity tonic, and topical wound/skin-condition treatment. Relatively rare in Sri Lanka compared to other Terminalia species; conservation and systematic cultivation are agronomic priorities."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dilmah_aralu", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/aralu--802954573e74c1d583458496082b312a.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Terminalia chebula"},
+    "description": {"source_id": "rg_terminalia_sl", "source_url": "https://www.researchgate.net/publication/283201133_Morphological_Characterization_of_Terminalia_chebula_Retz_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The T. chebula trees are naturally distributed only in the Intermediate Zone of Sri Lanka, although planted trees can be seen in all agro-climatic zones. It is relatively rare in Sri Lanka when compared to other Terminalia species. Fruit is used as one of the three components of thripala in Ayurvedic medicine."}
+  }
+}

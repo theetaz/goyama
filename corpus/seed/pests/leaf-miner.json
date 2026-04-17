@@ -1,0 +1,25 @@
+{
+  "slug": "leaf-miner",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Liriomyza spp.",
+  "names": {"en": "Vegetable leaf miner"},
+  "aliases": ["serpentine leaf miner", "Liriomyza sativae", "Liriomyza trifolii", "Liriomyza huidobrensis"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["tomato", "capsicum", "chilli", "snap-bean", "yard-long-bean", "mung-bean", "cucumber", "snake-gourd", "bitter-gourd", "pumpkin", "carrot", "beetroot"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Become especially serious during dry periods and under protected cultivation. Overuse of broad-spectrum insecticides eliminates parasitoid wasps and triggers leaf-miner resurgence."
+    }
+  },
+  "description": {
+    "en": "*Liriomyza sativae* is recorded in Sri Lanka with very high field infestation rates — 89% on tomato and 98% on mung bean in surveys. Adults are small black-and-yellow flies; females puncture leaves to feed and lay eggs. Larvae tunnel between the upper and lower leaf epidermis, creating the characteristic serpentine whitish mines; heavy mining reduces photosynthesis, causes leaf drop, and stunts plants. **DOA-recommended management**: yellow sticky traps, row covers to exclude adult flies, removal of alternate weed hosts, prompt destruction of infested leaves. Chemical options cited by DOA: Azadirachtin 1% EC at 16 ml per 16 L water, Abamectin 18 g/L EC at 9.6 ml per 16 L, neem seed water extract at 640 g per 16 L; Spinetoram has shown the highest reduction 7 days after application."
+  },
+  "field_provenance": {
+    "description": {"source_id": "mdpi_leafminer", "source_url": "https://www.mdpi.com/2311-7524/9/2/255", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Liriomyza sativae prefers hosts in the Cucurbitaceae, Fabaceae and Solanaceae families. Tomato showed 89% infestation and mung bean 98% infestation in field studies. DOA recommends Azadiractin 1% EC at 16ml/16 liters of water, Abamectin 18g/l EC at 9.6 ml/16 liters of water, and neem seed water extract at 640g/16 liters of water. Insecticidal effects showed the highest reduction values were observed after 7 DOA for Spinetoram"}
+  }
+}

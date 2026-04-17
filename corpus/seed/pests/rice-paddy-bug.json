@@ -1,0 +1,18 @@
+{
+  "slug": "rice-paddy-bug",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Leptocorisa oratoria",
+  "names": {"en": "Rice bug / paddy bug"},
+  "aliases": ["rice ear bug", "Leptocorisa acuta"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "description": {
+    "en": "Nymphs and adults suck developing grains, causing empty or partially filled grains. DOA estimates a 3–5% yield reduction in Sri Lanka. Natural enemies — especially the egg parasitoid *Gryon nixoni* — help suppress populations."
+  },
+  "field_provenance": {
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_pests_paddybug/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sucks the developing grains causing empty or partially filled grains. Both nymphs and adults damage the grains. The pest reportedly reduces rice yield by an estimated 3-5% in Sri Lanka. Gryon nixoni being noted as the most prevalent egg parasitoid in Sri Lanka."}
+  }
+}

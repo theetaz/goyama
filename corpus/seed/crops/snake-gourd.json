@@ -1,0 +1,28 @@
+{
+  "slug": "snake-gourd",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Trichosanthes cucumerina",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Snake gourd", "si": "Pathola", "ta": "Pudalangai"},
+  "aliases": ["pathola", "pudalangai"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 500, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "duration_days": {"min": 60, "max": 75, "unit": "days"},
+  "spacing_cm": {"within_row": 150, "between_row": 150},
+  "seed_rate_kg_per_acre": 1.619,
+  "expected_yield_kg_per_acre": {"min": 8094, "max": 8094, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trichosanthes cucumerina L"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Up to 500m"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5.5 -7.5"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "60-75 days after planting"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1.5 m x 1.5 m"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4kg/ha", "review_notes": "4 kg/ha → 1.619 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "20,000 kg/ha", "review_notes": "20 t/ha → 8094 kg/acre."}
+  }
+}

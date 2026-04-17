@@ -1,0 +1,21 @@
+{
+  "slug": "ginger",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Zingiber officinale",
+  "family": "Zingiberaceae",
+  "names": {"en": "Ginger", "si": "Inguru", "ta": "Inji"},
+  "aliases": ["inguru", "inji"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 240, "max": 240, "unit": "days (~8 months as short-duration crop)"},
+  "description": {
+    "en": "Short-duration cash spice grown mainly for domestic consumption and a small export market. Three varietal groups cultivated in Sri Lanka: **Local (Sri Lankan) ginger** — small rhizomes, ash-white fibrous flesh, highest pungency and aroma; **Rangoon ginger** — medium-sized well-spread finger rhizomes; **Chinese ginger** — large watery pale-yellow rhizomes with low pungency. Comparative research in two Sri Lankan agro-climatic zones found **Siddha and Rangoon** varieties best suited for cultivation. Larger seed-rhizome pieces germinate and establish faster. DEA is the primary authority; major production in Kandy, Matale, Kurunegala, and wet-zone smallholdings."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "pmc_ginger_sri_lanka", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8022136/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Zingiber officinale roscoe grown in Sri Lanka"},
+    "duration_days": {"source_id": "srilankabusiness_ginger", "source_url": "https://www.srilankabusiness.com/spices/about/sri-lanka-ginger.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ginger is a perennial plant but grown as a short duration crop for approximately 8 months", "review_notes": "8 months ≈ 240 days."},
+    "description": {"source_id": "srilankabusiness_ginger", "source_url": "https://www.srilankabusiness.com/spices/about/sri-lanka-ginger.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Local (Sri Lankan) Ginger: Rhizomes are small and the fibrous flesh is somewhat ash white in color, with pungency and aroma comparatively higher than other ginger varieties. Rangoon Ginger: Rhizomes are medium in size and with well spreaded finger rhizomes. Chinese Ginger: Rhizomes are large in size with watery flesh, pale yellow in color, with low pungency and aroma."}
+  }
+}

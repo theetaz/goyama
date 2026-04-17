@@ -1,0 +1,51 @@
+{
+  "slug": "okra",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Abelmoschus esculentus",
+  "family": "Malvaceae",
+  "names": {"en": "Okra", "si": "Bandakka", "ta": "Vendai"},
+  "aliases": ["ladies finger", "bandakka", "vendai"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "duration_days": {"min": 50, "max": 100, "unit": "days"},
+  "spacing_cm": {"within_row": 60, "between_row": 90},
+  "seed_rate_kg_per_acre": 1.821,
+  "expected_yield_kg_per_acre": {"min": 4047, "max": 12141, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Abelmoschus esculantus",
+      "review_notes": "DOA spelling 'esculantus'; accepted binomial is 'Abelmoschus esculentus'."
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "50-100 days after planting"
+    },
+    "spacing_cm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Between rows 90 cm; between plants within row 60 cm"
+    },
+    "seed_rate_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "4.5 kg/ha",
+      "review_notes": "4.5 kg/ha → 1.821 kg/acre."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Average is 10-15 metric tons per hectare; OKH1 hybrid yields approximately 30 t/ha",
+      "review_notes": "10–30 t/ha → 4047–12141 kg/acre (OP baseline 10–15; OKH1 hybrid upper)."
+    }
+  }
+}

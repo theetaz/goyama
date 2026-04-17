@@ -1,0 +1,30 @@
+{
+  "slug": "aphid",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Aphis craccivora / Myzus persicae",
+  "names": {"en": "Aphid"},
+  "aliases": ["cowpea aphid", "green peach aphid", "Aphis craccivora", "Myzus persicae"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["groundnut", "cowpea", "snap-bean", "yard-long-bean", "winged-bean", "soybean", "mung-bean", "tomato", "chilli", "capsicum", "brinjal", "cabbage", "potato", "papaya"],
+  "life_stages": ["nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "Warm, dry weather favours rapid asexual reproduction. Tender new growth and N-lush plants attract colonies. Indiscriminate broad-spectrum insecticides suppress natural enemies, triggering aphid resurgence."
+    }
+  },
+  "economic_threshold": {
+    "en": "Visual monitoring or yellow water/sticky traps. Spot-apply at initial infestation; direct spray to shoots and leaf undersides."
+  },
+  "description": {
+    "en": "Soft-bodied sap-sucking insects found in dense colonies on shoots, leaf undersides, and flower buds. Feeding causes leaf curling, yellowing, stunting and honeydew with sooty mould. More importantly, aphids transmit key viruses — bean common mosaic virus (BCMV), bean yellow mosaic virus (BYMV), groundnut rosette, potato virus Y — making vector management critical. **DOA 2019 pesticide recommendations**: seed treatments with Imidacloprid 70% WS or Thiamethoxam 70% WS; foliar options include Chlorantraniliprole 20% + Thiamethoxam 20% WG, Thiocyclam, and Buprofezin 10% WP. Biological control via syrphid flies, ladybird beetles, lacewings, and braconid wasps — encourage with flowering border crops and avoid broad-spectrum pesticides."
+  },
+  "field_provenance": {
+    "description": {"source_id": "doa_pesticide_2019", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/08/Pesticide-recommendations-book-2019.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka Department of Agriculture's pesticide recommendations include several options for managing aphids (Aphis craccivora and Myzus persicae), such as seed treatments with Imidacloprid 70% WS or Thiamethoxam 70% WS, and foliar sprays with Chlorantraniliprole 20% + Thiamethoxam 20% WG, Thiocyclam, and Buprofezin 10% WP"},
+    "economic_threshold": {"source_id": "doa_pesticide_2019", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/08/Pesticide-recommendations-book-2019.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Aphid populations on plants should be monitored visually or by placing yellow water traps in the field, with spot application being desirable at the initial stage of infestation"},
+    "favored_conditions": {"source_id": "plantwise_aphid", "source_url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.20207800293", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Aphids on groundnut-Sri Lanka: Aphis craccivora"}
+  }
+}

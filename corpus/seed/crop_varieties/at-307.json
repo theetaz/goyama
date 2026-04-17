@@ -1,0 +1,28 @@
+{
+  "slug": "at-307",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "At 307",
+  "released_by": "RRDI",
+  "release_year": 2005,
+  "duration_days": 97,
+  "expected_yield_kg_per_acre": {"min": 2833, "max": 2833, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "intermediate bold",
+    "pericarp_color": "white",
+    "amylose": "high",
+    "disease_resistance": ["blast", "gall-midge"],
+    "pest_resistance": ["brown-planthopper"],
+    "disease_susceptibility": ["bacterial-leaf-blight"],
+    "recommendation": "General cultivation",
+    "pedigree": "Bg 2225-1/Bg 96-3298"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at307/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "2005"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at307/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "97 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at307/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "7.0 t/ha", "review_notes": "7.0 t/ha → 2833 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at307/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "strong resistance to blast and gall midge, plus resistance to brown planthopper. However, it shows Moderately Susceptible response to bacterial leaf blight. Pedigree: Bg 2225-1/Bg 96-3298"}
+  }
+}

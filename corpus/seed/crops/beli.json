@@ -1,0 +1,19 @@
+{
+  "slug": "beli",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Aegle marmelos",
+  "family": "Rutaceae",
+  "names": {"en": "Bael fruit", "si": "Beli", "ta": "Vilva"},
+  "aliases": ["Bengal quince", "golden apple", "stone apple", "bael"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Indigenous fruit species considered under-utilised but widely cultivated across Sri Lanka's Wet and Dry zones. The **Fruit Crop Research and Development Station** has selected five elite accessions from both zones for cultivar distribution; **Rambukkana** and **Polonnaruwa-Supun** yield the largest, most-preferred fruits. Boiled unripe fruit is a traditional Ayurvedic remedy for dysentery, diarrhoea, piles, and dyspepsia; root, bark, leaf juice, and dried flowers all have medicinal value. Hardy tree fits dry-zone home-garden and agroforestry systems."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa_beli", "source_url": "https://doa.gov.lk/fruit-crops-beli-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Aegle marmelos"},
+    "description": {"source_id": "plos_bael", "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0233609", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The Fruit Crop Research and Development Station of Sri Lanka has selected five elite accessions of bael for distribution as cultivars within the country, with accessions chosen from both the Wet Zone and the Dry Zone. Rambukkana and Polonnaruwa-Supun yield the biggest and most preferred fruits."}
+  }
+}

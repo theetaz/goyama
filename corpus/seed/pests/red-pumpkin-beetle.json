@@ -1,0 +1,25 @@
+{
+  "slug": "red-pumpkin-beetle",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Aulacophora foveicollis",
+  "names": {"en": "Red pumpkin beetle"},
+  "aliases": ["cucurbit leaf beetle", "Aulacophora beetle"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["pumpkin", "cucumber", "snake-gourd", "bitter-gourd", "luffa", "kekiri"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing", "root_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 22, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Warm dry weather at germination to early-vegetative stage; damage heaviest on cotyledons and young true leaves."
+    }
+  },
+  "description": {
+    "en": "Introduced invasive pest in Sri Lanka. Adults are reddish-orange beetles 5–8 mm long; strongly prefers pumpkin (*Cucurbita maxima*) but also feeds on squash, melon, cucumber, watermelon, and sponge gourd. **Adults chew leaves, buds and flowers (defoliating young plants); grubs bore into roots and damage stems and fruits lying on the soil.** Integrated management: (a) **botanical** — neem (NSKE 5%) sprays give significant population reduction while preserving natural enemies; (b) **entomopathogens** — *Beauveria bassiana* and *Metarhizium anisopliae* applied as biopesticides; (c) **mechanical** — yellow sticky traps; (d) **cultural** — avoid continuous cucurbit cropping; (e) chemical (carbaryl dust) only as last resort. A combination of carbaryl dust + NSKE + yellow sticky traps is most effective."
+  },
+  "field_provenance": {
+    "description": {"source_id": "wikipedia_aulacophora", "source_url": "https://en.wikipedia.org/wiki/Aulacophora_foveicollis", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The red pumpkin beetle (Aulacophora foveicollis Lucas) is a leaf beetle of the family Chrysomelidae characterized by an elongate body measuring 5-8 mm in length with a reddish-orange head and thorax. The beetle has been introduced to Sri Lanka and Southeast Asia. A. foveicollis favours pumpkin (Cucurbita maxima) over other cucurbit crops, but will also feed on squash, melon, cucumber, watermelon and sponge gourd. They feed on leaves, buds and flowers and can defoliate plants; the grubs bore into roots and damage stems and fruits that lie on the soil."}
+  }
+}

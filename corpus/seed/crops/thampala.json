@@ -1,0 +1,22 @@
+{
+  "slug": "thampala",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Amaranthus spp.",
+  "family": "Amaranthaceae",
+  "names": {"en": "Amaranth", "si": "Thampala", "ta": "Thandu keerai"},
+  "aliases": ["Amaranthus viridis", "koora thampala", "red thampala", "green thampala"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "duration_days": {"min": 35, "max": 45, "unit": "days"},
+  "expected_yield_kg_per_acre": {"min": 10117, "max": 10117, "unit": "kg/acre (HORDI Thampala variety)"},
+  "description": {
+    "en": "One of the most popular leafy vegetables in Sri Lanka alongside gotukola, mukunuwenna, and kankun. Fast-growing C4 crop with very short 35–45-day cycle, low space requirement — ideal for intensive home gardens, urban/vertical gardens, and soil-less media. The **HORDI Thampala variety** (released 2013) has light green leaves, yield > 25 t/ha, high antioxidant and nutritional content, 35–40 days to first harvest, and is recommended island-wide. As forage, crude protein is 1.5–2× that of Guinea grass at 50 days."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "tar_sljol_thampala", "source_url": "https://tar.sljol.info/articles/10.4038/tar.v29i3.8265", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Amaranthus viridis"},
+    "duration_days": {"source_id": "doa_hordi_thampala_variety", "source_url": "https://doa.gov.lk/hordi-variety-leafy-vegetables/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "A new Amaranthus variety called HORDI thampala was released in 2013. This variety features light green leaves, yields greater than 25 t/ha, has high antioxidant and nutritional properties, can be harvested 35-40 days after planting"},
+    "expected_yield_kg_per_acre": {"source_id": "doa_hordi_thampala_variety", "source_url": "https://doa.gov.lk/hordi-variety-leafy-vegetables/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "yields greater than 25 t/ha", "review_notes": "25 t/ha → 10117 kg/acre (HORDI Thampala commercial baseline)."}
+  }
+}

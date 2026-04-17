@@ -1,0 +1,22 @@
+{
+  "slug": "fruit-fly-methyl-eugenol-trap",
+  "version": 1,
+  "status": "draft",
+  "type": "cultural",
+  "target_pest_slugs": ["oriental-fruit-fly"],
+  "applicable_crop_slugs": ["mango", "guava", "dragon-fruit", "papaya", "sweet-orange", "bitter-gourd", "snake-gourd"],
+  "name": {"en": "Methyl eugenol (ME) male-lure traps"},
+  "description": {
+    "en": "Para-pheromone male-lure trap. ME is a potent attractant that exploits male *Bactrocera dorsalis* pheromone chemistry — males ingest ME and convert it to sex-pheromone metabolites, so the lure doubles as both an attractant and a reproductive disruptor. Standard non-chemical tool for fruit-fly monitoring and mass trapping in Sri Lankan orchards."
+  },
+  "instructions": {
+    "en": "Hang 4–8 ME traps per acre on the windward side of the orchard canopy at 1.5–2 m height. Recharge lure blocks every 6–8 weeks depending on product. Do NOT co-deploy with cue-lure in the same trap for *B. dorsalis* — ME + cue-lure mixtures reduce catch versus ME alone. Combine with sanitation: remove fallen and overripe fruit daily, bury 60 cm deep or bag and solarise."
+  },
+  "effectiveness": "high",
+  "cost_tier": "low",
+  "organic_compatible": true,
+  "field_provenance": {
+    "description": {"source_id": "bioone_fruitfly", "source_url": "https://bioone.org/journals/florida-entomologist/volume-87/issue-4/0015-4040_2004_087_0481_SAIIBM_2.0.CO_2/SYNERGISTIC-AND-INHIBITORY-INTERACTIONS-BETWEEN-METHYL-EUGENOL-AND-CUE-LURE/10.1653/0015-4040(2004)087[0481:SAIIBM]2.0.CO;2.full", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Traps baited with methyl eugenol and cue-lure (mixed or separate) captured significantly fewer B. dorsalis males than traps baited with methyl eugenol alone"},
+    "instructions": {"source_id": "tare_sljol", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v26i1.5632", "fetched_at": "2026-04-17T00:00:00Z", "quote": "methyl-eugenol field traps have been used to collect adult fruit flies in Sri Lanka"}
+  }
+}

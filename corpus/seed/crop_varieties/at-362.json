@@ -1,0 +1,27 @@
+{
+  "slug": "at-362",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "At 362",
+  "released_by": "RRDI",
+  "release_year": 2002,
+  "duration_days": 110,
+  "expected_yield_kg_per_acre": {"min": 2833, "max": 2833, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "long medium",
+    "pericarp_color": "red",
+    "amylose": "intermediate-high",
+    "disease_resistance": ["gall-midge", "blast", "bacterial-leaf-blight"],
+    "pest_resistance": ["brown-planthopper"],
+    "recommendation": "General cultivation",
+    "pedigree": "At 85-2/Bg 380"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at362/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "2002"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at362/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "110 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at362/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "7.0 t/ha", "review_notes": "7.0 t/ha → 2833 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_at362/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "moderately resistant to blast and bacterial leaf blight, while demonstrating stronger resistance to gall midge and brown planthopper"}
+  }
+}

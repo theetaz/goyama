@@ -1,0 +1,18 @@
+{
+  "slug": "brinjal-amanda-f1",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "brinjal",
+  "name": "Amanda F1",
+  "released_by": "Commercial hybrid (DOA-listed)",
+  "expected_yield_kg_per_acre": {"min": 18211, "max": 24281, "unit": "kg/acre (hybrid 45–60 t/ha)"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "fruit_type": "hybrid",
+    "flowering_dap": 34,
+    "notes": {"en": "Commercial F1 hybrid in DOA's HORDI brinjal recommendation list. 50% flowering at 34 days after planting; yield 45–50 t/ha; ~4,960 g per plant."}
+  },
+  "field_provenance": {
+    "expected_yield_kg_per_acre": {"source_id": "doa_hordi_brinjal_variety", "source_url": "https://doa.gov.lk/hordi-variety2-brinjal/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "One variety shows a yield of 45-50 t/ha with a yield per plant of 4960g and 50% flowering at 34 days, while another variety shows 55-60 t/ha with 5600g per plant and 50% flowering at 35 days", "review_notes": "45–60 t/ha across two hybrids → 18211–24281 kg/acre. Attribution to Amanda F1 / Anjalee F1 inferred; agronomist confirmation recommended."}
+  }
+}

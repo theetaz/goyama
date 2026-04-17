@@ -1,0 +1,26 @@
+{
+  "slug": "brinjal-fruit-and-shoot-borer",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Leucinodes orbonalis",
+  "names": {"en": "Brinjal fruit and shoot borer"},
+  "aliases": ["BFSB", "eggplant fruit and shoot borer"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["brinjal", "ela-batu", "thumba-karawila"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 24, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Persists year-round in Sri Lanka's brinjal-growing areas since brinjal is often cultivated continuously. Overlapping generations and short life-cycle drive rapid build-up."
+    }
+  },
+  "description": {
+    "en": "**The major pest of eggplant in South Asia** including Sri Lanka, where brinjal is the country's second most extensively-grown vegetable after ash plantain. Larvae bore into young shoots (causing dead-heart wilting) and into developing fruits (rendering fruit unmarketable). **Pheromone-based IPM is the DOA-recommended primary strategy**: Sri Lankan research confirmed (E)-11-hexadecenyl acetate (E11-16:Ac) as the major female sex pheromone component, best deployed with 1–10% of (E)-11-hexadecen-1-ol (E11-16:OH) — blends in this ratio catch more males than E11-16:Ac alone. Additional IPM tools: (a) remove and destroy wilted shoots and bored fruits weekly; (b) mass-trapping with pheromone lures; (c) sex-pheromone mating disruption; (d) Bt-based biopesticides; (e) selective insecticides only at damage threshold; (f) crop rotation out of Solanaceae."
+  },
+  "field_provenance": {
+    "description": {"source_id": "pubmed_bfsb_pheromone", "source_url": "https://pubmed.ncbi.nlm.nih.gov/31585868/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The brinjal fruit and shoot borer, Leucinodes orbonalis is the major pest of eggplant in South Asia. Brinjal plant is an economically important plant grown in Sri Lanka and other Asian countries, and in Sri Lanka, it covers the second large extent after ash plantain."},
+    "favored_conditions": {"source_id": "springer_bfsb_pheromone", "source_url": "https://link.springer.com/article/10.1023/A:1010416927282", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Analysis of female pheromone gland extracts confirmed (E)-11-hexadecenyl acetate (E11-16:Ac) as the major pheromone component with 0.8 to 2.8% of the related (E)-11-hexadecen-1-ol (E11-16:OH), as previously reported from Sri Lanka. In field trials conducted in India, blends containing between 1 and 10% E11-16:OH caught more male L. orbonalis than E11-16:Ac alone."}
+  }
+}

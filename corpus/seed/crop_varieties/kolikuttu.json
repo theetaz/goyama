@@ -1,0 +1,18 @@
+{
+  "slug": "kolikuttu",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "banana",
+  "name": "Kolikuttu",
+  "released_by": "Traditional Sri Lankan cultivar",
+  "traits": {
+    "group": "Kolikuttu group (cultivars: kolikuttu, suwendel, puwalu, rath kehel)",
+    "fruit_size": "10–15 cm, short thick cylindrical",
+    "pericarp_color": "thin smooth",
+    "flesh_color": "highest phenolic content (55.1 mg/100g), highest total antioxidant (948%)",
+    "commercial_challenges": "Fruits drop from bunches when ripe; thin skin rips — difficult to transport commercially"
+  },
+  "field_provenance": {
+    "traits": {"source_id": "specialtyproduce_kolikuttu", "source_url": "https://specialtyproduce.com/produce/Kolikuttu_Bananas_23859.php", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Kolikuttu bananas are a small to medium-sized varietal, averaging 10 to 15 centimeters in length, and have a short, thick, and plump appearance with a straight to slightly curved, cylindrical shape. the peel is smooth, taut, and thin, splitting open easily when ripe. Despite their popularity, Kolikuttu bananas are challenging to produce commercially as the fruits often drop from the bunches when ripe. The thin skin also rips open, making transport difficult."}
+  }
+}

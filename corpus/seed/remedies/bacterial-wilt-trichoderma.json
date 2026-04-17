@@ -1,0 +1,21 @@
+{
+  "slug": "bacterial-wilt-trichoderma",
+  "version": 1,
+  "status": "draft",
+  "type": "biological",
+  "target_disease_slugs": ["bacterial-wilt"],
+  "applicable_crop_slugs": ["tomato", "brinjal", "capsicum", "chilli", "potato"],
+  "name": {"en": "Trichoderma asperellum soil application"},
+  "description": {
+    "en": "Biological control using *Trichoderma asperellum* — antagonistic soil fungus that suppresses *Ralstonia solanacearum* growth. In Sri Lankan trials, *T. asperellum* together with 1% Bordeaux mixture inhibited bacterial growth by 100% in vitro; treated plants showed significant reduction in bacterial density and no plant deaths versus untreated controls."
+  },
+  "instructions": {
+    "en": "Apply *Trichoderma asperellum* formulation to nursery beds and again at transplanting as a soil drench, following the product manufacturer's dosage. Combine with field sanitation (clean tools, disease-free seed) and, where appropriate, a 1% Bordeaux mixture soil drench."
+  },
+  "effectiveness": "high",
+  "cost_tier": "low",
+  "organic_compatible": true,
+  "field_provenance": {
+    "description": {"source_id": "sciencedirect_biocontrol", "source_url": "https://www.sciencedirect.com/science/article/pii/S2773078623000328", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trichoderma asperellum and Bordeaux mixture (1%) inhibited the growth of Ralstonia solanacearum by 100%, with plants treated showing significant reduction in bacterial growth compared to control with no plant deaths."}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "taro",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Colocasia esculenta",
+  "family": "Araceae",
+  "names": {"en": "Taro", "si": "Gahala", "ta": "Sevalai"},
+  "aliases": ["gahala", "kolakana ala", "sevel ala", "eddoes", "dasheen"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 150, "max": 360, "unit": "days (variety-dependent)"},
+  "description": {
+    "en": "Heavily used in Sri Lankan cuisine — corms eaten boiled or in coconut-milk curry. Multiple edible Sri Lankan varieties: **kiri ala**, **kolakana ala**, **gahala**, **sevel ala**. Many more varieties occur but most are toxic (oxalate-rich) and not cultivated. Shade-tolerant, loves waterlogged soils, flexible across climates. Note: *kiri ala* (Sri Lankan usage) sometimes refers to the distinct species *Xanthosoma sagittifolium* (see `kiriala` record) — local nomenclature is regional; agronomist review needed to align the two slugs."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_taro", "source_url": "https://en.wikipedia.org/wiki/Taro", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Colocasia esculenta"},
+    "duration_days": {"source_id": "wikipedia_taro", "source_url": "https://en.wikipedia.org/wiki/Taro", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Planting to harvest is anywhere from 5 to 12 months depending on variety"},
+    "description": {"source_id": "wikipedia_taro", "source_url": "https://en.wikipedia.org/wiki/Taro", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Edible varieties such as kiri ala, kolakana ala, gahala, and sevel ala are grown for their corms and leaves in Sri Lanka. Many varieties are recorded in Sri Lanka, with several being edible while most are toxic to humans and therefore not grown. Sri Lankans eat taro corms after boiling them or making them into a curry with coconut milk."}
+  }
+}

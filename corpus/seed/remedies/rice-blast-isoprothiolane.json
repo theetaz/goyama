@@ -1,0 +1,26 @@
+{
+  "slug": "rice-blast-isoprothiolane",
+  "version": 1,
+  "status": "draft",
+  "type": "chemical",
+  "target_disease_slugs": ["rice-blast"],
+  "applicable_crop_slugs": ["rice"],
+  "name": {"en": "Isoprothiolane 400 g/l EC for rice blast"},
+  "instructions": {"en": "Dissolve 20 ml in 16 l of water; apply 8–10 tanks per acre."},
+  "chemical": {
+    "active_ingredient": "Isoprothiolane",
+    "concentration": "400 g/l",
+    "formulation": "EC",
+    "dosage": "20 ml per 16 l tank; 8–10 tanks per acre",
+    "application_method": "foliar_spray",
+    "pre_harvest_interval_days": 30,
+    "safety_notes": {"en": "Verify PHI against current ORP registration. Standard fungicide PPE."}
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": false,
+  "field_provenance": {
+    "instructions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Isoprothiolane 400g/l EC: dissolve 20 ml in 16 l of water (8-10 tanks per acre)"},
+    "chemical": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Isoprothiolane 400g/l EC: dissolve 20 ml in 16 l of water (8-10 tanks per acre)", "review_notes": "PHI placeholder pending agronomist verification."}
+  }
+}

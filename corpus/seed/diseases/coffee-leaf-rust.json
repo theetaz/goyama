@@ -1,0 +1,29 @@
+{
+  "slug": "coffee-leaf-rust",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Hemileia vastatrix",
+  "names": {"en": "Coffee leaf rust"},
+  "aliases": ["CLR", "orange rust of coffee"],
+  "causal_organism": "fungal",
+  "causal_species": "Hemileia vastatrix (basidiomycete)",
+  "affected_crop_slugs": ["coffee"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 21, "max": 25, "unit": "°C"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Warm humid conditions with leaf wetness of ≥12 h drive infection. Dense coffee canopies and shade plantations (mid-range humidity) accelerate build-up."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "**The disease that ended Ceylon's coffee industry** — first observed in Sri Lanka in 1869 at Madulsima as orange pustules on coffee leaves. By the 1880s it had destroyed over 90% of the country's coffee plantations, prompting the pivot to tea that defines Sri Lankan agriculture today. Symptoms: orange-yellow powdery uredospore pustules on the underside of leaves; heavy defoliation weakens plants and reduces yield by 30–50%. The disease remains a yield-limiting factor in the modern small-scale arabica revival. Management: (a) **resistant cultivars** (Catimor, Castillo, Sarchimor lines bred for CLR resistance); (b) preventive copper fungicide sprays at early rain onset; (c) systemic triazoles + strobilurins in high-pressure seasons; (d) shade and canopy management to reduce humidity; (e) prompt removal of infected leaves; (f) balanced fertilisation (excess N worsens susceptibility)."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "wikipedia_hemileia", "source_url": "https://en.wikipedia.org/wiki/Hemileia_vastatrix", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Hemileia vastatrix"},
+    "description": {"source_id": "wikipedia_coffee_sl", "source_url": "https://en.wikipedia.org/wiki/Coffee_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "coffee plantations were devastated by the fungal disease Hemileia vastatrix, also known as coffee leaf rust (CLR). The coffee leaf rust fungus, Hemileia vastatrix, was first detected in Ceylon in 1869, initially observed as orange pustules on coffee leaves in the Madulsima region. leaf rust persists as a yield-limiting factor, capable of reducing output by 30-50% through defoliation and weakened plants."}
+  }
+}

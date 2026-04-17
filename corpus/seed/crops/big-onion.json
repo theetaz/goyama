@@ -1,0 +1,58 @@
+{
+  "slug": "big-onion",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Allium cepa",
+  "family": "Amaryllidaceae",
+  "names": {"en": "Big onion", "si": "Loku lunu", "ta": "Periya vengayam"},
+  "aliases": ["onion", "bulb onion", "loku lunu"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 2000, "unit": "m"},
+  "rainfall_mm": {"min": 0, "max": 750, "unit": "mm (growing-season cap)"},
+  "duration_days": {"min": 75, "max": 110, "unit": "days"},
+  "spacing_cm": {"within_row": 10, "between_row": 10},
+  "expected_yield_kg_per_acre": {"min": 7284, "max": 8094, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Allium cepa",
+      "review_notes": "Source page in Sinhala; English rendering of fields from DOA Sinhala content."
+    },
+    "elevation_m": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "from sea level up to 2,000 meters elevation"
+    },
+    "rainfall_mm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "rainfall during the growing season should not exceed 750 mm"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "maturity periods ranging 75-110 days"
+    },
+    "spacing_cm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "10 x 10 cm"
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/field-crops-bigonion-si",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "18-20 metric tons per hectare",
+      "review_notes": "18–20 t/ha → 7284–8094 kg/acre."
+    }
+  }
+}

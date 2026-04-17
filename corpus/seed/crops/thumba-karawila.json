@@ -1,0 +1,19 @@
+{
+  "slug": "thumba-karawila",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Momordica dioica",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Thumba karawila (Spine gourd)", "si": "Thumba karawila", "ta": "Paagerkai"},
+  "aliases": ["spine gourd", "teasle gourd", "kakrol"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "duration_days": {"min": 60, "max": 90, "unit": "days to first flower from stem cuttings / seed"},
+  "spacing_cm": {"within_row": 100, "between_row": 150},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-thumba-karawila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Momordica dioica ex Roxb.Willd"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-thumba-karawila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Flowering commences approximately 3 months after seeding, with flowers appearing 2 months after establishment when using stem cuttings"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-thumba-karawila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1.5 meters between rows and 1.0 meter between individual plants"}
+  }
+}

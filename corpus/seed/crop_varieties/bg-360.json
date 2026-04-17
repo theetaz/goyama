@@ -1,0 +1,28 @@
+{
+  "slug": "bg-360",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 360",
+  "released_by": "RRDI",
+  "release_year": 1999,
+  "duration_days": 105,
+  "expected_yield_kg_per_acre": {"min": 1700, "max": 1700, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "short round",
+    "pericarp_color": "white",
+    "grain_weight_1000g": 13.6,
+    "disease_resistance": ["gall-midge", "bacterial-leaf-blight"],
+    "pest_resistance": ["brown-planthopper"],
+    "disease_susceptibility": ["blast"],
+    "recommendation": "General cultivation",
+    "pedigree": "84-3346/IR36//Senerang"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg360/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1999"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg360/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "103 – 106 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg360/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4.2 t/ha", "review_notes": "4.2 t/ha → 1700 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg360/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Susceptible to blast; Moderately Resistant to bacterial leaf blight; Resistant to gall midge; Moderately Resistant to brown planthopper. 1000 grain weight 13.6 g"}
+  }
+}

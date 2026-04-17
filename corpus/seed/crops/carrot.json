@@ -1,0 +1,51 @@
+{
+  "slug": "carrot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Daucus carota",
+  "family": "Apiaceae",
+  "names": {"en": "Carrot", "si": "Carrot", "ta": "Carrot"},
+  "aliases": ["carrot"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 63, "max": 90, "unit": "days"},
+  "spacing_cm": {"within_row": 5, "between_row": 25},
+  "seed_rate_kg_per_acre": 1.619,
+  "expected_yield_kg_per_acre": {"min": 12141, "max": 16187, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-carrot/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Daucus carota"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-carrot/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "fertilizer application timeline through week 9",
+      "review_notes": "Inferred ~9 weeks (63 days) to harvest from stated 9-week fertilizer timeline; upper bound needs confirmation."
+    },
+    "spacing_cm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-carrot/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Row spacing is 25 cm, seedling thinning to 5 cm spacing"
+    },
+    "seed_rate_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-carrot/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "4 kg seed /ha",
+      "review_notes": "4 kg/ha → 1.619 kg/acre."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-carrot/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "30-40 t/ha",
+      "review_notes": "30–40 t/ha → 12141–16187 kg/acre."
+    }
+  }
+}

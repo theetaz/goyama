@@ -1,0 +1,28 @@
+{
+  "slug": "panama-disease",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Fusarium oxysporum f. sp. cubense",
+  "names": {"en": "Panama disease (Fusarium wilt of banana)"},
+  "aliases": ["Foc", "Foc TR4", "banana Fusarium wilt", "Panama wilt"],
+  "causal_organism": "fungal",
+  "causal_species": "Fusarium oxysporum f. sp. cubense (Foc); critical emerging strain is Tropical Race 4 (TR4)",
+  "affected_crop_slugs": ["banana"],
+  "affected_parts": ["root", "stem", "whole_plant"],
+  "transmission": ["soil_borne", "waterborne", "mechanical"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Soil-borne chlamydospores persist 30+ years in soil. Spreads via contaminated soil on tools, footwear, vehicles, irrigation water, and infected planting material."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Progressive yellowing and wilting of older leaves that collapse around the pseudostem; splitting of pseudostem base; internal reddish-brown vascular discoloration visible in corm cross-sections. The 1950s Race 1 strain destroyed the Gros Michel cultivar globally; since the 2010s the TR4 strain threatens Cavendish (the world's dominant export cultivar) and appears to be spreading across Asia. Control is extremely difficult — Foc TR4 is highly tolerant to azoles, SDHI, and strobilurin fungicides. Management is **phytosanitary**: quarantine to prevent introduction, strict farm hygiene, rogue-and-burn infected mats, fallow or rotate with non-host crops, plant disease-free tissue-cultured suckers, and shift to tolerant cultivars where breeding progress allows."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-banana-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Panama disease (Fusarium oxysporum cubense)"},
+    "description": {"source_id": "wikipedia_panama", "source_url": "https://en.wikipedia.org/wiki/Panama_disease", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Panama disease is a plant disease that infects banana plants caused by the fungus Fusarium oxysporum f. sp. cubense. The pathogen is resistant to fungicides, and its control is limited to phytosanitary measures. Since the 2010s, a new outbreak of Panama disease caused by the strain Tropical Race 4 (TR4) has threatened the production of the Cavendish banana"},
+    "favored_conditions": {"source_id": "plos_pathogens", "source_url": "https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1010860", "fetched_at": "2026-04-17T00:00:00Z", "quote": "All FocTR4 morphotypes are highly tolerant of the most widely-used single-site fungicides (azoles, succinate dehydrogenase inhibitors, strobilurins)"}
+  }
+}

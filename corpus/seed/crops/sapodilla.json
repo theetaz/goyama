@@ -1,0 +1,19 @@
+{
+  "slug": "sapodilla",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Manilkara zapota",
+  "family": "Sapotaceae",
+  "names": {"en": "Sapodilla", "si": "Sapathilla (Rata Mi)", "ta": "Sapota"},
+  "aliases": ["chikoo", "naseberry", "rata mi", "sapota"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Widely grown evergreen fruit tree across Sri Lanka's low- and mid-country Wet and Intermediate zones. Sweet brown-fleshed fruit with translucent jelly-like flesh. In Sri Lanka the native *mee* tree (*Madhuca longifolia* syn. *Bassia longifolia*) is commonly used as the rootstock for sapodilla grafting — distinctive to Sri Lankan sapodilla practice. Sap (chicle) was historically used for chewing gum production."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dilmah_rata_mi", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/rata-mi-sapathilla--37526d0a8da04cfcd690c47acaec470d.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The sapathilla tree, which is also known as rata mi, bears the scientific name of Manilkara zapota"},
+    "description": {"source_id": "growables_sapodilla", "source_url": "https://www.growables.org/information/TropicalFruit/SapodillaManilkaraSapota.htm", "fetched_at": "2026-04-17T00:00:00Z", "quote": "in Sri Lanka, mee (Bassia longifolia) is commonly used as a rootstock"}
+  }
+}

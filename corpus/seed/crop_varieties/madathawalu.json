@@ -1,0 +1,17 @@
+{
+  "slug": "madathawalu",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Madathawalu",
+  "released_by": "Traditional heirloom (Sri Lanka)",
+  "duration_days": 120,
+  "recommended_aez_codes": [],
+  "traits": {
+    "category": "traditional_heirloom",
+    "notes": {"en": "Traditional Sri Lankan rice, ~4 months from seeding to harvest."}
+  },
+  "field_provenance": {
+    "duration_days": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "This crop can be harvested within 4 months from seeding."}
+  }
+}

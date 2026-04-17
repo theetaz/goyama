@@ -1,0 +1,30 @@
+{
+  "slug": "black-sigatoka",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pseudocercospora fijiensis",
+  "names": {"en": "Black Sigatoka (black leaf streak of banana)"},
+  "aliases": ["Mycosphaerella fijiensis", "black leaf streak disease", "BLSD"],
+  "causal_organism": "fungal",
+  "causal_species": "Pseudocercospora fijiensis (formerly Mycosphaerella fijiensis)",
+  "affected_crop_slugs": ["banana"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 24, "max": 28, "unit": "°C"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Warm, humid, frequently wet banana canopies favour ascospore release and infection. Dense plantations amplify inoculum rapidly."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "The **most significant foliar disease of banana worldwide**. Thin dark streaks parallel to leaf veins expand into dark brown/black oval lesions with yellow halos that coalesce and prematurely kill leaves, reducing bunch weight and triggering early ripening. No effective host resistance in Cavendish. Commercial plantations control with up to **70 fungicide applications per year** — a protectant rotation of mancozeb (up to 35 applications/yr) alternated with 14–20 applications of systemics from triazole, strobilurin, morpholine, and benzimidazole groups. Weekly applications drive rapid resistance evolution (especially in 14α-demethylase inhibitor / DMI group). Fungicide cost is 10–15% of total banana production cost in major exporting countries. Urgent need for alternatives: defence-inducer sprays, resistant breeding lines, and IPM."
+  },
+  "confused_with": ["anthracnose"],
+  "field_provenance": {
+    "causal_species": {"source_id": "pmc_sigatoka_genomes", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4981457/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Pseudocercospora fijiensis (Synonym Mycosphaerella fijiensis)"},
+    "description": {"source_id": "pmc_sigatoka_fungicide", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640443/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Black Sigatoka (black leaf streak disease) is caused by the fungus Pseudocercospora fijiensis (previously: Mycosphaerella fijiensis) and is the most significant foliar disease of banana worldwide. fungicide treatments, which are applied up to 70 times per year and are estimated to comprise 10 to 15 percent of the total production cost of banana in Costa Rica. Intensive management involves applying a protectant fungicide (mancozeb) up to 35 times per year with an alternation of 14–20 applications of systemic fungicides using preferably triazoles, strobilurins, morpholines and in some cases benzimidazoles."}
+  }
+}

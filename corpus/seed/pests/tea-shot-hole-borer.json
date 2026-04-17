@@ -1,0 +1,25 @@
+{
+  "slug": "tea-shot-hole-borer",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Euwallacea fornicatus",
+  "names": {"en": "Tea shot-hole borer"},
+  "aliases": ["SHB", "Xyleborus fornicatus", "Euwallacea fornicatus complex"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["tea"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Attacks tea across 150–1400 m elevation, though also found outside this band. Stressed or poorly pruned bushes are more vulnerable."
+    }
+  },
+  "description": {
+    "en": "**The most serious pest of tea in Sri Lanka** per TRI (recognised as part of the *Euwallacea fornicatus* species complex). Female beetles bore into stems and create galleries where they farm symbiotic *Fusarium* ambrosia fungus as larval food. Two injury types: (1) primary — gallery construction weakens stems and causes **branch breakage**; (2) secondary — associated wood rot debilitates the bush, reducing yield and shortening productive life. TRI Advisory Circular I-4 is the national reference. **Management**: (a) **sanitation of infected hosts** is the most recommended step — prune out infested branches and burn; (b) avoid spread via infested planting material; (c) chemical control must be truly prophylactic — historical use of persistent organochlorines (DDT, dieldrin, aldrin, telodrin) caused severe secondary-pest outbreaks and is now prohibited; (d) plant-semiochemical research on attracting adults for mass trapping is ongoing; (e) field hygiene — remove shade-tree prunings that may host alternate beetles."
+  },
+  "field_provenance": {
+    "description": {"source_id": "jipm_shb", "source_url": "https://academic.oup.com/jipm/article/3/4/A1/922908", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Shot-hole borer (SHB), Xyleborus fornicatus Eichh. (Coleoptera: Scolytidae), is the most serious pest of tea in Sri Lanka. This insect causes two types of injury. The primary injury is caused during the constructions of galleries in the stems, which results in branch breakages, whereas the secondary injury occurs from wood rot, leading to debilitation of the tea plant. It has become a problem in tea grown in the range 150 -1400 m above sea level"},
+    "favored_conditions": {"source_id": "jipm_shb", "source_url": "https://academic.oup.com/jipm/article/3/4/A1/922908", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The use of utilization of persistent insecticides such as DDT, dieldrin, aldrin and telodrin to control SHB has caused serious secondary pest outbreaks"}
+  }
+}

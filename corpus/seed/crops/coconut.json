@@ -1,0 +1,21 @@
+{
+  "slug": "coconut",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cocos nucifera",
+  "family": "Arecaceae",
+  "names": {"en": "Coconut", "si": "Pol", "ta": "Thennai"},
+  "aliases": ["pol", "thennai"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "duration_days": {"min": 1825, "max": 2190, "unit": "days to first bearing (5–6 years for tall variety)"},
+  "description": {
+    "en": "Grown in most of Sri Lanka except higher elevations. Three principal variety groups: Tall (Sri Lankan Tall — height ~18 m, 40–80 nuts per palm per year), Dwarf (Sri Lanka Green Dwarf, Sri Lanka Brown Dwarf, Sri Lanka Yellow Semi-Tall), and King coconut (*Cocos nucifera* var. *aurantiaca*). CRI hybrids such as Green Dwarf × Tall yield ~20,000 nuts/ha/yr (≈125 nuts/palm/yr); the newer T × Malayan Red Dwarf hybrid released as CRISL 2020 is under multi-locational evaluation."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_coconut", "source_url": "https://en.wikipedia.org/wiki/Coconut_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The scientific name of the coconut is Cocos nucifera"},
+    "duration_days": {"source_id": "goodhands_coconut", "source_url": "https://goodhands.lk/en/coconuts-in-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "coconut flowers take about 5-6 years to form"},
+    "description": {"source_id": "rg_coconut_hybrids", "source_url": "https://www.researchgate.net/publication/266083697_Development_of_new_coconut_hybrids_for_yield_improvement_utilizing_novel_local_dwarf_coconut_variety_Sri_Lanka_Brown_Dwarf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The Coconut Research Institute started a crossing programme in 2006 with imported pollen of three promising exotic varieties—Malayan Red Dwarf (MRD), Rennel Island Tall (RIT) and Tagnanan Tall (TAGT)—crossed in various combinations with Sri Lankan Tall and Sri Lankan Green Dwarf. Hybrid varieties like Green Dwarf x Tall yield about 20,000 nuts per hectare per year"}
+  }
+}

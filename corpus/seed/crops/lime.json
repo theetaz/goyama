@@ -1,0 +1,21 @@
+{
+  "slug": "lime",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Citrus aurantiifolia",
+  "family": "Rutaceae",
+  "names": {"en": "Lime", "si": "Dehi", "ta": "Elumichai"},
+  "aliases": ["key lime", "Mexican lime", "West Indian lime", "Kagzi lime", "acid lime", "dehi"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "duration_days": {"min": 1460, "max": 2920, "unit": "days to first bearing (seed-grown 4–8 years; budded earlier)"},
+  "description": {
+    "en": "Cultivated across Sri Lankan home gardens and commercial smallholdings, with organic-export production for essential-oil markets. DOA's **Citrus Research Station at Bibile** conducts cultivar research and conservation of citrus species/varieties. Seedling trees take 4–8 years to first fruit and reach maximum yield around 10 years; grafted budded plants fruit earlier (2–3 years). Major global varieties — Mexican/Key, West Indian, Kagzi. Pests (fruit fly, citrus leafminer, citrus psyllid → HLB risk) and diseases (canker, greasy spot, HLB) are the main constraints."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "cabi_citrus_aurantifolia", "source_url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.13438", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Citrus aurantiifolia (lime)"},
+    "duration_days": {"source_id": "cabi_citrus_aurantifolia", "source_url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.13438", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trees cultivated from seedlings take 4–8 years before producing a harvest and attain their maximal yield at about 10 years of age"},
+    "description": {"source_id": "doa_crs_bibile", "source_url": "https://doa.gov.lk/crs-bibile/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka has a Citrus Research Station in Bibile that has been conducting research on citrus crops and is involved in producing high quality varieties and conservation of citrus species and varieties. The most common cultivars of Citrus aurantifolia include Mexican lime and its clonal derivatives like West Indian lime, Kagzi lime and Key lime."}
+  }
+}

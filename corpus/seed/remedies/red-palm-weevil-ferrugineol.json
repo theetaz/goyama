@@ -1,0 +1,22 @@
+{
+  "slug": "red-palm-weevil-ferrugineol-trap",
+  "version": 1,
+  "status": "draft",
+  "type": "cultural",
+  "target_pest_slugs": ["red-palm-weevil"],
+  "applicable_crop_slugs": ["coconut"],
+  "name": {"en": "Ferrugineol aggregation-pheromone bucket trap"},
+  "description": {
+    "en": "CRI-validated mass-trapping IPM protocol for *Rhynchophorus ferrugineus*. **4-methyl-5-nonanol (ferrugineol)** is the major aggregation pheromone. Ferrugineol + kairomone (1:3 ethyl acetate : ethanol) blend catches 1.4–2.2× more weevils than ferrugineol alone."
+  },
+  "instructions": {
+    "en": "Use 5 L open-top plastic buckets. Bait with ferrugineol + pentanol lure and a fermenting food attractant (date palm pieces or sugarcane chunks in water). Hang buckets at **1.5 m height on coconut palm stems**. Deploy 1 trap per acre (more around recently damaged palms). Replace lure every 8–12 weeks (field effectiveness persists up to 12 weeks). Empty and clean traps weekly."
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": true,
+  "field_provenance": {
+    "instructions": {"source_id": "cocos_pheromone_trap", "source_url": "https://cocos.sljol.info/articles/10.4038/cocos.v13i0.2177", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4-methyl-5-nonanol (ferrugineol), the major component of the aggregation pheromone of Rhynchophorus ferrugineus F., was evaluated as a lure for trapping of this pest in coconut plantations in Sri Lanka. 5L open plastic buckets baited with ferrugineol-pentanol and hung on coconut palm stems at a height of 1.5 meters catch significantly more adult weevils than other trap designs. the effectiveness of these lures can persist for up to 12 weeks under field conditions"},
+    "description": {"source_id": "pubmed_ferrugineol_kairomone", "source_url": "https://pubmed.ncbi.nlm.nih.gov/27060471/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "traps baited with the synthetic kairomone (1:3 ethyl acetate/ethanol) captured 1.4-2.2 times more total weevils than traps baited only with ferrugineol"}
+  }
+}

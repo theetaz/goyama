@@ -1,0 +1,30 @@
+{
+  "slug": "late-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Phytophthora infestans",
+  "names": {"en": "Late blight"},
+  "aliases": ["potato blight", "Irish famine disease"],
+  "causal_organism": "fungal",
+  "causal_species": "Phytophthora infestans (Oomycete — technically a water mould, not a true fungus)",
+  "affected_crop_slugs": ["potato", "tomato"],
+  "affected_parts": ["leaf", "stem", "fruit"],
+  "transmission": ["airborne", "waterborne", "seed_borne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 10, "max": 25, "unit": "°C (optimal 15–21)"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Thrives in cool, wet, humid weather typical of Sri Lanka's up-country potato zones (Nuwara Eliya, Badulla). Sporangia spread by wind and rain splash; leaf wetness >10 h triggers infection."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Water-soaked lesions on leaves that rapidly enlarge into brown/black necrotic patches with pale green or yellow margins and white sporulation on the underside in humid conditions. On tubers, reddish-brown corky rot extends inwards; secondary soft rots follow. Historically caused the Irish Potato Famine. Control requires integrated approach: resistant cultivars, certified clean seed, crop spacing for airflow, destroying volunteer plants, and 7–10 day preventive fungicide intervals (5–7 days once disease detected). Mancozeb (protectant) is typically tank-mixed with a systemic fungicide; 10+ applications may be needed per season under pressure. Alternate modes of action to avoid resistance."
+  },
+  "confused_with": ["early-blight"],
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "late blight"},
+    "description": {"source_id": "pmc_late_blight", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8707485/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Phytophthora infestans is one of the main pathogens in the agricultural sector, with the potato (Solanum tuberosum) being of great agricultural importance. In the case of P. infestans, mancozeb, which has a purely protective effect, is typically applied in association with a systemic fungicide. Control of the disease often requires 10 or more fungicide applications during the growing season. Before disease occurs, fungicides should be applied at 7-10 day intervals, and after disease is detected in the area, fungicides should be applied at 5-7 day intervals."}
+  }
+}

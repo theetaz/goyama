@@ -1,0 +1,25 @@
+{
+  "slug": "rice-gall-midge",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Orseolia oryzae",
+  "names": {"en": "Rice gall midge"},
+  "aliases": ["silver shoot", "onion shoot"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Damage is high in wet, humid weather. High infestation in Dry and Intermediate zones during Maha; in Wet zone during Yala. Severity depends on crop growth stage at attack."
+    }
+  },
+  "description": {
+    "en": "Larvae feed on rice buds and induce 'silver' or 'onion' shoot galls that terminate tiller development and reduce yield. Cultivation of resistant varieties in endemic areas is the most economical management. Biotype I resistance: Bg 276-5, Bg 400-1, Bg 380, Bg 450, Bg 300. Biotype I+II resistance: Bg 304, Bg 305, Bg 357, Bg 359, Bg 360."
+  },
+  "field_provenance": {
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_pests_ricegallmidge/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "larvae feed on rice buds, causing gall formation called a 'Silver' or 'Onion' shoot. These galls terminate the tiller development and hence affect rice yield. Biotype I resistant: Bg 276-5, Bg 400-1, Bg 380, Bg 450, Bg 300. Biotype I & II resistant: Bg 304, Bg 305, Bg 357, Bg 359, Bg 360"},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_pests_ricegallmidge/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Damage is high in wet humid weather. High infestation occurs in dry and intermediate zones during the maha season, and in wet zones during yala"}
+  }
+}

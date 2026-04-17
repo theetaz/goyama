@@ -1,0 +1,20 @@
+{
+  "slug": "pachchaperumal",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Pachchaperumal",
+  "released_by": "Traditional heirloom (Sri Lanka)",
+  "duration_days": 105,
+  "recommended_aez_codes": [],
+  "traits": {
+    "category": "traditional_heirloom",
+    "pericarp_color": "red",
+    "nutrition": "highly nutritious red rice",
+    "cultural_significance": "Considered a divine rice in traditional Sinhalese culture",
+    "notes": {"en": "Heirloom red rice with high cultural and nutritional value; 3.5-month maturity."}
+  },
+  "field_provenance": {
+    "duration_days": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Pachchaperumal has long been considered a divine rice in traditional Sinhalese culture. It is a highly nutritious red rice variety that can be harvested within 3 ½ months.", "review_notes": "3.5 months ≈ 105 days."}
+  }
+}

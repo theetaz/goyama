@@ -1,0 +1,21 @@
+{
+  "slug": "bacterial-wilt-grafting-lanka-sour",
+  "version": 1,
+  "status": "draft",
+  "type": "resistant_variety",
+  "target_disease_slugs": ["bacterial-wilt"],
+  "applicable_crop_slugs": ["tomato"],
+  "name": {"en": "Grafting tomato onto Lanka Sour rootstock"},
+  "description": {
+    "en": "Graft the scion variety (e.g. HORDI Tomato hybrid 03) onto Lanka Sour rootstock to leverage its bacterial-wilt resistance. Research in Sri Lanka shows 86.67% healthy plant rate with this combination; the literature reports 85–95% survival for bacterial-wilt-susceptible tomato grafted on resistant rootstocks."
+  },
+  "instructions": {
+    "en": "Raise rootstock (Lanka Sour) seedlings 2–3 days ahead of scion (HORDI Tomato hybrid 03 or other susceptible commercial variety). At 2–3 true-leaf stage, perform tube/cleft grafting. Heal grafts in a high-humidity chamber (~95% RH) at 25–28 °C for 5–7 days, then gradually harden off. Transplant only healthy, fully-knitted grafts."
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": true,
+  "field_provenance": {
+    "description": {"source_id": "researchgate_grafting", "source_url": "https://www.researchgate.net/publication/376990936_Seedling_grafting_for_management_of_bacterial_wilt_in_tomato_caused_by_Ralstonia_solanacearum", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Seedlings grafted to resistant rootstocks such as Lanka Sour with HORDI Tomato hybrid 03 showed the highest healthy plant percentage (86.67%). Additionally, bacterial wilt susceptible tomato grafted on resistant rootstocks resulted in 85–95 per cent survival in Sri Lanka."}
+  }
+}

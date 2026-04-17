@@ -1,0 +1,21 @@
+{
+  "slug": "cocoa",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Theobroma cacao",
+  "family": "Malvaceae",
+  "names": {"en": "Cocoa", "si": "Kokowa", "ta": "Kokoa"},
+  "aliases": ["cacao", "kokowa"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "expected_yield_kg_per_acre": {"min": 40, "max": 202, "unit": "kg/acre dry beans (100–500 kg/ha depending on shade)"},
+  "description": {
+    "en": "British-era plantation crop — the first cocoa plantation was established at Nalanda, **Matale district**. Matale remains the main cocoa district with ~1,805 ha. 2019 national cocoa production was 1,499 t from 2,000 ha. Sri Lanka historically grew the famous **Criollo** variety producing fine-flavour cocoa; most current plantings are hybrid crosses including **SCA6 × ICS6, NA32 × ICS1, W6/457, W5/5, WK2, WK7**. Yield ranges 100–200 kg/ha under heavy shade up to 500 kg/ha under minimum shade. The **mid-country intermediate zone** is the best agro-ecological zone for cocoa growth and yield; promising inter-crop with coconut. DEA's **Central Research Station, Matale** is the national authority."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_cocoa_sl", "source_url": "https://en.wikipedia.org/wiki/Cocoa_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Theobroma cacao"},
+    "expected_yield_kg_per_acre": {"source_id": "wikipedia_cocoa_sl", "source_url": "https://en.wikipedia.org/wiki/Cocoa_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Yields vary from 100–200 kg per ha under heavy shade, while with minimum shade, the yield could go up to 500 kg/ha", "review_notes": "100–500 kg/ha → 40–202 kg/acre dry beans."},
+    "description": {"source_id": "wikipedia_cocoa_sl", "source_url": "https://en.wikipedia.org/wiki/Cocoa_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Matale is one of the main cocoa growing districts in Sri Lanka, with a total cocoa extent of 1805 ha. The British established the first cocoa plantation in Nalanda, Matale district. Sri Lanka historically had the famous Criollo variety producing fine and flavorful cocoa, but currently most cocoa found in Sri Lanka are crosses of the main varieties, with main cultivated varieties/hybrids including SCA6 x ICS6, NA32 x ICS1, W6/457, W5/5, WK2 & WK7. In 2019, cocoa production was at 1,499 t from an area of 2,000 ha"}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "pink-hibiscus-mealybug",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Maconellicoccus hirsutus",
+  "names": {"en": "Pink hibiscus mealybug"},
+  "aliases": ["PHM", "hibiscus mealybug"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["papaya", "mango", "rambutan", "guava", "cocoa", "hibiscus"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 25, "max": 33, "unit": "°C"},
+    "notes": {
+      "en": "Highly polyphagous invasive across Sri Lanka fruit crops. Currently at reduced population density thanks to introduced hymenopteran parasitoids."
+    }
+  },
+  "description": {
+    "en": "Highly polyphagous invasive mealybug recorded in Sri Lankan fruit crop surveys as **medium-importance** on papaya (primary host), mango, rambutan, anona, and guava (secondary hosts). Injects toxic saliva causing distorted bunchy-top-like symptoms on shoots. **Management**: (a) **biological control** with introduced hymenopteran parasitoids (similar approach to papaya mealybug with *Anagyrus kamali* and *Cryptolaemus montrouzieri*) — currently keeping populations low in Sri Lanka; (b) **chemical** — acetamiprid, flupyradifurone, fenpropathrin and bifenthrin most toxic to nymphs; (c) **postharvest** hot-water dips as quarantine treatment on exported fruit; (d) prune infested shoots and destroy; (e) ant control (ants tend mealybugs)."
+  },
+  "field_provenance": {
+    "description": {"source_id": "tar_sljol_mealybugs", "source_url": "https://tar.sljol.info/articles/10.4038/tar.v25i1.8031", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Maconellicoccus hirsutus, commonly known as pink hibiscus mealybug, is a highly polyphagous, invasive pest in many parts of the world. This species was identified among mealybug species collected in Sri Lanka, and M. hirsutus was of medium importance on three fruit crops. Papaya is its primary host but mango, rambutan, anona and guava serve as secondary hosts. The pest is present at lower population levels than in previous years, probably due to the action of introduced hymenopteran parasitoids."},
+    "favored_conditions": {"source_id": "pmc_mealybug_insecticide", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6359081/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Acetamiprid, flupyradifurone, fenpropathrin, and bifenthrin were the most toxic insecticides to mealybug nymphs"}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "cowpea",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Vigna unguiculata",
+  "family": "Fabaceae",
+  "names": {"en": "Cowpea", "si": "Me karal", "ta": "Karamani"},
+  "aliases": ["black-eyed pea", "me karal", "karamani"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "duration_days": {"min": 75, "max": 90, "unit": "days"},
+  "description": {
+    "en": "An important rain-fed pulse in Sri Lanka's Dry Zone (Monaragala, Anuradhapura, Vavuniya, Mullaitivu, Kilinochchi). The FCRDI-bred variety **Waruni** is highly adaptable across environments — erect determinate habit, bluish-purple flowers, long dark-green pendulous pods, medium reddish-brown seeds. Harvest when pods turn brown (75–90 days after planting). Research shows 17% yield decline at elevated growth temperatures — a climate-change sensitivity to monitor. FCRDI Mahailluppallama is the national breeding centre for cowpea."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "hindawi_cowpea", "source_url": "https://hindawi.com/journals/ija/2022/3596075", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vigna unguiculata"},
+    "duration_days": {"source_id": "rg_cowpea_rainfed", "source_url": "https://www.researchgate.net/publication/374295494_Cultivation_of_rainfed_cowpea_in_Monaragala_district_of_Sri_Lanka_status_constrains_and_breeding_requirements", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cowpea can be harvested in 75-90 days after planting when pods turn brown"},
+    "description": {"source_id": "hindawi_cowpea", "source_url": "https://hindawi.com/journals/ija/2022/3596075", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Waruni has an erect and determinate growth habit, bluish purple flowers, bears long pendulous dark green pods, and has medium-sized seeds that are reddish brown in color. The total yield per hectare showed an average decrease of 17% in the Waruni genotype at high average growth temperature"}
+  }
+}

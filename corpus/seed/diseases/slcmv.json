@@ -1,0 +1,28 @@
+{
+  "slug": "slcmv",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Sri Lankan cassava mosaic virus",
+  "names": {"en": "Sri Lankan cassava mosaic virus"},
+  "aliases": ["SLCMV", "cassava mosaic disease (Sri Lankan strain)", "CMD"],
+  "causal_organism": "viral",
+  "causal_species": "Sri Lankan cassava mosaic virus (Geminiviridae: Begomovirus)",
+  "affected_crop_slugs": ["cassava"],
+  "affected_parts": ["leaf", "whole_plant"],
+  "transmission": ["insect_vector", "mechanical"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Spread by infected stem cuttings (primary in Sri Lanka) and by whitefly *Bemisia tabaci*. Only the 'Asia II 1' cryptic whitefly species transmits SLCMV efficiently among three Asian biotypes."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Named for its first confirmed description in Sri Lanka; now spreading across South-East Asia (detected in Cambodia, Vietnam 2015; Laos 2020). Infected plants show leaf curl and mosaic patterning on young leaves, stunting, and yield reduction. Can be systemic or localised. Management depends on (a) planting only virus-tested, disease-free stem cuttings, (b) roguing infected plants, (c) whitefly vector control (partially effective due to insecticide resistance), (d) tolerant/resistant cassava varieties — KU50 and Huaybong60 consistently show fewer symptomatic plants, lower disease progress, and higher yields in CMD-pressure regions."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lanka Cassava Mosaic Virus (spread via infected cuttings and whiteflies)"},
+    "description": {"source_id": "mdpi_slcmv", "source_url": "https://www.mdpi.com/2073-4395/12/7/1658", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lankan cassava mosaic virus (SLCMV) is the primary pathogen responsible for cassava mosaic disease in cassava plantations and is transmitted via infected cutting stems and the whitefly vector, Bemisia tabaci. SLCMV-infected plants exhibit leaf curl and mosaic in young leaves. Popular cassava varieties KU50 and Huaybong60 showed superior CMD tolerance"},
+    "favored_conditions": {"source_id": "sciencedirect_slcmv", "source_url": "https://www.sciencedirect.com/science/article/pii/S0042682219303320", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Only Asia II 1 whiteflies were able to transmit this virus efficiently among three widely distributed whitefly species in Asia"}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "suwandel",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Suwandel",
+  "released_by": "Traditional heirloom (Sri Lanka)",
+  "duration_days": 90,
+  "recommended_aez_codes": [],
+  "traits": {
+    "category": "traditional_heirloom",
+    "grain_shape": "medium",
+    "pericarp_color": "white aromatic",
+    "cultivation": "organic rain-fed",
+    "region": "Southern lowlands",
+    "notes": {"en": "Aromatic heirloom variety; organically cultivated with traditional rain-fed methods."}
+  },
+  "field_provenance": {
+    "duration_days": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Suwandel is an heirloom rice variety, cultivated organically with traditional rain-fed methods in the southern lowlands of Sri Lanka. It is usually 3 months before harvest."},
+    "traits": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Suwandel is an heirloom rice variety, cultivated organically with traditional rain-fed methods in the southern lowlands of Sri Lanka"}
+  }
+}

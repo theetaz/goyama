@@ -1,0 +1,19 @@
+{
+  "slug": "kumbuk",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Terminalia arjuna",
+  "family": "Combretaceae",
+  "names": {"en": "Arjun tree / White murdha", "si": "Kumbuk", "ta": "Marudhu"},
+  "aliases": ["arjun", "arjuna", "marudhu", "white murdha"],
+  "category": "medicinal",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Large buttressed-trunk tree growing along river banks and dry river beds throughout Sri Lanka, reaching 20–25 m with a wide canopy. Used extensively in Sri Lankan Ayurveda — **bark for cardiac care**; leaves, roots, flowers and fruits all medicinal. Roots purify water and anchor river banks — critical riparian-ecosystem service preventing soil erosion. Habitat for numerous bird and insect species, contributing to Sri Lanka's biodiversity. Sacred in Theravada Buddhism — believed to be the Bodhi tree of the tenth Buddha ('Anomadassi Buddha')."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dilmah_kumbuk", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/kumbuk--8f7b1d3e871d074682a49defd50ed202.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Terminalia arjuna"},
+    "description": {"source_id": "dilmah_kumbuk", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/kumbuk--8f7b1d3e871d074682a49defd50ed202.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Kumbuk (Terminalia arjuna) is found growing on river banks or near dry river beds throughout Sri Lanka. The tree grows to about 20–25 metres tall, usually has a buttressed trunk, and forms a wide canopy at the crown. Its bark is used in ayurveda practice for cardiac care. The tree's roots have the ability to purify water. In Theravada Buddhism, Kumbuk is said to have been used as the tree for achieved enlightenment by the tenth Buddha called Anomadassi Buddha."}
+  }
+}

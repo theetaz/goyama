@@ -1,0 +1,26 @@
+{
+  "slug": "white-grub",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Holotrichia serrata",
+  "names": {"en": "White grub (cockchafer grub)"},
+  "aliases": ["cockchafer grub", "sugarcane white grub", "kurmula"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["groundnut", "sugarcane", "coconut", "potato", "carrot", "beetroot", "soybean"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["root_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 22, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Adult beetle flight + egg-laying peak in October–November with pre-monsoon showers. Heavy organic-residue plots amplify populations."
+    }
+  },
+  "description": {
+    "en": "Soil-dwelling scarabaeid grubs that feed on roots of groundnut, sugarcane, coconut, and upland vegetables. Reported in Sri Lanka's groundnut and upland cropping systems. **Sri Lanka IPM recommendations**: (a) flood fields pre-sowing to kill grubs and deter egg-laying (viable where irrigation allows); (b) repeated ploughing in May–June to expose grubs to sun and bird predation; (c) avoid leaving organic matter/plant debris in the field between crops; (d) light traps during peak flight (October–November) to collect adult beetles; (e) hoeing/harrowing/trap cropping with sorghum, maize, or onion as border crops; (f) crop rotation with resistant crops (sunflower)."
+  },
+  "field_provenance": {
+    "description": {"source_id": "plantwise_whitegrub_sl", "source_url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.20207800492", "fetched_at": "2026-04-17T00:00:00Z", "quote": "White grub on ground nut-Sri Lanka.: Holotrichia sp. Flood the fields before sowing wherever possible to reduce the grub population. This avoid adult egg laying and kills the grubs in the soil. Plough the field repeatedly mainly in May-June to expose grubs to scorching sun radiation and for predation by natural enemies such as birds. Avoid keeping organic matter/ plant debris in field. Collect and destroy adult beetles by using light traps in peak periods (October-November)."},
+    "favored_conditions": {"source_id": "wikipedia_holotrichia", "source_url": "https://en.wikipedia.org/wiki/Holotrichia_serrata", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Holotrichia serrata, commonly known as the sugarcane white grub, or cockchafer grub, is a species of dung beetle found in India, Bangladesh, and Sri Lanka. Apart from sugarcane, it is also a major pest on many vegetables, groundnut and coconut."}
+  }
+}

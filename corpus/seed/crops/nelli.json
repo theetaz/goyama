@@ -1,0 +1,21 @@
+{
+  "slug": "nelli",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Phyllanthus emblica",
+  "family": "Phyllanthaceae",
+  "names": {"en": "Indian gooseberry / Amla", "si": "Nelli", "ta": "Nellikkai"},
+  "aliases": ["amla", "amloki", "emblica", "myrobalan", "nellikai"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "duration_days": {"min": 1095, "max": 3650, "unit": "days (grafted 3–4 years; seedling 7–10 years)"},
+  "description": {
+    "en": "Deciduous small-to-medium tree (1–8 m), indigenous to Sri Lanka and South Asia. In Sri Lanka nelli is cultivated primarily in **home gardens**, not commercial farms — a ritual-and-medicine crop more than a market crop. Families prepare Nelli oil for hair and skin, brew it as tea, and use it in seasonal cleansing rites. Propagation: seed (7–10 years to flower), ring budding or veneer grafting (flower in 3–4 years)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_nelli", "source_url": "https://en.wikipedia.org/wiki/Phyllanthus_emblica", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Phyllanthus emblica, also known as emblic, emblic myrobalan, myrobalan, nelikai, Indian gooseberry, Malacca tree, amloki or amla"},
+    "duration_days": {"source_id": "ejada_nelli", "source_url": "https://ejadagraham.blog/2025/08/29/10265/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Plants can be grown from seed, ring budding, or veneer grafting. Grafted trees begin flowering in 3–4 years, while seed-grown trees may take 7–10 years."},
+    "description": {"source_id": "ejada_nelli", "source_url": "https://ejadagraham.blog/2025/08/29/10265/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In Sri Lanka, Nelli is cultivated in home gardens, not commercial farms—a reflection of its intimate, ritual-based role in daily life. Families prepare Nelli oil for hair and skin, brew it into teas, and offer it in seasonal cleansing rites."}
+  }
+}

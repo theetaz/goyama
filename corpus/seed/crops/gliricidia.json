@@ -1,0 +1,20 @@
+{
+  "slug": "gliricidia",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Gliricidia sepium",
+  "family": "Fabaceae",
+  "names": {"en": "Gliricidia / Quickstick", "si": "Ginisiriya (Wetamara / Nanchi)", "ta": "Seemai agathi"},
+  "aliases": ["ginisiriya", "wetamara", "nanchi", "madre de cacao"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Fast-growing nitrogen-fixing leguminous tree — **nominated by the Sri Lankan government as the 4th major plantation crop for dendro-power generation**. Leaf loppings contain **4.0% N, 2.0% K, 1.4% Ca** on dry-weight basis. Critical green-manure / live-fence / shade / fodder / erosion-control species in Sri Lankan agroforestry systems. **~80% of its N is released to the soil solution within 4–5 weeks** of green-manure incorporation — exceptional mineralisation kinetics for rice and vegetable-bed N supply. Standard shade tree in coconut, cocoa, pepper plantations. Introduced from the West Indies."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "tare_sljol_gliricidia", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v26i3.5648", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Gliricidia sepium"},
+    "description": {"source_id": "rg_gliricidia_coconut", "source_url": "https://www.researchgate.net/publication/380786405_IDENTIFICATION_OF_THE_OPTIMAL_LOPPING_STAGE_OF_GLIRICIDIA_SEPIUM_USED_AS_MANURE_FOR_COCONUT_PLANTATIONS", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Gliricidia was introduced to Sri Lanka from West Indies and later to India. The Sri Lankan government has nominated G. sepium as the 4th major plantation crop in Sri Lanka for the generation of dendro power. Gliricidia loppings contain 4.0% nitrogen, 2.0% potassium, and 1.4% calcium on a dry weight basis."},
+    "family": {"source_id": "tare_sljol_gliricidia", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v26i3.5648", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Approximately 80% of the nitrogen content was released into the soil solution within 4-5 weeks of green manure incorporation"}
+  }
+}

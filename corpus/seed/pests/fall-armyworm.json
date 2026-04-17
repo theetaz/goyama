@@ -1,0 +1,28 @@
+{
+  "slug": "fall-armyworm",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Spodoptera frugiperda",
+  "names": {"en": "Fall armyworm"},
+  "aliases": ["FAW", "Spodoptera frugiperda"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["maize", "rice", "sorghum", "finger-millet", "cabbage", "tomato", "capsicum"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "First detected in Sri Lanka in all major maize-growing areas in October 2018. Highly mobile — adults fly long distances and colonise new regions rapidly."
+    }
+  },
+  "economic_threshold": {
+    "en": "Established monitoring via pheromone traps; action threshold typically 5% whorl damage or 1 larva per plant in early-whorl maize."
+  },
+  "description": {
+    "en": "Larvae feed on whorls of maize, cutting windowpane holes in leaves and producing sawdust-like frass; severe infestations kill the growing point. DOA + FAO response in Sri Lanka uses integrated pest management: pheromone-lure traps for monitoring and mass trapping (FAO distributed), Farmer Field School extension, natural-enemy conservation (predators, parasitoids, entomopathogens), and biological control over pesticide-first responses. The program reduced FAW-affected area to 144 ha out of 104,000 ha planted by the season ending April 2019 — <0.2% of area with <2% yield loss."
+  },
+  "field_provenance": {
+    "description": {"source_id": "fao_srilanka", "source_url": "https://www.fao.org/srilanka/news/detail-events/en/c/1402726/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The Fall Armyworm (FAW) or Spodoptera frugiperda was first detected in all major maize growing areas in Sri Lanka in October 2018. FAO distributed pheromone traps which are used to detect the presence and build-up of FAW. During the last season ending in April, out of the total 104,000 hectares of maize cultivated, only 144 hectares were affected by FAW with the yield loss recorded at less than 2 percent."}
+  }
+}

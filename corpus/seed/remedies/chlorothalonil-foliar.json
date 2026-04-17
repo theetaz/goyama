@@ -1,0 +1,32 @@
+{
+  "slug": "chlorothalonil-foliar",
+  "version": 1,
+  "status": "draft",
+  "type": "chemical",
+  "target_disease_slugs": ["anthracnose", "early-blight", "late-blight", "downy-mildew-cucurbits", "powdery-mildew-cucurbits"],
+  "applicable_crop_slugs": ["brinjal", "ela-batu", "tomato", "potato", "cucumber", "snake-gourd", "pumpkin", "bitter-gourd", "luffa", "cabbage", "cauliflower"],
+  "name": {"en": "Chlorothalonil 500 g/L SC multi-site contact fungicide"},
+  "description": {
+    "en": "DOA-listed multi-site contact fungicide (chloronitrile group) for foliar fungal diseases of brinjal and other vegetables. Low resistance-development risk; suitable as a tank-mix partner or rotation partner with single-site systemic fungicides."
+  },
+  "instructions": {
+    "en": "Foliar spray: 30 ml per 10 L water. Application rates: 950–1,200 ml/ha for low foliage, 1,500–1,800 ml/ha for high foliage. Repeat every 7–10 days."
+  },
+  "chemical": {
+    "active_ingredient": "Chlorothalonil",
+    "concentration": "500 g/L",
+    "formulation": "SC",
+    "dosage": "30 ml per 10 L water; 950–1,800 ml/ha",
+    "application_method": "foliar_spray",
+    "pre_harvest_interval_days": 14,
+    "safety_notes": {
+      "en": "PHI 14 days. Wear PPE. Toxic to aquatic organisms — do not apply near water bodies. Respiratory irritant."
+    }
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": false,
+  "field_provenance": {
+    "instructions": {"source_id": "doa_pest_mgmt_2015", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/06/Introduction_to_book.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Chlorothalonil 500g/l SC is recommended at 30 ml per 10 liters of water, with application rates of 950-1200 ml per hectare for low foliage and 1500-1800 ml per hectare for high foliage, with 7-10 day application intervals and 14-day PHI. For specific vegetable crops, chlorothalonil 500g/l SC is recommended at 30 ml per 10 liters of water for brinjal disease management."}
+  }
+}

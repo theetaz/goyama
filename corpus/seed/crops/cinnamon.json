@@ -1,0 +1,23 @@
+{
+  "slug": "cinnamon",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cinnamomum verum",
+  "family": "Lauraceae",
+  "names": {"en": "Ceylon cinnamon", "si": "Kurundu", "ta": "Karuvappattai"},
+  "aliases": ["Cinnamomum zeylanicum", "true cinnamon", "kurundu"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "elevation_m": {"min": 300, "max": 1000, "unit": "m"},
+  "rainfall_mm": {"min": 1500, "max": 2500, "unit": "mm"},
+  "temperature_c": {"min": 27, "max": 27, "unit": "°C average"},
+  "duration_days": {"min": 1095, "max": 1095, "unit": "days to first harvest (3 years)"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea", "source_url": "https://dea.gov.lk/cinnamon/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cinnamomum zeylanicum Blume", "review_notes": "C. zeylanicum is the legacy DEA name; C. verum is the currently accepted binomial. Both retained as aliases."},
+    "elevation_m": {"source_id": "dea", "source_url": "https://dea.gov.lk/cinnamon/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "cinnamon crop grows well at an altitude of 300–350 m to 1000 m above sea level"},
+    "rainfall_mm": {"source_id": "dea", "source_url": "https://dea.gov.lk/cinnamon/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "annual rainfall of 1500–2500 mm"},
+    "temperature_c": {"source_id": "dea", "source_url": "https://dea.gov.lk/cinnamon/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "requires average temperature of 27°C"},
+    "duration_days": {"source_id": "dea", "source_url": "https://dea.gov.lk/cinnamon/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trees are first harvested at 3 years old and continue producing well for 40–50 years", "review_notes": "3 years → 1095 days to first harvest; trees productive for 40–50 years."}
+  }
+}

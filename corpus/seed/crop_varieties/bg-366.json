@@ -1,0 +1,26 @@
+{
+  "slug": "bg-366",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 366",
+  "released_by": "RRDI",
+  "release_year": 2009,
+  "duration_days": 99,
+  "expected_yield_kg_per_acre": {"min": 2428, "max": 2428, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "intermediate bold",
+    "pericarp_color": "white",
+    "amylose": "high intermediate",
+    "disease_resistance": ["blast", "bacterial-leaf-blight", "gall-midge"],
+    "recommendation": "General cultivation",
+    "pedigree": "Bg 300/94-2236//Bg 300/Bg 304"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg366/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "2009"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg366/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "97 – 100 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg366/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "6.0 t/ha", "review_notes": "6.0 t/ha → 2428 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg366/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "moderate resistance to three major threats: Blast, Bacterial Leaf Blight, and Gall Midge"}
+  }
+}

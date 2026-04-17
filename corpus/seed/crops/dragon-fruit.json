@@ -1,0 +1,25 @@
+{
+  "slug": "dragon-fruit",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Hylocereus undatus",
+  "family": "Cactaceae",
+  "names": {"en": "Dragon fruit", "si": "Dragon fruit", "ta": "Dragon fruit"},
+  "aliases": ["Hylocereus polyrhizus", "Selenicereus megalanthus", "pitaya"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "creeper",
+  "rainfall_mm": {"min": 500, "max": 1500, "unit": "mm"},
+  "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+  "spacing_cm": {"within_row": 200, "between_row": 300},
+  "duration_days": {"min": 40, "max": 50, "unit": "days from flowering to fruit maturity"},
+  "expected_yield_kg_per_acre": {"min": 4047, "max": 4047, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Hylocereus polyrhizus, Hylocereus undatus"},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "500-1500mm with alternating wet/dry cycles"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "dry and temperate climate with 20-30°C temperature is favorable"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "2×2m (2,500 posts/ha), 2×3m, 3×3m", "review_notes": "Stored 2×3 m common mid-density."},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Flowering occurs April-May; fruits mature 40-50 days after pollination"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-dragon-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Average yield per 1ha per year is nearly 10,000kgs", "review_notes": "10 t/ha → 4047 kg/acre."}
+  }
+}

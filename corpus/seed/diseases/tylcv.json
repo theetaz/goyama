@@ -1,0 +1,30 @@
+{
+  "slug": "tylcv",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Tomato yellow leaf curl virus",
+  "names": {"en": "Tomato yellow leaf curl virus"},
+  "aliases": ["TYLCV", "leaf curl virus"],
+  "causal_organism": "viral",
+  "causal_species": "Tomato yellow leaf curl virus (Geminiviridae: Begomovirus)",
+  "affected_crop_slugs": ["tomato", "chilli", "capsicum", "brinjal", "ela-batu"],
+  "affected_parts": ["leaf", "whole_plant", "flower"],
+  "transmission": ["insect_vector"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 25, "max": 35, "unit": "°C (whitefly optimum)"},
+    "notes": {
+      "en": "Transmitted persistently by the silverleaf whitefly (*Bemisia tabaci* biotype B). First 5–6 weeks after transplant are the critical protection window. Whitefly inoculates plant within 15 min of feeding after a 24 h latent period."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Upward curling and yellowing of young leaves, severe stunting, leaf cupping, flower abortion and heavy yield loss in tomato. Among the most economically important tomato diseases globally. Management: destroy crop residue, reflective mulches to repel whiteflies early, plant TYLCV-resistant varieties where available, at-plant + drip + foliar insecticides for vector control, and strict seedling screening (the first 5–6 weeks post-transplant must be protected)."
+  },
+  "confused_with": ["anthracnose"],
+  "field_provenance": {
+    "causal_species": {"source_id": "pmc_tylcv", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4684678/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tomato yellow leaf curl virus (TYLCV) is one of the most economically important diseases of tomato globally. It is vectored persistently by the silverleaf whitefly, Bemisia tabaci biotype B"},
+    "favored_conditions": {"source_id": "pmc_tylcv", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4684678/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Whiteflies can inoculate a tomato plant with TYLCV after 15 min of feeding. There is a latent period of about 24 h. Protection of the crop from TYLCV during the first 5 or 6 wk after transplanting is crucial to reduce yield losses."},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "viral diseases (TYLCV, CTV, TSWV, CMV)"}
+  }
+}

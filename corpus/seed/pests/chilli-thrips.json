@@ -1,0 +1,30 @@
+{
+  "slug": "chilli-thrips",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Scirtothrips dorsalis",
+  "names": {"en": "Chilli thrips", "si": "Pela mekka", "ta": "Pela mekka"},
+  "aliases": ["yellow tea thrips", "castor thrips", "Pela mekka"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["chilli", "capsicum", "tomato", "mango", "banana", "cucumber", "snake-gourd", "bitter-gourd"],
+  "life_stages": ["egg", "nymph", "pupa", "adult"],
+  "feeding_type": ["rasping", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "low",
+    "temperature_c": {"min": 22, "max": 35, "unit": "°C"},
+    "notes": {
+      "en": "Hot, dry conditions favour rapid population build-up. Short generation time (14–20 days) allows multiple overlapping generations per season."
+    }
+  },
+  "economic_threshold": {
+    "en": "ETL set at 2 thrips per leaf in Sri Lanka. Sticky traps help detect thrips up to a month before visible on plants — hang yellow sticky cards at canopy top; inspect weekly."
+  },
+  "description": {
+    "en": "Presently one of the most important causal agents of the chilli leaf curl complex in Sri Lanka. Nymphs and adults rasp leaf, flower, and young-fruit surfaces, causing silvery scarring, leaf curling upward, bud abortion, and in severe infestations complete defoliation and total crop loss. Confirmed vector of tospoviruses. Management: (a) monitoring with yellow sticky traps; (b) organic control with NSKE 5%, neem cake (0.5 t/ha), vermicompost (2.5 t/ha) and neemazal 10,000 ppm applied 2/5/7/11 weeks after transplanting; (c) biological control — *Orius laevigatus* and *Amblyseius swirskii* (predatory mite) are effective on chilli in Sri Lanka; (d) **do NOT use pyrethroids** — they are toxic to natural enemies and not effective against chilli thrips."
+  },
+  "field_provenance": {
+    "description": {"source_id": "plantwise_chilli_thrips", "source_url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.20147800331", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Chilli thrips, Scirtothrips dorsalis, are presently considered as one of the most important causal agents of the chilli leaf curl complex in Sri Lanka. Severe infestation creates the tender leaves and buds of chilli plants brittle and complete defoliation and total crop loss is expected. Economic Threshold Level (ETL) set at two thrips leaf-1."},
+    "economic_threshold": {"source_id": "plantwise_chilli_thrips", "source_url": "https://plantwiseplusknowledgebank.org/doi/full/10.1079/pwkb.20147800331", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Economic Threshold Level (ETL) set at two thrips leaf-1. Sticky traps may help to detect thrips up to a month before they are seen on plants"},
+    "favored_conditions": {"source_id": "rg_chilli_thrips_biocontrol", "source_url": "https://www.researchgate.net/publication/357084521_Evaluation_of_Amblyseius_swirskii_predatory_mite_and_Orius_leavigatus_as_biological_control_agents_of_chilli_thrips_Scirtothrips_dorsalis", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Orius laevigatus and Amblyseius swirskii effectively controlled S. dorsalis on chilli pepper in Sri Lanka"}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cashew",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Anacardium occidentale",
+  "family": "Anacardiaceae",
+  "names": {"en": "Cashew", "si": "Kaju", "ta": "Mundhiri"},
+  "aliases": ["kaju", "mundhiri"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Introduced to Sri Lanka from Brazil by the Portuguese in the 16th century. **More than half of Sri Lanka's cashew area is in the Dry Zone**. Major districts: **Puttalam, Mannar, Vavuniya, Jaffna, Trincomalee, Batticaloa, Polonnaruwa, Moneragala, Hambantota**. The **Sri Lanka Cashew Corporation** runs plantations at Puttalam and Parcikuda (Batticaloa) producing budded and seedling plants. Research shows **lower planting densities (7.62 m × 7.62 m) give higher nut yields** than denser spacings. Two cropping systems — single-season and double-season — based on rainfall pattern. Average yields remain below global benchmarks, indicating substantial productivity upside with better agronomy. Also suitable as **intercrop with coconut** in Puttalam."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "fao_cashew_sl", "source_url": "https://www.fao.org/4/ac451e/ac451e08.htm", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Anacardium occidentale L."},
+    "description": {"source_id": "fao_cashew_sl", "source_url": "https://www.fao.org/4/ac451e/ac451e08.htm", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cashew (Anacardium occidentale L.) was introduced from Brazil to Sri Lanka by the Portuguese in the 16th century. More than half of the cashew extent is confined to the dry zone of the country. Puttalam is one of the major cashew-growing districts, along with Mannar, Vavuniya, Jaffna, Trincomalee, Batticoloa, Polonnaruwa, Moneragala and Hambantota. The Sri Lanka Cashew Corporation maintains plantations in Puttalam and Parcikuda (Batticaloa) for production of budded and seedling plants."}
+  }
+}

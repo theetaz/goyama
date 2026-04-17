@@ -1,0 +1,31 @@
+{
+  "slug": "downy-mildew-cucurbits",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pseudoperonospora cubensis",
+  "names": {"en": "Downy mildew (cucurbits)"},
+  "aliases": ["cucurbit downy mildew"],
+  "causal_organism": "fungal",
+  "causal_species": "Pseudoperonospora cubensis (Oomycete — obligate biotroph)",
+  "affected_crop_slugs": ["cucumber", "snake-gourd", "pumpkin", "bitter-gourd", "luffa", "kekiri"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "waterborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 15, "max": 25, "unit": "°C (optimal sporangia 15–20)"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Infects >40 species across 20 genera of Cucurbitaceae. Obligate biotroph — requires living tissue. Sporangia form between 5 and 30 °C on cucumber. Leaf wetness from rain or heavy dew drives infection."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Yellow, angular chlorotic lesions on upper leaf surface limited by leaf veins, sometimes with necrotic centres; dark greyish-purple sporulation visible on the lower leaf surface in humid conditions. Rapid defoliation under pressure. Since 2004, global host resistance has broken down in most cucurbit cultivars — management now requires intensive fungicide programmes with resistance management (rotate MoAs: Oxathiapiprolin, mandipropamid, cymoxanil, mancozeb, chlorothalonil). Early detection by field scouting is critical. Confusable with powdery mildew but distinguished by sporulation colour and leaf position — downy mildew shows on leaf underside, powdery mildew on the upper surface."
+  },
+  "confused_with": ["powdery-mildew-cucurbits"],
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kekiri/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Downy Mildew (Pseudoperonospara cubensis)"},
+    "description": {"source_id": "pmc_downy_mildew", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6640371/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Pseudoperonospora cubensis is an obligate biotrophic pathogen that infects over 40 host plant species belonging to 20 genera of the family Cucurbitaceae. The optimum temperature for sporangia production is 15–20 °C, but sporangia may form on cucumber at temperatures from 5 to 30 °C."},
+    "favored_conditions": {"source_id": "aps_phytopathology", "source_url": "https://apsjournals.apsnet.org/doi/10.1094/PHYTO-11-14-0334-FI", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Since the 2004 growing season, host resistance has been effective no longer and the control of downy mildew on cucurbits now requires an intensive fungicide programme"}
+  }
+}

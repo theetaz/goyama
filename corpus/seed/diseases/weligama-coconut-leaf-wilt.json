@@ -1,0 +1,26 @@
+{
+  "slug": "weligama-coconut-leaf-wilt",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Candidatus Phytoplasma sp.",
+  "names": {"en": "Weligama coconut leaf wilt disease"},
+  "aliases": ["WCLWD", "Weligama coconut leaf wilt", "coconut phytoplasma"],
+  "causal_organism": "phytoplasma",
+  "causal_species": "Candidatus Phytoplasma (16SrXI group)",
+  "affected_crop_slugs": ["coconut"],
+  "affected_parts": ["leaf", "whole_plant"],
+  "transmission": ["insect_vector"],
+  "favored_conditions": {
+    "notes": {
+      "en": "Confined to southern Sri Lanka (Weligama, Matara districts) since 2006. Vector confirmation under CRI study; quarantine zone enforced to prevent spread."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "A devastating phytoplasma disease **first recorded in 2006** in the Weligama area, Southern Province. Infected palms show progressive foliar yellowing, leaflet wilting, reduced nut production, and eventual palm death. Phytoplasmas live protected inside plant phloem cells — no chemical cure. **CRI / CCB / Ministry of Plantation Industries management strategy**: (1) **mandatory rogue-and-burn** of infected palms (only practical suppression tactic); (2) **3 km × 80 km buffer zone** demarcated around infested area with continuous inspection; (3) **statutory quarantine** by gazette — transport of coconut seedlings, fresh nuts, husks, or any palm material from the zone is prohibited by law; (4) **breeding for resistance** — screening of local germplasm identified **Sri Lanka Green Dwarf with 98% resistance**, individual Sri Lanka Yellow Dwarf and Gon Thembili Tall genotypes also resistant, and **Sri Lanka Tall (the dominant commercial variety) highly susceptible**. King coconut identified susceptible. Long-term sustainability depends on rolling out resistant hybrids (Dwarf × Tall) into the southern coconut triangle."
+  },
+  "field_provenance": {
+    "description": {"source_id": "iapps_wclwd", "source_url": "https://iapps2010.wordpress.com/2022/12/13/sri-lanka-coconut-leaf-wilt-disease/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Weligama coconut leaf wilt disease (WCLWD) causes heavy losses in the coconut cultivations of southern Sri Lanka. The disease was first reported in 2006 from the Weligama area in the Southern Province. The causal organism of WCLWD is phytoplasma. A 3 km wide and 80 km long buffer zone was marked demarcating the diseased area"},
+    "favored_conditions": {"source_id": "cocos_wclwd_germplasm", "source_url": "https://cocos.sljol.info/articles/10.4038/cocos.v21i0.5803", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Out of the germplasm evaluated, Sri Lanka Green Dwarf recorded a high level of resistance (98%), while certain individual genotypes within Sri Lanka Yellow dwarf and Gon thembili tall were resistant, and king coconut was identified to be susceptible. The most popular commercial coconut variety, Sri Lanka tall was highly susceptible to the disease."}
+  }
+}

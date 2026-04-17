@@ -1,0 +1,26 @@
+{
+  "slug": "diamondback-moth",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Plutella xylostella",
+  "names": {"en": "Diamondback moth"},
+  "aliases": ["DBM", "cabbage moth"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["cabbage", "cauliflower", "knol-khol", "radish"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "low",
+    "temperature_c": {"min": 15, "max": 28, "unit": "°C"},
+    "notes": {
+      "en": "Warm, dry weather — classic up-country wet/intermediate zone cabbage-growing season conditions (Nuwara Eliya, Badulla). Short generation time (14–21 days) and high insecticide-resistance potential."
+    }
+  },
+  "description": {
+    "en": "The key global pest of cabbage and other brassicas; one of the most significant cabbage pests in Sri Lanka's up-country cabbage-growing areas. Larvae window-feed on young leaves, producing irregular holes and a skeletonized appearance; heavy infestation reduces head quality and marketability. **High insecticide-resistance risk** — farmers over-relying on chemicals has driven resistance. **Sri Lanka IPM research** (Tropical Agricultural Research & Extension, 2022) evaluates physical barriers (nets, covers) as eco-friendly alternatives. Key management: (a) crop rotation away from brassicas; (b) trap crops (mustard attractants); (c) biocontrol — *Trichogramma chilonis* (egg parasitoid), *Cotesia plutellae* (larval parasitoid), *Chrysoperla carnea* (lacewing predator); (d) selective insecticides — chlorantraniliprole, spinosad, B. thuringiensis (Bt); avoid chlorpyrifos + pyrethroids in rotation to delay resistance; (e) physical exclusion nets on nursery beds and early-growth crops."
+  },
+  "field_provenance": {
+    "description": {"source_id": "sljol_dbm", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v25i3.5586", "fetched_at": "2026-04-17T00:00:00Z", "quote": "in Sri Lanka, diamondback moth is one of the key pests of cabbage that causes significant yield loss, with farmers heavily using agro-chemicals to control it while ignoring alternative non-chemical eco-friendly pest management strategies. Research has evaluated the combined effectiveness of physical pest management strategies to suppress the diamondback moth population in cabbage as eco-friendly alternatives."},
+    "favored_conditions": {"source_id": "wikipedia_dbm", "source_url": "https://en.wikipedia.org/wiki/Diamondback_moth", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Common natural enemies of the moth include the parasitoids Trichogramma chilonis and Cotesia plutella and the predator Chrysoperla carnea, a lacewing"}
+  }
+}

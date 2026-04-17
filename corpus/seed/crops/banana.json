@@ -1,0 +1,21 @@
+{
+  "slug": "banana",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Musa spp.",
+  "family": "Musaceae",
+  "names": {"en": "Banana", "si": "Kesel", "ta": "Vaazhai"},
+  "aliases": ["plantain", "kesel", "vaazhai"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "elevation_m": {"min": 0, "max": 1500, "unit": "m"},
+  "soil_ph": {"min": 4.5, "max": 8.0},
+  "spacing_cm": {"within_row": 300, "between_row": 300},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-banana-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Musa species (various cultivars)"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-banana-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sea level to 1,500 meters"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-banana-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "4.5–8.0 (optimal: 6.0–7.5)"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-banana-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Traditional: 3m × 3m or 3.5m × 3.5m; High-density: 3m rows with 1m spacing within rows"}
+  }
+}

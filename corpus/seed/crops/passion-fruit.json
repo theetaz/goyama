@@ -1,0 +1,21 @@
+{
+  "slug": "passion-fruit",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Passiflora edulis",
+  "family": "Passifloraceae",
+  "names": {"en": "Passion fruit", "si": "Deshi dodam", "ta": "Passion pazham"},
+  "aliases": ["Passiflora edulis f. flavicarpa", "Passiflora edulis f. edulis"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "soil_ph": {"min": 6.0, "max": 7.5},
+  "duration_days": {"min": 300, "max": 300, "unit": "days to first bearing (Bandaravela variety)"},
+  "spacing_cm": {"within_row": 30, "between_row": 200},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-passion-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Passiflora edulis f. flavicarpa and P. edulis f. edulis"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-passion-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "6.0–7.5 required for optimal growth"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-passion-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Approximately 10 months from transplanting for 'Bandaravelda' variety; 60 days from flowering to harvest", "review_notes": "10 months → 300 days to first bearing."},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-passion-fruit-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Support stakes planted 4.5 meters apart in rows, with 2-meter spacing between rows; individual plants positioned 30 cm forward from every two stakes"}
+  }
+}

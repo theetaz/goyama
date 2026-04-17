@@ -1,0 +1,24 @@
+{
+  "slug": "yellow-stem-borer",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Scirpophaga incertulas",
+  "names": {"en": "Yellow stem borer"},
+  "aliases": ["YSB", "rice stem borer", "Tryporyza incertulas"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "notes": {
+      "en": "Serious outbreaks are rare in Sri Lanka. Caterpillars bore into rice stems and hollow them out completely."
+    }
+  },
+  "description": {
+    "en": "Caterpillars bore into rice stems. Young plants show 'dead hearts'; older plants show 'white heads' where panicles emerge empty. Affected stems are hollow and plants lodge easily. No resistant varieties available in Sri Lanka; cultural control via land preparation and weed management."
+  },
+  "field_provenance": {
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_pests_yellowstemborer/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Young plants display dead hearts; Older plants show white heads; Stem hollowing and lodging. The caterpillars bore into the rice stem and hollow out the stem completely."},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_pests_yellowstemborer/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Serious out breaks of YSB are very rare; resistant varieties are currently unavailable"}
+  }
+}

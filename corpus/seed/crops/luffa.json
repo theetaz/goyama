@@ -1,0 +1,25 @@
+{
+  "slug": "luffa",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Luffa acutangula",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Ridge gourd / Luffa", "si": "Wetakolu", "ta": "Peerkankai"},
+  "aliases": ["ridge gourd", "angled luffa", "wetakolu", "peerkankai"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "elevation_m": {"min": 0, "max": 500, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "duration_days": {"min": 60, "max": 70, "unit": "days to first harvest"},
+  "spacing_cm": {"within_row": 150, "between_row": 150},
+  "seed_rate_kg_per_acre": 1.214,
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Luffa acutangula"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Can be cultivated up to 500m from sea level"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5.5 -7.5 for optimal growth"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "First harvest occurs 60-70 days after planting"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1.5 m (1.5 m x 1.5 m)"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-luffa/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "3 kg /ha", "review_notes": "3 kg/ha → 1.214 kg/acre."}
+  }
+}

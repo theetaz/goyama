@@ -1,0 +1,25 @@
+{
+  "slug": "beetroot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Beta vulgaris",
+  "family": "Amaranthaceae",
+  "names": {"en": "Beetroot", "si": "Beetroot", "ta": "Beetroot"},
+  "aliases": ["beet", "red beet"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "soil_ph": {"min": 6.3, "max": 7.3},
+  "duration_days": {"min": 75, "max": 90, "unit": "days after transplanting"},
+  "spacing_cm": {"within_row": 10, "between_row": 30},
+  "seed_rate_kg_per_acre": 2.226,
+  "expected_yield_kg_per_acre": {"min": 4856, "max": 8094, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Beta vulgaris"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Optimum soil pH range is 6.3- 7.3"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "75- 90 days after transplanting"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "30 x 10 cm"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5-6 kg seeds /ha", "review_notes": "5.5 kg/ha midpoint → 2.226 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-beet-root/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "12-20 t/ha", "review_notes": "12–20 t/ha → 4856–8094 kg/acre."}
+  }
+}

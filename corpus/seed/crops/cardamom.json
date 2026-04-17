@@ -1,0 +1,27 @@
+{
+  "slug": "cardamom",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Elettaria cardamomum",
+  "family": "Zingiberaceae",
+  "names": {"en": "Cardamom", "si": "Enasal", "ta": "Elam"},
+  "aliases": ["green cardamom", "enasal", "elam"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "elevation_m": {"min": 200, "max": 1900, "unit": "m (Knuckles range)"},
+  "rainfall_mm": {"min": 1200, "max": 6000, "unit": "mm"},
+  "temperature_c": {"min": 13, "max": 29, "unit": "°C"},
+  "expected_yield_kg_per_acre": {"min": 68, "max": 182, "unit": "kg/acre green pods"},
+  "description": {
+    "en": "Cultivated primarily in the central highlands and the Knuckles Forest Reserve under shade of taller trees. As of 2009, ~2,794 ha under cultivation producing ~61 tons; high-yielding cultivars can reach ~450 kg/ha of green pods."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea", "source_url": "https://dea.gov.lk/cardamom/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Elettaria cardamomum"},
+    "elevation_m": {"source_id": "harti", "source_url": "http://harti.gov.lk/images/download/reasearch_report/new/research_report_196_f.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Knuckles Forest Reserve runs approximately northwest to southeast in the central highlands over a distance of 20 km and across an altitudinal range of 200–1900 m a.s.l."},
+    "rainfall_mm": {"source_id": "iplantz", "source_url": "https://www.iplantz.com/plant/638/elettaria-cardamomum/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "annual rainfall of 1200 to 6000 mm"},
+    "temperature_c": {"source_id": "iplantz", "source_url": "https://www.iplantz.com/plant/638/elettaria-cardamomum/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "annual lows of 13 to 20°C, annual highs of 21 to 29°C"},
+    "expected_yield_kg_per_acre": {"source_id": "iplantz", "source_url": "https://www.iplantz.com/plant/638/elettaria-cardamomum/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Average yields of green pods range from 168 to 280 kgs per hectare, or the equivalent of 150 to 250 lbs per acre, while high-yielding cultivars reportedly yield up to 450 kgs per hectare", "review_notes": "168–450 kg/ha → 68–182 kg/acre."},
+    "description": {"source_id": "scirp", "source_url": "https://www.scirp.org/journal/paperinformation?paperid=76141", "fetched_at": "2026-04-17T00:00:00Z", "quote": "By 2009 the total extent under cardamom cultivation was 2,794 ha in Sri Lanka, and production for that year was 61 t"}
+  }
+}

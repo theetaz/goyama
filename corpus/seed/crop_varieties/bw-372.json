@@ -1,0 +1,55 @@
+{
+  "slug": "bw-372",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bw 372",
+  "released_by": "RRDI",
+  "release_year": 2014,
+  "duration_days": 104,
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "intermediate bold",
+    "pericarp_color": "red",
+    "disease_resistance": [
+      "gall-midge",
+      "blast"
+    ],
+    "pest_resistance": [],
+    "recommendation": "Wet Zone; tolerance to iron toxicity",
+    "salinity_tolerance": "medium",
+    "pedigree": "Bg 359/Bw 267-3 (short mutant)"
+  },
+  "field_provenance": {
+    "release_year": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bw372/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Year of release : 2014"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bw372/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Maturity : 104 days"
+    },
+    "traits": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bw372/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Red pericarp colour and intermediate bold grain shape. Resistant to gall midge, Moderately Resistant to blast; Moderately Resistant / Moderately Susceptible to bacterial leaf blight and brown planthopper. Recommendation: WZ, Tolerance to iron toxicity. Pedigree: Bg 359/Bw 267-3 (short mutant)"
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bw372/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Average yield : 4.2 t/ha",
+      "review_notes": "4.2 t/ha → 1700 kg/acre."
+    }
+  },
+  "expected_yield_kg_per_acre": {
+    "min": 1700,
+    "max": 1700,
+    "unit": "kg/acre"
+  }
+}

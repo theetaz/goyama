@@ -1,0 +1,29 @@
+{
+  "slug": "sheath-rot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Sarocladium oryzae",
+  "names": {"en": "Sheath rot (rice)"},
+  "aliases": ["Acrocylindrium oryzae"],
+  "causal_organism": "fungal",
+  "causal_species": "Sarocladium oryzae",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["stem", "panicle"],
+  "transmission": ["seed_borne", "airborne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 20, "max": 28, "unit": "°C"},
+    "notes": {
+      "en": "Temperatures 20–28 °C during flowering-to-fruiting, elevated moisture, and excessive nitrogen application promote outbreaks."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Oblong or irregular oval lesions with gray or light-brown centres and dark reddish-brown diffuse margins appear on the flag-leaf sheath. In severe cases a powdery white growth of spores and hyphae covers affected tissue and panicle emergence is impaired."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathrot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sarocladium oryzae"},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathrot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Lesions are oblong or irregular oval spots with gray or light-brown centers and a dark reddish-brown, diffuse margin. A powdery white growth consisting of spores and hyphae"},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathrot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "temperatures ranging from 20-28°C, elevated moisture levels, and excessive nitrogen application"}
+  }
+}

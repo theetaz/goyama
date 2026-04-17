@@ -1,0 +1,23 @@
+{
+  "slug": "sugar-apple",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Annona squamosa",
+  "family": "Annonaceae",
+  "names": {"en": "Sugar apple / Sweetsop", "si": "Weli Anoda", "ta": "Seetha palam"},
+  "aliases": ["sweetsop", "weli anoda", "atha"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "rainfall_mm": {"min": 700, "max": 1500, "unit": "mm"},
+  "temperature_c": {"min": 15, "max": 41, "unit": "°C"},
+  "description": {
+    "en": "The most widely cultivated of the Annona species in Sri Lanka and the tropics. Tolerates tropical-lowland climate better than *A. reticulata* and *A. cherimola*. Home-garden dessert fruit; white custardy aromatic pulp with many black seeds. Requires summer temperatures 25–41 °C, winter >15 °C, and 700+ mm annual rainfall. Sensitive to cold — defoliated below 10 °C. Only moderately drought-tolerant; poor fruit set under drought."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_annona_squamosa", "source_url": "https://en.wikipedia.org/wiki/Annona_squamosa", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Annona squamosa"},
+    "rainfall_mm": {"source_id": "wikipedia_annona_squamosa", "source_url": "https://en.wikipedia.org/wiki/Annona_squamosa", "fetched_at": "2026-04-17T00:00:00Z", "quote": "requiring at least 700 millimetres (28 in) of annual rainfall"},
+    "temperature_c": {"source_id": "wikipedia_annona_squamosa", "source_url": "https://en.wikipedia.org/wiki/Annona_squamosa", "fetched_at": "2026-04-17T00:00:00Z", "quote": "summer temperatures from 25 °C to 41 °C, and mean winter temperatures above 15 °C"},
+    "description": {"source_id": "wikipedia_annona_squamosa", "source_url": "https://en.wikipedia.org/wiki/Annona_squamosa", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Annona squamosa is a small, well-branched tree or shrub from the family Annonaceae that bears edible fruits called sugar apples or sweetsops or custard apples. It tolerates a tropical lowland climate better than its relatives Annona reticulata and Annona cherimola, helping make it the most widely cultivated of these species."}
+  }
+}

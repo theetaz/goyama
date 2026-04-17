@@ -1,0 +1,21 @@
+{
+  "slug": "sweet-potato",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Ipomoea batatas",
+  "family": "Convolvulaceae",
+  "names": {"en": "Sweet potato", "si": "Bathala", "ta": "Sakkaravalli kizhangu"},
+  "aliases": ["bathala", "sakkaravalli"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "duration_days": {"min": 90, "max": 120, "unit": "days"},
+  "temperature_c": {"min": 20, "max": 40, "unit": "°C"},
+  "expected_yield_kg_per_acre": {"min": 6070, "max": 10117, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ipomea batatas", "review_notes": "DOA spelling 'Ipomea'; accepted binomial is 'Ipomoea batatas'."},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "3 to 4 months"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "in between 20-40"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "15-25 t/ha", "review_notes": "15–25 t/ha → 6070–10117 kg/acre."}
+  }
+}

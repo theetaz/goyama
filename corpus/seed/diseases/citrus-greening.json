@@ -1,0 +1,28 @@
+{
+  "slug": "citrus-greening",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Candidatus Liberibacter asiaticus",
+  "names": {"en": "Citrus greening (Huanglongbing)"},
+  "aliases": ["HLB", "CVPD", "yellow dragon disease", "Candidatus Liberibacter"],
+  "causal_organism": "bacterial",
+  "causal_species": "Candidatus Liberibacter asiaticus (CLas) — phloem-limited α-proteobacterium; also CLaf and CLam variants",
+  "affected_crop_slugs": ["sweet-orange"],
+  "affected_parts": ["leaf", "fruit", "whole_plant"],
+  "transmission": ["insect_vector", "mechanical"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 22, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Spread by the Asian citrus psyllid (*Diaphorina citri*) and also via infected grafting material. Warm temperate-to-tropical citrus zones sustain both vector and pathogen year-round."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "One of the most devastating diseases of citrus globally — has collapsed commercial citrus industries in Florida and elsewhere. Symptoms: asymmetric blotchy-mottle leaf chlorosis (distinctive from nutrient deficiencies which are symmetric), yellow shoots, lopsided bitter fruits that fail to colour, progressive tree decline. **No known cure** — infected trees are difficult to regenerate and study. CBID management follows a triangular strategy — target pathogen, host, vector: (a) **cultivate pathogen-free certified seedlings** (foundational); (b) **aggressively remove infected trees** to reduce inoculum; (c) **control Asian citrus psyllid** with rotating insecticide classes + biocontrol wasp *Tamarixia radiata*; (d) emerging: thermotherapy, chemotherapy, plant-defence activators, nano-emulsions; (e) use-of antibiotics restricted in most regulatory regimes. For Sri Lanka's Citrus Research Station (Bibile), early monitoring + certified-seedling programmes are the primary line of defence."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "wikipedia_hlb", "source_url": "https://en.wikipedia.org/wiki/Citrus_greening_disease", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Three species of bacterium are known to be associated with citrus greening disease: Candidatus Liberibacter asiaticus (CLas), Candidatus Liberibacter africanus (CLaf), and Candidatus Liberibacter americanus (CLam)"},
+    "description": {"source_id": "pmc_hlb_review", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9824665/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Huanglongbing (HLB, aka citrus greening) is one of the most devastating diseases of citrus, caused by the phloem-limited bacteria Candidatus Liberibacter asiaticus (CLas), which are transmitted via psyllid. To date, there are no effective long-term commercialized control measures for HLB. A triangular disease management approach has been introduced targeting pathogen, host, and vector. Currently, it is essential for the prevention and control of HLB to use antibiotics and pesticides while reducing the spread of HLB by cultivating pathogen-free seedlings, removing disease trees, and killing Asian citrus psyllid (ACP)."}
+  }
+}

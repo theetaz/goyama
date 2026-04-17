@@ -1,0 +1,19 @@
+{
+  "slug": "ash-plantain",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Musa × paradisiaca",
+  "family": "Musaceae",
+  "names": {"en": "Ash plantain", "si": "Alu Kesel", "ta": "Vazhaikkai"},
+  "aliases": ["alu kesel", "mondan banana", "grey banana", "cooking plantain"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "description": {
+    "en": "**The most extensively grown vegetable in Sri Lanka** (brinjal is #2 per DOA data). The dusty grey coating on the green pseudostem and fruit skin gives the variety its 'ash' or 'alu' moniker. Cultivated in Dry and Intermediate zones as both a home-garden staple and a commercial crop; pseudo-stem, unripe fruit, flower and inner 'heart' are all eaten. Traditional preparation: *alu kesel kirata* (ash plantain coconut curry). Shares all standard *Musa* disease and pest threats (see Panama disease, black Sigatoka, banana weevil)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "bfn_ash_plantain", "source_url": "https://www.bfnsrilanka.org/vegetables/ash-plantain", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Musa paradisiaca"},
+    "description": {"source_id": "specialtyproduce_alu_kesel", "source_url": "https://specialtyproduce.com/produce/Sri_Lanka_Ash_Plantains_23847.php", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ash plantains, botanically classified as Musa paradisiaca, are a specialty variety belonging to the Musaceae family. Ash plantains are also known as Mondan bananas, Alu Kesel, and Grey bananas. The variety acquired its ash or grey moniker from the dusty coating on the plantain's surface, giving it the appearance of being covered in ash. The variety is grown in the dry and intermediate zones of India and Sri Lanka and is a home garden and commercially grown cultivar."}
+  }
+}

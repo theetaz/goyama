@@ -1,0 +1,58 @@
+{
+  "slug": "bg-352",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 352",
+  "released_by": "RRDI",
+  "release_year": 1992,
+  "duration_days": 100,
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "intermediate bold",
+    "pericarp_color": "white",
+    "amylose": "intermediate",
+    "disease_resistance": [
+      "blast",
+      "bacterial-leaf-blight"
+    ],
+    "pest_resistance": [
+      "brown-planthopper"
+    ],
+    "recommendation": "General cultivation",
+    "pedigree": "Bg 380/Bg 367-4"
+  },
+  "field_provenance": {
+    "release_year": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg352/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Year of release : 1992"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg352/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Maturity : 98 – 102 days",
+      "review_notes": "Stored midpoint 100 days; true range 98–102."
+    },
+    "traits": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg352/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Moderately Resistant to blast, bacterial leaf blight, and brown planthopper. Pedigree : Bg 380/Bg 367-4"
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg352/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Average yield : 4.9 t/ha",
+      "review_notes": "4.9 t/ha → 1983 kg/acre."
+    }
+  },
+  "expected_yield_kg_per_acre": {
+    "min": 1983,
+    "max": 1983,
+    "unit": "kg/acre"
+  }
+}

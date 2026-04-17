@@ -1,0 +1,25 @@
+{
+  "slug": "papaya-mealybug",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Paracoccus marginatus",
+  "names": {"en": "Papaya mealybug"},
+  "aliases": ["Paracoccus marginatus", "papaw mealybug"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["papaya", "mango", "rambutan", "guava", "cassava"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 25, "max": 35, "unit": "°C"},
+    "notes": {
+      "en": "Warm, dry conditions favour rapid population build-up. Spreads on infested planting material, farm equipment, and wind."
+    }
+  },
+  "description": {
+    "en": "An invasive alien pest first recorded in Sri Lanka in early 2008 in Colombo and Gampaha districts; originates from Mexico / Central America. Polyphagous across 40+ plant species with papaya as primary host and mango, rambutan, guava, annona as secondary hosts. Colonies of tiny white-waxy mealybugs encrust stems, leaves and fruits, secreting honeydew that supports sooty mould. Severe infestation stunts papaya trees and renders fruit unmarketable. **Landmark Sri Lankan biocontrol success**: DOA imported three parasitoid wasps from Puerto Rico in 2008–2009 — *Acerophagus papayae* (the dominant effective agent), *Anagyrus loecki*, and *Pseudleptomastix mexicana*. *Acerophagus papayae* now plays the major role in sustained suppression of *P. marginatus* populations across the dry zone."
+  },
+  "field_provenance": {
+    "description": {"source_id": "sljol_papaya_mealybug", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v13i3.3143", "fetched_at": "2026-04-17T00:00:00Z", "quote": "A previously unrecorded papaya mealybug species, Paracoccus marginatus, was discovered in early 2008 in the western provincial districts Colombo and Gampaha in Sri Lanka. This invasive alien species originated from Mexico and/or Central America. A biocontrol programme was implemented with the introduction of three natural enemies—Acerophagus papayae, Anagyrus loeki, and Pseudleptomastix mexicana—imported from Puerto Rico in selected regions in 2008 and 2009. Acerophagus papayae was found playing a major role in managing populations of P. marginatus."}
+  }
+}

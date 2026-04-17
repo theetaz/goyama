@@ -1,0 +1,19 @@
+{
+  "slug": "bulu",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Terminalia bellirica",
+  "family": "Combretaceae",
+  "names": {"en": "Beleric myrobalan / Bahera", "si": "Bulu", "ta": "Thani"},
+  "aliases": ["bibhitaki", "baheda", "bahera", "beleric", "bastard myrobalan"],
+  "category": "medicinal",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Large deciduous medicinal tree found across the Indian subcontinent, Sri Lanka, and South-East Asia. **Second component of the classic Ayurvedic *Thripala* (Triphala)** formulation alongside *Aralu* (*Terminalia chebula*) and *Nelli* (*Phyllanthus emblica*). Fruit pulp used as astringent, laxative, brain tonic, expectorant, febrifuge, and antiseptic; salt-and-long-pepper preparation prescribed for throat and chest infections. Rich in gallic acid, ellagic acid, β-sitosterol, gallo-tannic acid, luteolin, belleric acid, and chebulagic acid — phenolic and flavonoid antioxidants. Supplied by Sri Lankan herbal exporters (Link Natural, Caveman Redux) as part of Triphala tablets/powders."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_bulu", "source_url": "https://en.wikipedia.org/wiki/Terminalia_bellirica", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Terminalia bellirica"},
+    "description": {"source_id": "lakpura_bulu", "source_url": "https://lakpura.com/pages/terminalia-bellirica", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In the formulation Triphala, Bulu (Terminalia bellirica) is combined with Aralu (Terminalia chebula) and Nelli (Phyllanthus emblica), and has been used for thousands of years to promote health and longevity. The pulp of the fruit is considered by ayurvedic physicians to be astringent and laxative, and is prescribed with salt and long pepper in infections of the throat and chest."}
+  }
+}

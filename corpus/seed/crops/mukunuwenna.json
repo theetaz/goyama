@@ -1,0 +1,19 @@
+{
+  "slug": "mukunuwenna",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Alternanthera sessilis",
+  "family": "Amaranthaceae",
+  "names": {"en": "Sessile joyweed", "si": "Mukunuwenna", "ta": "Ponnanganni"},
+  "aliases": ["mukunuwenna", "weda mukunuwenna", "ponnanganni keerai", "sessile joyweed"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "creeper",
+  "description": {
+    "en": "A widely consumed Sri Lankan leafy vegetable, eaten as **mallung** (stir-fried with grated coconut). Sri Lankan research (TARE 2024) compared cultivars and found **Piliyandala selection**, **Colombo selection**, and **Cultivar M7** exhibit preferable growth and yield traits for commercial cultivation, while **Weda Mukunuwenna** is the ideal choice for home-garden cultivation under upland conditions in the Low Country Wet Zone. Grown in moist well-drained soils; short cropping cycle enables multiple harvests."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "sljol_mukunuwenna", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v27i1.5692", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Alternanthera sessilis"},
+    "description": {"source_id": "sljol_mukunuwenna", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v27i1.5692", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Piliyandala selection, Colombo selection, and Cultivar M7 exhibit preferable growth and yield traits for commercial cultivation, while Weda Mukunuwenna stands out as an ideal choice for home garden cultivation under upland conditions in the Low Country Wet Zone"}
+  }
+}

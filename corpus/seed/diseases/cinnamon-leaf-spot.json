@@ -1,0 +1,27 @@
+{
+  "slug": "cinnamon-leaf-spot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Colletotrichum gloeosporioides / Pestalotia cinnamomi",
+  "names": {"en": "Cinnamon leaf spot / Grey leaf blight"},
+  "aliases": ["cinnamon anthracnose", "grey leaf blight of cinnamon"],
+  "causal_organism": "fungal",
+  "causal_species": "Colletotrichum gloeosporioides (dark leaf spot/blight) + Pestalotia cinnamomi (grey leaf spot)",
+  "affected_crop_slugs": ["cinnamon"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Incidence significantly higher in **lands with high shade, high planting densities, poor weeding, and improper pruning** — all canopy/management factors that raise humidity and slow leaf drying."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Two principal foliar diseases co-documented on Sri Lankan cinnamon: **leaf spot / blight** (*Colletotrichum gloeosporioides* — same pathogen as mango anthracnose) and **grey leaf spot / blight** (*Pestalotia cinnamomi*). Lesions reduce bark-yield quality in the short term and weaken bushes over successive harvests. **Management**: (a) **optimal shade** (not excessive); (b) **appropriate planting density** per DEA recommendations — avoid over-dense stands; (c) regular weeding and proper pruning to improve air flow; (d) prompt removal of severely infected leaves; (e) copper-based fungicide sprays (e.g. copper oxychloride) at early-symptom stage."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "rg_cinnamon_leaf_spot", "source_url": "https://www.researchgate.net/publication/336305794_Intensity_of_leaf_spot_and_rough_bark_diseases_in_cinnamon_accessions_collected_from_major_cinnamon_growing_areas_of_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The important diseases of cinnamon reported are leaf spot/blight caused by Colletotrichum gloeosporioides and grey leaf spot/blight caused by Pestalotia cinnamomi"},
+    "favored_conditions": {"source_id": "rg_cinnamon_leaf_spot", "source_url": "https://www.researchgate.net/publication/336305794_Intensity_of_leaf_spot_and_rough_bark_diseases_in_cinnamon_accessions_collected_from_major_cinnamon_growing_areas_of_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Considerably higher disease incidence was observed in lands with high shades, high planting densities, poor weeding, and improper pruning"}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "thebu",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Hellenia speciosa",
+  "family": "Costaceae",
+  "names": {"en": "Insulin plant / Crepe ginger", "si": "Thebu Kola", "ta": "Kosttam"},
+  "aliases": ["Costus speciosus", "insulin plant", "cane reed", "Hellenia speciosa"],
+  "category": "medicinal",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "description": {
+    "en": "Sri Lankan medicinal plant (Ayurvedic 'insulin plant') — leaves used traditionally and commercially for **diabetes management** and blood-sugar regulation. Contains corosolic acid; reported to stimulate insulin production alongside antioxidant, anti-inflammatory, and metabolism-boosting effects. **Grown wild and cultivated in back-yards** — propagated easily from stem cuttings and rhizome divisions. Due to indiscriminate wild collection, *C. speciosus* is classified as endangered in Sri Lanka — systematic cultivation is needed. Corporate organic-herb exporters supply powder/capsule forms internationally."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "biodiversity_thebu", "source_url": "https://biodiversityofsrilanka.blogspot.com/2011/07/thebu-costus-speciosus.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Thebu (Hellenia speciosa [Syn: Costus speciosus])"},
+    "description": {"source_id": "lakpura_thebu", "source_url": "https://lakpura.com/pages/costus-speciosus", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Thebu (Costus speciosus) which is also known as the Insulin plant is highly regarded in traditional medicine practices while its leaves are known for their ability to manage and control diabetes. It has the ability to stimulate insulin production while offering antioxidant, anti-inflammatory and metabolism boosting benefits. Having a natural concentration of Corosolic acid, Insulin plant can have a positive effect on blood sugar level. However, due to indiscriminate collection from natural habitat C. speciosus has become endangered."}
+  }
+}

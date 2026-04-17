@@ -1,0 +1,25 @@
+{
+  "slug": "cauliflower",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Brassica oleracea var. botrytis",
+  "family": "Brassicaceae",
+  "names": {"en": "Cauliflower", "si": "Malgowa", "ta": "Poo kos"},
+  "aliases": ["malgowa"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "soil_ph": {"min": 6.0, "max": 6.8},
+  "duration_days": {"min": 60, "max": 75, "unit": "days after transplant"},
+  "spacing_cm": {"within_row": 40, "between_row": 45},
+  "seed_rate_kg_per_acre": 0.121,
+  "expected_yield_kg_per_acre": {"min": 2428, "max": 3642, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Brassica oleracea var. botrytis"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Optimum pH is 6.0 -6.8"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Heads are ready to harvest around 60 – 75 days after transplant"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Between rows 40 -50 cm and within rows 40 cm"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "300 g / ha", "review_notes": "0.3 kg/ha → 0.121 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "6.0 – 9.0 t/ ha", "review_notes": "6–9 t/ha → 2428–3642 kg/acre."}
+  }
+}

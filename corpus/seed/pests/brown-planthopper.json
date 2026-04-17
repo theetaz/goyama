@@ -1,0 +1,46 @@
+{
+  "slug": "brown-planthopper",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Nilaparvata lugens",
+  "names": {
+    "en": "Brown planthopper"
+  },
+  "aliases": ["BPH", "nilaparvata lugens"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sucking", "sap_feeding"],
+  "economic_threshold": {
+    "en": "DOA guideline: 2 BPH per hill at booting stage or 5 per hill at heading stage, adjusted for natural enemy (spider) presence."
+  },
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Higher moisture levels and indiscriminate insecticide use during the vegetative stage known to trigger BPH outbreaks; most damaging during late vegetative and reproductive stages."
+    }
+  },
+  "description": {
+    "en": "Heavy infestations produce hopper burn — leaves dry and turn brown after feeding, with patches of burned plants often lodged. Also transmits grassy stunt and ragged stunt viruses, compounding losses."
+  },
+  "field_provenance": {
+    "description": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_pests_brownplanthopper/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Heavy infestations produce symptoms of hopper burn. Leaves dry and turn brown after insect feeding, and patches of burned plants are often lodged. Acts as a disease vector for grassy stunt and ragged stunt virus diseases."
+    },
+    "economic_threshold": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_pests_brownplanthopper/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "booting stage: 2 per hill; heading stage: 5 per hill threshold"
+    },
+    "favored_conditions": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_pests_brownplanthopper/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Indiscriminate use of insecticides during vegetative stage known to cause BPH outbreaks. Higher moisture levels support multiplication"
+    }
+  }
+}

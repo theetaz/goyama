@@ -1,0 +1,21 @@
+{
+  "slug": "rice-blast-cultural-burnt-husk",
+  "version": 1,
+  "status": "draft",
+  "type": "cultural",
+  "target_disease_slugs": ["rice-blast", "brown-spot", "sheath-blight", "sheath-rot", "narrow-brown-leaf-spot", "leaf-scald"],
+  "applicable_crop_slugs": ["rice"],
+  "name": {"en": "Burnt paddy husk incorporation + certified seed"},
+  "description": {
+    "en": "Foundational cultural practice DOA RRDI recommends for nearly every major rice disease: (1) use certified disease-free seed paddy; (2) apply burnt paddy husk at 250 kg per acre during land preparation; (3) avoid incorporating disease-infected straw."
+  },
+  "instructions": {
+    "en": "During land preparation, broadcast 250 kg of burnt paddy husk per acre and incorporate into the soil. Source seed paddy from certified disease-free suppliers. Remove and compost infected crop residue away from the field rather than tilling it in."
+  },
+  "effectiveness": "medium",
+  "cost_tier": "low",
+  "organic_compatible": true,
+  "field_provenance": {
+    "instructions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Use certified disease-free seed, add burnt paddy husk (250 kg/acre), avoid infected straw"}
+  }
+}

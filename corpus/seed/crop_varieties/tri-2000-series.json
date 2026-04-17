@@ -1,0 +1,19 @@
+{
+  "slug": "tri-2000-series",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tea",
+  "name": "TRI 2000 series (TRI 2023, 2024, 2025, 2026)",
+  "released_by": "Tea Research Institute of Sri Lanka (TRI)",
+  "recommended_aez_codes": [],
+  "traits": {
+    "cultivar_set": "TRISL 2023, TRISL 2024, TRISL 2025, TRI 2026 (and pigmented TRI 2043)",
+    "adoption": "Most popular set, covers over 55% of national tea extent",
+    "recommendation": "Recommended for replanting",
+    "disease_note": "TRI 2024 is susceptible to blister blight (reduced net photosynthesis, transpiration, stomatal conductance, WUE under infection)",
+    "notes": {"en": "The workhorse clone set of Sri Lankan tea replanting programmes; newer TRI 5000 series supersedes on blister-blight resistance for up-country."}
+  },
+  "field_provenance": {
+    "traits": {"source_id": "tri_advisory_clones", "source_url": "https://www.tri.lk/wp-content/uploads/2020/02/TRI_Advisory_Ciculars_PN_01.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Among Sri Lankan tea clones, TRISL 2023, TRISL 2024, TRISL 2025, and TRI 2026 are most popular and are recommended for replanting. Sri Lankan cultivar TRI 2024 has been identified as susceptible to blister blight disease"}
+  }
+}

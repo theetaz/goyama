@@ -1,0 +1,29 @@
+{
+  "slug": "sheath-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Rhizoctonia solani",
+  "names": {"en": "Sheath blight"},
+  "aliases": ["ShB", "Thanatephorus cucumeris"],
+  "causal_organism": "fungal",
+  "causal_species": "Rhizoctonia solani (teleomorph Thanatephorus cucumeris)",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["stem", "leaf"],
+  "transmission": ["waterborne", "soil_borne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 28, "max": 40, "unit": "°C"},
+    "notes": {
+      "en": "Warm temperatures up to 40 °C, humidity above 90 %, excessive nitrogen, dense plant populations, cloudy weather and shade all favor infection."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Lesions develop near the waterline on leaf sheaths — 1–3 cm, white-centred with green, brown and orange banding. Sclerotia (4–5 mm) form on leaf surfaces, initially white then turning brown or purplish-brown at maturity."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathblight/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Thanatephorus cucumeris (Rhizoctonia solani)"},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathblight/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Lesions develop near the water level on leaf sheaths, measuring 1-3 cm with white in the center, banded with green, brown, and orange coloration. Sclerotia (4-5 mm structures) form on leaf surfaces, initially white but turning brown or purplish brown at maturity."},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_sheathblight/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "high temperature conditions reaching 40°C, moisture levels exceeding 90%, excessive nitrogen application, and dense plant populations. Cloudy weather and shade also promote infection."}
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "anthracnose",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Colletotrichum spp.",
+  "names": {"en": "Anthracnose"},
+  "aliases": ["Colletotrichum gloeosporioides", "C. truncatum", "C. scovillei"],
+  "causal_organism": "fungal",
+  "causal_species": "Colletotrichum gloeosporioides (mango); C. truncatum, C. scovillei, C. siamense complex (chilli)",
+  "affected_crop_slugs": ["mango", "chilli", "capsicum", "banana", "guava", "dragon-fruit", "snap-bean", "moringa"],
+  "affected_parts": ["leaf", "stem", "fruit", "flower"],
+  "transmission": ["airborne", "seed_borne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Warm, humid, rainy conditions favour infection. Spores spread by rain splash. Latent infection on immature fruit expresses at ripening — a key post-harvest threat in mango."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "In mango: dark, water-soaked lesions on stems, leaves, flowers and fruits; immature leaves and flowers are especially susceptible; *C. gloeosporioides* is the main pathogen across Sri Lankan cultivated regions. In chilli: sunken necrotic lesions on fruit with concentric rings of acervuli; 260+ *Colletotrichum* isolates have been recovered from chilli in a multi-country Asian survey including Sri Lanka. Management: resistant varieties, nursery sanitation (avoid Solanaceae rotation history), well-drained sites, pre/post-harvest fungicide schedules, and post-harvest hot-water treatment for mango."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mango-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Anthracnose (caused by Colletotrichum gloeosporioides)"},
+    "description": {"source_id": "researchgate_mango", "source_url": "https://www.researchgate.net/publication/329519803_Management_of_Anthracnose_Disease_of_Mango_Caused_by_Colletotrichum_gloeosporioides_A_Review", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Colletotrichum gloeosporioides spreads across cultivated regions of Sri Lanka and can infect flowers, immature leaves, mature leaves, stems and fruits. Infected plants develop dark, water soaked lesions on stems, leaves and fruits, with immature leaves and flowers being highly susceptible."},
+    "favored_conditions": {"source_id": "intechopen", "source_url": "https://www.intechopen.com/chapters/73319", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Typical anthracnose symptoms on chilli fruit include sunken necrotic tissues, with concentric rings of acervuli."}
+  }
+}

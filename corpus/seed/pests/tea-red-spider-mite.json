@@ -1,0 +1,30 @@
+{
+  "slug": "tea-red-spider-mite",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Oligonychus coffeae",
+  "names": {"en": "Tea red spider mite"},
+  "aliases": ["TRSM", "red spider mite", "Oligonychus coffeae"],
+  "kingdom": "arachnida",
+  "affected_crop_slugs": ["tea"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["rasping", "sap_feeding"],
+  "favored_conditions": {
+    "humidity": "low",
+    "temperature_c": {"min": 25, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Populations rise sharply in warm weather and decline markedly once monsoon rains arrive. Under optimal conditions up to 22 overlapping generations per year."
+    }
+  },
+  "economic_threshold": {
+    "en": "In Sri Lanka Oligonychus coffeae and Brevipalpus spp. can cause 0.6–5 % yield reduction; some TRI-released clones have inherent resistance."
+  },
+  "description": {
+    "en": "Major mite pest of tea (*Camellia sinensis*). Nymphs and adults lacerate leaf cells on the upper surface, producing characteristic minute reddish-brown scars; under severe infestation leaves turn red, photosynthesis and quality drop, and yield falls. Integrated management: (a) **host-plant resistance** — TRI-resistant clones reduce populations at source; (b) botanical extracts (neem and Trichilia derivatives) match or exceed propargite efficacy; (c) microbial biocontrol — *Purpureocillium lilacinum*, *Metarhizium robertsii*, *Aspergillus niger*, *Pseudomonas fluorescens*, *P. putida*; (d) natural predators — green lacewings, ladybirds, phytoseiid mites; (e) chemical acaricides as last resort with strict resistance management."
+  },
+  "field_provenance": {
+    "economic_threshold": {"source_id": "springer_rsm", "source_url": "https://link.springer.com/article/10.1007/s10493-014-9800-4", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In Sri Lanka O. coffeae and Brevipalpus spp. could cause 0.6–5 % reduction of yield. Additionally, some tea clones in Sri Lanka are also resistant to O. coffeae."},
+    "description": {"source_id": "springer_rsm", "source_url": "https://link.springer.com/article/10.1007/s10493-014-9800-4", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Nymphs and adults of RSM lacerate cells, producing minute characteristic reddish brown marks on the upper surface of mature leaves, which turn red in severe cases of infestation. Their number increases as the weather warms up and decreases markedly once rains set in. Under optimal conditions there may be 22 overlapping generations in a year."},
+    "favored_conditions": {"source_id": "sciencedirect_rsm_biocontrol", "source_url": "https://www.sciencedirect.com/science/article/pii/S2405844024106366", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Purpureocillium lilacinum, Metarhizium robertsii, Aspergillus niger, Pseudomonas fluorescens, and Pseudomonas putida are highly effective against TRSM without causing any harm to the nontarget beneficial insects"}
+  }
+}

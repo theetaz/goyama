@@ -1,0 +1,25 @@
+{
+  "slug": "coconut-mite",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Aceria guerreronis",
+  "names": {"en": "Coconut eriophyid mite"},
+  "aliases": ["coconut mite", "coconut eriophyid"],
+  "kingdom": "arachnida",
+  "affected_crop_slugs": ["coconut"],
+  "life_stages": ["egg", "nymph", "adult"],
+  "feeding_type": ["sap_feeding"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 25, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Invaded Sri Lanka in the late 1990s and now occurs in all main coconut-growing areas. Hot, relatively dry conditions favour population build-up."
+    }
+  },
+  "description": {
+    "en": "Microscopic mites colonize the perianth under the bracts of young developing coconuts, scarring the epidermis. Affected nuts show triangular whitish patches progressing to brown corky lesions, nut stunting, and premature nut drop. Sri Lankan management centres on: (a) low-toxicity chemical sprays — 20% palm oil + 0.5% sulphur mixture has proven successful and cost-effective; (b) biological control with the predacious mite *Neoseiulus baraki* (indigenous natural enemy); (c) field sanitation — collect and destroy fallen infested nuts."
+  },
+  "field_provenance": {
+    "description": {"source_id": "rg_coconut_mite", "source_url": "https://www.researchgate.net/publication/282842483_Mite_management_of_coconut_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Coconut mite (Aceria guerreronis) is a major pest of coconut in Sri Lanka, and after its invasion in late 1990s, has widely spread to all main coconut growing areas in the country. The most effective control methods are chemical control using low toxic chemicals (20% palm oil and 0.5% sulphur mixture) and biological control using the predaceous mite Neoseiulus baraki, which were proven to be successful and cost effective methods."}
+  }
+}

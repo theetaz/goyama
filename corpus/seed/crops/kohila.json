@@ -1,0 +1,19 @@
+{
+  "slug": "kohila",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Lasia spinosa",
+  "family": "Araceae",
+  "names": {"en": "Kohila", "si": "Kohila", "ta": "Kohila"},
+  "aliases": ["lasia"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 240, "max": 360, "unit": "days to first leaf harvest"},
+  "expected_yield_kg_per_acre": {"min": 16187, "max": 20234, "unit": "kg/acre rhizomes"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kohila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Lasia spinosa"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kohila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Leaves harvestable 8-12 months after planting"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kohila/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Approximately 2,000-2,500 kg of rhizomes per 50 m² area", "review_notes": "2000–2500 kg / 50 m² → 40–50 kg/m² → 161870–202340 kg/acre; stored top-end 16187–20234 kg/acre as plausible sustained per-acre yield. Needs agronomist verification; upper-bound likely unrealistic sustained."}
+  }
+}

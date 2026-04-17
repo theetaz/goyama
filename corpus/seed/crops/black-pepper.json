@@ -1,0 +1,19 @@
+{
+  "slug": "black-pepper",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Piper nigrum",
+  "family": "Piperaceae",
+  "names": {"en": "Black pepper", "si": "Gammiris", "ta": "Milagu"},
+  "aliases": ["peppercorn", "gammiris", "milagu"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "description": {
+    "en": "A climbing perennial vine trained on living support posts (commonly gliricidia). In Sri Lanka mainly cultivated in Low and Mid-country Wet and Intermediate zones — Matale, Kandy, Kegalle, Badulla, Ratnapura, Monaragala, and Kurunegala districts. Sri Lanka produced ~21,800 tons in 2020 over ~42,989 ha."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea", "source_url": "https://dea.gov.lk/pepper/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Piper nigrum"},
+    "description": {"source_id": "dea", "source_url": "https://dea.gov.lk/pepper/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In Sri Lanka pepper is mainly cultivated in Low and Mid country Wet and Intermediate agro-climatic zones. The total extent of pepper in Sri Lanka is about 42,989 ha and Matale, Kandy, Kegalle, Badulla, Ratnapura, Monaragala, and Kurunegala are the major districts."}
+  }
+}

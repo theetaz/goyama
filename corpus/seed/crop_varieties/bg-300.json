@@ -1,0 +1,47 @@
+{
+  "slug": "bg-300",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 300",
+  "released_by": "RRDI",
+  "release_year": 1987,
+  "duration_days": 93,
+  "expected_yield_kg_per_acre": {"min": 2023, "max": 2023, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "intermediate bold",
+    "pericarp_color": "white",
+    "amylose": "high",
+    "disease_resistance": ["blast", "bacterial-leaf-blight", "gall-midge"],
+    "pest_resistance": ["brown-planthopper"],
+    "recommendation": "General cultivation"
+  },
+  "field_provenance": {
+    "release_year": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg300/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "1987"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg300/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "93 days"
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg300/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "5.0 t/ha",
+      "review_notes": "5.0 t/ha → 2023 kg/acre. Point estimate stored as both min and max."
+    },
+    "traits": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_rice_bg300/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Moderately Resistant status against blast and bacterial leaf blight; Resistant traits against gall midge and Moderately Resistant against brown planthopper. Parentage: Bg 367-7//IR 841/Bg 276-5"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "pigeon-pea",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cajanus cajan",
+  "family": "Fabaceae",
+  "names": {"en": "Pigeon pea", "si": "Rata thora", "ta": "Thuvaram paruppu"},
+  "aliases": ["red gram", "tur dal", "rata thora", "thuvaram paruppu"],
+  "category": "field_crop",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "duration_days": {"min": 120, "max": 180, "unit": "days (early 120–140; medium 160–180; long >180 globally)"},
+  "expected_yield_kg_per_acre": {"min": 28, "max": 688, "unit": "kg/acre"},
+  "description": {
+    "en": "A traditional pulse in Sri Lanka's Dry Zone, tolerant of drought and poor soils; often intercropped in rain-fed uplands. Research in 1995–1996 evaluated 8 extra-short-duration and 2 short-duration pigeon pea genotypes at two April/May sowing dates, with and without supplementary irrigation — rain-fed grain yields ranged 0.07–0.47 t/ha in late sowings, rising to 1.7 t/ha with irrigation. Internationally, pigeon pea is grouped into early (120–140 days), medium (160–180 days), and long (>180 days) maturity classes; most Sri Lankan cropping systems use early or short-duration genotypes to fit the dry-zone rain window."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_pigeon_pea", "source_url": "https://en.wikipedia.org/wiki/Pigeon_pea", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Cajanus cajan"},
+    "duration_days": {"source_id": "sciencedirect_pigeonpea", "source_url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/pigeonpea", "fetched_at": "2026-04-17T00:00:00Z", "quote": "medium (160-180 days) and long (>180 days) maturity groups, with a small portion belonging to the early (120-140 days) maturity group"},
+    "expected_yield_kg_per_acre": {"source_id": "rg_pigeonpea_dry_zone", "source_url": "https://www.researchgate.net/figure/Rainfall-distribution-in-the-dry-zone-and-pigeonpea-production-systems-in-Sri-Lanka_fig1_277065430", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Grain yields of the pigeonpea genotypes under rainfed conditions ranged from 0.07 to 0.47 t ha⁻¹ in the late sowings, while irrigated yields reached 1.7 t ha⁻¹ in the late sowings", "review_notes": "0.07–1.7 t/ha → 28–688 kg/acre — wide range reflects rain-fed vs. irrigated contrast."}
+  }
+}

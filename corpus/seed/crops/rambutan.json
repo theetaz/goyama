@@ -1,0 +1,23 @@
+{
+  "slug": "rambutan",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Nephelium lappaceum",
+  "family": "Sapindaceae",
+  "names": {"en": "Rambutan", "si": "Rambutan", "ta": "Rambutan"},
+  "aliases": ["Malwana rambutan"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "elevation_m": {"min": 0, "max": 450, "unit": "m"},
+  "rainfall_mm": {"min": 1500, "max": 2000, "unit": "mm"},
+  "temperature_c": {"min": 27, "max": 30, "unit": "°C"},
+  "spacing_cm": {"within_row": 1000, "between_row": 1000},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-rambutan-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Botanical name – Nephelium lappaceum"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-rambutan-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "sea level up to approximately 450 meters elevation"},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-rambutan-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1500-2000mm annual rainfall"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-rambutan-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "ambient temperatures around 27-30°C"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-rambutan-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trees are planted at 10 x 10 or 10 x 8 meter intervals"}
+  }
+}

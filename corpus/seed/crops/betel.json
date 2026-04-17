@@ -1,0 +1,19 @@
+{
+  "slug": "betel",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Piper betle",
+  "family": "Piperaceae",
+  "names": {"en": "Betel leaf", "si": "Bulath", "ta": "Vetrilai"},
+  "aliases": ["bulath", "vetrilai", "paan leaf", "Kalu Bulath (dark-leaf export grade)"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "description": {
+    "en": "Cultural and ceremonial staple; also a significant commercial crop with export markets for the large-dark-leaf **Kalu Bulath** grade. Cultivated commercially in Kurunegala, Gampaha, Kegalle, Kalutara, and Colombo districts on lataritic and clay loam soils. Performs best in the Wet and Intermediate zones — sun-loving but producing higher-quality leaves in these moister climates than in the Dry Zone. Released DEA varieties: **Narammali** and **Naramrathi** (high-yielding improvements on traditional *Galdalu*, *Mahamaneru*, *Kudamaneru*, *Ratadalu*, *Nagawalli*, *Malabulath*). DEA fertilizer recommendations applied at 3-week intervals for Kalu Bulath export production. A successful Sri Lankan betel farm returns ~LKR 1,635 per 150 sq ft (14 m²) every 6 months."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea_betel", "source_url": "https://dea.gov.lk/betel/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Piper betle L."},
+    "description": {"source_id": "dea_betel", "source_url": "https://dea.gov.lk/betel/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Six cultivars of P. betle, namely, Galdalu, Mahamaneru, Kudamaneru, Ratadalu, Nagawalli and Malabulath, were used in scientific studies. Using these betel types and other available accessions, two high yielding varieties were released named as Narammali and Naramrathi. Commercial production of betel with bigger leaves with dark green colour combined with thickness, known as Kalu Bulath, is confined to a few districts, such as Kurunagala, Gampaha, Kegalle, Kalutara and Colombo. Betel can be successfully grown in well-drained, fertile soils in wet to dry climatic zones of Sri Lanka"}
+  }
+}

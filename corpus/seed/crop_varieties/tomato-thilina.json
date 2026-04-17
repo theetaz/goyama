@@ -1,0 +1,21 @@
+{
+  "slug": "tomato-thilina",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "name": "Thilina",
+  "released_by": "HORDI, Department of Agriculture",
+  "duration_days": 60,
+  "recommended_aez_codes": [],
+  "traits": {
+    "fruit_weight_g": 85,
+    "yield_per_plant_kg": 3.5,
+    "disease_resistance": ["bacterial-wilt"],
+    "maturity": "early",
+    "notes": {"en": "Early-harvest variety — harvest in 2 months from transplanting. Fruit weight ~85 g, yield ~3.5 kg/plant. Bacterial-wilt resistant."}
+  },
+  "field_provenance": {
+    "duration_days": {"source_id": "doa_hordi_tomato_variety", "source_url": "https://doa.gov.lk/hordi-variety1-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "harvests in 2 months"},
+    "traits": {"source_id": "doa_hordi_tomato_variety", "source_url": "https://doa.gov.lk/hordi-variety1-tomato/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Thilina is a variety where one fruit weighs around 85g, harvests in 2 months, and from one plant you can get a harvest of 3 1/2 kg. It is also resistant to Bacteria Wilt."}
+  }
+}

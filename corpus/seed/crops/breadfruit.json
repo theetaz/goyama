@@ -1,0 +1,23 @@
+{
+  "slug": "breadfruit",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Artocarpus altilis",
+  "family": "Moraceae",
+  "names": {"en": "Breadfruit", "si": "Del", "ta": "Pilavu"},
+  "aliases": ["del", "pana", "pilavu", "ulu"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "duration_days": {"min": 1095, "max": 2190, "unit": "days (vegetative propagation 3–6 years to fruiting)"},
+  "expected_yield_kg_per_acre": {"min": 2225, "max": 12141, "unit": "kg/acre (5.5–30 t/ha across systems)"},
+  "description": {
+    "en": "Evergreen tree widely grown in Sri Lankan Low-country home gardens; boiled breadfruit is a staple main meal traditionally consumed with scraped coconut or coconut sambol, and curry preparations with coconut milk are common. Cultivated varieties are largely seedless; seeded breadfruit varieties are grown mainly for their edible seeds. Vegetatively propagated trees begin fruiting in 3–6 years. Yields vary from 5.5 t/ha (traditional agroforestry) up to 16–50 t/ha under orchard conditions; 150–250 fruit or 160–500 kg per tree per year typical."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_breadfruit", "source_url": "https://en.wikipedia.org/wiki/Breadfruit", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Artocarpus altilis"},
+    "duration_days": {"source_id": "cabi_breadfruit", "source_url": "https://www.cabidigitallibrary.org/doi/abs/10.1079/cabicompendium.1822", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vegetatively propagated trees start fruiting in 3–6 years"},
+    "expected_yield_kg_per_acre": {"source_id": "rg_breadfruit_marketing", "source_url": "https://www.researchgate.net/publication/237250411_Farm_and_Forestry_Production_and_Marketing_Profile_for_Breadfruit_Artocarpus_altilis", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Average fruit yield is 5.5 t/ha under traditional agroforestry system on the island of Pohnpei (Micronesia), and ranges as high as 16 to 50 t/ha under orchard conditions. Studies in Barbados indicate a reasonable potential of 15 to 30 t/ha", "review_notes": "5.5–30 t/ha → 2225–12141 kg/acre spread across management systems."},
+    "description": {"source_id": "wikipedia_breadfruit", "source_url": "https://en.wikipedia.org/wiki/Breadfruit", "fetched_at": "2026-04-17T00:00:00Z", "quote": "In Sri Lanka, breadfruit is cooked as a curry using coconut milk and spices (which becomes a side dish) or boiled, with boiled breadfruit being a famous main meal. It is often consumed with scraped coconut or coconut sambol"}
+  }
+}

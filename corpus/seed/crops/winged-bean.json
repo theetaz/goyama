@@ -1,0 +1,27 @@
+{
+  "slug": "winged-bean",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Psophocarpus tetragonolobus",
+  "family": "Fabaceae",
+  "names": {"en": "Winged bean", "si": "Dambala", "ta": "Dambala"},
+  "aliases": ["goa bean", "four-angled bean", "dambala"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "elevation_m": {"min": 0, "max": 2000, "unit": "m"},
+  "temperature_c": {"min": 18, "max": 32, "unit": "°C"},
+  "duration_days": {"min": 70, "max": 100, "unit": "days to first harvest"},
+  "spacing_cm": {"within_row": 60, "between_row": 75},
+  "seed_rate_kg_per_acre": 8.9,
+  "expected_yield_kg_per_acre": {"min": 6070, "max": 10926, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Psophocarpus tetragonolobus"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "up to 2000m from mean sea level"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Temperature range from 18 – 32 oC is suitable for better performance"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "First harvest occurs in 70-75 days for recommended varieties; local varieties may require up to 90-100 days"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "75 cm x 60 cm between rows and plants"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "21-23 kg /ha", "review_notes": "22 kg/ha midpoint → 8.9 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-winged-bean/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "SLS-44: 15-20 t/ha; Krishna: 27 t/ha", "review_notes": "15–27 t/ha → 6070–10926 kg/acre."}
+  }
+}

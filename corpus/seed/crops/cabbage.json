@@ -1,0 +1,57 @@
+{
+  "slug": "cabbage",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Brassica oleracea var. capitata",
+  "family": "Brassicaceae",
+  "names": {"en": "Cabbage", "si": "Gova", "ta": "Muttaikkos"},
+  "aliases": ["gova", "muttaikkos"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "duration_days": {"min": 90, "max": 110, "unit": "days after planting"},
+  "soil_ph": {"min": 6.0, "max": 6.5},
+  "spacing_cm": {"within_row": 40, "between_row": 50},
+  "seed_rate_kg_per_acre": 0.091,
+  "expected_yield_kg_per_acre": {"min": 16187, "max": 18211, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Brassica oleraceae Capitata group"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "90-110 days after planting"
+    },
+    "soil_ph": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Best pH range is 6-6.5"
+    },
+    "spacing_cm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "40 x 50 cm"
+    },
+    "seed_rate_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "200-250 g/ha",
+      "review_notes": "Midpoint 225 g/ha → 0.091 kg/acre."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-cabbage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "40-45 t/ha",
+      "review_notes": "40–45 t/ha → 16187–18211 kg/acre."
+    }
+  }
+}

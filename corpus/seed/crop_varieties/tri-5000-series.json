@@ -1,0 +1,20 @@
+{
+  "slug": "tri-5000-series",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tea",
+  "name": "TRI 5000 series (TRI 5001–5004)",
+  "released_by": "Tea Research Institute of Sri Lanka (TRI)",
+  "recommended_aez_codes": [],
+  "traits": {
+    "cultivar_set": "TRI 5001, TRI 5002, TRI 5003, TRI 5004",
+    "region": "Up-country tea growing region",
+    "disease_resistance": ["tea-blister-blight"],
+    "quality": "TRI 5001 and TRI 5002 produce high-quality black tea; TRI 5003 moderate quality",
+    "yield_advantage": "10–15% yield increase vs TRI 2000/3000/4000 series",
+    "notes": {"en": "Latest up-country clones: all four resistant to blister blight (the most severe up-country leaf disease)."}
+  },
+  "field_provenance": {
+    "traits": {"source_id": "sljts_tri_5000", "source_url": "https://sljts.sljol.info/articles/6/files/679c6814b373d.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "New tea cultivars recorded around 10-15% yield increase compared to existing TRI 2000, TRI 3000 and TRI 4000 series cultivars. All four tea cultivars are resistant to Blister Blight disease, the most severe leaf disease in the up-country. TRI 5001 and TRI 5002 cultivars produce high quality black tea and TRI 5003 cultivar produces moderate quality black tea"}
+  }
+}

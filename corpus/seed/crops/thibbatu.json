@@ -1,0 +1,19 @@
+{
+  "slug": "thibbatu",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Solanum torvum",
+  "family": "Solanaceae",
+  "names": {"en": "Turkey berry", "si": "Thibbatu", "ta": "Sundakkai"},
+  "aliases": ["devil's fig", "pea eggplant", "platebrush", "susumber"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "description": {
+    "en": "Bushy, erect, spiny perennial solanaceous shrub valued both as a specialty vegetable (green berries used in *thibbatu mallung*) and as a **resistant rootstock for grafting eggplant/tomato** for bacterial-wilt management in Sri Lanka. Currently under-utilised but recognised for its functional (Ayurvedic) benefits; one Mannar-District farmer produces ~6,000 kg/yr for organic specialty supermarket channels. Hardy, drought-tolerant, grows readily on marginal land with minimal inputs."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_thibbatu", "source_url": "https://en.wikipedia.org/wiki/Solanum_torvum", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Solanum torvum"},
+    "description": {"source_id": "taa_thibbatu", "source_url": "https://taa-international.org/thibbatu-or-turkey-berry-solanum-torvum/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Solanum torvum (thibbatu), also known as turkey berry, devil's fig, pea eggplant, platebrush or susumber, is a bushy, erect and spiny perennial plant used horticulturally as a rootstock for eggplant. A farmer in Mannar District is promoting thibbatu as a specialist organic vegetable, with plans for producing some 6,000 kg per year"}
+  }
+}

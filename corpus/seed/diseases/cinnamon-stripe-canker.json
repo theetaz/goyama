@@ -1,0 +1,27 @@
+{
+  "slug": "cinnamon-stripe-canker",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Phytophthora cinnamomi",
+  "names": {"en": "Cinnamon stripe canker"},
+  "aliases": ["cinnamon canker"],
+  "causal_organism": "fungal",
+  "causal_species": "Phytophthora cinnamomi (Oomycete — water-mould)",
+  "affected_crop_slugs": ["cinnamon"],
+  "affected_parts": ["stem"],
+  "transmission": ["soil_borne", "waterborne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Prevalent on ill-drained soils — waterlogging drives zoospore spread to young bark. Heavy shade + high planting density + poor weeding amplify disease."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "**Important disease affecting cinnamon stems in Sri Lanka** — the country's flagship spice crop. Symptoms: vertical stripes of dead bark, most numerous near ground level; up to **42% bark damage** in infested plantations. **Management per TARE review**: (a) **well-drained soils** to minimise disease incidence; (b) phytosanitation — remove and destroy affected parts, dress wounds with tar; (c) **soil application of sulphur**; (d) reduce excessive shade and dense planting; (e) proper pruning and weeding; (f) select tolerant accessions from ongoing DEA cinnamon germplasm trials."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "tare_cinnamon_diseases", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v10i0.1864", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Phytopthora cinnamomi causes stripe canker, which is an important disease affecting cinnamon stems in Sri Lanka"},
+    "description": {"source_id": "tare_cinnamon_diseases", "source_url": "https://tare.sljol.info/articles/10.4038/tare.v10i0.1864", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vertical stripes of dead bark are most numerous near ground level, and the disease is prevalent on ill-drained soils and causes up to 42% bark damage. For stripe canker management, well drainage is important to minimize disease incidence at a lower level, and phytosanitation such as removal and destruction of affected parts and wound dressing with tar have been recommended as management measures. Additionally, soil application of sulphur has been recommended for the control of this disease."}
+  }
+}

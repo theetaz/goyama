@@ -1,0 +1,25 @@
+{
+  "slug": "coconut-black-headed-caterpillar",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Opisina arenosella",
+  "names": {"en": "Coconut black-headed caterpillar"},
+  "aliases": ["BHC", "Opisina arenosella", "coconut caterpillar", "Nephantis serinopa (legacy)"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["coconut"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 25, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Drought stress and continuous coconut monocrop with uncleaned fallen debris amplify outbreaks. Cyclical population dynamics with natural-enemy crash phases."
+    }
+  },
+  "description": {
+    "en": "**Officially declared a pest of coconut in Sri Lanka in 1924**, making it among the longest-regulated insect pests on record — outbreaks were legally reportable to the agricultural authority from that date. The Coconut Research Institute (CRI) became the leading authority in 1956 and documented outbreaks 1965–1985. First described in India and Sri Lanka in the mid-19th century. Larvae feed gregariously on the underside of coconut fronds, spinning silken galleries and consuming parenchyma between veins; severe infestation causes scorched brown appearance to the canopy, reduced photosynthesis, delayed flowering and up to 45% nut-yield loss in outbreak years. **CRI management emphasises non-chemical IPM** — crop diversification under coconut, pheromone-based monitoring, and native/introduced natural enemies (parasitoid wasps *Goniozus nephantidis* and *Bracon brevicornis*, predators, entomopathogenic fungi). Chemical control is a last resort due to pollinator and natural-enemy risk."
+  },
+  "field_provenance": {
+    "description": {"source_id": "pmc_opisina", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10084852/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Opisina arenosella was officially declared a pest in Sri Lanka in 1924, when it became a legal requirement to report any outbreaks to the agricultural authority. The Coconut Research Institute (CRI) became the leading agricultural authority in 1956, and have documents of all reported outbreaks between 1965 & 1985. Opisina arenosella was first described in India and Sri Lanka during the mid-19th century. For Opisina arenosella, the work primarily focuses on non-chemical integrated pest management (IPM) methods and prevention strategies. These include crop diversification, pheromone-based monitoring and the use of (native, exotic) natural enemies for BHC biological control."}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "rath-suwandel",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Rath Suwandel (Rath Heenati)",
+  "released_by": "Traditional heirloom (Sri Lanka)",
+  "recommended_aez_codes": [],
+  "traits": {
+    "category": "traditional_heirloom",
+    "grain_shape": "medium",
+    "pericarp_color": "red",
+    "nutrition": "high in protein and zinc",
+    "traditional_use": "diabetes and oxidative stress management in traditional medicine",
+    "notes": {"en": "Adapted to both Dry and Wet zones; high-protein high-zinc red rice used in Ayurveda for diabetes support."}
+  },
+  "field_provenance": {
+    "traits": {"source_id": "ceylon_digest_heirloom", "source_url": "https://www.ceylondigest.com/traditional-rice-varieties-of-sri-lanka/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Rath suwandel is a crop cultivated in both the dry and wet zones. It has red, medium-sized grains which are high in protein and zinc, and in traditional medicine, it is used for the treatment of diabetes and oxidative stress."}
+  }
+}

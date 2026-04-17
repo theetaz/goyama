@@ -1,0 +1,25 @@
+{
+  "slug": "pineapple",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Ananas comosus",
+  "family": "Bromeliaceae",
+  "names": {"en": "Pineapple", "si": "Annasi", "ta": "Annasi"},
+  "aliases": ["annasi"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "rainfall_mm": {"min": 1500, "max": 3000, "unit": "mm"},
+  "temperature_c": {"min": 24, "max": 32, "unit": "°C"},
+  "soil_ph": {"min": 5.0, "max": 6.0},
+  "duration_days": {"min": 360, "max": 600, "unit": "days to natural flowering"},
+  "expected_yield_kg_per_acre": {"min": 6475, "max": 10117, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ananascomosus", "review_notes": "DOA runs together; accepted binomial is 'Ananas comosus'."},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "annual rainfall of 1500-3000 mm"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Temperature 24- 32 0C most favorable"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Well drained Sandy Loams soil with pH 5 – 6 is most suitable"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Root/axil suckers require 12-14 months to natural flowering; crowns need 18-20 months"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-pineapple-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Mauritius: 1.5-1.8 kg avg fruit, 16 mt/ha; Kew: 2-2.5 kg avg fruit, 25 mt/ha", "review_notes": "16–25 t/ha → 6475–10117 kg/acre."}
+  }
+}

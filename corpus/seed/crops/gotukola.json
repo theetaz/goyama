@@ -1,0 +1,24 @@
+{
+  "slug": "gotukola",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Centella asiatica",
+  "family": "Apiaceae",
+  "names": {"en": "Gotu kola", "si": "Gotukola", "ta": "Vallarai"},
+  "aliases": ["gotukola", "Asiatic pennywort", "spadeleaf", "vallarai"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "creeper",
+  "soil_ph": {"min": 6.0, "max": 7.0},
+  "duration_days": {"min": 100, "max": 100, "unit": "days to first harvest"},
+  "expected_yield_kg_per_acre": {"min": 40468, "max": 50585, "unit": "kg/acre (scaled from DOA 100 m² benchmark)"},
+  "description": {
+    "en": "Signature Sri Lankan leafy green, the primary ingredient of **gotukola sambol** and **kola kenda** (herbal porridge). The DOA HORDI recommends the low-country wet zone with irrigation as most suitable; well-drained lowlands preferred. Two forms exist: small creeping form and erect bushy form with large leaves and petioles — **the erect large-leaf form is the most commonly cultivated** and **Meerigama selection** is the favoured medium-leaf commercial type. Propagated by partially matured healthy runners with roots. DOA benchmark: **1,000–1,250 kg from 100 m² (¼ acre)** = ~40–50 t/ha. First harvest within 100 days of planting."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-gotukola/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Centella asiatica"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-gotukola/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The suitable soil pH range is 6-7"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-gotukola/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "first harvest can be obtained within 100 days from the date of planting"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-gotukola/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1000-1250 kg of gotukola harvest can be obtained from 100 m² (1/4 ac) field", "review_notes": "Quoted as 1000–1250 kg per 100 m². If 100 m² ≈ ¼ acre per DOA, that implies 4000–5000 kg/acre — but 100 m² is actually 0.025 acre, so scaling is ambiguous; stored upper-bound using DOA's own 100 m² ≈ ¼ ac rendering → 40468–50585 kg/acre. Needs agronomist check against actual acre area."}
+  }
+}

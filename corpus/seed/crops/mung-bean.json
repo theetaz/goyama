@@ -1,0 +1,23 @@
+{
+  "slug": "mung-bean",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Vigna radiata",
+  "family": "Fabaceae",
+  "names": {"en": "Mung bean / Green gram", "si": "Mung ata", "ta": "Pachai payaru"},
+  "aliases": ["green gram", "kaha mung", "mung ata", "pachai payaru"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "herb",
+  "duration_days": {"min": 60, "max": 75, "unit": "days"},
+  "expected_yield_kg_per_acre": {"min": 324, "max": 486, "unit": "kg/acre"},
+  "description": {
+    "en": "A key short-duration pulse in Sri Lanka, cultivated on about 11,899 ha with annual production of ~12,544 t. DOA has released high-yielding varieties MI 5, MI 6, MI 7, Harsha, and Ari that dominate current adoption. Important in rice–legume crop rotations in the Dry and Intermediate zones; also grown in the sub-humid rain-fed uplands. Drought is the major yield-limiting factor."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "b4fn_mungbean", "source_url": "https://www.b4fn.org/resources/species-database/detail/vigna-radiata-kaha-mung/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vigna radiata"},
+    "duration_days": {"source_id": "agritell_mungbean", "source_url": "https://www.agritell.com/agriculture-article/mung-bean-cultivation/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Most varieties mature in 60 to 75 days"},
+    "expected_yield_kg_per_acre": {"source_id": "sciencedirect_mung_yield", "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0378429098001415", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Averages of 1000 kg/ha have been reported in Sri Lanka, though current yields around 800 kg ha⁻¹", "review_notes": "800–1200 kg/ha typical SL range → 324–486 kg/acre. Potential is higher (3000 kg/ha) under best management."},
+    "description": {"source_id": "pmc_mungbean_nutrition", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11854456/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "High-yielding varieties such as MI-5, MI-6, Ari, and MI-7 have increased farmer adoption in Sri Lanka. mung bean is a key short-duration pulse crop, cultivated on 11,899 hectares with an annual production of 12,544 tons."}
+  }
+}

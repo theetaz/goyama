@@ -1,0 +1,25 @@
+{
+  "slug": "sugarcane-internode-borer",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Chilo sacchariphagus indicus",
+  "names": {"en": "Sugarcane internode borer"},
+  "aliases": ["Chilo sacchariphagus", "sugarcane stem borer"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["sugarcane"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["boring"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Severe in Sri Lanka's Eastern Province (Ampara) sugarcane plantations since 2016 with increasing infestation trend."
+    }
+  },
+  "description": {
+    "en": "A major sugarcane borer in Sri Lanka — attacks both plant cane and ratoon crops. Larvae bore into internodes, hollowing stems and reducing cane quality and sugar recovery. Alongside *Sesamia inferans* (shoot borer) it is a principal borer pest of SRI-registered sugarcane. **Management**: (a) **Fipronil 0.3% granular (Prince) at 18 kg/ha** — Sri Lankan field trials showed significant effectiveness against internode borer; (b) **Chlorantraniliprole 0.4% w/w G** effective on shoot and stalk damage in both plant and ratoon crops; (c) sex-pheromone trapping — SRI + international collaboration 2019–20 optimised Sri Lankan trap design; (d) *Trichogramma chilonis* egg parasitoid releases; (e) sanitation — destroy infested stubble after harvest; (f) resistant-variety selection."
+  },
+  "field_provenance": {
+    "description": {"source_id": "rg_sugarcane_borer_granular", "source_url": "https://www.researchgate.net/publication/399595187_Efcacy_of_a_Granular_Insecticide_for_the_Management_of_Borer_Pests_of_Sugarcane_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sugarcane borers (Chilo sacchariphagus indicus and Sesamia inferans) are a major pest group in sugarcane in Sri Lanka. Chilo sacchariphagus (Internode Borer) causes severe damage to the sugarcane crop and an increasing trend of infestation has been recorded in sugarcane plantations in Ampara district in Eastern province of Sri Lanka since 2016. Chlorantraniliprole 0.4% (w/w) G showed a significant effect on shoot and stalk damages due to borers during both plant and ratoon crops compared to the control."},
+    "favored_conditions": {"source_id": "springer_fipronil_sri_lanka", "source_url": "https://link.springer.com/article/10.1007/s12355-008-0030-0", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Fipronil in its granular form of Prince at the recommended dosage of 18kg/ha is most suitable for controlling the internode borer Chilo sacchariphagus"}
+  }
+}

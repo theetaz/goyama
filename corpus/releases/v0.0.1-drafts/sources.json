@@ -1,0 +1,63 @@
+{
+  "sources": [
+    {
+      "id": "doa",
+      "display_name": "Department of Agriculture, Sri Lanka",
+      "homepage_url": "https://doa.gov.lk/",
+      "licence": "Government of Sri Lanka (attribution required; per-document terms vary)",
+      "robots_checked_at": "2026-04-17T00:00:00Z",
+      "rate_per_sec": 1.0,
+      "notes": "Primary authoritative source — includes RRDI, HORDI, FCRDI, FRDI sub-sites."
+    },
+    {
+      "id": "agrimin",
+      "display_name": "Ministry of Agriculture, Sri Lanka",
+      "homepage_url": "https://www.agrimin.gov.lk/",
+      "licence": "Government of Sri Lanka (attribution required)",
+      "robots_checked_at": "2026-04-17T00:00:00Z",
+      "rate_per_sec": 1.0,
+      "notes": "Policy, variety-release announcements, advisory broadcasts."
+    },
+    {
+      "id": "dea",
+      "display_name": "Department of Export Agriculture, Sri Lanka",
+      "homepage_url": "https://dea.gov.lk/",
+      "licence": "Government of Sri Lanka (attribution required)",
+      "robots_checked_at": "2026-04-17T00:00:00Z",
+      "rate_per_sec": 1.0,
+      "notes": "Authoritative for spice crops — cinnamon, pepper, cardamom, cloves, nutmeg, ginger, turmeric, coffee, cocoa, vanilla."
+    },
+    {
+      "id": "wikipedia",
+      "display_name": "Wikipedia",
+      "homepage_url": "https://en.wikipedia.org/",
+      "licence": "CC-BY-SA 4.0",
+      "rate_per_sec": 1.0,
+      "notes": "Used for general-knowledge framing only (taxonomy, summaries); never overrides Sri Lanka-specific sources."
+    },
+    {
+      "id": "cbd_chm_lk",
+      "display_name": "Sri Lanka Biodiversity — CBD Clearing House Mechanism",
+      "homepage_url": "https://lk.chm-cbd.net/",
+      "licence": "Government of Sri Lanka (attribution required)",
+      "rate_per_sec": 1.0,
+      "notes": "Authoritative for climatic/ecological zones and biodiversity context."
+    },
+    {
+      "id": "edb_lk",
+      "display_name": "Export Development Board of Sri Lanka",
+      "homepage_url": "https://www.srilankabusiness.com/",
+      "licence": "Government of Sri Lanka (attribution required)",
+      "rate_per_sec": 1.0,
+      "notes": "Commercial and production overview content — spices, fruits."
+    },
+    {
+      "id": "fao_gaez",
+      "display_name": "FAO GAEZ v4 Data Portal",
+      "homepage_url": "https://gaez.fao.org/",
+      "licence": "Free for non-commercial use; CC-BY 4.0 in many datasets",
+      "rate_per_sec": 1.0,
+      "notes": "Agro-ecological regions and global suitability layers; baseline only — Sri Lankan NRMC sources override."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "durian",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Durio zibethinus",
+  "family": "Malvaceae",
+  "names": {"en": "Durian", "si": "Duriyan", "ta": "Durian"},
+  "aliases": ["duriyan"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "elevation_m": {"min": 50, "max": 600, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 7.0},
+  "duration_days": {"min": 1460, "max": 1825, "unit": "days to first bearing (grafted 4–5 years)"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-duriyan-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Duriozibethius Murray", "review_notes": "DOA runs together; accepted binomial is 'Durio zibethinus'."},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-duriyan-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "මීටර් 50 – 600 දක්වා (50-600 meters)"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-duriyan-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Soil pH should ideally exceed 5.5"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-duriyan-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Grafted plants can produce fruit within 4-5 years"}
+  }
+}

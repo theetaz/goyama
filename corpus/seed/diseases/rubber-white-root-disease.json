@@ -1,0 +1,28 @@
+{
+  "slug": "rubber-white-root-disease",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Rigidoporus microporus",
+  "names": {"en": "Rubber white root disease"},
+  "aliases": ["WRD", "white root rot"],
+  "causal_organism": "fungal",
+  "causal_species": "Rigidoporus microporus (basidiomycete)",
+  "affected_crop_slugs": ["rubber"],
+  "affected_parts": ["root", "whole_plant"],
+  "transmission": ["soil_borne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "notes": {
+      "en": "Warm, humid Wet-Zone conditions favour persistence. Fungus spreads via root-to-root contact from infected stumps, decaying wood, and rhizomorphs through soil."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "The most destructive root disease in rubber plantations across Sri Lanka, India, Indonesia, Malaysia, Thailand and West/Central Africa. The white mycelial mat fans out over infected roots — characteristic 'boot-lace' rhizomorphs visible when the soil is scraped. Above-ground symptoms: leaves slowly lose gloss, turn yellowish then orange-brown, become leathery and curve downward, then leaf fall and die-back. Management by RRISL follows a tiered IPM strategy: (a) site preparation — remove old stumps and infected wood before replanting; (b) host-plant resistance — screen and select resistant RRIC / RRIM clones (RRIM 2002, RRIM 2024 under study with soluble-silicon supplementation); (c) **biological control** with *Trichoderma* isolates from local rubber-soil populations, antagonistic to *R. microporus*; (d) chemical trunk-paint on exposed collars; (e) rogue and destroy to interrupt rhizomorph spread."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "wikipedia_rigidoporus", "source_url": "https://en.wikipedia.org/wiki/Rigidoporus_microporus", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Rigidoporus microporus"},
+    "description": {"source_id": "rrisl_wrd", "source_url": "http://www.rrisl.gov.lk/content/files/downDoc/10.%20Management%20of%20White%20Root%20Disease.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Symptoms on leaves of infected rubber trees develop as slightly off-green discoloration losing glossy appearance which eventually turns yellowish, mature leaves become leathery and curve downward, and at later stages, leaves become orange-brownish and fall off causing die-back"},
+    "favored_conditions": {"source_id": "rg_trichoderma_rubber", "source_url": "https://journals.sjp.ac.lk/index.php/fesympo/article/view/5103", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Trichoderma isolates obtained from rubber growing soils were found antagonistic against R. microporus"}
+  }
+}

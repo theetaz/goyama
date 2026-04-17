@@ -1,0 +1,23 @@
+{
+  "slug": "vanilla",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Vanilla planifolia",
+  "family": "Orchidaceae",
+  "names": {"en": "Vanilla", "si": "Vanilla", "ta": "Vanilla"},
+  "aliases": ["Bourbon vanilla", "Ceylon vanilla"],
+  "category": "spice",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "elevation_m": {"min": 0, "max": 1000, "unit": "m"},
+  "rainfall_mm": {"min": 2000, "max": 2500, "unit": "mm"},
+  "description": {
+    "en": "Climbing orchid producing the world-renowned Bourbon-type vanilla bean. In Sri Lanka: ~2,000 farmers engaged across **Kandy, Matale, Nuwara Eliya, Kegalle, Ratnapura, Badulla, Galle** districts. Grows best at <1000 m above sea level under mild temperatures, 2,000–2,500 mm rainfall, shaded from direct sunlight (grown on support trees). Hand pollination is required — flowers open for ~24 h. No specific Sri Lankan varieties have been identified; planting material is taken from traditionally grown vines. Beans mature in ~9 months post-pollination, then require traditional 3–6 month curing (sweating-and-drying cycles)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "dea_vanilla", "source_url": "https://dea.gov.lk/vanilla/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vanilla Planifolia"},
+    "elevation_m": {"source_id": "edb_vanilla", "source_url": "https://www.srilankabusiness.com/spices/vanilla.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vanilla grows well in 1000m above sea level in Sri Lanka, under mild temperature and 2000-2500 mm rainfall"},
+    "rainfall_mm": {"source_id": "edb_vanilla", "source_url": "https://www.srilankabusiness.com/spices/vanilla.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "2000-2500 mm rainfall"},
+    "description": {"source_id": "edb_vanilla", "source_url": "https://www.srilankabusiness.com/spices/vanilla.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Around 2000 farmers in Kandy, Matale, Nuwara Eliya, Kegalle, Ratnapura, Badulla and Galle are engaged in the cultivation of Vanilla in Sri Lanka. No specific varieties have been identified in Sri Lanka and planting material is taken from traditionally grown vines."}
+  }
+}

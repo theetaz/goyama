@@ -1,0 +1,33 @@
+{
+  "slug": "rice-blast-tricyclazole",
+  "version": 1,
+  "status": "draft",
+  "type": "chemical",
+  "target_disease_slugs": ["rice-blast"],
+  "applicable_crop_slugs": ["rice"],
+  "name": {"en": "Tricyclazole 75% WP foliar spray for rice blast"},
+  "description": {
+    "en": "Melanin-biosynthesis inhibitor specific for rice blast; penetrant with short systemic movement."
+  },
+  "instructions": {
+    "en": "Dissolve 10 g in 16 l of water; apply 8–10 tanks per acre."
+  },
+  "chemical": {
+    "active_ingredient": "Tricyclazole",
+    "concentration": "75%",
+    "formulation": "WP",
+    "dosage": "10 g per 16 l tank; 8–10 tanks per acre",
+    "application_method": "foliar_spray",
+    "pre_harvest_interval_days": 30,
+    "safety_notes": {
+      "en": "PHI placeholder — verify against current ORP registration. Wear PPE during mixing and application. Avoid drift."
+    }
+  },
+  "effectiveness": "high",
+  "cost_tier": "medium",
+  "organic_compatible": false,
+  "field_provenance": {
+    "instructions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tricyclazole 75% WP: dissolve 10 g in 16 l of water (8-10 tanks per acre)"},
+    "chemical": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tricyclazole 75% WP: dissolve 10 g in 16 l of water (8-10 tanks per acre)", "review_notes": "PHI 30 days is conservative placeholder; requires agronomist verification before publish."}
+  }
+}

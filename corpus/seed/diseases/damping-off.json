@@ -1,0 +1,28 @@
+{
+  "slug": "damping-off",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pythium spp. / Rhizoctonia solani / Phytophthora spp.",
+  "names": {"en": "Damping-off"},
+  "aliases": ["seedling blight", "nursery wilt"],
+  "causal_organism": "fungal",
+  "causal_species": "Pythium spp. (primary), Rhizoctonia solani, Phytophthora spp., Fusarium spp.",
+  "affected_crop_slugs": ["tomato", "brinjal", "ela-batu", "chilli", "capsicum", "cabbage", "cauliflower", "knol-khol", "leeks", "big-onion"],
+  "affected_parts": ["stem", "root", "seed"],
+  "transmission": ["soil_borne", "seed_borne", "waterborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 15, "max": 25, "unit": "°C"},
+    "notes": {
+      "en": "Wet, poorly drained nursery beds, cool-to-moderate temperatures, dense seedling stands, and excessive irrigation all favour outbreaks. Can cause 60% seedling loss in solanaceous crops."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Death of seedlings either before emergence (pre-emergence damping-off: seed and seedling rot before soil surface) or shortly after (post-emergence: young seedlings fall over with dark, shrivelled stem at the soil line). Primary threat in nursery beds for solanaceous vegetables (tomato, brinjal, chilli, capsicum) and brassicas. Management: (a) soil solarisation — cover moist nursery beds with 250-gauge polythene for 30 days pre-sowing; (b) Trichoderma viride 1.2 kg/ha soil application; (c) seed treatment with Captan 50% WP at 4 g/kg seed or Thiophanate-methyl 50% + Thiram 30% WP at 4 g/kg; (d) Thiophanate-methyl 70% WP as nursery soil drench; (e) raised beds with good drainage; minimise irrigation; avoid dense seeding."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "ipm_ucanr", "source_url": "https://ipm.ucanr.edu/agriculture/tomato/damping-off/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The disease is caused by Phytophthora spp., Pythium spp., and Rhizoctonia spp."},
+    "description": {"source_id": "rg_pythium_damping", "source_url": "https://www.researchgate.net/publication/379404184_Pythium-induced_damping-off_disease_and_its_management_in_tomato_Solanum_lycopersicum_L_A_review", "fetched_at": "2026-04-17T00:00:00Z", "quote": "About 60% losses at seedling stage in both nursery and field level have been reported due to damping off disease in tomato, chilli and brinjal caused by Pythium species. Seed treatment options include Captan 50% WP (4 g/Kg of seeds) and Thiophanate Methyl; 50%+Thiram 30% WP (4 g/kg of seeds). Soil solarization by spreading 250 gauge polythene sheet over the bed for 30 days before sowing and application of bio-control agent Trichoderma viride in soil @ 1.2kg/ha is found effective"}
+  }
+}

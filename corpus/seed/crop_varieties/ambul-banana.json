@@ -1,0 +1,20 @@
+{
+  "slug": "ambul-banana",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "banana",
+  "name": "Ambul",
+  "released_by": "Traditional Sri Lankan cultivar (Mysore group)",
+  "traits": {
+    "group": "Mysore group",
+    "fruit_size": "small, petite, slender, sharp-ended",
+    "pericarp_color": "thin yellow",
+    "flavor": "slightly sour + sweet, pungent aroma",
+    "sugar_content_g_100g": 36.4,
+    "notes": {"en": "Highest sugar content among SL banana cultivars measured (36.4 g/100g). Famous for the distinctive slightly-sour sweet balance."}
+  },
+  "field_provenance": {
+    "traits": {"source_id": "rg_banana_nutritional", "source_url": "https://www.researchgate.net/publication/331356258_Evaluation_of_the_Nutritional_Value_of_Selected_Banana_Varieties_Grown_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ambul cultivar recorded the highest sugar content (36.4 ± 1.69 g/100 g)"},
+    "group": {"source_id": "exploresl_banana", "source_url": "https://exploresrilanka.lk/the-bountiful-banana/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Sri Lankan banana varieties can be divided into three main groups: the mysore, the kolikuttu, and the Cavendish. Examples of banana varieties coming within the mysore group are the ambul and seeni bananas"}
+  }
+}

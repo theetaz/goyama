@@ -1,0 +1,24 @@
+{
+  "slug": "tea-tortrix",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Homona coffearia",
+  "names": {"en": "Tea tortrix"},
+  "aliases": ["Homona coffearia", "tea leaf roller"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["tea"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "low",
+    "notes": {
+      "en": "Seasonal pest — larvae damage accelerates during dry weather when natural-enemy population crashes. Worst in up-country and Uva regions."
+    }
+  },
+  "description": {
+    "en": "**Economically important pest of tea in Sri Lanka's up-country and Uva regions** (TRI Talawakelle advisory). Larvae fold young tea leaves with silk and feed inside, causing plucking-yield loss during dry seasons. The parasitoid **Macrocentrus homonae** (Braconidae) has historically provided effective biological control, but **hyperparasitism rates of 35–52%** on *Macrocentrus* in recent Sri Lankan plantation surveys have eroded its impact. Current IPM per TRI: (a) regular and hard plucking to physically remove larval generations; (b) selective insecticides in hot-spot plantations; (c) monitoring for hyperparasite pressure on *Macrocentrus*; (d) emerging alternative insecticides under evaluation."
+  },
+  "field_provenance": {
+    "description": {"source_id": "scirp_tortrix", "source_url": "https://www.scirp.org/journal/paperinformation?paperid=55295", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tea tortrix, Homona coffearia Nietner (Lepidoptera: Tortricidae), is a seasonal pest of tea in Sri Lanka. It is an economically important insect pest of tea in the regions of up country and Uva regions in Sri Lanka, with larvae feeding on young tea leaves of pluckable tea shoots and causing considerable yield loss during dry weather. The parasite, Macrocentrus homonae Nixon (Hymenoptera: Braconidae), controls the tortrix populations, but the efficiency of Macrocentrus has been reduced on account of hyperparasites in recent times. Hyperparasitism levels varied during study periods, with average values observed ranging from 35% to 52%"}
+  }
+}

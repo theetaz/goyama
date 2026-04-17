@@ -1,0 +1,23 @@
+{
+  "slug": "knol-khol",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Brassica oleracea var. gongylodes",
+  "family": "Brassicaceae",
+  "names": {"en": "Knol-khol (Kohlrabi)", "si": "Knol-khol", "ta": "Knol-khol"},
+  "aliases": ["kohlrabi", "turnip cabbage"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "soil_ph": {"min": 5.5, "max": 5.5},
+  "duration_days": {"min": 50, "max": 60, "unit": "days after transplant"},
+  "spacing_cm": {"within_row": 10, "between_row": 30},
+  "seed_rate_kg_per_acre": 0.237,
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-knol-khol/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Brassica oleraceae var. gongylodes"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-knol-khol/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "around 5.5", "review_notes": "DOA also recommends lifting pH to 7.1–7.2 with agricultural lime for club-root management."},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-knol-khol/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Harvest can be taken around 50 – 60 days after transplant"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-knol-khol/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "30 cm between rows, 10 cm within rows"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-knol-khol/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Short varieties: 600-750 g/ha; long varieties: 375-400 g/ha", "review_notes": "0.6–0.75 kg/ha short varieties → ~0.237 kg/acre midpoint (375–400 g/ha would be 0.151)."}
+  }
+}

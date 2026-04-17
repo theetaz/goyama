@@ -1,0 +1,29 @@
+{
+  "slug": "bacterial-wilt",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Ralstonia solanacearum",
+  "names": {"en": "Bacterial wilt"},
+  "aliases": ["southern wilt", "Pseudomonas solanacearum (legacy)"],
+  "causal_organism": "bacterial",
+  "causal_species": "Ralstonia solanacearum",
+  "affected_crop_slugs": ["tomato", "brinjal", "ela-batu", "capsicum", "chilli", "potato", "ginger", "snake-gourd", "winged-bean"],
+  "affected_parts": ["stem", "root", "whole_plant"],
+  "transmission": ["soil_borne", "waterborne", "mechanical", "seed_borne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 24, "max": 35, "unit": "°C"},
+    "notes": {
+      "en": "Wet, warm conditions and continuous cropping with solanaceous plants build up soil inoculum. Wounds during transplanting or cultivation provide entry points."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "A devastating soil-borne bacterial disease. Rapid wilting of entire plant without yellowing; cut stems ooze milky-white bacterial slime in clean water. Causes 20–60% yield loss in brinjal and up to 90% in tomato in Sri Lanka. No chemical control; managed through resistant varieties (e.g., Lanka Sour rootstock for grafting HORDI Tomato hybrid 03), grafting, biological control (Trichoderma asperellum, Bordeaux mixture), crop rotation with non-hosts, and field sanitation."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-ela-batu/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Bacterial wilt is the primary concern. There is no chemical control for this disease"},
+    "description": {"source_id": "researchgate_wilt", "source_url": "https://www.researchgate.net/publication/326125730_Wilt_diseases_of_tomato_Lycopersicum_esculentum_and_chilli_Capsium_annum_and_their_management_strategies_Emphasis_on_the_strategies_employed_in_Sri_Lanka_A_review", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Bacterial wilt caused by Ralstonia solanacearum is a major soil-borne disease of brinjal cultivation in Sri Lanka, with overall yield losses ranging from 20-60%. For tomato, bacterial wilt is one of the most devastating diseases causing up to 90% of yield loss in Sri Lanka."},
+    "favored_conditions": {"source_id": "researchgate_wilt", "source_url": "https://www.researchgate.net/publication/326125730_Wilt_diseases_of_tomato_Lycopersicum_esculentum_and_chilli_Capsium_annum_and_their_management_strategies_Emphasis_on_the_strategies_employed_in_Sri_Lanka_A_review", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Tomato bacterial wilt is successfully managed through usage of resistant cultivars, grafting, biological control agents"}
+  }
+}

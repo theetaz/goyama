@@ -1,0 +1,27 @@
+{
+  "slug": "bg-450",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "rice",
+  "name": "Bg 450",
+  "released_by": "RRDI",
+  "release_year": 1985,
+  "duration_days": 125,
+  "expected_yield_kg_per_acre": {"min": 2145, "max": 2145, "unit": "kg/acre"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "grain_shape": "short round",
+    "pericarp_color": "white",
+    "amylose": "high",
+    "disease_resistance": ["gall-midge"],
+    "disease_susceptibility": ["blast"],
+    "recommendation": "General cultivation",
+    "pedigree": "Bg 12-1#2 / IR 42"
+  },
+  "field_provenance": {
+    "release_year": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg450/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1985"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg450/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "125 days"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg450/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "5.3 tons per hectare", "review_notes": "5.3 t/ha → 2145 kg/acre."},
+    "traits": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_rice_bg450/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "susceptibility to blast; moderate resistance/susceptibility to bacterial leaf blight and brown planthopper; resistant to gall midge"}
+  }
+}

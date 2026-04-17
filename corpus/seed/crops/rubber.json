@@ -1,0 +1,21 @@
+{
+  "slug": "rubber",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Hevea brasiliensis",
+  "family": "Euphorbiaceae",
+  "names": {"en": "Rubber", "si": "Rabar", "ta": "Rubber"},
+  "aliases": ["natural rubber", "Pará rubber tree"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "expected_yield_kg_per_acre": {"min": 1214, "max": 1214, "unit": "kg/acre/year dry rubber (current productivity ~3000 kg/ha/yr)"},
+  "description": {
+    "en": "Major plantation crop concentrated in the Wet Zone (Ratnapura, Kegalle, Kalutara, Galle, Kandy districts). The Rubber Research Institute of Sri Lanka (RRISL) began clonal breeding in 1932 and has released numerous RRIC-series clones. 2002 variety composition: PB 86 (43% — foreign clone), RRIC 100 (24%), RRIC 121 (6%). More recent clones (RRIC 121, RRISL 2000 series) are increasingly used for new planting and replanting. Productivity has increased to about 3,000 kg/ha/year. Wintering (natural leaf fall) is December–February; flowering and flushing follow in March. Common tapping systems: S/2 d2, d3, d4, or d6 (half-spiral tapping every 2/3/4/6 days)."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_rubber", "source_url": "https://en.wikipedia.org/wiki/Rubber_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Hevea brasiliensis"},
+    "expected_yield_kg_per_acre": {"source_id": "wikipedia_rubber", "source_url": "https://en.wikipedia.org/wiki/Rubber_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The productivity of these clones has been on a gradual increase up to about 3000 kg/ha/year", "review_notes": "3000 kg/ha/yr → ~1214 kg/acre/yr dry rubber."},
+    "description": {"source_id": "wikipedia_rubber", "source_url": "https://en.wikipedia.org/wiki/Rubber_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The variety PB 86 predominates but clones of the RRIC 100 series such as RRIC 121 and RRISL 2000 series developed by the Rubber Research Institute are increasingly used in new and replanting. According to statistics from 2002, the clone composition in Sri Lanka was dominated by the foreign clone PB 86 (43%) followed by RRIC 100 (24%) and RRIC 121 (6%)"}
+  }
+}

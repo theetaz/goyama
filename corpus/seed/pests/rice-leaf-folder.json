@@ -1,0 +1,25 @@
+{
+  "slug": "rice-leaf-folder",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Cnaphalocrocis medinalis",
+  "names": {"en": "Rice leaf folder", "si": "Kola hakulana dalabuwa", "ta": "Ilaimadichikkatti"},
+  "aliases": ["RLF", "rice leaf roller"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["chewing"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 25, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Warm, wet, shaded canopies (high N, dense stands) favour outbreaks. Broad-spectrum insecticide overuse eliminates *Trichogrammatoidea* parasitoids and triggers resurgence."
+    }
+  },
+  "description": {
+    "en": "**A major rice pest in Sri Lanka, affecting ~10% of the rice crop annually.** Larvae fold a rice leaf lengthwise around themselves with silk threads and scrape chlorophyll from inside, creating long whitish-translucent streaks. Severe infestation in booting to flowering stage reduces yield significantly. **DOA (2010) recommends Methoxyfenozide 240 g/L SC**; biological control is preferred — the egg parasitoid *Trichogrammatoidea bactrae* is present in Sri Lankan rice fields and destroys the pest at the egg stage. Integrated management: healthy cultivation (avoid excess N), ecological regulation (preserve natural enemies), behavioural regulation (pheromone monitoring), selective insecticide application only at damage threshold."
+  },
+  "field_provenance": {
+    "description": {"source_id": "rg_rlf_sri_lanka", "source_url": "https://www.researchgate.net/publication/365734328_Leaf_folder_on_rice-Sri_Lanka_Cnaphalocrocis_medinalis_Sinhala_-_Kola_hakulana_dalabuwa_Tamil_-_Ilaimadichikkatti", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Rice leaf folder, Cnaphalocrocis medinalis is a major pest in many rice growing areas of Sri Lanka. In Sri Lanka, 10% of rice crop is affected annually by the RLF. Trichogrammatoidea bactrae present in rice fields in Sri Lanka is an egg parasitoid of rice leaf folder."}
+  }
+}

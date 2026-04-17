@@ -1,0 +1,58 @@
+{
+  "slug": "bitter-gourd",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Momordica charantia",
+  "family": "Cucurbitaceae",
+  "names": {"en": "Bitter gourd", "si": "Karawila", "ta": "Paagal"},
+  "aliases": ["bitter melon", "karawila", "paagal"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "vine",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 1200, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "spacing_cm": {"within_row": 100, "between_row": 150},
+  "seed_rate_kg_per_acre": 2.428,
+  "expected_yield_kg_per_acre": {"min": 8094, "max": 12141, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Momordica Charantia"
+    },
+    "elevation_m": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Can be successfully cultivated up to above 1200 m of sea the level"
+    },
+    "soil_ph": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "5'5 – 7'5"
+    },
+    "spacing_cm": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "1.5 m x 1 m"
+    },
+    "seed_rate_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "6 kg/ha",
+      "review_notes": "6 kg/ha → 2.428 kg/acre."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Average 20 t/ha for OP varieties and 20-30 t/ha for hybrid variety",
+      "review_notes": "20–30 t/ha → 8094–12141 kg/acre."
+    }
+  }
+}

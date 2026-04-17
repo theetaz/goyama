@@ -1,0 +1,25 @@
+{
+  "slug": "kiriala",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Xanthosoma sagittifolium",
+  "family": "Araceae",
+  "names": {"en": "Kiriala (Tannia)", "si": "Kiriala", "ta": "Kiriala"},
+  "aliases": ["tannia", "new cocoyam", "yautia"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "herb",
+  "rainfall_mm": {"min": 1500, "max": 1500, "unit": "mm (approx annual)"},
+  "soil_ph": {"min": 5.5, "max": 6.5},
+  "duration_days": {"min": 240, "max": 300, "unit": "days"},
+  "spacing_cm": {"within_row": 100, "between_row": 100},
+  "expected_yield_kg_per_acre": {"min": 5666, "max": 6070, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Xanthosoma sagittifolium"},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "approximately 1,500mm annual rainfall"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "preferred pH level range is 5.5 -6.5"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "8-10 month timeframe for harvesting"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1m x 1m"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-kiri-ala/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "14-15 t/ha is obtained", "review_notes": "14–15 t/ha → 5666–6070 kg/acre."}
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "capsicum",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Capsicum annuum",
+  "family": "Solanaceae",
+  "names": {"en": "Capsicum (bell pepper)", "si": "Maluwa miris", "ta": "Kudaimilagai"},
+  "aliases": ["bell pepper", "sweet pepper", "maluwa miris"],
+  "category": "vegetable",
+  "life_cycle": "annual",
+  "growth_habit": "shrub",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 1500, "unit": "m"},
+  "soil_ph": {"min": 5.5, "max": 6.8},
+  "duration_days": {"min": 75, "max": 150, "unit": "days from nursery sowing to first harvest (75) through extended picking"},
+  "expected_yield_kg_per_acre": {"min": 4047, "max": 10117, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Capsicum annuum"
+    },
+    "elevation_m": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "successfully grown up to 1500m above msl"
+    },
+    "soil_ph": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "pH value between 5.5 -6.8 is preferred"
+    },
+    "duration_days": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "75 days after nursery sowing",
+      "review_notes": "First harvest at 75 days; total duration extends with successive picks — range needs agronomist confirmation."
+    },
+    "expected_yield_kg_per_acre": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "10-15 t/ha – OP varities; 20-25 t/ha – Hybrids",
+      "review_notes": "10–25 t/ha → 4047–10117 kg/acre (OP 4047–6070, hybrid 8094–10117)."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "slug": "anamalu-banana",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "banana",
+  "name": "Anamalu",
+  "released_by": "Traditional Sri Lankan cultivar (Cavendish group)",
+  "traits": {
+    "group": "Cavendish group (with embon, bin kehel, nethrapalam)",
+    "uses": "flavouring cakes, breads, desserts, smoothies"
+  },
+  "field_provenance": {
+    "traits": {"source_id": "exploresl_banana", "source_url": "https://exploresrilanka.lk/the-bountiful-banana/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Anamalu is used to flavour cakes, breads, desserts and smoothies. anamalu, embon, bin kehel, and nethrapalam come within the Cavendish group"}
+  }
+}

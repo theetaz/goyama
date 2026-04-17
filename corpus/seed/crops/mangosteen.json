@@ -1,0 +1,23 @@
+{
+  "slug": "mangosteen",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Garcinia mangostana",
+  "family": "Clusiaceae",
+  "names": {"en": "Mangosteen", "si": "Mangustin", "ta": "Mangustin"},
+  "aliases": ["purple mangosteen"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "rainfall_mm": {"min": 1500, "max": 2000, "unit": "mm"},
+  "temperature_c": {"min": 25, "max": 28, "unit": "°C"},
+  "spacing_cm": {"within_row": 1000, "between_row": 1000},
+  "duration_days": {"min": 3650, "max": 4380, "unit": "days to first bearing (10–12 years seedling)"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mangosteen-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Garcinia mangostana L."},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mangosteen-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Annual rainfall: 1,500–2,000 mm distributed throughout the year"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mangosteen-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Temperature: 25–28°C"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mangosteen-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "10 × 10 meters spacing"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mangosteen-s/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Seedling trees require 10–12 years before initial fruiting"}
+  }
+}

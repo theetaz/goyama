@@ -1,0 +1,19 @@
+{
+  "slug": "kankun",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Ipomoea aquatica",
+  "family": "Convolvulaceae",
+  "names": {"en": "Water spinach / Kangkong", "si": "Kankun", "ta": "Vallal"},
+  "aliases": ["kangkong", "water morning-glory", "water spinach", "kan kun"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "creeper",
+  "water_requirement": "high",
+  "description": {
+    "en": "Fast-growing semi-aquatic leafy vegetable eaten as a stir-fried *mallung* or curry across Sri Lanka. Prefers continuously moist to submerged soils — perfect for low-lying waterlogged beds alongside rice-fallow areas. Multiple cuts possible from a single planting; ready for first harvest ~4–6 weeks after transplanting cuttings. Low input, high nutritional value — important household food-security crop."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "herbalplantslanka_kankun", "source_url": "https://herbalplantslanka.blogspot.com/2013/12/kankun-ipomoea-aquatica.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Ipomoea aquatica is known as Kankun in Sinhala and is also called Water Morning-Glory in English. The edible parts are the leaves."}
+  }
+}

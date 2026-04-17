@@ -1,0 +1,25 @@
+{
+  "slug": "leeks",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Allium ampeloprasum",
+  "family": "Amaryllidaceae",
+  "names": {"en": "Leeks", "si": "Leeks", "ta": "Leeks"},
+  "aliases": ["leek"],
+  "category": "vegetable",
+  "life_cycle": "biennial",
+  "growth_habit": "herb",
+  "soil_ph": {"min": 5.0, "max": 6.0},
+  "duration_days": {"min": 135, "max": 135, "unit": "days after transplanting"},
+  "spacing_cm": {"within_row": 10, "between_row": 15},
+  "seed_rate_kg_per_acre": 1.517,
+  "expected_yield_kg_per_acre": {"min": 8094, "max": 12141, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Allium ampeloprasum"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Best pH range is 5-6"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Crop cab be harvest about 4 ½ months after transplanting", "review_notes": "4.5 months ≈ 135 days."},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "15 x 10 cm"},
+    "seed_rate_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "3750 g/ha", "review_notes": "3.75 kg/ha → 1.517 kg/acre."},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-leeks/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "20-30 t/ha", "review_notes": "20–30 t/ha → 8094–12141 kg/acre."}
+  }
+}

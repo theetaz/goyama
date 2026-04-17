@@ -1,0 +1,27 @@
+{
+  "slug": "banana-bunchy-top",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Banana bunchy top virus",
+  "names": {"en": "Banana bunchy top disease"},
+  "aliases": ["BBTV", "banana bunchy top"],
+  "causal_organism": "viral",
+  "causal_species": "Banana bunchy top virus (Nanoviridae); Sri Lanka (Kandy) isolate classified in Pacific Indian Oceans (PIO) group",
+  "affected_crop_slugs": ["banana", "ash-plantain"],
+  "affected_parts": ["leaf", "whole_plant"],
+  "transmission": ["insect_vector", "mechanical"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "notes": {
+      "en": "Aphid vector requires ≥4 h feeding on infected plants to acquire, ≥15 min feeding on healthy plants to transmit. Persistent, circulative, non-propagative transmission."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "Sri Lankan isolate characterised from Kandy (BBTV-K). Infected banana plants develop a characteristic 'bunchy top' — severely shortened petioles crowded into a rosette at the pseudostem apex, narrow chlorotic-margin leaves with dark-green 'dot-and-dash' streaks on midrib and petiole. No fruit produced from infected mats. Spread by **banana aphid *Pentalonia nigronervosa*** and by infected suckers. **Management**: (a) strict phytosanitary rogueing — destroy infected mats immediately; (b) imidacloprid injection or paraffinic-oil spray of the infested plant plus all plants within 10 m; (c) plant only BBTV-free tissue-cultured or certified suckers; (d) control aphid populations in nursery and field; (e) isolate planting areas from old infected stands."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "pmc_bbtv_sri_lanka", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4908997/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Six genomic DNA components of a BBTV isolate from Kandy, Sri Lanka (BBTV-K). Phylogenetic analysis grouped the Sri Lanka (Kandy) isolate in the Pacific Indian Oceans (PIO) group"},
+    "description": {"source_id": "wikipedia_bbtv", "source_url": "https://en.wikipedia.org/wiki/Banana_bunchy_top_virus", "fetched_at": "2026-04-17T00:00:00Z", "quote": "BBTV is transmitted by banana aphid Pentalonia nigronervosa Coquerel in a persistent, circulative and non-propagative manner. Aphids require a feeding period of at least 4 hours or more on diseased plants to become infective, and a minimum feeding period of 15 minutes on susceptible plants to transmit the virus. The most important factors in controlling BBTV are killing the aphid vector and rogueing (removing and destroying) infected banana plants. Banana aphids can be treated by either injecting the infested banana plant with imidacloprid or by spraying with paraffinic oil"}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "rice",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Oryza sativa",
+  "family": "Poaceae",
+  "names": {"en": "Rice", "si": "Sahal", "ta": "Arisi"},
+  "aliases": ["paddy", "sahal", "vee"],
+  "category": "field_crop",
+  "life_cycle": "annual",
+  "growth_habit": "grass",
+  "default_season": "year_round",
+  "description": {
+    "en": "Rice is the staple food of Sri Lanka and the livelihood of over 2 million farming households. Cultivated nationally across Wet, Intermediate and Dry zones in both Maha (Sep–Mar) and Yala (Apr–Aug) seasons."
+  },
+  "field_provenance": {
+    "scientific_name": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_homepage/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Oryza sativa"
+    },
+    "description": {
+      "source_id": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Agriculture_in_Sri_Lanka",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Rice is the staple food of 21 million Sri Lankans and is the livelihood of more than 2 million farmers."
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "slug": "seeni-banana",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "banana",
+  "name": "Seeni kesel",
+  "released_by": "Traditional Sri Lankan cultivar (Mysore group)",
+  "traits": {
+    "group": "Mysore group",
+    "fruit_size": "small, rounder than ambul",
+    "flavor": "sticky-sweet; distinctly sweeter than ambul"
+  },
+  "field_provenance": {
+    "traits": {"source_id": "exploresl_banana", "source_url": "https://exploresrilanka.lk/the-bountiful-banana/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Seeni bananas are similar to ambul in that they too are small in size. However, they are rounder in shape, and taste distinctly sweeter. The flesh of a seeni banana is sticky-sweet."}
+  }
+}

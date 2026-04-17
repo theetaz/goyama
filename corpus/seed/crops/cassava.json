@@ -1,0 +1,30 @@
+{
+  "slug": "cassava",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Manihot esculenta",
+  "family": "Euphorbiaceae",
+  "names": {"en": "Cassava / Manioc", "si": "Manyokka", "ta": "Maravalli kizhangu"},
+  "aliases": ["manioc", "manyokka", "yuca", "tapioca"],
+  "category": "vegetable",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "default_season": "year_round",
+  "elevation_m": {"min": 0, "max": 1500, "unit": "m"},
+  "rainfall_mm": {"min": 1000, "max": 1500, "unit": "mm"},
+  "temperature_c": {"min": 25, "max": 29, "unit": "°C"},
+  "soil_ph": {"min": 5.0, "max": 6.0},
+  "duration_days": {"min": 270, "max": 360, "unit": "days"},
+  "spacing_cm": {"within_row": 90, "between_row": 90},
+  "expected_yield_kg_per_acre": {"min": 14164, "max": 16187, "unit": "kg/acre"},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Manihot esculenta"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Up to 1500m elevation"},
+    "rainfall_mm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "1000-1500mm rainfall needed"},
+    "temperature_c": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Temperature between 25-29°C"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Suitable pH is 5-6"},
+    "duration_days": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "9-12 months to harvest (Kirikawadi variety can be harvested from 6 months)", "review_notes": "9–12 months → 270–360 days."},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Medium branching: 90 x 90 cm"},
+    "expected_yield_kg_per_acre": {"source_id": "doa", "source_url": "https://doa.gov.lk/hordi-crop-cassava/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "35-40 tonnes per hectare", "review_notes": "35–40 t/ha → 14164–16187 kg/acre."}
+  }
+}

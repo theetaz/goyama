@@ -1,0 +1,47 @@
+{
+  "slug": "rice-blast",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Magnaporthe oryzae",
+  "names": {
+    "en": "Rice blast"
+  },
+  "aliases": ["blast", "neck rot", "Pyricularia grisea", "Magnaporthe grisea"],
+  "causal_organism": "fungal",
+  "causal_species": "Magnaporthe oryzae",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "stem", "panicle"],
+  "transmission": ["airborne", "seed_borne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 17, "max": 20, "unit": "°C at night"},
+    "notes": {
+      "en": "Low night temperatures (17–20 °C), high humidity, excessive nitrogen fertilizer, foggy conditions, and high plant densities favor the pathogen."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "The most economically important rice disease in Sri Lanka. Produces spindle-shaped leaf lesions, infects nodes (which blacken and rot), and rots the neck of the panicle causing whiteheads and grain loss. Severely infected crops can suffer major yield loss."
+  },
+  "field_provenance": {
+    "causal_species": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Fungus, Magnaporthe grisea (Pyricularia grisea)",
+      "review_notes": "DOA page uses legacy Magnaporthe grisea; Magnaporthe oryzae is the currently accepted species for rice-infecting strains. Aliased accordingly."
+    },
+    "description": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Spindle-shaped leaf spots with brown or reddish/yellowish-brown margins, ashy centers, and pointed ends. Nodes become black and rot. Panicles: rotten neck or neck rot and causes the panicle to fall off. Severe infection produces whiteheads."
+    },
+    "favored_conditions": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_riceblast/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Low temperature during night (17-20OC), High humidity, Excessive application of nitrogen fertilizer, foggy conditions, and high plant densities"
+    }
+  }
+}

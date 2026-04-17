@@ -1,0 +1,28 @@
+{
+  "slug": "rice-tungro",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Rice tungro bacilliform virus + Rice tungro spherical virus",
+  "names": {"en": "Rice tungro disease"},
+  "aliases": ["RTBV", "RTSV", "tungro"],
+  "causal_organism": "viral",
+  "causal_species": "Complex of two viruses: Rice tungro bacilliform virus (RTBV, Caulimoviridae) + Rice tungro spherical virus (RTSV, Secoviridae)",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "whole_plant"],
+  "transmission": ["insect_vector"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 22, "max": 32, "unit": "°C"},
+    "notes": {
+      "en": "Present in Sri Lanka and across South/Southeast Asia. Transmitted semipersistently by green leafhopper *Nephotettix virescens* (highest efficiency of the vector complex)."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "**Confirmed present in Sri Lanka** along with Bangladesh, India, Indonesia, Malaysia, Philippines, Thailand. Two-virus complex — **both** must be transmitted for full disease expression. **Vector**: green leafhopper *Nephotettix virescens* (semi-persistent transmission). Symptoms: yellow-orange leaf discoloration starting from leaf tip, stunted plants, delayed maturity, few tillers, and reduced grain fill; mistaken for nutrient deficiency when mild. Management: (a) **resistant varieties** (IRRI Utri Rajapan-derived resistance genes) — most economical; (b) rogue infected plants; (c) vector control with selective insecticides; (d) synchronised planting across a landscape reduces leafhopper carry-over; (e) reduce to two rice crops per year where possible; (f) encourage natural enemies (egg parasitoid wasps, mirid bugs, strepsipterans, pipunculid flies, nematodes)."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "sciencedirect_nephotettix", "source_url": "https://www.sciencedirect.com/topics/immunology-and-microbiology/nephotettix", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Rice tungro disease results from infection by two distinct virus species—Rice tungro bacilliform virus (RTBV) and Rice tungro spherical virus (RTSV)—which are mainly transmitted by the green leafhopper (GLH) Nephotettix virescens in a semipersistent manner. Nephotettix virescens is the most important vector species, with the highest transmission efficiency than the other vector species."},
+    "favored_conditions": {"source_id": "jircas_tungro", "source_url": "https://www.jircas.go.jp/sites/default/files/publication/tars/tars19-_173-182.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Association of RTBV and RTSV with tungro has been confirmed in Bangladesh, India, Indonesia, Malaysia, Philippines, Sri Lanka and Thailand"}
+  }
+}

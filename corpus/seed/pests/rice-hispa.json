@@ -1,0 +1,26 @@
+{
+  "slug": "rice-hispa",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Dicladispa armigera",
+  "names": {"en": "Rice hispa"},
+  "aliases": ["hispa beetle"],
+  "kingdom": "insecta",
+  "affected_crop_slugs": ["rice"],
+  "life_stages": ["egg", "larva", "pupa", "adult"],
+  "feeding_type": ["rasping", "chewing"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 20, "max": 28, "unit": "°C"},
+    "notes": {
+      "en": "Heavy pre-monsoon / early-monsoon rain followed by abnormally low precipitation + minimum day-night temperature differential + high humidity favour outbreaks. Grassy weeds around fields are critical alternate hosts."
+    }
+  },
+  "description": {
+    "en": "Recorded in Sri Lanka's rice-growing regions along with Myanmar, India, Thailand, Cambodia, Nepal, Indonesia, Laos, Malaysia, China, and Pakistan. Adults scrape the upper leaf epidermis leaving only the lower layer ('window-paning'); grubs mine between leaf layers producing translucent whitish tunnels. Under heavy pressure plants lose vigour and tiller fewer panicles. Management: (a) **avoid over-fertilisation** (N-lush plants are more susceptible); (b) close plant spacing gives high enough leaf density to tolerate hispa; (c) **cut and destroy shoot tips** to remove eggs and clip infested shoots 'and bury in mud' — **reduces grub populations 75–92%**; (d) biological control — parasitoid wasps on eggs and larvae, a reduviid predator on adults, three fungal entomopathogens on adults; (e) weed control to remove alternate hosts; (f) mechanical adult collection with sweep nets; (g) selective insecticides only at threshold."
+  },
+  "field_provenance": {
+    "description": {"source_id": "cabi_rice_hispa", "source_url": "https://www.cabidigitallibrary.org/doi/full/10.1079/cabicompendium.27270", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Rice hispa is known in Myanmar, India, Thailand, Cambodia, Nepal, Indonesia, Laos, Malaysia, China, Pakistan, and Sri Lanka. Rice hispa scrapes the upper surface of leaf blades leaving only the lower epidermis and tunnels through the leaf tissues."},
+    "favored_conditions": {"source_id": "irri_rice_hispa", "source_url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/insects/item/rice-hispa", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The presence of grassy weeds in and near rice fields as alternate hosts harbor and encourage the pest to develop, and heavily fertilized fields also encourage the damage. Heavy rains, especially in premonsoon or earliest monsoon periods, followed by abnormally low precipitation, minimum day-night temperature differential for a number of days, and high RH are favorable. Cutting shoot tips to prevent egg laying, and clipping and burying shoots in the mud can reduce grub populations by 75−92%"}
+  }
+}

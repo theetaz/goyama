@@ -1,0 +1,19 @@
+{
+  "slug": "grape",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Vitis vinifera",
+  "family": "Vitaceae",
+  "names": {"en": "Grape", "si": "Mideri", "ta": "Thirakshai"},
+  "aliases": ["table grape", "mideri"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "vine",
+  "description": {
+    "en": "Grown on ~100 ha in Sri Lanka, almost all commercial production concentrated in **Jaffna District** (Urumpirai and surrounding areas in the Northern Dry Zone) with about 800 growers. Thrives in dry zone areas with well-drained deep soils and assured irrigation — dry weather during flowering, fruit development, and maturity is essential for fruit quality. **Israel Blue** (introduced 1968) is the dominant commercial cultivar; other grown varieties: **Cardinal, Black Muscat, Muscat MI, French MI**. Anthracnose is a significant disease problem on Sri Lankan grapevines."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa_grapes", "source_url": "https://doa.gov.lk/fruit-crops-grapes-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Vitis vinifera L."},
+    "description": {"source_id": "jnsfsl_grapes", "source_url": "https://jnsfsl.sljol.info/articles/10.4038/jnsfsr.v43i1.7921", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Table grapes (Vitis vinifera L.) rank fourth in the world fresh fruit production. in Sri Lanka, grapes are grown in an area of about 100 hectares. viticulture has become established in the northern dry zone, particularly in Jaffna District. around 800 grape growers in Jaffna cultivating it in more than 100 hectares. The variety locally known as Israel Blue, introduced in 1968, demonstrated high adaptability and became the preferred selection for commercial cultivation. Other varieties used by cultivators in Sri Lanka include Cardinal, Black Muscat, Muscat MI and French MI."}
+  }
+}

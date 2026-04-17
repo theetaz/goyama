@@ -1,0 +1,29 @@
+{
+  "slug": "brown-spot",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Bipolaris oryzae",
+  "names": {"en": "Brown spot (rice)"},
+  "aliases": ["Cochliobolus miyabeanus", "Helminthosporium oryzae"],
+  "causal_organism": "fungal",
+  "causal_species": "Bipolaris oryzae (teleomorph Cochliobolus miyabeanus)",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "seed"],
+  "transmission": ["seed_borne", "airborne"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 16, "max": 36, "unit": "°C"},
+    "notes": {
+      "en": "Broad temperature range 16–36 °C, humidity 86–100 %, nutrient-deficient or problem soils (high salinity, iron toxicity), and drought stress promote infection."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Circular to oval spots on leaves and seeds, ranging from minute dark specks to large dark-brown/reddish-brown ovals. Seedling blight weakens stands; grain infection produces lightweight or chalky kernels. Historically linked to the Bengal famine of 1943."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_brownspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Fungus Cochliobolus miyabeanus (Bipolaris oryzae)"},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_brownspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "minute dark (dark brown to reddish brown) spots to large oval to circular spots. Seedling blight may result in weak plant stands, while grain infection can produce lightweight or chalky kernels."},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_brownspot/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Environmental temperatures between 16-36°C, High humidity (86-100%), Nutrient-deficient or problem soils (high salinity, iron toxicity), Drought stress"}
+  }
+}

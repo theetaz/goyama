@@ -1,0 +1,30 @@
+{
+  "slug": "tea-grey-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Pestalotiopsis spp. / Pseudopestalotiopsis spp.",
+  "names": {"en": "Tea grey blight"},
+  "aliases": ["Pestalotiopsis leaf blight", "Pseudopestalotiopsis ampullacea"],
+  "causal_organism": "fungal",
+  "causal_species": "Pestalotiopsis spp. + Pseudopestalotiopsis spp. (species complex)",
+  "affected_crop_slugs": ["tea"],
+  "affected_parts": ["leaf"],
+  "transmission": ["airborne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 20, "max": 28, "unit": "°C"},
+    "rainfall": "wet",
+    "notes": {
+      "en": "Mainly attacks old and mature tea leaves; injury from harsh plucking or hail storms creates entry points for spore germination."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "**Yield loss 20–50% in major tea-growing countries including Sri Lanka**. Early symptoms: light yellow-brown spots that progress to brown then grey-white; necrotic spots become irregular/circular/semi-circular, with abundant acervuli (black dots) in rings on the adaxial leaf surface. **Management per TRI Plant Pathology Division's Integrated Disease Management (IDM) approach**: (a) **Fungicides** — Carbendazim + Mancozeb mix, Hexaconazole, Propiconazole, Validamycin (85.1–89.8% inhibition of *P. ampullacea*); (b) **Biological** — *Trichoderma harzianum*, *T. reesei*, *T. hamatum*, *Bacillus subtilis*, *Microbacterium barkeri* (66.6–84.2% antagonistic activity) — alternative to synthetic fungicides aligned with TRI's 'minimal chemicals' cleanliness goal; (c) canopy / plucking-frequency management to avoid stress; (d) rotate fungicide MoA groups."
+  },
+  "confused_with": ["tea-blister-blight"],
+  "field_provenance": {
+    "causal_species": {"source_id": "nature_grey_blight", "source_url": "https://www.nature.com/articles/s41598-024-80354-w", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Pseudopestalotiopsis ampullacea as a new pathogen causing tea gray blight"},
+    "description": {"source_id": "pmc_grey_blight", "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11589121/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Grey blight is estimated to lower the yield by 20% to 50% in major tea growing countries, including China, Japan, India, and Sri Lanka. Early disease symptoms start with light yellow brown spots, which change brown and grey-white with disease progresses. Carbendazim + mancozeb, hexaconazole, propiconazole, and valextra were effective fungicides with an 85.1% to 89.8% range of inhibitory activity against P. ampullacea. Trichoderma harzianum, T. reesei, T. hamatum, Bacillus subtilis, and Microbacterium barkeri were efficient bioagents"}
+  }
+}

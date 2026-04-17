@@ -1,0 +1,21 @@
+{
+  "slug": "tea",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Camellia sinensis",
+  "family": "Theaceae",
+  "names": {"en": "Tea", "si": "The", "ta": "Thean"},
+  "aliases": ["Ceylon tea", "chai"],
+  "category": "plantation",
+  "life_cycle": "perennial",
+  "growth_habit": "shrub",
+  "elevation_m": {"min": 0, "max": 2000, "unit": "m (low-grown <600, mid 600–1200, high >1200)"},
+  "description": {
+    "en": "Sri Lanka's flagship plantation crop, branded globally as Ceylon tea. Commercial cultivation began in 1867 at Loolecondera Estate, Kandy. Seven principal growing regions: Nuwara Eliya, Dimbula, Uva, Uda Pussellawa (high-grown), plus Kandy, Ruhuna, Sabaragamuwa (mid & low-grown). The Tea Research Institute (TRI) clonal series — TRI 2023 through TRI 2027 and later releases — covers over 55% of the national tea extent, replacing seedling plantations with vegetatively propagated high-yielding disease-resistant clones."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "springer_tea_breeding", "source_url": "https://link.springer.com/chapter/10.1007/978-3-642-31878-8_4", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Camellia sinensis"},
+    "elevation_m": {"source_id": "grokipedia_tea", "source_url": "https://grokipedia.com/page/Tea_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "altitudes from approximately 600 to 2,000 meters... broadly divided into low-grown (<600 m a.s.l), mid-grown (600–1200 m a.s.l) and high-grown (>1200 m a.s.l) areas"},
+    "description": {"source_id": "grokipedia_tea", "source_url": "https://grokipedia.com/page/Tea_production_in_Sri_Lanka", "fetched_at": "2026-04-17T00:00:00Z", "quote": "clones such as TRI 2023 through TRI 2027, now cover over 55% of the nation's tea extent, enabling more uniform growth, disease resistance, and elevated made-tea yields compared to seedling plantations."}
+  }
+}

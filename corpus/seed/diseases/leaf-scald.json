@@ -1,0 +1,27 @@
+{
+  "slug": "leaf-scald",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Microdochium oryzae",
+  "names": {"en": "Leaf scald (rice)"},
+  "aliases": ["Monographella albescens", "Gerlachia oryzae"],
+  "causal_organism": "fungal",
+  "causal_species": "Microdochium oryzae (teleomorph Monographella albescens)",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "panicle"],
+  "transmission": ["seed_borne", "airborne"],
+  "favored_conditions": {
+    "notes": {
+      "en": "Seed-borne and persists between seasons via infected seed and crop residue. Common and sometimes severe in major Sri Lankan rice districts."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Lesions show a chevron pattern of light (tan) and darker reddish-brown zones on mature leaves; affected foliage turns straw-coloured and dry. At grain-fill, infected florets discolour and may lead to kernel sterility or abortion."
+  },
+  "field_provenance": {
+    "causal_species": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_leafscald/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Monographella albescens (Microdochium oryzae)"},
+    "description": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_leafscald/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "a chevron pattern of light (tan) and darker reddish-brown areas on mature leaves. Affected foliage becomes straw-colored and dry."},
+    "favored_conditions": {"source_id": "doa", "source_url": "https://doa.gov.lk/rrdi_ricediseases_leafscald/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "seed borne and survives between seasons/crops via infected seeds"}
+  }
+}

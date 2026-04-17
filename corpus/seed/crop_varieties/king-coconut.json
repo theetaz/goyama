@@ -1,0 +1,20 @@
+{
+  "slug": "king-coconut",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "coconut",
+  "name": "King coconut (Thambili)",
+  "released_by": "Traditional / CRI-characterised",
+  "recommended_aez_codes": [],
+  "traits": {
+    "scientific_name": "Cocos nucifera var. aurantiaca",
+    "sub_types": ["Nawasi Thambili", "Rathran Thambili", "Bothal Thambili", "Gon Thembili", "Ran Thembili"],
+    "bunches_per_year": "14.9–16.8 (vs 12–14 for tall coconut)",
+    "nut_yield": "Over 100 nuts per palm per year in phenotypes Ran Thembili and Gon Thembili",
+    "primary_use": "Tender-nut (beverage) coconut",
+    "notes": {"en": "Native Sri Lankan variety; the ideal beverage coconut. Research programme at CRI includes tissue-culture propagation and seasonality mitigation. Gon Thembili also noted for Weligama Leaf Wilt phytoplasma resistance."}
+  },
+  "field_provenance": {
+    "traits": {"source_id": "wikipedia_king_coconut", "source_url": "https://en.wikipedia.org/wiki/King_coconut", "fetched_at": "2026-04-17T00:00:00Z", "quote": "King coconut (Cocos nucifera var aurantiaca) is a variety of coconut, native to Sri Lanka, where it is known as Thæmbili. Sri Lanka has one such variety called Aurantiaca, which means orange coloured in Latin, and within this variety, there are four types of coconut, including king coconut – Nawasi Thambili, Rathran Thambili, and Bothal Thambili. The annual average number of bunches varied from 14.9 to 16.8, which is significantly higher than the generally accepted 12–14 bunches in tall coconuts"}
+  }
+}

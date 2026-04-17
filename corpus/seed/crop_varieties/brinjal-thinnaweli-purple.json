@@ -1,0 +1,18 @@
+{
+  "slug": "brinjal-thinnaweli-purple",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "brinjal",
+  "name": "Thinnaweli Purple",
+  "released_by": "HORDI, Department of Agriculture",
+  "expected_yield_kg_per_acre": {"min": 6070, "max": 10117, "unit": "kg/acre (15-25 t/ha)"},
+  "recommended_aez_codes": [],
+  "traits": {
+    "fruit_color": "dark purple",
+    "zone_recommendation": "Wet Zone 15-18 t/ha; Intermediate/Dry 20-25 t/ha",
+    "notes": {"en": "Dark-purple fruited traditional brinjal cultivar maintained by HORDI. Wet-zone yield 15–18 t/ha; up to 20–25 t/ha in better-suited zones."}
+  },
+  "field_provenance": {
+    "expected_yield_kg_per_acre": {"source_id": "doa_hordi_brinjal_variety", "source_url": "https://doa.gov.lk/hordi-variety2-brinjal/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Another variety with dark purple fruits has a potential yield of 15-18 t/ha for the wet zone and 20-25 t/ha", "review_notes": "15–25 t/ha → 6070–10117 kg/acre. Attribution to Thinnaweli Purple inferred from DOA brinjal page which lists it among recommended dark-purple varieties; agronomist confirmation recommended."}
+  }
+}

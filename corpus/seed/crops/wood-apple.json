@@ -1,0 +1,19 @@
+{
+  "slug": "wood-apple",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Limonia acidissima",
+  "family": "Rutaceae",
+  "names": {"en": "Wood apple", "si": "Divul", "ta": "Vilam palam"},
+  "aliases": ["elephant apple", "monkey fruit", "curd fruit", "divul"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "Commonly cultivated in Sri Lanka's Dry Zone, particularly along roadsides, field edges and occasionally in orchards. Large thorny tree reaches 9 m with pinnate citrus-scented leaves. Hard-shelled round pale-brown fruit cracks open to reveal sticky brown pulp with small white seeds — used for *divul kiri* (a yogurt-like refreshment), curries, juices, and chutneys. Two size classes in markets: larger fruits (sweeter, more valuable) and smaller fruits (acidic, less preferred). Tree prefers dry climates for flowering and fruit set."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_wood_apple", "source_url": "https://en.wikipedia.org/wiki/Limonia_acidissima", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Limonia acidissima"},
+    "description": {"source_id": "dilmah_divul", "source_url": "https://www.dilmahconservation.org/arboretum/plants-and-trees/divul--cbcf2721e43d54eb0f7ce237f908487d.html", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Wood apples, or Divul (Limonia acidissima of the family Rutaceae), are commonly cultivated in the country's dry zones of Sri Lanka. Limonia acidissima is a large tree growing to 9 metres (30 ft) tall with rough, spiny bark. The round, pale brown fruit has a distinctive taste and a musky aroma. It has a hard, woody outer appearance; the fruit is cracked open to reveal a sticky brown pulp with tiny white seeds inside."}
+  }
+}

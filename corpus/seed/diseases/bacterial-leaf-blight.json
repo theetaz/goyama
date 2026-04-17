@@ -1,0 +1,46 @@
+{
+  "slug": "bacterial-leaf-blight",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Xanthomonas oryzae pv. oryzae",
+  "names": {
+    "en": "Bacterial leaf blight"
+  },
+  "aliases": ["BLB", "kresek"],
+  "causal_organism": "bacterial",
+  "causal_species": "Xanthomonas oryzae pv. oryzae",
+  "affected_crop_slugs": ["rice"],
+  "affected_parts": ["leaf", "whole_plant"],
+  "transmission": ["waterborne", "seed_borne", "splash"],
+  "favored_conditions": {
+    "humidity": "high",
+    "temperature_c": {"min": 25, "max": 34, "unit": "°C"},
+    "notes": {
+      "en": "Warm temperatures (25–34 °C), high humidity, strong winds and continuous heavy rains, and excessive nitrogen fertilization favor spread."
+    }
+  },
+  "severity": "high",
+  "description": {
+    "en": "At the seedling stage causes wilting, yellowing, and systemic 'kresek'; squeezing cut ends of affected leaves releases yellowish bacterial ooze. In mature plants, water-soaked orange stripes develop on blades or leaf tips, with wavy-margined lesions progressing toward the base."
+  },
+  "field_provenance": {
+    "causal_species": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_bacterialleafblight/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Xanthomonas oryzae pv. oryzae"
+    },
+    "description": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_bacterialleafblight/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Seedling stage: wilting and yellowing of leaves, or wilting of seedlings (called kresek) with yellowish bacterial ooze coming out of the cut ends when leaves squeezed. Mature plants: lesions usually develop as water-soaked orange stripes on leaf blades or leaf tips. Lesions have a wavy margin and progress toward the leaf base."
+    },
+    "favored_conditions": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/rrdi_ricediseases_bacterialleafblight/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "temperatures at 25−34°C, strong winds and continuous heavy rains, High humidity, Excessive application of nitrogen fertilizer"
+    }
+  }
+}

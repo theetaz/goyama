@@ -1,0 +1,27 @@
+{
+  "slug": "powdery-mildew-cucurbits",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Podosphaera xanthii",
+  "names": {"en": "Powdery mildew (cucurbits)"},
+  "aliases": ["Podosphaera fusca", "Erysiphe cichoracearum", "Sphaerotheca fuliginea"],
+  "causal_organism": "fungal",
+  "causal_species": "Podosphaera xanthii (primary on cucurbits in Sri Lanka)",
+  "affected_crop_slugs": ["cucumber", "snake-gourd", "pumpkin", "bitter-gourd", "luffa"],
+  "affected_parts": ["leaf", "stem"],
+  "transmission": ["airborne"],
+  "favored_conditions": {
+    "humidity": "medium",
+    "temperature_c": {"min": 20, "max": 30, "unit": "°C"},
+    "notes": {
+      "en": "Unlike most fungal diseases, powdery mildew thrives under warm dry weather with cool humid nights. Low to moderate relative humidity favours conidial germination; free water suppresses germination."
+    }
+  },
+  "severity": "medium",
+  "description": {
+    "en": "Whitish, powdery fungal growth on upper leaf surfaces; severe infection causes leaf yellowing, defoliation, reduced photosynthesis and yield loss. Affects all major cucurbits grown in Sri Lanka (cucumber, snake gourd, pumpkin, bitter gourd, luffa). DOA's Pest Management Recommendations (2015) list Carbendazim 50% WG, Thiophanate-methyl 70% WP, Chlorothalonil 500 g/l SC, and Potassium bicarbonate 82% SP as approved fungicides with specific dosages and pre-harvest intervals. Sulphur fungicides are not recommended for cucurbits as they can be phytotoxic in hot weather."
+  },
+  "field_provenance": {
+    "description": {"source_id": "doa_pest_mgmt_2015", "source_url": "https://doa.gov.lk/wp-content/uploads/2020/06/Introduction_to_book.pdf", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Carbendazim 50% WG... Thiophanate-methyl 70% WP... Chlorothalonil 500g/l SC... Potassium bicarbonate 82% SP... sulphur-containing fungicides are not recommended for cucurbits and can be phytotoxic during hot weather", "review_notes": "Dosage specifics for each fungicide are captured in separate remedy records pending agronomist review before publication."}
+  }
+}

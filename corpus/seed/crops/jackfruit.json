@@ -1,0 +1,19 @@
+{
+  "slug": "jackfruit",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Artocarpus heterophyllus",
+  "family": "Moraceae",
+  "names": {"en": "Jackfruit", "si": "Kos", "ta": "Palaa"},
+  "aliases": ["kos", "polos (young jackfruit)", "palaa"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "description": {
+    "en": "**The National Fruit of Sri Lanka** — a cultural staple eaten as green curry (polos), ripe dessert fruit (waraka/wela), and as an emerging plant-based meat substitute. Two main Sri Lankan varieties: **Wela** (soft, sweet, dessert) and **Waraka** (firm-fleshed, crunchy). Thrives in the humus-rich soils of the Low-country Wet Zone. Tree grows 9–21 m; mature trees produce ~200 fruits/year, older trees up to 500 fruits/year. Well-grown specimens yield 40–60 fruits per harvest cycle. The Fruit Crop Research and Development Station (Peradeniya) conducts research on jackfruit alongside avocado, durian, rambutan, banana, and guava."
+  },
+  "field_provenance": {
+    "scientific_name": {"source_id": "wikipedia_jackfruit", "source_url": "https://en.wikipedia.org/wiki/Jackfruit", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Artocarpus heterophyllus"},
+    "description": {"source_id": "geocountries_national_fruit", "source_url": "https://www.geocountries.com/sri-lanka/national/fruit/jackfruit", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Two varieties grown in Sri Lanka are Wela and Waraka. A tree is 60-80 feet tall and bears fruit once a year, with a well-grown jackfruit tree yielding up to 40-60 fruits at a time. The jackfruit tree thrives in the humus soil typical of the lowland wet zone."}
+  }
+}

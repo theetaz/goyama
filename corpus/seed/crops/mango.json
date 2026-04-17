@@ -1,0 +1,22 @@
+{
+  "slug": "mango",
+  "version": 1,
+  "status": "draft",
+  "scientific_name": "Mangifera indica",
+  "family": "Anacardiaceae",
+  "names": {"en": "Mango", "si": "Amba", "ta": "Mampalam"},
+  "aliases": ["amba", "mampalam"],
+  "category": "fruit",
+  "life_cycle": "perennial",
+  "growth_habit": "tree",
+  "default_season": "perennial",
+  "elevation_m": {"min": 0, "max": 1300, "unit": "m (commercial best 0–600)"},
+  "soil_ph": {"min": 5.5, "max": 7.5},
+  "spacing_cm": {"within_row": 1000, "between_row": 1000},
+  "field_provenance": {
+    "scientific_name": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mango-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Mangifera Indica"},
+    "elevation_m": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mango-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Can be grown up to 1300 m. But commercial cultivation is successful from sea level to 600 m"},
+    "soil_ph": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mango-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "The pH range of soil should be 5.5 – 7.5"},
+    "spacing_cm": {"source_id": "doa", "source_url": "https://doa.gov.lk/fruit-crops-mango-e/", "fetched_at": "2026-04-17T00:00:00Z", "quote": "Standard varieties require 10m × 10m. Willard uses 7m × 10m. TOM EJC uses high-density planting with 5m × 5m", "review_notes": "Stored 10m × 10m standard; high-density and Willard options in quote."}
+  }
+}
