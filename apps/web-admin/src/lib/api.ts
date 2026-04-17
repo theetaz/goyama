@@ -40,6 +40,76 @@ export interface CropListResponse {
   count: number;
 }
 
+export type RecordStatus =
+  | 'draft'
+  | 'in_review'
+  | 'published'
+  | 'deprecated'
+  | 'rejected';
+
+export interface CultivationStepInput {
+  type: string;
+  name: Record<string, string>;
+  amount?: number;
+  unit?: string;
+  per_unit_area?: string;
+  notes?: Record<string, string>;
+}
+
+export interface CultivationStep {
+  slug: string;
+  crop_slug: string;
+  variety_slug?: string;
+  aez_code?: string;
+  season?: string;
+  stage: string;
+  order_idx: number;
+  day_after_planting?: Range;
+  title?: Record<string, string>;
+  body?: Record<string, string>;
+  inputs?: CultivationStepInput[];
+  media_slugs?: string[];
+  status: RecordStatus;
+  field_provenance?: Record<string, FieldProvenance>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface FieldProvenance {
+  source_id: string;
+  source_url: string;
+  fetched_at: string;
+  quote?: string;
+  extractor_version?: string;
+  model_id?: string;
+  confidence?: number;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface ReviewQueueResponse {
+  status: RecordStatus;
+  items: CultivationStep[];
+  count: number;
+}
+
+// ReviewerIdentity is stored in localStorage so an agronomist only types
+// their email once per browser. Swap for real SSO identity in a future PR.
+const REVIEWER_KEY = 'goyama.admin.reviewer';
+
+export function getReviewer(): string {
+  if (typeof window === 'undefined') return '';
+  return window.localStorage.getItem(REVIEWER_KEY) ?? '';
+}
+
+export function setReviewer(email: string): void {
+  if (typeof window === 'undefined') return;
+  if (email) window.localStorage.setItem(REVIEWER_KEY, email);
+  else window.localStorage.removeItem(REVIEWER_KEY);
+}
+
 export interface ApiProblem {
   type: string;
   title: string;
@@ -61,13 +131,19 @@ export class ApiError extends Error {
 }
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
+  const headers: Record<string, string> = {
+    Accept: 'application/json',
+    ...((init?.headers as Record<string, string>) ?? {}),
+  };
+  // Attach the reviewer header to every admin-scoped request so we never
+  // forget it on a mutation. The backend ignores it for public endpoints.
+  const reviewer = getReviewer();
+  if (reviewer) headers['X-Goyama-Reviewer'] = reviewer;
+
   const res = await fetch(path, {
     credentials: 'include',
-    headers: {
-      Accept: 'application/json',
-      ...(init?.headers ?? {}),
-    },
     ...init,
+    headers,
   });
   if (!res.ok) {
     const problem = (await res.json().catch(() => ({
@@ -97,4 +173,19 @@ export const api = {
     return request<CropListResponse>(`/v1/crops${suffix}`);
   },
   getCrop: (slug: string) => request<CropDetail>(`/v1/crops/${encodeURIComponent(slug)}`),
+  listCultivationStepsForReview: (status: RecordStatus = 'draft') =>
+    request<ReviewQueueResponse>(
+      `/v1/admin/cultivation-steps?status=${encodeURIComponent(status)}`,
+    ),
+  getCultivationStep: (slug: string) =>
+    request<CultivationStep>(`/v1/admin/cultivation-steps/${encodeURIComponent(slug)}`),
+  updateCultivationStepStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<CultivationStep>(`/v1/admin/cultivation-steps/${encodeURIComponent(slug)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
 };

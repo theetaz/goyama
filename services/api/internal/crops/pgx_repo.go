@@ -5,6 +5,7 @@ import (
 	"errors"
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -256,6 +257,153 @@ func derefF(p *float32) any {
 		return nil
 	}
 	return *p
+}
+
+// reviewStepsSelect is the column list shared by the review-queue list and
+// single-get queries — fewer columns than the user-facing endpoint because
+// the admin surface doesn't care about title/body translations yet. They're
+// assembled separately when an admin drills into one step.
+const reviewStepsSelect = `
+	cs.slug, cs.crop_slug, COALESCE(cs.variety_slug, ''),
+	COALESCE(cs.aez_code, ''), COALESCE(cs.season::text, ''),
+	cs.stage, cs.order_idx,
+	cs.dap_min, cs.dap_max, cs.inputs,
+	COALESCE(cs.media_slugs, '{}'), cs.status::text,
+	COALESCE(cs.reviewed_by, ''), cs.reviewed_at, COALESCE(cs.review_notes, ''),
+	cs.field_provenance
+`
+
+func scanReviewStep(rows interface{ Scan(dest ...any) error }) (CultivationStep, error) {
+	var s CultivationStep
+	var dapMin, dapMax *int
+	var inputs []map[string]any
+	var reviewedAt *time.Time
+	var provenance map[string]any
+	if err := rows.Scan(
+		&s.Slug, &s.CropSlug, &s.VarietySlug,
+		&s.AEZCode, &s.Season,
+		&s.Stage, &s.OrderIdx,
+		&dapMin, &dapMax, &inputs,
+		&s.MediaSlugs, &s.Status,
+		&s.ReviewedBy, &reviewedAt, &s.ReviewNotes,
+		&provenance,
+	); err != nil {
+		return s, err
+	}
+	if dapMin != nil || dapMax != nil {
+		s.DayAfterPlanting = &IntRange{Min: dapMin, Max: dapMax}
+	}
+	if reviewedAt != nil {
+		s.ReviewedAt = reviewedAt.UTC().Format(time.RFC3339)
+	}
+	s.Inputs = inputs
+	s.FieldProvenance = provenance
+	return s, nil
+}
+
+// ListCultivationStepsByStatus powers the admin review queue.
+func (r *PgxRepo) ListCultivationStepsByStatus(ctx context.Context, status string) ([]CultivationStep, error) {
+	sql := `
+SELECT ` + reviewStepsSelect + `
+FROM cultivation_step cs
+WHERE cs.status = $1::record_status
+ORDER BY cs.crop_slug, cs.order_idx`
+	rows, err := r.pool.Query(ctx, sql, status)
+	if err != nil {
+		return nil, fmt.Errorf("list steps by status: %w", err)
+	}
+	defer rows.Close()
+	out := make([]CultivationStep, 0, 16)
+	for rows.Next() {
+		s, err := scanReviewStep(rows)
+		if err != nil {
+			return nil, fmt.Errorf("scan step: %w", err)
+		}
+		out = append(out, s)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, fmt.Errorf("iterate: %w", err)
+	}
+	return out, nil
+}
+
+// GetCultivationStep returns a single step — title / body translations are
+// joined in so the admin detail panel has the full record in one round-trip.
+func (r *PgxRepo) GetCultivationStep(ctx context.Context, slug string) (CultivationStep, error) {
+	sql := `
+WITH s AS (
+	SELECT * FROM cultivation_step WHERE slug = $1
+	ORDER BY version DESC LIMIT 1
+),
+titles AS (
+	SELECT jsonb_object_agg(locale, value) AS value
+	FROM translation
+	WHERE entity_type = 'cultivation_step' AND entity_slug = $1 AND field = 'title'
+),
+bodies AS (
+	SELECT jsonb_object_agg(locale, value) AS value
+	FROM translation
+	WHERE entity_type = 'cultivation_step' AND entity_slug = $1 AND field = 'body'
+)
+SELECT ` + strings.ReplaceAll(reviewStepsSelect, "cs.", "s.") + `,
+       COALESCE((SELECT value FROM titles), '{}'::jsonb) AS title,
+       COALESCE((SELECT value FROM bodies), '{}'::jsonb) AS body
+FROM s`
+	var s CultivationStep
+	var dapMin, dapMax *int
+	var inputs []map[string]any
+	var reviewedAt *time.Time
+	var provenance map[string]any
+	var title, body map[string]string
+	err := r.pool.QueryRow(ctx, sql, slug).Scan(
+		&s.Slug, &s.CropSlug, &s.VarietySlug,
+		&s.AEZCode, &s.Season,
+		&s.Stage, &s.OrderIdx,
+		&dapMin, &dapMax, &inputs,
+		&s.MediaSlugs, &s.Status,
+		&s.ReviewedBy, &reviewedAt, &s.ReviewNotes,
+		&provenance,
+		&title, &body,
+	)
+	if err != nil {
+		if errors.Is(err, pgx.ErrNoRows) {
+			return CultivationStep{}, ErrNotFound
+		}
+		return CultivationStep{}, fmt.Errorf("get step %q: %w", slug, err)
+	}
+	if dapMin != nil || dapMax != nil {
+		s.DayAfterPlanting = &IntRange{Min: dapMin, Max: dapMax}
+	}
+	if reviewedAt != nil {
+		s.ReviewedAt = reviewedAt.UTC().Format(time.RFC3339)
+	}
+	s.Inputs = inputs
+	s.FieldProvenance = provenance
+	s.Title = title
+	s.Body = body
+	return s, nil
+}
+
+// SetCultivationStepStatus promotes or rejects a step. The status enum is
+// validated by Postgres itself; an invalid transition will come back as a
+// pg error that the handler maps to a 400.
+func (r *PgxRepo) SetCultivationStepStatus(ctx context.Context, slug string, u StatusUpdate) error {
+	const sql = `
+UPDATE cultivation_step
+SET status       = $2::record_status,
+    reviewed_by  = $3,
+    reviewed_at  = now(),
+    review_notes = NULLIF($4, ''),
+    updated_at   = now()
+WHERE slug = $1`
+	tag, err := r.pool.Exec(ctx, sql, slug, u.Status, u.ReviewedBy, u.Notes)
+	if err != nil {
+		return fmt.Errorf("update status: %w", err)
+	}
+	if tag.RowsAffected() == 0 {
+		return ErrNotFound
+	}
+	return nil
 }
 
 const cultivationStepsSQL = `
