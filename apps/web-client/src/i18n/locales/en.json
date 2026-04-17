@@ -41,6 +41,18 @@
     "yield": "Expected yield",
     "also_known_as": "Also known as"
   },
+  "map": {
+    "title": "Sri Lanka on one map",
+    "subtitle": "Tap any spot to see which agro-ecological zone it's in and what grows well there.",
+    "legend_wet": "Wet Zone",
+    "legend_intermediate": "Intermediate Zone",
+    "legend_dry": "Dry Zone",
+    "legend_tap_hint": "Tap a zone to explore crops",
+    "popup_sample_crops": "Crops grown here",
+    "popup_off_zone": "You tapped outside the agro-ecological zones.",
+    "popup_placeholder_note": "Approximate boundaries — NRMC polygons coming soon.",
+    "disclaimer": "Zone boundaries on this map are sketchy hand-drawn approximations for the first UX pass. The canonical NRMC polygon dataset replaces them when the geospatial vectorisation workstream lands."
+  },
   "locale_picker": {
     "label": "Language"
   },
