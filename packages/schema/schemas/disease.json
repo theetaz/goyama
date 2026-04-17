@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/disease.json",
+  "title": "Disease",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "scientific_name": { "type": "string" },
+    "names": { "$ref": "common.json#/$defs/I18nString" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "causal_organism": {
+      "type": "string",
+      "enum": ["fungal", "bacterial", "viral", "viroid", "nematode", "phytoplasma", "deficiency", "physiological", "abiotic"]
+    },
+    "causal_species": {
+      "type": "string",
+      "description": "Binomial name of the pathogen when known."
+    },
+    "affected_crop_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" },
+      "minItems": 1
+    },
+    "affected_parts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["leaf", "stem", "root", "fruit", "flower", "seed", "whole_plant", "panicle", "tiller"]
+      }
+    },
+    "transmission": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["seed_borne", "soil_borne", "airborne", "waterborne", "insect_vector", "mechanical", "contact", "splash"]
+      }
+    },
+    "favored_conditions": {
+      "type": "object",
+      "properties": {
+        "humidity": { "type": "string", "enum": ["low", "medium", "high"] },
+        "temperature_c": { "$ref": "common.json#/$defs/Range" },
+        "rainfall": { "type": "string", "enum": ["dry", "medium", "wet"] },
+        "season": {
+          "type": "array",
+          "items": { "$ref": "common.json#/$defs/Season" }
+        },
+        "notes": { "$ref": "common.json#/$defs/I18nString" }
+      },
+      "additionalProperties": false
+    },
+    "severity": { "type": "string", "enum": ["low", "medium", "high"] },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "confused_with": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" },
+      "description": "Slugs of other diseases this is commonly mistaken for."
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "names", "causal_organism", "affected_crop_slugs"],
+  "additionalProperties": false
+}

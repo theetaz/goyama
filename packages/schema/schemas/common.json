@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/common.json",
+  "title": "Common types",
+  "$defs": {
+    "Slug": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]{1,62}[a-z0-9]$",
+      "description": "URL-safe canonical identifier. Lowercase letters, digits, underscores, hyphens."
+    },
+    "Locale": {
+      "type": "string",
+      "enum": ["en", "si", "ta"],
+      "description": "BCP-47 language tag restricted to CropDoc's supported locales."
+    },
+    "I18nString": {
+      "type": "object",
+      "description": "Multilingual string. English is the canonical authoring locale; si/ta may be machine-translated drafts flagged for review.",
+      "properties": {
+        "en": { "type": "string" },
+        "si": { "type": "string" },
+        "ta": { "type": "string" },
+        "si_status": { "$ref": "#/$defs/TranslationStatus" },
+        "ta_status": { "$ref": "#/$defs/TranslationStatus" }
+      },
+      "required": ["en"],
+      "additionalProperties": false
+    },
+    "TranslationStatus": {
+      "type": "string",
+      "enum": ["missing", "machine_draft", "human_reviewed"],
+      "default": "missing"
+    },
+    "Status": {
+      "type": "string",
+      "enum": ["draft", "in_review", "published", "deprecated", "rejected"],
+      "description": "Workflow status of the record."
+    },
+    "Uuid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "Timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "Range": {
+      "type": "object",
+      "properties": {
+        "min": { "type": "number" },
+        "max": { "type": "number" },
+        "unit": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "IntRange": {
+      "type": "object",
+      "properties": {
+        "min": { "type": "integer" },
+        "max": { "type": "integer" },
+        "unit": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "Season": {
+      "type": "string",
+      "enum": ["maha", "yala", "perennial", "year_round"],
+      "description": "Sri Lankan cultivation season. Maha: Oct–Mar (NE monsoon). Yala: Apr–Sep (SW monsoon)."
+    },
+    "ZoneGroup": {
+      "type": "string",
+      "enum": ["wet", "intermediate", "dry"]
+    },
+    "ElevationClass": {
+      "type": "string",
+      "enum": ["low_country", "mid_country", "up_country"]
+    },
+    "SuitabilityClass": {
+      "type": "string",
+      "enum": ["S1", "S2", "S3", "N"],
+      "description": "FAO land suitability. S1: highly suitable. S2: moderately. S3: marginally. N: not suitable."
+    },
+    "EffortLevel": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "WaterRequirement": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "CropCategory": {
+      "type": "string",
+      "enum": ["field_crop", "vegetable", "fruit", "spice", "plantation", "forage", "ornamental", "medicinal"]
+    },
+    "LifeCycle": {
+      "type": "string",
+      "enum": ["annual", "biennial", "perennial"]
+    },
+    "GeoJsonPolygon": {
+      "type": "object",
+      "properties": {
+        "type": { "const": "Polygon" },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": { "type": "number" },
+              "minItems": 2,
+              "maxItems": 3
+            }
+          }
+        }
+      },
+      "required": ["type", "coordinates"]
+    },
+    "GeoJsonMultiPolygon": {
+      "type": "object",
+      "properties": {
+        "type": { "const": "MultiPolygon" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "array" }
+        }
+      },
+      "required": ["type", "coordinates"]
+    }
+  }
+}

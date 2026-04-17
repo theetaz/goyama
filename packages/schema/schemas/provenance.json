@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/provenance.json",
+  "title": "Provenance",
+  "description": "Every published field carries a provenance record so consumers can trace a claim back to its source.",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "description": "Slug of the source in the source register (e.g. 'doa.gov.lk', 'hordi', 'meteo.gov.lk')."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "quote": {
+      "type": "string",
+      "description": "Verbatim excerpt from the source that supports the extracted value. Required for numeric fields."
+    },
+    "fetched_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "extractor_version": {
+      "type": "string",
+      "description": "Git SHA or semver of the extractor that produced this value."
+    },
+    "model_id": {
+      "type": "string",
+      "description": "Model identifier when LLM-assisted extraction was used (e.g. 'claude-sonnet-4-6')."
+    },
+    "prompt_version": {
+      "type": "string",
+      "description": "Identifier of the prompt template used for LLM extraction."
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "reviewed_by": { "type": "string" },
+    "reviewed_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "review_notes": { "type": "string" }
+  },
+  "required": ["source_id", "source_url", "fetched_at"],
+  "additionalProperties": false
+}

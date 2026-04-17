@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/crop.json",
+  "title": "Crop",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "scientific_name": { "type": "string" },
+    "family": { "type": "string" },
+    "names": { "$ref": "common.json#/$defs/I18nString" },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternate names and spellings across locales; used for entity resolution."
+    },
+    "category": { "$ref": "common.json#/$defs/CropCategory" },
+    "life_cycle": { "$ref": "common.json#/$defs/LifeCycle" },
+    "growth_habit": {
+      "type": "string",
+      "enum": ["herb", "shrub", "tree", "vine", "grass", "creeper"]
+    },
+    "default_season": { "$ref": "common.json#/$defs/Season" },
+    "duration_days": { "$ref": "common.json#/$defs/IntRange" },
+    "elevation_m": { "$ref": "common.json#/$defs/Range" },
+    "rainfall_mm": { "$ref": "common.json#/$defs/Range" },
+    "temperature_c": { "$ref": "common.json#/$defs/Range" },
+    "soil_ph": { "$ref": "common.json#/$defs/Range" },
+    "preferred_soil_groups": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "water_requirement": { "$ref": "common.json#/$defs/WaterRequirement" },
+    "effort_level": { "$ref": "common.json#/$defs/EffortLevel" },
+    "spacing_cm": {
+      "type": "object",
+      "properties": {
+        "within_row": { "type": "number" },
+        "between_row": { "type": "number" }
+      },
+      "additionalProperties": false
+    },
+    "seed_rate_kg_per_acre": { "type": "number" },
+    "expected_yield_kg_per_acre": { "$ref": "common.json#/$defs/Range" },
+    "companions": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "rotates_with": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "field_provenance": {
+      "type": "object",
+      "description": "Map of field name -> provenance record. At least scientific_name and any numeric field must have provenance.",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "scientific_name", "names", "category", "life_cycle"],
+  "additionalProperties": false
+}

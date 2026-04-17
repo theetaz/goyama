@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/cultivation-step.json",
+  "title": "CultivationStep",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "crop_slug": { "$ref": "common.json#/$defs/Slug" },
+    "variety_slug": { "$ref": "common.json#/$defs/Slug" },
+    "aez_code": { "type": "string" },
+    "season": { "$ref": "common.json#/$defs/Season" },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "land_preparation",
+        "nursery",
+        "seed_treatment",
+        "sowing",
+        "transplanting",
+        "fertilization",
+        "irrigation",
+        "weed_management",
+        "pest_management",
+        "disease_management",
+        "pruning",
+        "training",
+        "pollination",
+        "harvesting",
+        "post_harvest",
+        "storage"
+      ]
+    },
+    "order_idx": { "type": "integer", "minimum": 0 },
+    "day_after_planting": { "$ref": "common.json#/$defs/IntRange" },
+    "title": { "$ref": "common.json#/$defs/I18nString" },
+    "body": { "$ref": "common.json#/$defs/I18nString" },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["seed", "fertilizer", "pesticide", "herbicide", "fungicide", "water", "labor", "mulch", "amendment", "tool"]
+          },
+          "name": { "$ref": "common.json#/$defs/I18nString" },
+          "amount": { "type": "number" },
+          "unit": { "type": "string" },
+          "per_unit_area": { "type": "string", "enum": ["acre", "hectare", "perch", "square_meter"] },
+          "notes": { "$ref": "common.json#/$defs/I18nString" }
+        },
+        "required": ["type", "name"],
+        "additionalProperties": false
+      }
+    },
+    "media_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "crop_slug", "season", "stage", "order_idx", "title"],
+  "additionalProperties": false
+}

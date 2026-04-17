@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/remedy.json",
+  "title": "Remedy",
+  "description": "A treatment for a disease or pest. Chemical remedies require DOA-registered active ingredients and explicit agronomist review before publication.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "type": {
+      "type": "string",
+      "enum": ["cultural", "biological", "chemical", "resistant_variety", "mechanical", "integrated"]
+    },
+    "target_disease_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "target_pest_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "applicable_crop_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "name": { "$ref": "common.json#/$defs/I18nString" },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "instructions": { "$ref": "common.json#/$defs/I18nString" },
+    "chemical": {
+      "type": "object",
+      "description": "Required when type='chemical'.",
+      "properties": {
+        "active_ingredient": { "type": "string" },
+        "concentration": { "type": "string" },
+        "formulation": {
+          "type": "string",
+          "enum": ["EC", "SC", "WP", "WG", "SL", "SP", "ULV", "DP", "GR", "other"]
+        },
+        "doa_registration_no": {
+          "type": "string",
+          "description": "Registration number under the Control of Pesticides Act of Sri Lanka."
+        },
+        "dosage": { "type": "string" },
+        "dosage_per_acre": { "$ref": "common.json#/$defs/Range" },
+        "application_method": {
+          "type": "string",
+          "enum": ["foliar_spray", "soil_drench", "seed_treatment", "broadcast", "injection", "bait", "fumigation"]
+        },
+        "frequency": { "type": "string" },
+        "pre_harvest_interval_days": { "type": "integer", "minimum": 0 },
+        "re_entry_interval_hours": { "type": "integer", "minimum": 0 },
+        "who_hazard_class": {
+          "type": "string",
+          "enum": ["Ia", "Ib", "II", "III", "U"]
+        },
+        "safety_notes": { "$ref": "common.json#/$defs/I18nString" }
+      },
+      "required": ["active_ingredient", "application_method", "pre_harvest_interval_days"],
+      "additionalProperties": false
+    },
+    "effectiveness": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "variable"]
+    },
+    "cost_tier": {
+      "type": "string",
+      "enum": ["free", "low", "medium", "high"]
+    },
+    "organic_compatible": { "type": "boolean" },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "type", "name"],
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "chemical" } } },
+      "then": { "required": ["chemical"] }
+    }
+  ],
+  "anyOf": [
+    { "required": ["target_disease_slugs"] },
+    { "required": ["target_pest_slugs"] }
+  ],
+  "additionalProperties": false
+}

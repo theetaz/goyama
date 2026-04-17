@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/aez.json",
+  "title": "AgroEcologicalZone",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "code": {
+      "type": "string",
+      "description": "Standard Sri Lanka AEZ code (e.g. WL1a, IL1, DL1b).",
+      "pattern": "^(WL|IL|DL)[0-9]+[a-z]?$"
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "name": { "$ref": "common.json#/$defs/I18nString" },
+    "zone_group": { "$ref": "common.json#/$defs/ZoneGroup" },
+    "elevation_class": { "$ref": "common.json#/$defs/ElevationClass" },
+    "avg_rainfall_mm": { "type": "number" },
+    "avg_temperature_c": { "type": "number" },
+    "dominant_soil_groups": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "geometry": {
+      "oneOf": [
+        { "$ref": "common.json#/$defs/GeoJsonPolygon" },
+        { "$ref": "common.json#/$defs/GeoJsonMultiPolygon" }
+      ]
+    },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["code", "version", "status", "zone_group", "elevation_class", "geometry"],
+  "additionalProperties": false
+}

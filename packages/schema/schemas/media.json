@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/media.json",
+  "title": "Media",
+  "description": "References to images, videos, PDFs, audio. We redistribute only media we produce ourselves; third-party media is linked, never rehosted.",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "type": {
+      "type": "string",
+      "enum": ["image", "video", "pdf", "audio", "transcript"]
+    },
+    "hosting": {
+      "type": "string",
+      "enum": ["own", "external_link"],
+      "description": "'own': we host it (CC-BY 4.0). 'external_link': linked to original host, not rehosted."
+    },
+    "url": { "type": "string", "format": "uri" },
+    "external_url": { "type": "string", "format": "uri" },
+    "title": { "$ref": "common.json#/$defs/I18nString" },
+    "caption": { "$ref": "common.json#/$defs/I18nString" },
+    "credit": { "type": "string" },
+    "licence": {
+      "type": "string",
+      "description": "SPDX licence identifier or a URL. E.g. 'CC-BY-4.0', 'CC-BY-SA-4.0', 'public-domain', 'all-rights-reserved'."
+    },
+    "captured_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "captured_at_geom": {
+      "type": "object",
+      "description": "Optional GeoJSON Point, fuzzed to GN division if user-submitted.",
+      "properties": {
+        "type": { "const": "Point" },
+        "coordinates": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 2,
+          "maxItems": 3
+        }
+      },
+      "required": ["type", "coordinates"]
+    },
+    "related": {
+      "type": "object",
+      "properties": {
+        "crop_slug": { "$ref": "common.json#/$defs/Slug" },
+        "disease_slug": { "$ref": "common.json#/$defs/Slug" },
+        "pest_slug": { "$ref": "common.json#/$defs/Slug" },
+        "symptom_slug": { "$ref": "common.json#/$defs/Slug" },
+        "cultivation_step_slug": { "$ref": "common.json#/$defs/Slug" }
+      },
+      "additionalProperties": false
+    },
+    "language": { "$ref": "common.json#/$defs/Locale" },
+    "duration_seconds": { "type": "number", "minimum": 0 },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "type", "hosting", "licence"],
+  "allOf": [
+    { "if": { "properties": { "hosting": { "const": "own" } } },
+      "then": { "required": ["url"] } },
+    { "if": { "properties": { "hosting": { "const": "external_link" } } },
+      "then": { "required": ["external_url"] } }
+  ],
+  "additionalProperties": false
+}

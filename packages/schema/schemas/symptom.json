@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/symptom.json",
+  "title": "Symptom",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "disease_slug": { "$ref": "common.json#/$defs/Slug" },
+    "pest_slug": { "$ref": "common.json#/$defs/Slug" },
+    "stage": { "type": "string", "enum": ["early", "mid", "severe"] },
+    "affected_part": {
+      "type": "string",
+      "enum": ["leaf", "stem", "root", "fruit", "flower", "seed", "whole_plant", "panicle", "tiller"]
+    },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "image_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" },
+      "description": "References to symptom-image records."
+    },
+    "confused_with_symptom_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" }
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "stage", "affected_part", "description"],
+  "anyOf": [
+    { "required": ["disease_slug"] },
+    { "required": ["pest_slug"] }
+  ],
+  "additionalProperties": false
+}

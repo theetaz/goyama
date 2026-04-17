@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/pest.json",
+  "title": "Pest",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "scientific_name": { "type": "string" },
+    "names": { "$ref": "common.json#/$defs/I18nString" },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "kingdom": {
+      "type": "string",
+      "enum": ["insecta", "arachnida", "nematoda", "mollusca", "mammalia", "aves", "other"]
+    },
+    "affected_crop_slugs": {
+      "type": "array",
+      "items": { "$ref": "common.json#/$defs/Slug" },
+      "minItems": 1
+    },
+    "life_stages": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["egg", "larva", "nymph", "pupa", "adult"] }
+    },
+    "feeding_type": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["chewing", "sucking", "boring", "rasping", "sap_feeding", "fruit_piercing", "root_feeding"]
+      }
+    },
+    "economic_threshold": { "$ref": "common.json#/$defs/I18nString" },
+    "favored_conditions": {
+      "type": "object",
+      "properties": {
+        "humidity": { "type": "string", "enum": ["low", "medium", "high"] },
+        "temperature_c": { "$ref": "common.json#/$defs/Range" },
+        "season": {
+          "type": "array",
+          "items": { "$ref": "common.json#/$defs/Season" }
+        },
+        "notes": { "$ref": "common.json#/$defs/I18nString" }
+      },
+      "additionalProperties": false
+    },
+    "description": { "$ref": "common.json#/$defs/I18nString" },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "names", "kingdom", "affected_crop_slugs"],
+  "additionalProperties": false
+}

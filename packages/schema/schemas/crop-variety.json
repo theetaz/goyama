@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cropdoc.lk/schemas/crop-variety.json",
+  "title": "CropVariety",
+  "type": "object",
+  "properties": {
+    "id": { "$ref": "common.json#/$defs/Uuid" },
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "crop_slug": { "$ref": "common.json#/$defs/Slug" },
+    "name": { "type": "string" },
+    "released_by": {
+      "type": "string",
+      "description": "Originating institution (e.g. 'RRDI', 'HORDI', 'FCRDI')."
+    },
+    "release_year": { "type": "integer", "minimum": 1900 },
+    "duration_days": { "type": "integer" },
+    "expected_yield_kg_per_acre": { "$ref": "common.json#/$defs/Range" },
+    "recommended_aez_codes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "traits": {
+      "type": "object",
+      "properties": {
+        "disease_resistance": {
+          "type": "array",
+          "items": { "$ref": "common.json#/$defs/Slug" },
+          "description": "Slugs of diseases this variety resists."
+        },
+        "pest_resistance": {
+          "type": "array",
+          "items": { "$ref": "common.json#/$defs/Slug" }
+        },
+        "drought_tolerance": { "type": "string", "enum": ["low", "medium", "high"] },
+        "flood_tolerance": { "type": "string", "enum": ["low", "medium", "high"] },
+        "salinity_tolerance": { "type": "string", "enum": ["low", "medium", "high"] },
+        "grain_type": { "type": "string" },
+        "notes": { "$ref": "common.json#/$defs/I18nString" }
+      },
+      "additionalProperties": true
+    },
+    "field_provenance": {
+      "type": "object",
+      "additionalProperties": { "$ref": "provenance.json" }
+    },
+    "created_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "updated_at": { "$ref": "common.json#/$defs/Timestamp" }
+  },
+  "required": ["slug", "version", "status", "crop_slug", "name"],
+  "additionalProperties": false
+}
