@@ -1,0 +1,33 @@
+name: corpus
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    paths:
+      - 'corpus/**'
+      - 'packages/schema/**'
+      - 'scripts/validate_corpus.py'
+      - '.github/workflows/corpus.yml'
+
+concurrency:
+  group: corpus-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: JSON Schema validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install validator deps
+        run: pip install 'jsonschema[format]==4.23.*' 'referencing==0.35.*'
+
+      - name: Validate all seed records
+        run: python scripts/validate_corpus.py

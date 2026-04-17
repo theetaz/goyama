@@ -1,0 +1,50 @@
+name: Data source proposal
+description: Propose a new source to add to the crawler register
+title: "[data] "
+labels: ["data-source"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Source name
+      placeholder: "DOA Sri Lanka — Crop Recommendations"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Root URL
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: What's on this source
+      description: What entities (crops, diseases, varieties, …) does it cover? Sri Lanka focus or global baseline?
+    validations:
+      required: true
+  - type: dropdown
+    id: license
+    attributes:
+      label: Licence / terms
+      options:
+        - Public domain / government gazette
+        - Creative Commons (specify version below)
+        - All rights reserved — facts only, with citation
+        - Unclear — needs a licence review
+    validations:
+      required: true
+  - type: textarea
+    id: robots
+    attributes:
+      label: robots.txt / terms notes
+      description: Paste the relevant lines from robots.txt or quote the site's ToS section on automated access.
+    validations:
+      required: true
+  - type: input
+    id: cadence
+    attributes:
+      label: Proposed crawl cadence
+      placeholder: "weekly / monthly / one-shot"
+    validations:
+      required: true

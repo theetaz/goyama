@@ -1,0 +1,42 @@
+name: Bug report
+description: Something in the app, API, or corpus is broken
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: A clear description of the bug and the expected behaviour.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - web-client
+        - web-admin
+        - mobile
+        - api
+        - corpus content
+        - pipelines (crawler / extractor)
+        - docs
+        - infra / CI
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See error …
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser, OS, device, locale — whatever's relevant.
