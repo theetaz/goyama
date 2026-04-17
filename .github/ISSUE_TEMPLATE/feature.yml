@@ -1,0 +1,36 @@
+name: Feature request
+description: Propose a new feature or UX improvement
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is the user trying to do, and what's missing or clunky today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - web-client
+        - web-admin
+        - mobile
+        - api
+        - corpus schema
+        - pipelines
+        - other
+    validations:
+      required: true

@@ -20,24 +20,24 @@ var ErrNotFound = errors.New("crop not found")
 // corpus schema — enough for the client to render cards and detail pages.
 // The full provenance block is available via the detail endpoint.
 type Crop struct {
-	Slug            string              `json:"slug"`
-	ScientificName  string              `json:"scientific_name,omitempty"`
-	Family          string              `json:"family,omitempty"`
-	Category        string              `json:"category,omitempty"`
-	LifeCycle       string              `json:"life_cycle,omitempty"`
-	GrowthHabit     string              `json:"growth_habit,omitempty"`
-	Names           map[string]string   `json:"names,omitempty"`
-	Aliases         []string            `json:"aliases,omitempty"`
-	DefaultSeason   string              `json:"default_season,omitempty"`
-	DurationDays    *Range              `json:"duration_days,omitempty"`
-	ElevationM      *Range              `json:"elevation_m,omitempty"`
-	RainfallMM      *Range              `json:"rainfall_mm,omitempty"`
-	TemperatureC    *Range              `json:"temperature_c,omitempty"`
-	SoilPH          *Range              `json:"soil_ph,omitempty"`
-	ExpectedYield   *Range              `json:"expected_yield_kg_per_acre,omitempty"`
-	Description     map[string]string   `json:"description,omitempty"`
-	Status          string              `json:"status,omitempty"`
-	FieldProvenance map[string]any      `json:"field_provenance,omitempty"`
+	Slug            string            `json:"slug"`
+	ScientificName  string            `json:"scientific_name,omitempty"`
+	Family          string            `json:"family,omitempty"`
+	Category        string            `json:"category,omitempty"`
+	LifeCycle       string            `json:"life_cycle,omitempty"`
+	GrowthHabit     string            `json:"growth_habit,omitempty"`
+	Names           map[string]string `json:"names,omitempty"`
+	Aliases         []string          `json:"aliases,omitempty"`
+	DefaultSeason   string            `json:"default_season,omitempty"`
+	DurationDays    *Range            `json:"duration_days,omitempty"`
+	ElevationM      *Range            `json:"elevation_m,omitempty"`
+	RainfallMM      *Range            `json:"rainfall_mm,omitempty"`
+	TemperatureC    *Range            `json:"temperature_c,omitempty"`
+	SoilPH          *Range            `json:"soil_ph,omitempty"`
+	ExpectedYield   *Range            `json:"expected_yield_kg_per_acre,omitempty"`
+	Description     map[string]string `json:"description,omitempty"`
+	Status          string            `json:"status,omitempty"`
+	FieldProvenance map[string]any    `json:"field_provenance,omitempty"`
 }
 
 // Range matches the schema's Range / IntRange object.
