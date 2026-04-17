@@ -53,6 +53,12 @@
     "popup_placeholder_note": "Approximate boundaries — NRMC polygons coming soon.",
     "disclaimer": "Zone boundaries on this map are sketchy hand-drawn approximations for the first UX pass. The canonical NRMC polygon dataset replaces them when the geospatial vectorisation workstream lands."
   },
+  "cultivation": {
+    "heading": "Cultivation calendar",
+    "disclaimer": "Draft guide — timings and inputs are sourced from DOA / HORDI publications and pending agronomist review.",
+    "dap_before": "{{n}} days before planting",
+    "dap_after": "Day {{n}}"
+  },
   "locale_picker": {
     "label": "Language"
   },

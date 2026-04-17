@@ -1,0 +1,36 @@
+{
+  "slug": "capsicum-03-fertilization-top1",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "capsicum",
+  "season": "year_round",
+  "stage": "fertilization",
+  "order_idx": 3,
+  "day_after_planting": {"min": 30, "max": 30, "unit": "days"},
+  "title": {
+    "en": "1st top dressing — 1 month after planting",
+    "si": "පළමු අතිරේක පොහොර — සිටුවා මාසයකට පසු",
+    "ta": "முதல் மேல் உரம் — நடவுக்குப் பின் 1 மாதம்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Apply Urea 100 kg/ha and MOP 65 kg/ha as the first top dressing one month after planting.",
+    "si": "සිටුවා මාසයකට පසු යූරියා හෙක්ටයාරයට 100 kg සහ MOP 65 kg පළමු අතිරේක පොහොර ලෙස යොදන්න.",
+    "ta": "நடவுக்குப் பின் ஒரு மாதத்தில் யூரியா ஹெக்டேருக்கு 100 kg மற்றும் MOP 65 kg முதல் மேல் உரமாக வழங்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {"type": "fertilizer", "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 100, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"}
+  ],
+  "field_provenance": {
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "1 month after: Urea 100 kg/ha, MOP 65 kg/ha"
+    }
+  }
+}

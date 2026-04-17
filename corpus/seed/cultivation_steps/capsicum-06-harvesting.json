@@ -1,0 +1,32 @@
+{
+  "slug": "capsicum-06-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "capsicum",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 6,
+  "day_after_planting": {"min": 54, "max": 75, "unit": "days from transplanting (≈75 days from nursery sowing)"},
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "First harvest can be done 75 days after nursery sowing, then at 5–7 day intervals. Expected yield is 10–15 t/ha for open-pollinated varieties and 20–25 t/ha for hybrids.",
+    "si": "පළමු අස්වනු බීජ වපුරා දින 75 කට පසුව නෙලා, ඉන්පසු දින 5–7 පරතර වලින් නෙලන්න. අපේක්ෂිත අස්වැන්න OP ප්‍රභේද සඳහා හෙක්ටයාරයට ටොන් 10–15 ක් ද, මිශ්‍ර ප්‍රභේද සඳහා ටොන් 20–25 ක් ද වේ.",
+    "ta": "நாற்றுப் பாத்தி விதைத்து 75 நாட்களுக்குப் பின் முதல் அறுவடை செய்யலாம், பின்னர் 5–7 நாள் இடைவெளியில். எதிர்பார்க்கப்படும் விளைச்சல் OP வகைகளுக்கு ஹெக்டேருக்கு 10–15 டன், கலப்பின வகைகளுக்கு 20–25 டன்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "First harvesting can be done 75 days after nursery sowing and at 5-7 day intervals. 10-15 t/ha – OP varities. 20-25 t/ha – Hybrids."
+    }
+  }
+}

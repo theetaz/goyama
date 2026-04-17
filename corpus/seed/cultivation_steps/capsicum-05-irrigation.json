@@ -1,0 +1,31 @@
+{
+  "slug": "capsicum-05-irrigation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "capsicum",
+  "season": "year_round",
+  "stage": "irrigation",
+  "order_idx": 5,
+  "title": {
+    "en": "Irrigation schedule",
+    "si": "ජල සැපයුම් කාල ක්‍රමය",
+    "ta": "நீர்ப்பாசன அட்டவணை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Irrigate at 4–5 day intervals during early stages and at weekly intervals during later stages.",
+    "si": "මුල් අවධියේදී දින 4–5 පරතර වලින් ද, පසු අවධියේදී සතියකට වරක් ද ජල සැපයුම කරන්න.",
+    "ta": "ஆரம்ப நிலைகளில் 4–5 நாள் இடைவெளியிலும், பிற்பகுதி நிலைகளில் வாரத்திற்கு ஒரு முறையும் நீர்ப்பாசனம் செய்யவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Irrigation to be practiced in 4-5 day intervals at early stages and 1 week interval at latter stages"
+    }
+  }
+}

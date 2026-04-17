@@ -1,0 +1,31 @@
+{
+  "slug": "tomato-06-irrigation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "stage": "irrigation",
+  "order_idx": 6,
+  "title": {
+    "en": "Irrigation — avoid excess water",
+    "si": "ජලපහසුකම — අතිරික්ත ජලය වළක්වන්න",
+    "ta": "நீர்ப்பாசனம் — அதிக நீரைத் தவிர்க்கவும்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Do not apply excess water, especially in the dry season — it causes fruit crack.",
+    "si": "වියළි සමයෙහි විශේෂයෙන් අතිරික්ත ජලය නොයොදන්න — එය ගෙඩි පැළීමට හේතු වේ.",
+    "ta": "குறிப்பாக வறண்ட காலத்தில் அதிகமான நீரைப் பயன்படுத்த வேண்டாம் — இது காய்கள் வெடிக்க காரணமாகும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Don't apply excess water specially in dry season. It causes fruit crack."
+    }
+  }
+}

@@ -25,6 +25,7 @@ func (h *Handler) Routes() chi.Router {
 	r := chi.NewRouter()
 	r.Get("/", h.list)
 	r.Get("/{slug}", h.get)
+	r.Get("/{slug}/cultivation-steps", h.cultivationSteps)
 	return r
 }
 
@@ -62,4 +63,18 @@ func (h *Handler) get(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	httpx.JSON(w, http.StatusOK, c)
+}
+
+func (h *Handler) cultivationSteps(w http.ResponseWriter, r *http.Request) {
+	slug := chi.URLParam(r, "slug")
+	steps, err := h.repo.ListCultivationSteps(r.Context(), slug)
+	if err != nil {
+		httpx.Problem(w, r, http.StatusInternalServerError, "internal-error", err.Error())
+		return
+	}
+	httpx.JSON(w, http.StatusOK, map[string]any{
+		"crop_slug": slug,
+		"items":     steps,
+		"count":     len(steps),
+	})
 }

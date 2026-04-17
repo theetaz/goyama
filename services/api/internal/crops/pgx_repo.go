@@ -257,3 +257,77 @@ func derefF(p *float32) any {
 	}
 	return *p
 }
+
+const cultivationStepsSQL = `
+WITH latest AS (
+	SELECT DISTINCT ON (slug) *
+	FROM cultivation_step
+	WHERE crop_slug = $1
+	ORDER BY slug, version DESC
+),
+titles AS (
+	SELECT entity_slug AS slug,
+	       jsonb_object_agg(locale, value) AS value
+	FROM translation
+	WHERE entity_type = 'cultivation_step' AND field = 'title'
+	GROUP BY entity_slug
+),
+bodies AS (
+	SELECT entity_slug AS slug,
+	       jsonb_object_agg(locale, value) AS value
+	FROM translation
+	WHERE entity_type = 'cultivation_step' AND field = 'body'
+	GROUP BY entity_slug
+)
+SELECT l.slug, l.crop_slug, COALESCE(l.variety_slug, ''), COALESCE(l.aez_code, ''),
+       COALESCE(l.season::text, ''), l.stage, l.order_idx,
+       l.dap_min, l.dap_max, l.inputs, COALESCE(l.media_slugs, '{}'),
+       l.status::text,
+       COALESCE(t.value, '{}'::jsonb) AS title,
+       COALESCE(b.value, '{}'::jsonb) AS body,
+       l.field_provenance
+FROM latest l
+LEFT JOIN titles t ON t.slug = l.slug
+LEFT JOIN bodies b ON b.slug = l.slug
+ORDER BY l.order_idx
+`
+
+// ListCultivationSteps returns every cultivation step attached to the crop,
+// ordered by order_idx. Titles and bodies come back as locale -> string
+// maps so the client can render its current i18n locale directly.
+func (r *PgxRepo) ListCultivationSteps(ctx context.Context, cropSlug string) ([]CultivationStep, error) {
+	rows, err := r.pool.Query(ctx, cultivationStepsSQL, cropSlug)
+	if err != nil {
+		return nil, fmt.Errorf("list cultivation steps: %w", err)
+	}
+	defer rows.Close()
+
+	out := make([]CultivationStep, 0, 8)
+	for rows.Next() {
+		var s CultivationStep
+		var dapMin, dapMax *int
+		var title, body map[string]string
+		var inputs []map[string]any
+		var provenance map[string]any
+		if err := rows.Scan(
+			&s.Slug, &s.CropSlug, &s.VarietySlug, &s.AEZCode,
+			&s.Season, &s.Stage, &s.OrderIdx,
+			&dapMin, &dapMax, &inputs, &s.MediaSlugs,
+			&s.Status, &title, &body, &provenance,
+		); err != nil {
+			return nil, fmt.Errorf("scan cultivation step: %w", err)
+		}
+		if dapMin != nil || dapMax != nil {
+			s.DayAfterPlanting = &IntRange{Min: dapMin, Max: dapMax}
+		}
+		s.Title = title
+		s.Body = body
+		s.Inputs = inputs
+		s.FieldProvenance = provenance
+		out = append(out, s)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, fmt.Errorf("iterate cultivation steps: %w", err)
+	}
+	return out, nil
+}

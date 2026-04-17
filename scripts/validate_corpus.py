@@ -28,6 +28,7 @@ DIR_TO_SCHEMA: dict[str, str] = {
     "aez": "aez.json",
     "crops": "crop.json",
     "crop_varieties": "crop-variety.json",
+    "cultivation_steps": "cultivation-step.json",
     "diseases": "disease.json",
     "media": "media.json",
     "pests": "pest.json",

@@ -1,9 +1,14 @@
 import { Link, createFileRoute } from '@tanstack/react-router';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft } from 'lucide-react';
+import { ChevronLeft, Sprout } from 'lucide-react';
 
-import { api, type Range } from '@/lib/api';
+import {
+  api,
+  type CultivationStep,
+  type CultivationStepInput,
+  type Range,
+} from '@/lib/api';
 import { pickLocalised, type Locale } from '@/i18n';
 
 export const Route = createFileRoute('/crops/$slug')({
@@ -18,6 +23,14 @@ function CropDetailPage() {
   const { data, isLoading, isError, error } = useQuery({
     queryKey: ['crop', slug],
     queryFn: () => api.getCrop(slug),
+  });
+
+  const steps = useQuery({
+    queryKey: ['crop-cultivation-steps', slug],
+    queryFn: () => api.listCultivationSteps(slug),
+    // Only fetch steps for a crop we actually loaded, so a 404 detail doesn't
+    // trigger a second loading spinner on the timeline.
+    enabled: !!data,
   });
 
   return (
@@ -85,10 +98,124 @@ function CropDetailPage() {
               </ul>
             </section>
           )}
+
+          {steps.data && steps.data.items.length > 0 && (
+            <CultivationTimeline items={steps.data.items} locale={locale} />
+          )}
         </article>
       )}
     </div>
   );
+}
+
+function CultivationTimeline({
+  items,
+  locale,
+}: {
+  items: CultivationStep[];
+  locale: Locale;
+}) {
+  const { t } = useTranslation();
+  return (
+    <section aria-labelledby="cultivation-heading" className="space-y-3">
+      <header className="flex items-center gap-2">
+        <Sprout className="h-5 w-5 text-primary" aria-hidden />
+        <h2 id="cultivation-heading" className="text-xl font-semibold">
+          {t('cultivation.heading')}
+        </h2>
+      </header>
+      <p className="text-xs text-muted-foreground">{t('cultivation.disclaimer')}</p>
+      <ol className="relative space-y-4 border-l-2 border-muted pl-6">
+        {items.map((step) => (
+          <StepCard key={step.slug} step={step} locale={locale} />
+        ))}
+      </ol>
+    </section>
+  );
+}
+
+function StepCard({ step, locale }: { step: CultivationStep; locale: Locale }) {
+  const { t } = useTranslation();
+  const title = pickLocalised(step.title, locale) ?? step.stage.replace(/_/g, ' ');
+  const body = pickLocalised(step.body, locale);
+  const dap = formatDap(step.day_after_planting, t);
+
+  return (
+    <li className="relative">
+      <span
+        aria-hidden
+        className="absolute -left-[33px] top-2 flex h-4 w-4 items-center justify-center rounded-full border-2 border-primary bg-background text-[10px] font-semibold text-primary"
+      >
+        {step.order_idx}
+      </span>
+      <div className="rounded-xl border bg-card p-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h3 className="text-base font-semibold">{title}</h3>
+          <div className="flex gap-1.5 text-[11px]">
+            <span className="rounded-full bg-muted px-2 py-0.5 capitalize text-muted-foreground">
+              {step.stage.replace(/_/g, ' ')}
+            </span>
+            {dap && (
+              <span className="rounded-full bg-primary/10 px-2 py-0.5 text-primary">
+                {dap}
+              </span>
+            )}
+          </div>
+        </div>
+        {body && (
+          <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-muted-foreground">
+            {body}
+          </p>
+        )}
+        {step.inputs && step.inputs.length > 0 && (
+          <ul className="mt-3 flex flex-wrap gap-1.5">
+            {step.inputs.map((input, i) => (
+              <li key={i}>
+                <InputPill input={input} locale={locale} />
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </li>
+  );
+}
+
+function InputPill({
+  input,
+  locale,
+}: {
+  input: CultivationStepInput;
+  locale: Locale;
+}) {
+  const name = pickLocalised(input.name, locale) ?? '';
+  const parts: string[] = [];
+  if (input.amount != null) {
+    const unit = input.unit ? ` ${input.unit}` : '';
+    const per = input.per_unit_area ? `/${input.per_unit_area.replace('_', ' ')}` : '';
+    parts.push(`${input.amount}${unit}${per}`);
+  }
+  return (
+    <span className="inline-flex items-center gap-1 rounded-md border bg-background px-2 py-0.5 text-[11px]">
+      <span className="uppercase tracking-wide text-muted-foreground">{input.type}</span>
+      <span className="text-foreground">{name}</span>
+      {parts.length > 0 && <span className="text-muted-foreground">· {parts.join(' ')}</span>}
+    </span>
+  );
+}
+
+function formatDap(
+  range: Range | undefined,
+  t: (key: string, options?: Record<string, unknown>) => string,
+): string | null {
+  if (!range) return null;
+  const { min, max } = range;
+  if (min == null && max == null) return null;
+  const fmt = (n: number) => (n < 0 ? t('cultivation.dap_before', { n: -n }) : t('cultivation.dap_after', { n }));
+  if (min != null && max != null && min !== max) {
+    return `${fmt(min)} → ${fmt(max)}`;
+  }
+  return fmt(min ?? max!);
 }
 
 function Chip({ label, value }: { label?: string; value: string }) {

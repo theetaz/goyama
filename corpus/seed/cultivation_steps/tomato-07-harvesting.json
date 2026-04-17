@@ -1,0 +1,31 @@
+{
+  "slug": "tomato-07-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 7,
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Harvest the fruits when they reach the green-yellow stage. Expected yield is 20–30 t/ha.",
+    "si": "ගෙඩි කොළ-කහ වර්ණයට පැමිණි විට අස්වනු නෙලන්න. අපේක්ෂිත අස්වැන්න හෙක්ටයාරයට ටොන් 20–30 කි.",
+    "ta": "காய்கள் பச்சை-மஞ்சள் நிறத்தை அடையும் போது அறுவடை செய்யவும். எதிர்பார்க்கப்படும் விளைச்சல் ஹெக்டேருக்கு 20–30 டன் ஆகும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Harvesting is done when the fruits reach green yellow. 20-30 tons per hectare"
+    }
+  }
+}
