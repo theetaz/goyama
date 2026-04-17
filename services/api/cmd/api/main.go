@@ -21,6 +21,7 @@ import (
 	"github.com/go-chi/cors"
 	"github.com/jackc/pgx/v5/pgxpool"
 
+	"github.com/goyama/api/internal/admin"
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/health"
 	"github.com/goyama/api/internal/platform/config"
@@ -136,10 +137,12 @@ func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository
 
 	healthH := health.New(version)
 	cropsH := crops.NewHandler(cropsRepo)
+	adminH := admin.New(cropsRepo)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
 		r.Mount("/crops", cropsH.Routes())
+		r.Mount("/admin", adminH.Routes())
 	})
 
 	// Root-level redirect to docs in non-prod.

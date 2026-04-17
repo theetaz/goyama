@@ -65,6 +65,25 @@ type Repository interface {
 	// guide for a crop. Returns an empty slice when the repo has no step
 	// data (e.g. the JSONL fallback).
 	ListCultivationSteps(ctx context.Context, cropSlug string) ([]CultivationStep, error)
+	// ListCultivationStepsByStatus powers the admin review queue. Returns
+	// every step matching the given status (e.g. "draft", "in_review"),
+	// ordered by crop_slug then order_idx.
+	ListCultivationStepsByStatus(ctx context.Context, status string) ([]CultivationStep, error)
+	// GetCultivationStep returns a single step by slug, status-agnostic.
+	GetCultivationStep(ctx context.Context, slug string) (CultivationStep, error)
+	// SetCultivationStepStatus promotes or rejects a step. Writes
+	// reviewed_by / reviewed_at / review_notes onto the row so the audit
+	// trail is preserved.
+	SetCultivationStepStatus(ctx context.Context, slug string, update StatusUpdate) error
+}
+
+// StatusUpdate carries the fields captured when an agronomist promotes or
+// rejects a record. `ReviewedBy` should be the verified identity of the
+// reviewer, not a free-text input.
+type StatusUpdate struct {
+	Status     string
+	ReviewedBy string
+	Notes      string
 }
 
 // CultivationStep is one entry in a crop's cultivation guide. Title and body
@@ -85,6 +104,9 @@ type CultivationStep struct {
 	MediaSlugs       []string          `json:"media_slugs,omitempty"`
 	Status           string            `json:"status,omitempty"`
 	FieldProvenance  map[string]any    `json:"field_provenance,omitempty"`
+	ReviewedBy       string            `json:"reviewed_by,omitempty"`
+	ReviewedAt       string            `json:"reviewed_at,omitempty"`
+	ReviewNotes      string            `json:"review_notes,omitempty"`
 }
 
 // IntRange matches the corpus schema IntRange object — integer min/max with
@@ -222,6 +244,26 @@ func (r *JSONLRepo) Get(_ context.Context, slug string) (Crop, error) {
 // serves the real data.
 func (r *JSONLRepo) ListCultivationSteps(_ context.Context, _ string) ([]CultivationStep, error) {
 	return []CultivationStep{}, nil
+}
+
+// Admin-facing operations are database-backed only. The JSONL fallback
+// surfaces them as explicit errors so an admin endpoint never silently
+// no-ops when DATABASE_URL is missing.
+var ErrRequiresDatabase = errors.New("operation requires Postgres (set DATABASE_URL)")
+
+// ListCultivationStepsByStatus — JSONL repo can't satisfy admin queries.
+func (r *JSONLRepo) ListCultivationStepsByStatus(_ context.Context, _ string) ([]CultivationStep, error) {
+	return nil, ErrRequiresDatabase
+}
+
+// GetCultivationStep — JSONL repo can't satisfy admin queries.
+func (r *JSONLRepo) GetCultivationStep(_ context.Context, _ string) (CultivationStep, error) {
+	return CultivationStep{}, ErrRequiresDatabase
+}
+
+// SetCultivationStepStatus — JSONL repo can't satisfy admin writes.
+func (r *JSONLRepo) SetCultivationStepStatus(_ context.Context, _ string, _ StatusUpdate) error {
+	return ErrRequiresDatabase
 }
 
 func matches(c Crop, q string) bool {
