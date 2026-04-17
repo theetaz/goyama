@@ -23,6 +23,7 @@ import (
 
 	"github.com/goyama/api/internal/admin"
 	"github.com/goyama/api/internal/crops"
+	"github.com/goyama/api/internal/diseases"
 	"github.com/goyama/api/internal/health"
 	"github.com/goyama/api/internal/platform/config"
 	"github.com/goyama/api/internal/platform/httpx"
@@ -47,13 +48,13 @@ func run() error {
 	log := newLogger(cfg.LogLevel)
 	slog.SetDefault(log)
 
-	cropsRepo, closeRepo, err := newCropsRepo(cfg, log)
+	cropsRepo, diseasesRepo, closeRepos, err := newRepos(cfg, log)
 	if err != nil {
-		return fmt.Errorf("crops repo: %w", err)
+		return fmt.Errorf("repos: %w", err)
 	}
-	defer closeRepo()
+	defer closeRepos()
 
-	r := buildRouter(cfg, log, cropsRepo)
+	r := buildRouter(cfg, log, cropsRepo, diseasesRepo)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.Port),
@@ -95,32 +96,32 @@ func run() error {
 	return nil
 }
 
-// newCropsRepo returns the repo backing the /crops endpoint — a Postgres-
-// backed pgx repo when DATABASE_URL is set, or the JSONL corpus loader
-// otherwise. The returned close function tears down pool resources; it's a
-// no-op for the JSONL repo.
-func newCropsRepo(cfg config.Config, log *slog.Logger) (crops.Repository, func(), error) {
+// newRepos builds the crops + diseases repositories that back the public
+// and admin routes. Both repos share one pgx pool when DATABASE_URL is
+// set; when it isn't, crops falls back to the JSONL bundle and diseases
+// returns the "database required" sentinel from every admin call.
+func newRepos(cfg config.Config, log *slog.Logger) (crops.Repository, diseases.Repository, func(), error) {
 	if cfg.DatabaseURL == "" {
-		log.Info("crops repo: using JSONL corpus",
+		log.Info("repos: using JSONL corpus (diseases admin disabled)",
 			slog.String("corpus_path", cfg.CorpusPath),
 		)
-		return crops.NewJSONLRepo(cfg.CorpusPath), func() {}, nil
+		return crops.NewJSONLRepo(cfg.CorpusPath), diseases.NewJSONLRepo(), func() {}, nil
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
 	if err != nil {
-		return nil, nil, fmt.Errorf("pgx pool: %w", err)
+		return nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
 	}
 	if err := pool.Ping(ctx); err != nil {
 		pool.Close()
-		return nil, nil, fmt.Errorf("ping db: %w", err)
+		return nil, nil, nil, fmt.Errorf("ping db: %w", err)
 	}
-	log.Info("crops repo: using Postgres")
-	return crops.NewPgxRepo(pool), pool.Close, nil
+	log.Info("repos: using Postgres")
+	return crops.NewPgxRepo(pool), diseases.NewPgxRepo(pool), pool.Close, nil
 }
 
-func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository) http.Handler {
+func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository, diseasesRepo diseases.Repository) http.Handler {
 	r := chi.NewRouter()
 
 	r.Use(middleware.Recoverer)
@@ -137,7 +138,7 @@ func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository
 
 	healthH := health.New(version)
 	cropsH := crops.NewHandler(cropsRepo)
-	adminH := admin.New(cropsRepo)
+	adminH := admin.New(cropsRepo, diseasesRepo)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
