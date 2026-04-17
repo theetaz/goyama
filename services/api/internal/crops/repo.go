@@ -11,6 +11,8 @@ import (
 	"sort"
 	"strings"
 	"sync"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // ErrNotFound is returned when a crop slug has no record.
@@ -56,8 +58,9 @@ type Summary struct {
 	Aliases        []string          `json:"aliases,omitempty"`
 }
 
-// Repository serves crop records. The JSONL implementation is for dev/demo
-// while the Postgres wiring lands; the Handler depends only on this interface.
+// Repository is the farmer-facing crop surface: listing, getting a single
+// crop, and reading the cultivation guide for a given crop. Admin-side
+// cultivation-step review operations live on CultivationStepRepo.
 type Repository interface {
 	List(ctx context.Context, filter ListFilter) ([]Summary, error)
 	Get(ctx context.Context, slug string) (Crop, error)
@@ -65,25 +68,18 @@ type Repository interface {
 	// guide for a crop. Returns an empty slice when the repo has no step
 	// data (e.g. the JSONL fallback).
 	ListCultivationSteps(ctx context.Context, cropSlug string) ([]CultivationStep, error)
-	// ListCultivationStepsByStatus powers the admin review queue. Returns
-	// every step matching the given status (e.g. "draft", "in_review"),
-	// ordered by crop_slug then order_idx.
-	ListCultivationStepsByStatus(ctx context.Context, status string) ([]CultivationStep, error)
-	// GetCultivationStep returns a single step by slug, status-agnostic.
-	GetCultivationStep(ctx context.Context, slug string) (CultivationStep, error)
-	// SetCultivationStepStatus promotes or rejects a step. Writes
-	// reviewed_by / reviewed_at / review_notes onto the row so the audit
-	// trail is preserved.
-	SetCultivationStepStatus(ctx context.Context, slug string, update StatusUpdate) error
 }
 
-// StatusUpdate carries the fields captured when an agronomist promotes or
-// rejects a record. `ReviewedBy` should be the verified identity of the
-// reviewer, not a free-text input.
-type StatusUpdate struct {
-	Status     string
-	ReviewedBy string
-	Notes      string
+// CultivationStepRepo is the admin-facing cultivation-step surface.
+// Separated from Repository so the review.Routes factory can bind against
+// the canonical ListByStatus / Get / SetStatus shape without also
+// dragging in the farmer-facing Crop type.
+//
+// Both JSONLRepo and PgxRepo implement both interfaces.
+type CultivationStepRepo interface {
+	ListByStatus(ctx context.Context, status string) ([]CultivationStep, error)
+	Get(ctx context.Context, slug string) (CultivationStep, error)
+	SetStatus(ctx context.Context, slug string, update review.StatusUpdate) error
 }
 
 // CultivationStep is one entry in a crop's cultivation guide. Title and body
@@ -251,18 +247,25 @@ func (r *JSONLRepo) ListCultivationSteps(_ context.Context, _ string) ([]Cultiva
 // no-ops when DATABASE_URL is missing.
 var ErrRequiresDatabase = errors.New("operation requires Postgres (set DATABASE_URL)")
 
-// ListCultivationStepsByStatus — JSONL repo can't satisfy admin queries.
-func (r *JSONLRepo) ListCultivationStepsByStatus(_ context.Context, _ string) ([]CultivationStep, error) {
+// CultivationStepJSONLRepo satisfies CultivationStepRepo by failing every
+// call — admin ops can't run against the JSONL corpus bundle.
+type CultivationStepJSONLRepo struct{}
+
+// NewCultivationStepJSONLRepo returns the placeholder admin repo.
+func NewCultivationStepJSONLRepo() *CultivationStepJSONLRepo { return &CultivationStepJSONLRepo{} }
+
+// ListByStatus always returns ErrRequiresDatabase.
+func (*CultivationStepJSONLRepo) ListByStatus(context.Context, string) ([]CultivationStep, error) {
 	return nil, ErrRequiresDatabase
 }
 
-// GetCultivationStep — JSONL repo can't satisfy admin queries.
-func (r *JSONLRepo) GetCultivationStep(_ context.Context, _ string) (CultivationStep, error) {
+// Get always returns ErrRequiresDatabase.
+func (*CultivationStepJSONLRepo) Get(context.Context, string) (CultivationStep, error) {
 	return CultivationStep{}, ErrRequiresDatabase
 }
 
-// SetCultivationStepStatus — JSONL repo can't satisfy admin writes.
-func (r *JSONLRepo) SetCultivationStepStatus(_ context.Context, _ string, _ StatusUpdate) error {
+// SetStatus always returns ErrRequiresDatabase.
+func (*CultivationStepJSONLRepo) SetStatus(context.Context, string, review.StatusUpdate) error {
 	return ErrRequiresDatabase
 }
 

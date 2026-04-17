@@ -8,6 +8,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // PgxRepo is the production implementation of diseases.Repository.
@@ -190,7 +192,7 @@ func (r *PgxRepo) loadI18n(ctx context.Context, items []Disease) error {
 
 // SetStatus promotes / rejects a disease, stamping the reviewer identity
 // and optional notes on the row. Returns ErrNotFound if no row matched.
-func (r *PgxRepo) SetStatus(ctx context.Context, slug string, u StatusUpdate) error {
+func (r *PgxRepo) SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error {
 	const sql = `
 UPDATE disease
 SET status       = $2::record_status,

@@ -49,13 +49,13 @@ func run() error {
 	log := newLogger(cfg.LogLevel)
 	slog.SetDefault(log)
 
-	cropsRepo, diseasesRepo, pestsRepo, closeRepos, err := newRepos(cfg, log)
+	cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, closeRepos, err := newRepos(cfg, log)
 	if err != nil {
 		return fmt.Errorf("repos: %w", err)
 	}
 	defer closeRepos()
 
-	r := buildRouter(cfg, log, cropsRepo, diseasesRepo, pestsRepo)
+	r := buildRouter(cfg, log, cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.Port),
@@ -97,32 +97,60 @@ func run() error {
 	return nil
 }
 
-// newRepos builds the crops + diseases + pests repositories that back the
-// public and admin routes. All three share one pgx pool when DATABASE_URL
-// is set; otherwise crops falls back to JSONL and diseases / pests return
-// ErrRequiresDatabase from every admin call.
-func newRepos(cfg config.Config, log *slog.Logger) (crops.Repository, diseases.Repository, pests.Repository, func(), error) {
+// newRepos builds every repository the API serves — both farmer-facing
+// (crops) and admin-facing (cultivation-step review queue, diseases,
+// pests). All share one pgx pool when DATABASE_URL is set; otherwise
+// crops falls back to JSONL and the three admin repos return
+// ErrRequiresDatabase from every call.
+func newRepos(
+	cfg config.Config,
+	log *slog.Logger,
+) (
+	crops.Repository,
+	crops.CultivationStepRepo,
+	diseases.Repository,
+	pests.Repository,
+	func(),
+	error,
+) {
 	if cfg.DatabaseURL == "" {
-		log.Info("repos: using JSONL corpus (diseases + pests admin disabled)",
+		log.Info("repos: using JSONL corpus (admin review queues disabled)",
 			slog.String("corpus_path", cfg.CorpusPath),
 		)
-		return crops.NewJSONLRepo(cfg.CorpusPath), diseases.NewJSONLRepo(), pests.NewJSONLRepo(), func() {}, nil
+		return crops.NewJSONLRepo(cfg.CorpusPath),
+			crops.NewCultivationStepJSONLRepo(),
+			diseases.NewJSONLRepo(),
+			pests.NewJSONLRepo(),
+			func() {},
+			nil
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
 	if err != nil {
-		return nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
+		return nil, nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
 	}
 	if err := pool.Ping(ctx); err != nil {
 		pool.Close()
-		return nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
+		return nil, nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
 	}
 	log.Info("repos: using Postgres")
-	return crops.NewPgxRepo(pool), diseases.NewPgxRepo(pool), pests.NewPgxRepo(pool), pool.Close, nil
+	return crops.NewPgxRepo(pool),
+		crops.NewCultivationStepPgxRepo(pool),
+		diseases.NewPgxRepo(pool),
+		pests.NewPgxRepo(pool),
+		pool.Close,
+		nil
 }
 
-func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository, diseasesRepo diseases.Repository, pestsRepo pests.Repository) http.Handler {
+func buildRouter(
+	cfg config.Config,
+	log *slog.Logger,
+	cropsRepo crops.Repository,
+	stepsAdminRepo crops.CultivationStepRepo,
+	diseasesRepo diseases.Repository,
+	pestsRepo pests.Repository,
+) http.Handler {
 	r := chi.NewRouter()
 
 	r.Use(middleware.Recoverer)
@@ -139,7 +167,7 @@ func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository
 
 	healthH := health.New(version)
 	cropsH := crops.NewHandler(cropsRepo)
-	adminH := admin.New(cropsRepo, diseasesRepo, pestsRepo)
+	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
