@@ -1,0 +1,47 @@
+{
+  "slug": "okra-02-sowing",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "stage": "sowing",
+  "order_idx": 2,
+  "day_after_planting": {"min": 0, "max": 0, "unit": "days"},
+  "title": {
+    "en": "Direct sowing",
+    "si": "සෘජු වපුරීම",
+    "ta": "நேரடி விதைப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Direct seeding is practiced. Soak seeds and plant 3–4 seeds per pit. Seed rate is 4.5 kg/ha.",
+    "si": "සෘජුව බීජ වපුරයි. බීජ තෙමා එක් කුහරයකට බීජ 3–4 බැගින් සිටුවන්න. බීජ අනුපාතය හෙක්ටයාරයට 4.5 kg වේ.",
+    "ta": "நேரடி விதைப்பு செய்யப்படுகிறது. விதைகளை ஊறவைத்து ஒரு குழிக்கு 3–4 விதைகள் வீதம் விதைக்கவும். விதை அளவு ஹெக்டேருக்கு 4.5 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Okra seed", "si": "බණ්ඩක්කා බීජ", "ta": "வெண்டை விதை", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 4.5,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Direct seeding is practiced. Seeds are soaked and planted at 3-4 seeds per pit."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Seed requirement 4.5 kg/ha"
+    }
+  }
+}

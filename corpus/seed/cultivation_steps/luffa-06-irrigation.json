@@ -1,0 +1,31 @@
+{
+  "slug": "luffa-06-irrigation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "luffa",
+  "season": "year_round",
+  "stage": "irrigation",
+  "order_idx": 6,
+  "title": {
+    "en": "Irrigation schedule",
+    "si": "ජල සැපයුම් කාල ක්‍රමය",
+    "ta": "நீர்ப்பாசன அட்டவணை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Irrigate twice a day until the seeds germinate. After germination, irrigate according to soil moisture conditions.",
+    "si": "බීජ පැලවන තෙක් දිනකට දෙවරක් ජල සැපයුම කරන්න. පැලවීමෙන් පසු පස්වල තෙතමනය අනුව ජල සැපයුම කරන්න.",
+    "ta": "விதைகள் முளைக்கும் வரை ஒரு நாளைக்கு இரண்டு முறை நீர்ப்பாய்ச்சவும். முளைத்த பிறகு, மண் ஈரப்பதத்திற்கு ஏற்ப நீர்ப்பாய்ச்சவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-luffa/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Irrigate twice a day until seeds are germinated. After that irrigation should be practiced according to moisture condition in the soil."
+    }
+  }
+}

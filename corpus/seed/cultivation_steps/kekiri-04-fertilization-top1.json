@@ -1,0 +1,36 @@
+{
+  "slug": "kekiri-04-fertilization-top1",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "kekiri",
+  "season": "year_round",
+  "stage": "fertilization",
+  "order_idx": 4,
+  "day_after_planting": {"min": 28, "max": 28, "unit": "days (from emergence)"},
+  "title": {
+    "en": "1st top dressing — 4 weeks after emergence",
+    "si": "පළමු අතිරේක පොහොර — පැළවීමෙන් සති 4 කට පසු",
+    "ta": "முதல் மேல் உரம் — முளைத்த 4 வாரங்கள்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Apply Urea 75 kg/ha and MOP 60 kg/ha as the first top dressing at four weeks after emergence.",
+    "si": "පැළවීමෙන් සති 4 කට පසු යූරියා හෙක්ටයාරයට 75 kg සහ MOP 60 kg පළමු අතිරේක පොහොර ලෙස යොදන්න.",
+    "ta": "முளைத்த நான்கு வாரங்களில் யூரியா ஹெக்டேருக்கு 75 kg மற்றும் MOP 60 kg முதல் மேல் உரமாக வழங்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {"type": "fertilizer", "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+  ],
+  "field_provenance": {
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "04 weeks after emergence of seedlings – Urea 75 kg/ha, MOP 60 kg/ha"
+    }
+  }
+}

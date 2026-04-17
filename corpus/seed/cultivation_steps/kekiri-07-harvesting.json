@@ -1,0 +1,31 @@
+{
+  "slug": "kekiri-07-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "kekiri",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 7,
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "When the fruit is well matured, harvest by cutting the stalk with a sharp knife. Expected yield is 25,000–30,000 kg/ha.",
+    "si": "ගෙඩි හොඳින් පැසුණු විට තියුණු පිහියකින් කඳ කපා අස්වනු නෙලන්න. අපේක්ෂිත අස්වැන්න හෙක්ටයාරයට කිලෝ 25,000–30,000 කි.",
+    "ta": "காய்கள் நன்கு முதிர்ந்தவுடன் கூர்மையான கத்தியால் காம்பை வெட்டி அறுவடை செய்யவும். எதிர்பார்க்கப்படும் விளைச்சல் ஹெக்டேருக்கு 25,000–30,000 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "When the fruit is well matured, harvest while cutting the stalk with a sharp knife. 25,000 – 30,000 Kgs per hectare."
+    }
+  }
+}
