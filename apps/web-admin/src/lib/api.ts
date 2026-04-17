@@ -188,4 +188,47 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }),
+  listDiseasesForReview: (status: RecordStatus = 'draft') =>
+    request<DiseaseReviewQueueResponse>(
+      `/v1/admin/diseases?status=${encodeURIComponent(status)}`,
+    ),
+  getDisease: (slug: string) =>
+    request<Disease>(`/v1/admin/diseases/${encodeURIComponent(slug)}`),
+  updateDiseaseStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<Disease>(`/v1/admin/diseases/${encodeURIComponent(slug)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
 };
+
+export interface Disease {
+  slug: string;
+  scientific_name?: string;
+  causal_organism: string;
+  causal_species?: string;
+  severity?: string;
+  affected_crop_slugs?: string[];
+  affected_parts?: string[];
+  transmission?: string[];
+  confused_with?: string[];
+  favored_conditions?: Record<string, unknown>;
+  names?: Record<string, string>;
+  aliases?: string[];
+  description?: Record<string, string>;
+  attrs?: Record<string, unknown>;
+  status: RecordStatus;
+  field_provenance?: Record<string, FieldProvenance>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface DiseaseReviewQueueResponse {
+  status: RecordStatus;
+  items: Disease[];
+  count: number;
+}

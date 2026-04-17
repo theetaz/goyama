@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, Outlet, createRootRouteWithContext } from '@tanstack/react-router';
 import type { QueryClient } from '@tanstack/react-query';
-import { ClipboardCheck, LayoutDashboard, Leaf, UserCircle2 } from 'lucide-react';
+import { Bug, ClipboardCheck, LayoutDashboard, Leaf, UserCircle2 } from 'lucide-react';
 
 import { getReviewer, setReviewer } from '@/lib/api';
 
@@ -14,7 +14,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 const nav = [
   { to: '/', label: 'Dashboard', icon: LayoutDashboard, exact: true },
   { to: '/crops', label: 'Crops', icon: Leaf, exact: false },
-  { to: '/review', label: 'Review queue', icon: ClipboardCheck, exact: false },
+  { to: '/review', label: 'Cultivation review', icon: ClipboardCheck, exact: false },
+  { to: '/review-diseases', label: 'Disease review', icon: Bug, exact: false },
 ] as const;
 
 function AdminLayout() {

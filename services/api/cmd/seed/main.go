@@ -80,6 +80,16 @@ func run() error {
 		}
 	}
 
+	// Diseases reference crops via affected_crop_slugs; run them after
+	// crops so the cross-reference is coherent for anyone inspecting the
+	// DB mid-seed.
+	diseasesDir := filepath.Join(*corpusRoot, "diseases")
+	if _, err := os.Stat(diseasesDir); err == nil {
+		if err := seedDiseases(ctx, tx, logger, diseasesDir); err != nil {
+			return fmt.Errorf("seed diseases: %w", err)
+		}
+	}
+
 	if err := tx.Commit(ctx); err != nil {
 		return fmt.Errorf("commit: %w", err)
 	}
