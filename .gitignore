@@ -1,0 +1,217 @@
+# ───────────────────────────────────────────────────────────────
+# Local tooling — do NOT commit
+# ───────────────────────────────────────────────────────────────
+# Claude Code / AI agent artifacts
+CLAUDE.md
+.claude/
+.claude-*/
+.anthropic/
+.cursor/
+.cursorignore
+.cursorrules
+.aider*
+.continue/
+.codeium/
+.copilot/
+.windsurf/
+.roo/
+.github/copilot-instructions.md
+.mcp.json
+.mcp/
+AGENTS.md
+AGENT.md
+
+# Editor / IDE
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.idea/
+*.iml
+.zed/
+.fleet/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+.#*
+
+# ───────────────────────────────────────────────────────────────
+# Secrets — never commit
+# ───────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+credentials.json
+service-account*.json
+secrets/
+.secrets/
+
+# ───────────────────────────────────────────────────────────────
+# Language / runtime
+# ───────────────────────────────────────────────────────────────
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.yarn/
+.npm/
+*.tgz
+*.tsbuildinfo
+
+# TanStack Router regenerates this on dev start
+**/src/routeTree.gen.ts
+
+# Go
+services/api/bin/
+*.exe
+*.test
+*.out
+vendor/
+go.work.sum
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.turbo/
+.cache/
+.parcel-cache/
+.vite/
+.astro/
+.vercel/
+.netlify/
+.wrangler/
+.output/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.pyre/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+venv/
+.venv/
+env/
+.env-*/
+pip-log.txt
+pip-delete-this-directory.txt
+.ipynb_checkpoints/
+
+# Rust
+target/
+Cargo.lock.bak
+
+# Mobile
+# React Native / Expo
+.expo/
+.expo-shared/
+ios/Pods/
+ios/build/
+android/.gradle/
+android/build/
+android/app/build/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# ───────────────────────────────────────────────────────────────
+# Data pipeline — local caches, raw snapshots, heavy blobs
+# ───────────────────────────────────────────────────────────────
+data/raw/
+data/staging/
+data/cache/
+data/scratch/
+data/tmp/
+corpus/build/
+*.sqlite
+*.sqlite3
+*.db
+*.parquet.local
+*.csv.local
+# Keep published corpus exports (corpus/releases/) under git-lfs or a release repo, not here.
+
+# ML artifacts
+models/checkpoints/
+models/runs/
+models/wandb/
+wandb/
+mlruns/
+lightning_logs/
+*.ckpt
+*.pt
+*.onnx.local
+*.tflite.local
+*.h5
+
+# Media scratch (downloads of videos/audio for transcription)
+media/downloads/
+media/audio/
+media/transcripts/raw/
+*.mp4
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.m4a
+# (published thumbnails / curated images belong in the CMS / object storage, not in git)
+
+# Logs
+*.log
+logs/
+
+# Coverage / test
+coverage/
+.nyc_output/
+.jest-cache/
+playwright-report/
+test-results/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraformrc
+terraform.rc
+
+# Misc
+*.swp
+*.swo
+.history/
