@@ -90,6 +90,14 @@ func run() error {
 		}
 	}
 
+	// Pests follow diseases — same affected_crop_slugs cross-reference.
+	pestsDir := filepath.Join(*corpusRoot, "pests")
+	if _, err := os.Stat(pestsDir); err == nil {
+		if err := seedPests(ctx, tx, logger, pestsDir); err != nil {
+			return fmt.Errorf("seed pests: %w", err)
+		}
+	}
+
 	if err := tx.Commit(ctx); err != nil {
 		return fmt.Errorf("commit: %w", err)
 	}

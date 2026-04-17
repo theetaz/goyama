@@ -19,6 +19,7 @@ import (
 
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/diseases"
+	"github.com/goyama/api/internal/pests"
 	"github.com/goyama/api/internal/platform/httpx"
 )
 
@@ -29,11 +30,12 @@ const ReviewerHeader = "X-Goyama-Reviewer"
 type Handler struct {
 	crops    crops.Repository
 	diseases diseases.Repository
+	pests    pests.Repository
 }
 
 // New returns an admin Handler backed by the given repositories.
-func New(cropsRepo crops.Repository, diseasesRepo diseases.Repository) *Handler {
-	return &Handler{crops: cropsRepo, diseases: diseasesRepo}
+func New(cropsRepo crops.Repository, diseasesRepo diseases.Repository, pestsRepo pests.Repository) *Handler {
+	return &Handler{crops: cropsRepo, diseases: diseasesRepo, pests: pestsRepo}
 }
 
 // Routes returns a chi sub-router mounted at /v1/admin.
@@ -49,6 +51,11 @@ func (h *Handler) Routes() chi.Router {
 		r.Get("/", h.listDiseases)
 		r.Get("/{slug}", h.getDisease)
 		r.Patch("/{slug}", h.patchDisease)
+	})
+	r.Route("/pests", func(r chi.Router) {
+		r.Get("/", h.listPests)
+		r.Get("/{slug}", h.getPest)
+		r.Patch("/{slug}", h.patchPest)
 	})
 	return r
 }
@@ -168,7 +175,9 @@ func (h *Handler) patchStep(w http.ResponseWriter, r *http.Request) {
 // missing DATABASE_URL in particular should be a 503 so the admin app can
 // render a helpful hint rather than a generic 500.
 func (h *Handler) writeRepoError(w http.ResponseWriter, r *http.Request, err error) {
-	if errors.Is(err, crops.ErrRequiresDatabase) || errors.Is(err, diseases.ErrRequiresDatabase) {
+	if errors.Is(err, crops.ErrRequiresDatabase) ||
+		errors.Is(err, diseases.ErrRequiresDatabase) ||
+		errors.Is(err, pests.ErrRequiresDatabase) {
 		httpx.Problem(w, r, http.StatusServiceUnavailable, "db-required",
 			"admin endpoints require DATABASE_URL to be set on the API")
 		return
@@ -253,4 +262,83 @@ func (h *Handler) patchDisease(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	httpx.JSON(w, http.StatusOK, d)
+}
+
+// ─── pest handlers ─────────────────────────────────────────────────────────
+
+func (h *Handler) listPests(w http.ResponseWriter, r *http.Request) {
+	status := r.URL.Query().Get("status")
+	if status == "" {
+		status = "draft"
+	}
+	items, err := h.pests.ListByStatus(r.Context(), status)
+	if err != nil {
+		h.writeRepoError(w, r, err)
+		return
+	}
+	httpx.JSON(w, http.StatusOK, map[string]any{
+		"status": status,
+		"items":  items,
+		"count":  len(items),
+	})
+}
+
+func (h *Handler) getPest(w http.ResponseWriter, r *http.Request) {
+	slug := chi.URLParam(r, "slug")
+	p, err := h.pests.Get(r.Context(), slug)
+	if errors.Is(err, pests.ErrNotFound) {
+		httpx.Problem(w, r, http.StatusNotFound, "pest-not-found", "no pest with slug "+slug)
+		return
+	}
+	if err != nil {
+		h.writeRepoError(w, r, err)
+		return
+	}
+	httpx.JSON(w, http.StatusOK, p)
+}
+
+func (h *Handler) patchPest(w http.ResponseWriter, r *http.Request) {
+	slug := chi.URLParam(r, "slug")
+	var body patchBody
+	if err := json.NewDecoder(r.Body).Decode(&body); err != nil {
+		httpx.Problem(w, r, http.StatusBadRequest, "invalid-json", err.Error())
+		return
+	}
+	body.Status = strings.TrimSpace(body.Status)
+	if body.Status == "" {
+		httpx.Problem(w, r, http.StatusBadRequest, "status-required", "status is required")
+		return
+	}
+
+	current, err := h.pests.Get(r.Context(), slug)
+	if errors.Is(err, pests.ErrNotFound) {
+		httpx.Problem(w, r, http.StatusNotFound, "pest-not-found", "no pest with slug "+slug)
+		return
+	}
+	if err != nil {
+		h.writeRepoError(w, r, err)
+		return
+	}
+	if allowed := validTransitions[current.Status]; !allowed[body.Status] && current.Status != body.Status {
+		httpx.Problem(w, r, http.StatusBadRequest, "invalid-transition",
+			"cannot transition from "+current.Status+" to "+body.Status)
+		return
+	}
+
+	update := pests.StatusUpdate{
+		Status:     body.Status,
+		ReviewedBy: strings.TrimSpace(r.Header.Get(ReviewerHeader)),
+		Notes:      strings.TrimSpace(body.Notes),
+	}
+	if err := h.pests.SetStatus(r.Context(), slug, update); err != nil {
+		h.writeRepoError(w, r, err)
+		return
+	}
+
+	p, err := h.pests.Get(r.Context(), slug)
+	if err != nil {
+		h.writeRepoError(w, r, err)
+		return
+	}
+	httpx.JSON(w, http.StatusOK, p)
 }

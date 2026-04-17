@@ -203,6 +203,21 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }),
+  listPestsForReview: (status: RecordStatus = 'draft') =>
+    request<PestReviewQueueResponse>(
+      `/v1/admin/pests?status=${encodeURIComponent(status)}`,
+    ),
+  getPest: (slug: string) =>
+    request<Pest>(`/v1/admin/pests/${encodeURIComponent(slug)}`),
+  updatePestStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<Pest>(`/v1/admin/pests/${encodeURIComponent(slug)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
 };
 
 export interface Disease {
@@ -230,5 +245,31 @@ export interface Disease {
 export interface DiseaseReviewQueueResponse {
   status: RecordStatus;
   items: Disease[];
+  count: number;
+}
+
+export interface Pest {
+  slug: string;
+  scientific_name?: string;
+  kingdom: string;
+  affected_crop_slugs?: string[];
+  life_stages?: string[];
+  feeding_type?: string[];
+  favored_conditions?: Record<string, unknown>;
+  names?: Record<string, string>;
+  aliases?: string[];
+  description?: Record<string, string>;
+  economic_threshold?: Record<string, string>;
+  status: RecordStatus;
+  attrs?: Record<string, unknown>;
+  field_provenance?: Record<string, FieldProvenance>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface PestReviewQueueResponse {
+  status: RecordStatus;
+  items: Pest[];
   count: number;
 }
