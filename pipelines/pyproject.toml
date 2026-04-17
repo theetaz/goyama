@@ -1,0 +1,54 @@
+[project]
+name = "cropdoc-pipelines"
+version = "0.0.1"
+description = "Data gathering and extraction pipelines for the CropDoc knowledge corpus"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",
+    "selectolax>=0.3.21",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.2",
+    "pdfminer.six>=20240706",
+    "pypdf>=4.3",
+    "pydantic>=2.8",
+    "pyyaml>=6.0",
+    "python-slugify>=8.0",
+    "structlog>=24.4",
+    "typer>=0.12",
+    "jsonschema>=4.23",
+    "rich>=13.7",
+    "tenacity>=9.0",
+    "anthropic>=0.40",
+    "langdetect>=1.0.9",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "respx>=0.21",
+]
+
+[project.scripts]
+cropdoc = "core.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["core", "sources", "prompts"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "A", "S", "C4", "SIM", "RUF"]
+ignore = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

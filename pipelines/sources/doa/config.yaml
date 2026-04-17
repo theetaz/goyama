@@ -1,0 +1,27 @@
+source_id: doa
+display_name: "Department of Agriculture, Sri Lanka"
+homepage: "https://www.doa.gov.lk/"
+licence: "Government of Sri Lanka (attribution required; confirm per-document)"
+robots_checked_at: null
+rate_per_sec: 1.0
+max_pages: 200
+
+crawler_class: DoaCrawler
+extractor_class: DoaCropExtractor
+
+seed_urls:
+  - "https://www.doa.gov.lk/"
+  - "https://www.doa.gov.lk/fcrdi/"
+  - "https://www.doa.gov.lk/hordi/"
+  - "https://www.doa.gov.lk/rrdi/"
+
+allow_patterns:
+  - "^https?://[^/]*doa\\.gov\\.lk/"
+
+deny_patterns:
+  - "/(login|admin|wp-admin|wp-login|search|tag|feed)(/|$|\\?)"
+  - "\\.(jpg|jpeg|png|gif|webp|mp4|mp3|zip|exe)(\\?|$)"
+
+freshness_days:
+  default: 7
+  advisory: 1
