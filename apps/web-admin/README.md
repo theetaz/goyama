@@ -1,4 +1,4 @@
-# @cropdoc/web-admin
+# @goyama/web-admin
 
 Internal agronomist / staff admin portal. Same stack as `web-client` with a denser theme (via `data-app="admin"`).
 
@@ -6,13 +6,13 @@ Internal agronomist / staff admin portal. Same stack as `web-client` with a dens
 
 ```bash
 pnpm install
-pnpm --filter @cropdoc/web-admin dev      # :5174
+pnpm --filter @goyama/web-admin dev      # :5174
 
 # Go API
 cd services/api && make run                # :8080
 ```
 
-Deployed at `admin.cropdoc.lk`. Access restricted — future wiring: email + TOTP with optional IP allowlist.
+Deployed at `admin.goyama.lk`. Access restricted — future wiring: email + TOTP with optional IP allowlist.
 
 ## Layout
 

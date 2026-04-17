@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/remedy.json",
+  "$id": "https://goyama.lk/schemas/remedy.json",
   "title": "Remedy",
   "description": "A treatment for a disease or pest. Chemical remedies require DOA-registered active ingredients and explicit agronomist review before publication.",
   "type": "object",

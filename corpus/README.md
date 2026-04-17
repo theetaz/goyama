@@ -1,6 +1,6 @@
 # corpus
 
-The CropDoc open knowledge corpus.
+The Goyama open knowledge corpus.
 
 This directory will host versioned snapshots of the curated canonical data — crops, varieties, diseases, pests, remedies, cultivation steps, agro-ecological zones — as machine-readable files with full provenance.
 

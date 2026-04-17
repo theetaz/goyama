@@ -4,8 +4,8 @@
 
 ## 5.0 Two web apps and one mobile app
 
-- **`apps/web-client`** — public-facing farmer SPA. Vite + React + Shadcn. Deployed to `app.cropdoc.lk`.
-- **`apps/web-admin`** — agronomist + staff workspace. Same stack, **separate app and theme**. Deployed to `admin.cropdoc.lk`.
+- **`apps/web-client`** — public-facing farmer SPA. Vite + React + Shadcn. Deployed to `app.goyama.lk`.
+- **`apps/web-admin`** — agronomist + staff workspace. Same stack, **separate app and theme**. Deployed to `admin.goyama.lk`.
 - **`apps/mobile`** — Expo React Native. Shares design tokens and API contract with web-client.
 
 All three consume the Go API in `services/api/`.
@@ -201,7 +201,7 @@ Types:
 
 ## 5.11 Admin portal (`apps/web-admin`)
 
-**A separate SPA at `admin.cropdoc.lk` with its own theme, auth, and RBAC.** Not a drawer inside the client app.
+**A separate SPA at `admin.goyama.lk` with its own theme, auth, and RBAC.** Not a drawer inside the client app.
 
 ### Views
 

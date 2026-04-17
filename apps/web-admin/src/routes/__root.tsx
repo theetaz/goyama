@@ -19,7 +19,7 @@ function AdminLayout() {
       <div className="grid grid-cols-[220px_1fr]">
         <aside className="sticky top-0 h-screen border-r bg-card">
           <div className="px-4 py-5">
-            <div className="text-sm font-semibold">CropDoc Admin</div>
+            <div className="text-sm font-semibold">Goyama Admin</div>
             <div className="text-xs text-muted-foreground">internal tooling</div>
           </div>
           <nav className="flex flex-col gap-0.5 px-2 text-sm">

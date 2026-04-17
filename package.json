@@ -1,8 +1,8 @@
 {
-  "name": "cropdoc",
+  "name": "goyama",
   "private": true,
   "version": "0.0.0",
-  "description": "CropDoc — open Sri Lanka-first agricultural knowledge platform",
+  "description": "Goyama — open Sri Lanka-first agricultural knowledge platform",
   "packageManager": "pnpm@10.30.3",
   "engines": {
     "node": ">=22.0.0",
@@ -10,8 +10,8 @@
   },
   "scripts": {
     "dev": "pnpm -r --parallel --filter './apps/*' dev",
-    "dev:client": "pnpm --filter @cropdoc/web-client dev",
-    "dev:admin": "pnpm --filter @cropdoc/web-admin dev",
+    "dev:client": "pnpm --filter @goyama/web-client dev",
+    "dev:admin": "pnpm --filter @goyama/web-admin dev",
     "build": "pnpm -r build",
     "lint": "pnpm -r lint",
     "typecheck": "pnpm -r typecheck",

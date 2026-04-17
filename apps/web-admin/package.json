@@ -1,5 +1,5 @@
 {
-  "name": "@cropdoc/web-admin",
+  "name": "@goyama/web-admin",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,7 +12,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@cropdoc/design-tokens": "workspace:*",
+    "@goyama/design-tokens": "workspace:*",
     "@radix-ui/react-slot": "^1.1.0",
     "@tanstack/react-query": "^5.59.16",
     "@tanstack/react-router": "^1.74.0",

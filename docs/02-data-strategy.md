@@ -41,7 +41,7 @@ Disease scans (with fuzzed location), marketplace listings, posts, farm diaries.
 
 ## 2. Crawl targets (Sri Lanka web)
 
-Every target has a dedicated crawler + extractor. Crawlers respect `robots.txt`, set a descriptive User-Agent (`CropDocBot/1.0 (+https://cropdoc.lk/bot)`), throttle to ≤ 1 req/sec per host, and cache aggressively.
+Every target has a dedicated crawler + extractor. Crawlers respect `robots.txt`, set a descriptive User-Agent (`GoyamaBot/1.0 (+https://goyama.lk/bot)`), throttle to ≤ 1 req/sec per host, and cache aggressively.
 
 ### Government & research (primary, high-trust)
 - **doa.gov.lk** — Department of Agriculture main portal: crop profiles, leaflets, advisories, variety releases.
@@ -141,7 +141,7 @@ Sri Lanka-specific sources always take precedence when they disagree with a glob
 
 ### Open-corpus exporter
 - A nightly job snapshots the canonical, published records into machine-readable dumps (JSON, JSONL, GeoJSON, Parquet) with full provenance.
-- Published to a public GitHub repo (`cropdoc/corpus`) and mirrored on a static CDN. Versioned; each release tagged.
+- Published to a public GitHub repo (`goyama/corpus`) and mirrored on a static CDN. Versioned; each release tagged.
 - Anyone can `git clone` the knowledge base and use it.
 
 ## 4. Data quality

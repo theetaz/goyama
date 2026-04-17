@@ -29,7 +29,7 @@ Goal: a browsable, searchable, trustworthy catalog for 30 priority crops and the
 - Web app (Next.js) published: crop explorer, disease catalog, map view, search.
 - Mobile app alpha (TestFlight / internal track): same read-only surfaces + offline sync for the 30 crops.
 - Market price daily job (at least Dambulla + one other DEC).
-- **Corpus v0.1** published to the public GitHub repo (`cropdoc/corpus`) under CC-BY-SA / ODbL with full provenance.
+- **Corpus v0.1** published to the public GitHub repo (`goyama/corpus`) under CC-BY-SA / ODbL with full provenance.
 
 **Exit criteria:** an agronomist reviews a random sample of 50 content pages and finds ≥ 90% publish-ready accuracy. Public web launch behind a "beta" banner. First open-corpus release tagged.
 

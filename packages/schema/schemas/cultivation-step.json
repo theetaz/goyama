@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/cultivation-step.json",
+  "$id": "https://goyama.lk/schemas/cultivation-step.json",
   "title": "CultivationStep",
   "type": "object",
   "properties": {

@@ -142,7 +142,7 @@ None of this is skippable. The cost of shipping a confusing UI to a farmer who's
 
 ## Design deliverables
 
-- **Figma file** (`design/cropdoc.fig`) with:
+- **Figma file** (`design/goyama.fig`) with:
   - Design tokens (colour, typography, spacing, motion)
   - Component library mirroring Shadcn components
   - Screens: onboarding, map home, crop detail, disease scan, plant planner, community feed, marketplace, profile

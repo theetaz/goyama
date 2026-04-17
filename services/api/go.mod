@@ -1,4 +1,4 @@
-module github.com/cropdoc/api
+module github.com/goyama/api
 
 go 1.25
 

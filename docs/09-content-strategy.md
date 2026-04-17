@@ -159,7 +159,7 @@ The graph is not a separate source of truth; it is a derived view that makes tra
 Example Cypher (via Apache AGE):
 
 ```sql
-SELECT * FROM ag_catalog.cypher('cropdoc', $$
+SELECT * FROM ag_catalog.cypher('goyama', $$
   MATCH (c:Crop)-[s:SUITABLE_IN]->(a:AEZ {code: 'IL1a'}),
         (c)-[:GROWS_IN]->(:Season {name: 'yala'})
   WHERE NOT (c)-[:AFFECTED_BY]->(:Disease {slug: 'late_blight'})
@@ -179,7 +179,7 @@ Release-gate rule: the app never blocks a user on a missing translation; it fall
 
 ## 8. Governance of the open corpus
 
-- **Public repo** (`cropdoc/corpus`) tracks versioned releases. Each release is a tag and a manifest.
+- **Public repo** (`goyama/corpus`) tracks versioned releases. Each release is a tag and a manifest.
 - **CHANGELOG.md** in the corpus repo is human-readable.
 - **Issues & PRs** are how the public contributes corrections. A PR with a source URL + a clear field change is reviewed by an agronomist; accepted changes become the next release.
 - **Monthly release cadence** once `v0.1` ships; major versions when schema changes.

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/media.json",
+  "$id": "https://goyama.lk/schemas/media.json",
   "title": "Media",
   "description": "References to images, videos, PDFs, audio. We redistribute only media we produce ourselves; third-party media is linked, never rehosted.",
   "type": "object",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/crop.json",
+  "$id": "https://goyama.lk/schemas/crop.json",
   "title": "Crop",
   "type": "object",
   "properties": {

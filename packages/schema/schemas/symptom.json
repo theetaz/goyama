@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/symptom.json",
+  "$id": "https://goyama.lk/schemas/symptom.json",
   "title": "Symptom",
   "type": "object",
   "properties": {

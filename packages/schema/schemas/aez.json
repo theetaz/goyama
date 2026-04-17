@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/aez.json",
+  "$id": "https://goyama.lk/schemas/aez.json",
   "title": "AgroEcologicalZone",
   "type": "object",
   "properties": {

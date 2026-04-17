@@ -1,5 +1,5 @@
 -- 0001_init.sql
--- Initial schema for the CropDoc canonical store.
+-- Initial schema for the Goyama canonical store.
 -- Targets Postgres 16 with extensions: postgis, pgvector, age (Apache AGE).
 
 BEGIN;

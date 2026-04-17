@@ -15,7 +15,7 @@ export const supportedLocales: Array<{ code: Locale; native: string; label: stri
 
 const storedLocale =
   typeof window !== 'undefined'
-    ? (localStorage.getItem('cropdoc.locale') as Locale | null)
+    ? (localStorage.getItem('goyama.locale') as Locale | null)
     : null;
 
 void i18n.use(initReactI18next).init({
@@ -33,7 +33,7 @@ void i18n.use(initReactI18next).init({
 export function setLocale(locale: Locale): void {
   void i18n.changeLanguage(locale);
   if (typeof window !== 'undefined') {
-    localStorage.setItem('cropdoc.locale', locale);
+    localStorage.setItem('goyama.locale', locale);
     document.documentElement.lang = locale;
   }
 }

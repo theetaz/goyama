@@ -7,28 +7,28 @@ BEGIN;
 LOAD 'age';
 SET search_path = ag_catalog, "$user", public;
 
-SELECT create_graph('cropdoc');
+SELECT create_graph('goyama');
 
 -- Node labels
-SELECT create_vlabel('cropdoc', 'Crop');
-SELECT create_vlabel('cropdoc', 'Variety');
-SELECT create_vlabel('cropdoc', 'AEZ');
-SELECT create_vlabel('cropdoc', 'Disease');
-SELECT create_vlabel('cropdoc', 'Pest');
-SELECT create_vlabel('cropdoc', 'Remedy');
-SELECT create_vlabel('cropdoc', 'Season');
-SELECT create_vlabel('cropdoc', 'SoilGroup');
+SELECT create_vlabel('goyama', 'Crop');
+SELECT create_vlabel('goyama', 'Variety');
+SELECT create_vlabel('goyama', 'AEZ');
+SELECT create_vlabel('goyama', 'Disease');
+SELECT create_vlabel('goyama', 'Pest');
+SELECT create_vlabel('goyama', 'Remedy');
+SELECT create_vlabel('goyama', 'Season');
+SELECT create_vlabel('goyama', 'SoilGroup');
 
 -- Edge labels
-SELECT create_elabel('cropdoc', 'SUITABLE_IN');
-SELECT create_elabel('cropdoc', 'AFFECTED_BY');
-SELECT create_elabel('cropdoc', 'TREATED_BY');
-SELECT create_elabel('cropdoc', 'RESISTANT_TO');
-SELECT create_elabel('cropdoc', 'CONFUSED_WITH');
-SELECT create_elabel('cropdoc', 'COMPANION_OF');
-SELECT create_elabel('cropdoc', 'ROTATES_WITH');
-SELECT create_elabel('cropdoc', 'GROWS_IN');
-SELECT create_elabel('cropdoc', 'PREFERS_SOIL');
-SELECT create_elabel('cropdoc', 'OF_CROP');
+SELECT create_elabel('goyama', 'SUITABLE_IN');
+SELECT create_elabel('goyama', 'AFFECTED_BY');
+SELECT create_elabel('goyama', 'TREATED_BY');
+SELECT create_elabel('goyama', 'RESISTANT_TO');
+SELECT create_elabel('goyama', 'CONFUSED_WITH');
+SELECT create_elabel('goyama', 'COMPANION_OF');
+SELECT create_elabel('goyama', 'ROTATES_WITH');
+SELECT create_elabel('goyama', 'GROWS_IN');
+SELECT create_elabel('goyama', 'PREFERS_SOIL');
+SELECT create_elabel('goyama', 'OF_CROP');
 
 COMMIT;

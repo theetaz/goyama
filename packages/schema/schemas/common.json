@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/common.json",
+  "$id": "https://goyama.lk/schemas/common.json",
   "title": "Common types",
   "$defs": {
     "Slug": {
@@ -11,7 +11,7 @@
     "Locale": {
       "type": "string",
       "enum": ["en", "si", "ta"],
-      "description": "BCP-47 language tag restricted to CropDoc's supported locales."
+      "description": "BCP-47 language tag restricted to Goyama's supported locales."
     },
     "I18nString": {
       "type": "object",

@@ -1,6 +1,6 @@
 # Corpus changelog
 
-All notable changes to the CropDoc open corpus. The format follows [Keep a Changelog](https://keepachangelog.com/) and semantic versioning.
+All notable changes to the Goyama open corpus. The format follows [Keep a Changelog](https://keepachangelog.com/) and semantic versioning.
 
 ## [v0.0.1-drafts] — 2026-04-17
 
@@ -10,7 +10,7 @@ All notable changes to the CropDoc open corpus. The format follows [Keep a Chang
   - `manifest.json` with per-bundle sha256 checksums and licence metadata.
   - `sources.json` copied verbatim from the seed register.
   - `README.md` describing review workflow and known limitations.
-- **Corpus exporter** (`pipelines/core/exporter.py` + `cropdoc export` CLI command) — deterministic JSONL serialisation sorted by slug, sha256 manifest, and a `--include-draft` flag for pre-release drafts bundles.
+- **Corpus exporter** (`pipelines/core/exporter.py` + `goyama export` CLI command) — deterministic JSONL serialisation sorted by slug, sha256 manifest, and a `--include-draft` flag for pre-release drafts bundles.
 - **Exporter tests** (3 new unit tests) covering draft inclusion, published-only default, and licence/timestamp manifest fields. 12/12 tests green.
 
 ### Notes
@@ -23,7 +23,7 @@ All notable changes to the CropDoc open corpus. The format follows [Keep a Chang
 - Postgres migrations (`packages/schema/migrations/0001_init.sql`, `0002_graph.sql`) covering relational, geospatial, vector, and graph layers.
 - Crawling + extraction framework under `pipelines/core/` with polite fetcher, robots.txt handling, per-host rate limiting, and a raw-zone append-only store.
 - First source integration: Department of Agriculture (`pipelines/sources/doa/`) with crawler, LLM-assisted extractor, and the `crop_extraction_v1` prompt.
-- `cropdoc` CLI (`cropdoc sources list | crawl | extract | validate`).
+- `goyama` CLI (`goyama sources list | crawl | extract | validate`).
 - **Seed corpus drafts** under `corpus/seed/`, gathered live from authoritative Sri Lankan sources (DOA, HORDI, RRDI, FCRDI, FRDI, Ministry of Agriculture, Department of Export Agriculture, HARTI, Sri Lanka Biodiversity CHM, plus FAO baselines) with full per-field provenance and schema-validated:
   - **98 crops** — rice + 40 vegetables (standard + indigenous leafy greens + specialty: brinjal, tomato, okra, bitter-gourd, cabbage, capsicum, carrot, big onion, cucumber, snake-gourd, pumpkin, luffa, leeks, beetroot, potato, sweet-potato, yard-long-bean, radish, cassava, snap-bean, winged-bean, cauliflower, knol-khol, innala, kiriala, kohila, oyster mushroom, chilli, ela-batu, kekiri, lettuce, thumba-karawila, curry-leaf, elephant-foot-yam, gotukola, mukunuwenna, kankun, ash-plantain, taro, nivithi, kathurumurunga, thampala, sarana, thibbatu) + 8 field crops (groundnut, sesame, soybean, maize, finger-millet, mung-bean, cowpea, pigeon-pea) + 14 fruits (mango, banana, pineapple, passion-fruit, rambutan, guava, dragon-fruit, mangosteen, durian, sweet-orange, papaya, lime, jackfruit, breadfruit + wood-apple, beli, nelli, sapodilla, soursop, sugar-apple, grape) + 5 spices (cinnamon, black-pepper, cardamom, ginger, turmeric + betel, vanilla, arecanut) + 4 plantation crops (tea, coconut, rubber, cocoa, coffee, cashew, gliricidia) + 4 medicinal (aralu, bulu, kumbuk, thebu) + 2 ornamentals (anthurium, orchid) + others (sugarcane, tobacco, lotus).
   - **30 varieties** — 20 rice (14 modern RRDI + 6 traditional heirlooms: Suwandel, Kalu Heenati, Rath Suwandel, Pachchaperumal, Madathawalu, Sudu Heenati) + 4 banana (Kolikuttu, Ambul, Seeni, Anamalu) + 2 brinjal (Thinnaweli Purple, Amanda F1) + 1 tomato (Thilina) + 1 king coconut + 2 tea clone series (TRI 2000, TRI 5000).

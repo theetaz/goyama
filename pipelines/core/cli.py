@@ -16,7 +16,7 @@ from .fetch import PoliteFetcher
 from .log import configure_logging, get_logger
 from .storage import RawStore, StagingStore
 
-app = typer.Typer(help="CropDoc data pipelines", no_args_is_help=True)
+app = typer.Typer(help="Goyama data pipelines", no_args_is_help=True)
 sources_app = typer.Typer(help="Source registry operations")
 app.add_typer(sources_app, name="sources")
 console = Console()

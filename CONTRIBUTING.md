@@ -1,6 +1,6 @@
-# Contributing to CropDoc
+# Contributing to Goyama
 
-Thank you for your interest. CropDoc is an open, Sri Lanka-first agricultural knowledge project. We welcome contributions from farmers, agronomists, extension officers, researchers, translators, and developers.
+Thank you for your interest. Goyama is an open, Sri Lanka-first agricultural knowledge project. We welcome contributions from farmers, agronomists, extension officers, researchers, translators, and developers.
 
 ## Ways to contribute
 

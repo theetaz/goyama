@@ -1,6 +1,6 @@
-# @cropdoc/schema
+# @goyama/schema
 
-Canonical schemas for the CropDoc knowledge corpus.
+Canonical schemas for the Goyama knowledge corpus.
 
 This package is the single source of truth for data shapes used across the crawler pipelines, the backend API, the mobile and web apps, and the published open corpus.
 
@@ -36,7 +36,7 @@ This package is the single source of truth for data shapes used across the crawl
 
 ```bash
 # TypeScript types for apps + API
-pnpm --filter @cropdoc/schema build:ts
+pnpm --filter @goyama/schema build:ts
 
 # Python Pydantic models for pipelines
 cd pipelines && uv run datamodel-codegen \

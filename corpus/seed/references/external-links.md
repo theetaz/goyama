@@ -23,7 +23,7 @@ Live Sri Lankan agricultural digital resources worth linking to and watching for
 These are the competitive / complementary landscape to be aware of:
 
 - [Govi Mithuru](https://www.dialog.lk/govi-mithuru) — Dialog Axiata SMS-based agri advisory (launched 2015). Tailored to farmer's crop and season.
-- [Govi AI](https://goviai.com/) — "Sri Lanka's First Agriculture AI Assistant" for plant-disease detection in Sinhala and Tamil. Direct comparable to CropDoc's scanner module; study their UX.
+- [Govi AI](https://goviai.com/) — "Sri Lanka's First Agriculture AI Assistant" for plant-disease detection in Sinhala and Tamil. Direct comparable to Goyama's scanner module; study their UX.
 - Govi Gnana Seva — agri commodity price info service (Dialog Telekom partnership).
 - [GeoGoviya Smart Farming Platform](https://www.agrarian.lk/) — Department of Agrarian Development digital initiative (2022).
 

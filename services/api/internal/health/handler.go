@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/cropdoc/api/internal/platform/httpx"
+	"github.com/goyama/api/internal/platform/httpx"
 )
 
 // Handler serves /v1/health.

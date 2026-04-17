@@ -1,5 +1,5 @@
 /**
- * JS/TS export of the CropDoc design tokens.
+ * JS/TS export of the Goyama design tokens.
  * apps/mobile consumes these via NativeWind; web apps import the CSS directly.
  */
 

@@ -17,7 +17,7 @@ importers:
 
   apps/web-admin:
     dependencies:
-      '@cropdoc/design-tokens':
+      '@goyama/design-tokens':
         specifier: workspace:*
         version: link:../../packages/design-tokens
       '@radix-ui/react-slot':
@@ -87,7 +87,7 @@ importers:
 
   apps/web-client:
     dependencies:
-      '@cropdoc/design-tokens':
+      '@goyama/design-tokens':
         specifier: workspace:*
         version: link:../../packages/design-tokens
       '@radix-ui/react-dialog':

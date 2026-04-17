@@ -1,4 +1,4 @@
-# @cropdoc/web-client
+# @goyama/web-client
 
 Farmer-facing SPA. Vite + React + TypeScript + TanStack Router + TanStack Query + Shadcn UI + Tailwind.
 
@@ -7,7 +7,7 @@ Farmer-facing SPA. Vite + React + TypeScript + TanStack Router + TanStack Query 
 ```bash
 # from repo root
 pnpm install
-pnpm --filter @cropdoc/web-client dev        # serves on :5173
+pnpm --filter @goyama/web-client dev        # serves on :5173
 
 # in a second terminal
 cd services/api && make run                   # serves on :8080

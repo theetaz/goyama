@@ -23,7 +23,7 @@
 | **Queues / cache** | **Redis** (managed) | Rate limiting, async jobs (mealybug-scan review queue, email/SMS notifications). |
 | **Auth** | Go service owns JWT issuance; phone-OTP via **Dialog / Mobitel** SMS gateway; email+TOTP for admins. | No Clerk / Supabase Auth — we own identity. |
 | **Web client** (farmer-facing) | **Vite + React 18 + TypeScript + TanStack Query + TanStack Router + Shadcn UI + Tailwind** | SPA deployed to Cloudflare Pages / Vercel. Custom agri theme. |
-| **Web admin** (agronomist + staff) | Same stack, **separate app**, separate subdomain (admin.cropdoc.lk), different theme (denser, data-heavy). | Independent deployment, auth, and RBAC boundary. |
+| **Web admin** (agronomist + staff) | Same stack, **separate app**, separate subdomain (admin.goyama.lk), different theme (denser, data-heavy). | Independent deployment, auth, and RBAC boundary. |
 | **Mobile** | **Expo (managed workflow) + React Native + TypeScript + TanStack Query + NativeWind** | EAS builds for Android + iOS. Shared design tokens with web. |
 | **Maps** | **MapLibre GL JS** (web) + **@maplibre/maplibre-react-native** + self-hosted vector tiles (PMTiles/OpenMapTiles) | Avoid Mapbox licensing. AEZ, soil, plot, farmer-locations overlays. |
 | **ML serving** | Go API owns the endpoint; model inference via a sidecar **ONNX Runtime** HTTP service or **Python FastAPI** shim | On-device model (TFLite / Core ML) in the Expo app. |
@@ -34,7 +34,7 @@
 ## Repository layout (monorepo)
 
 ```
-cropdoc/
+goyama/
 ├── apps/
 │   ├── web-client/           # Vite + React client SPA (farmer-facing)
 │   ├── web-admin/            # Vite + React admin SPA (agronomist + staff)
@@ -63,7 +63,7 @@ Package management: **pnpm workspaces** for JS/TS; **Go workspaces** (`go.work`)
 ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
 │  apps/mobile     │  │ apps/web-client  │  │ apps/web-admin   │
 │  (Expo RN)       │  │ (Vite + React)   │  │ (Vite + React)   │
-│  cropdoc.lk app  │  │ app.cropdoc.lk   │  │ admin.cropdoc.lk │
+│  goyama.lk app  │  │ app.goyama.lk   │  │ admin.goyama.lk │
 └────────┬─────────┘  └────────┬─────────┘  └────────┬─────────┘
          │                     │                     │
          │  HTTPS + JWT / OTP  │                     │ HTTPS + TOTP
@@ -121,7 +121,7 @@ See [docs/11-backend-api-design.md](./11-backend-api-design.md) for detail. Key 
 - Same stack but **separate app and deployment**. Different Shadcn theme preset (denser, more neutral, optimized for tables and long review sessions).
 - **Data-heavy views**: review queue, edit records, approve/reject, moderation dashboards, broadcast advisories.
 - **RBAC gate** at the app shell — unauthenticated users redirected to login; viewer/reviewer/admin roles gate specific routes.
-- Dedicated subdomain `admin.cropdoc.lk` with stricter CSP, shorter JWT TTL, and IP allowlist optional for high-privilege operations.
+- Dedicated subdomain `admin.goyama.lk` with stricter CSP, shorter JWT TTL, and IP allowlist optional for high-privilege operations.
 
 ## Mobile app architecture (`apps/mobile`)
 

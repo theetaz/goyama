@@ -173,7 +173,7 @@ We emit **RFC 7807 problem+json** for all errors:
 
 ```json
 {
-  "type": "https://cropdoc.lk/errors/crop-not-found",
+  "type": "https://goyama.lk/errors/crop-not-found",
   "title": "Crop not found",
   "status": 404,
   "detail": "No crop with slug 'wheat-abc'",

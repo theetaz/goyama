@@ -1,4 +1,4 @@
-# CropDoc corpus release — v0.0.1-drafts
+# Goyama corpus release — v0.0.1-drafts
 
 **Pre-release drafts bundle — NOT FOR END-USER CONSUMPTION.**
 
@@ -42,14 +42,14 @@ For each record in the bundle an agronomist should:
 4. **Flip** the record's `status` from `"draft"` to `"published"`.
 5. Move the updated record back into `corpus/seed/<type>/<slug>.json`.
 
-When a critical mass is published, run `cropdoc export v0.1.0` (without `--include-draft`) to produce the first publishable release.
+When a critical mass is published, run `goyama export v0.1.0` (without `--include-draft`) to produce the first publishable release.
 
 ## Reproduce this bundle
 
 ```bash
 cd pipelines
 uv sync --extra test
-uv run cropdoc export v0.0.1-drafts --include-draft
+uv run goyama export v0.0.1-drafts --include-draft
 ```
 
 The SHA-256 checksums in `manifest.json` are deterministic given the same input seed records (sorted by slug, compact JSON).

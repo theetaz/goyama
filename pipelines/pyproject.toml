@@ -1,7 +1,7 @@
 [project]
-name = "cropdoc-pipelines"
+name = "goyama-pipelines"
 version = "0.0.1"
-description = "Data gathering and extraction pipelines for the CropDoc knowledge corpus"
+description = "Data gathering and extraction pipelines for the Goyama knowledge corpus"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -32,7 +32,7 @@ test = [
 ]
 
 [project.scripts]
-cropdoc = "core.cli:app"
+goyama = "core.cli:app"
 
 [build-system]
 requires = ["hatchling"]

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/disease.json",
+  "$id": "https://goyama.lk/schemas/disease.json",
   "title": "Disease",
   "type": "object",
   "properties": {

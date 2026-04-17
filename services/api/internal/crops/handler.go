@@ -7,7 +7,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 
-	"github.com/cropdoc/api/internal/platform/httpx"
+	"github.com/goyama/api/internal/platform/httpx"
 )
 
 // Handler wires crops HTTP routes to the repository.

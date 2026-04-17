@@ -1,8 +1,8 @@
-# CropDoc
+# Goyama
 
 **An open, Sri Lanka-first knowledge base and companion apps for farmers.**
 
-CropDoc builds a public, structured, multilingual knowledge corpus of Sri Lankan agriculture — crops, varieties, diseases, pests, remedies, cultivation calendars, agro-ecological zones, and market context — and a set of mobile and web applications that put that knowledge in the hands of growers.
+Goyama builds a public, structured, multilingual knowledge corpus of Sri Lankan agriculture — crops, varieties, diseases, pests, remedies, cultivation calendars, agro-ecological zones, and market context — and a set of mobile and web applications that put that knowledge in the hands of growers.
 
 > **Status:** early development. Corpus `v0.0` — schema definition and ingestion pipeline in progress. Contributors welcome.
 
@@ -60,8 +60,8 @@ Each published record carries:
 |---|---|
 | Backend API | **Go 1.22+** · chi · pgx · sqlc · OpenAPI 3.1 |
 | DB | Postgres 16 + PostGIS + pgvector |
-| Web (client) | **Vite + React 18 + TypeScript + TanStack Query + Shadcn UI + Tailwind** → `app.cropdoc.lk` |
-| Web (admin) | Same stack, **separate app + theme** → `admin.cropdoc.lk` |
+| Web (client) | **Vite + React 18 + TypeScript + TanStack Query + Shadcn UI + Tailwind** → `app.goyama.lk` |
+| Web (admin) | Same stack, **separate app + theme** → `admin.goyama.lk` |
 | Mobile | **Expo + React Native + TypeScript + TanStack Query + NativeWind** |
 | Maps | MapLibre GL (web + native) with self-hosted vector tiles |
 | Object storage | Cloudflare R2 + Cloudflare Images |

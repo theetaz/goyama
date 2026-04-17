@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/provenance.json",
+  "$id": "https://goyama.lk/schemas/provenance.json",
   "title": "Provenance",
   "description": "Every published field carries a provenance record so consumers can trace a claim back to its source.",
   "type": "object",

@@ -6,7 +6,7 @@
 
 ## Crawl policy
 
-- **User-Agent**: `CropDocBot/<version> (+https://cropdoc.lk/bot)`
+- **User-Agent**: `GoyamaBot/<version> (+https://goyama.lk/bot)`
 - **Rate**: 1 req / sec / host (override in `config.yaml` if needed).
 - **robots.txt**: respected via the shared `RobotsCache`.
 - **Freshness**: weekly for crop profiles; daily for advisories.

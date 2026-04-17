@@ -1,6 +1,6 @@
 # pipelines
 
-Crawlers, extractors, and data jobs that populate the CropDoc canonical store and the open corpus.
+Crawlers, extractors, and data jobs that populate the Goyama canonical store and the open corpus.
 
 Python 3.12 + [uv](https://docs.astral.sh/uv/) for dependency management.
 
@@ -25,9 +25,9 @@ pipelines/
 ```bash
 cd pipelines
 uv sync
-uv run cropdoc sources list
-uv run cropdoc crawl doa --dry-run
-uv run cropdoc extract doa --limit 5
+uv run goyama sources list
+uv run goyama crawl doa --dry-run
+uv run goyama extract doa --limit 5
 ```
 
 ## Ground rules (mirror CLAUDE.md)
@@ -42,7 +42,7 @@ uv run cropdoc extract doa --limit 5
 
 Copy `.env.example` to `.env` and fill in. Minimally:
 
-- `CROPDOC_RAW_DIR` — where to write raw artifacts (default `./data/raw`).
-- `CROPDOC_STAGING_DIR` — draft records (default `./data/staging`).
+- `GOYAMA_RAW_DIR` — where to write raw artifacts (default `./data/raw`).
+- `GOYAMA_STAGING_DIR` — draft records (default `./data/staging`).
 - `ANTHROPIC_API_KEY` — for LLM-assisted extraction (or configure `LLM_PROVIDER=none` for dry-run).
 - `DATABASE_URL` — Postgres connection string (required for `ingest` command).

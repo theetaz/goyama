@@ -23,7 +23,7 @@ func JSON(w http.ResponseWriter, status int, v any) {
 // Problem renders an RFC 7807 problem+json payload.
 func Problem(w http.ResponseWriter, r *http.Request, status int, title, detail string) {
 	payload := map[string]any{
-		"type":       "https://cropdoc.lk/errors/" + title,
+		"type":       "https://goyama.lk/errors/" + title,
 		"title":      title,
 		"status":     status,
 		"detail":     detail,

@@ -1,4 +1,4 @@
-// Command api starts the CropDoc HTTP API.
+// Command api starts the Goyama HTTP API.
 //
 // Reads config from the environment via internal/platform/config, wires the
 // HTTP router with chi, attaches structured logging + request IDs, and serves
@@ -20,10 +20,10 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
 
-	"github.com/cropdoc/api/internal/crops"
-	"github.com/cropdoc/api/internal/health"
-	"github.com/cropdoc/api/internal/platform/config"
-	"github.com/cropdoc/api/internal/platform/httpx"
+	"github.com/goyama/api/internal/crops"
+	"github.com/goyama/api/internal/health"
+	"github.com/goyama/api/internal/platform/config"
+	"github.com/goyama/api/internal/platform/httpx"
 )
 
 // version is overridden via -ldflags at build time.
@@ -114,7 +114,7 @@ func buildRouter(cfg config.Config, log *slog.Logger) http.Handler {
 	// Root-level redirect to docs in non-prod.
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
 		httpx.JSON(w, http.StatusOK, map[string]string{
-			"service": "cropdoc-api",
+			"service": "goyama-api",
 			"version": version,
 			"docs":    "/v1/health",
 		})

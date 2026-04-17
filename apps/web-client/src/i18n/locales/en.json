@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "CropDoc",
+    "name": "Goyama",
     "tagline": "Your pocket agronomist for Sri Lanka"
   },
   "nav": {
@@ -45,7 +45,7 @@
     "label": "Language"
   },
   "errors": {
-    "api_unreachable": "Can't reach the CropDoc service. Is it running on :8080?",
+    "api_unreachable": "Can't reach the Goyama service. Is it running on :8080?",
     "generic": "Something went wrong. Please try again."
   }
 }

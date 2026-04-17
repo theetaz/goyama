@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://cropdoc.lk/schemas/pest.json",
+  "$id": "https://goyama.lk/schemas/pest.json",
   "title": "Pest",
   "type": "object",
   "properties": {

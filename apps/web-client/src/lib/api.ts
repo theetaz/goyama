@@ -1,5 +1,5 @@
 /**
- * API client for the CropDoc Go service.
+ * API client for the Goyama Go service.
  *
  * Thin wrapper around fetch — returns typed objects and throws on non-2xx.
  * TanStack Query handles caching, retries, and background refetching.

@@ -1,6 +1,6 @@
 # Code of Conduct
 
-CropDoc is committed to being a welcoming, inclusive, and harassment-free community. This applies to every space the project operates in — the repository, issues, PRs, discussions, chat channels, events.
+Goyama is committed to being a welcoming, inclusive, and harassment-free community. This applies to every space the project operates in — the repository, issues, PRs, discussions, chat channels, events.
 
 ## Our standards
 

@@ -1,5 +1,5 @@
 /**
- * CropDoc design tokens — single source of truth for colour, radius, motion.
+ * Goyama design tokens — single source of truth for colour, radius, motion.
  * Used verbatim by apps/web-client and apps/web-admin.
  * Mobile consumes the JS export in ./index.ts via NativeWind.
  *
