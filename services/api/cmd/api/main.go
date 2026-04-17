@@ -172,11 +172,17 @@ func buildRouter(
 
 	healthH := health.New(version)
 	cropsH := crops.NewHandler(cropsRepo)
+	diseasesH := diseases.NewHandler(diseasesRepo)
+	pestsH := pests.NewHandler(pestsRepo)
+	remediesH := remedies.NewHandler(remediesRepo)
 	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
 		r.Mount("/crops", cropsH.Routes())
+		r.Mount("/diseases", diseasesH.Routes())
+		r.Mount("/pests", pestsH.Routes())
+		r.Mount("/remedies", remediesH.Routes())
 		r.Mount("/admin", adminH.Routes())
 	})
 

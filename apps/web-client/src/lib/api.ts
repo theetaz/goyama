@@ -77,6 +77,98 @@ export interface CultivationStepsResponse {
   count: number;
 }
 
+// Published-only farmer-facing surfaces. Records come back stripped of
+// review fields (reviewed_by etc. are admin-only on the backend).
+
+export interface DiseaseSummary {
+  slug: string;
+  scientific_name?: string;
+  causal_organism: string;
+  severity?: string;
+  affected_crop_slugs?: string[];
+  names?: Record<string, string>;
+}
+
+export interface DiseaseDetail extends DiseaseSummary {
+  causal_species?: string;
+  affected_parts?: string[];
+  transmission?: string[];
+  confused_with?: string[];
+  favored_conditions?: Record<string, unknown>;
+  aliases?: string[];
+  description?: Record<string, string>;
+  field_provenance?: Record<string, unknown>;
+}
+
+export interface DiseaseListResponse {
+  items: DiseaseSummary[];
+  count: number;
+}
+
+export interface PestSummary {
+  slug: string;
+  scientific_name?: string;
+  kingdom: string;
+  affected_crop_slugs?: string[];
+  feeding_type?: string[];
+  names?: Record<string, string>;
+}
+
+export interface PestDetail extends PestSummary {
+  life_stages?: string[];
+  favored_conditions?: Record<string, unknown>;
+  aliases?: string[];
+  description?: Record<string, string>;
+  economic_threshold?: Record<string, string>;
+  field_provenance?: Record<string, unknown>;
+}
+
+export interface PestListResponse {
+  items: PestSummary[];
+  count: number;
+}
+
+export type RemedyType =
+  | 'cultural'
+  | 'biological'
+  | 'chemical'
+  | 'resistant_variety'
+  | 'mechanical'
+  | 'integrated';
+
+export interface RemedySummary {
+  slug: string;
+  type: RemedyType;
+  active_ingredient?: string;
+  pre_harvest_interval_days?: number;
+  organic_compatible?: boolean;
+  target_disease_slugs?: string[];
+  target_pest_slugs?: string[];
+  applicable_crop_slugs?: string[];
+  name?: Record<string, string>;
+}
+
+export interface RemedyDetail extends RemedySummary {
+  concentration?: string;
+  formulation?: string;
+  dosage?: string;
+  application_method?: string;
+  frequency?: string;
+  re_entry_interval_hours?: number;
+  who_hazard_class?: string;
+  effectiveness?: string;
+  cost_tier?: string;
+  description?: Record<string, string>;
+  instructions?: Record<string, string>;
+  safety_notes?: Record<string, string>;
+  field_provenance?: Record<string, unknown>;
+}
+
+export interface RemedyListResponse {
+  items: RemedySummary[];
+  count: number;
+}
+
 export interface CropListResponse {
   items: CropSummary[];
   count: number;
@@ -143,4 +235,12 @@ export const api = {
     request<CultivationStepsResponse>(
       `/v1/crops/${encodeURIComponent(slug)}/cultivation-steps`,
     ),
+  listDiseases: () => request<DiseaseListResponse>('/v1/diseases'),
+  getDisease: (slug: string) =>
+    request<DiseaseDetail>(`/v1/diseases/${encodeURIComponent(slug)}`),
+  listPests: () => request<PestListResponse>('/v1/pests'),
+  getPest: (slug: string) => request<PestDetail>(`/v1/pests/${encodeURIComponent(slug)}`),
+  listRemedies: () => request<RemedyListResponse>('/v1/remedies'),
+  getRemedy: (slug: string) =>
+    request<RemedyDetail>(`/v1/remedies/${encodeURIComponent(slug)}`),
 };

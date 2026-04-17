@@ -2,7 +2,7 @@ import { Link, Outlet, createRootRouteWithContext } from '@tanstack/react-router
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import type { QueryClient } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
-import { Leaf, Map as MapIcon } from 'lucide-react';
+import { Bug, FlaskConical, Leaf, Map as MapIcon, ShieldAlert } from 'lucide-react';
 
 import { supportedLocales, setLocale, type Locale } from '@/i18n';
 
@@ -36,6 +36,30 @@ function RootLayout() {
             >
               <MapIcon className="h-4 w-4" aria-hidden />
               {t('nav.map')}
+            </Link>
+            <Link
+              to="/diseases"
+              activeProps={{ className: 'font-semibold text-primary' }}
+              className="flex items-center gap-1 rounded-md px-3 py-2 hover:bg-muted"
+            >
+              <ShieldAlert className="h-4 w-4" aria-hidden />
+              {t('nav.diseases')}
+            </Link>
+            <Link
+              to="/pests"
+              activeProps={{ className: 'font-semibold text-primary' }}
+              className="flex items-center gap-1 rounded-md px-3 py-2 hover:bg-muted"
+            >
+              <Bug className="h-4 w-4" aria-hidden />
+              {t('nav.pests')}
+            </Link>
+            <Link
+              to="/remedies"
+              activeProps={{ className: 'font-semibold text-primary' }}
+              className="flex items-center gap-1 rounded-md px-3 py-2 hover:bg-muted"
+            >
+              <FlaskConical className="h-4 w-4" aria-hidden />
+              {t('nav.remedies')}
             </Link>
             <LocalePicker current={i18n.language as Locale} />
           </nav>
