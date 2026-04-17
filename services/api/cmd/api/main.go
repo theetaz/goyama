@@ -19,6 +19,7 @@ import (
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"github.com/go-chi/cors"
+	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/health"
@@ -45,7 +46,13 @@ func run() error {
 	log := newLogger(cfg.LogLevel)
 	slog.SetDefault(log)
 
-	r := buildRouter(cfg, log)
+	cropsRepo, closeRepo, err := newCropsRepo(cfg, log)
+	if err != nil {
+		return fmt.Errorf("crops repo: %w", err)
+	}
+	defer closeRepo()
+
+	r := buildRouter(cfg, log, cropsRepo)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.Port),
@@ -87,7 +94,32 @@ func run() error {
 	return nil
 }
 
-func buildRouter(cfg config.Config, log *slog.Logger) http.Handler {
+// newCropsRepo returns the repo backing the /crops endpoint — a Postgres-
+// backed pgx repo when DATABASE_URL is set, or the JSONL corpus loader
+// otherwise. The returned close function tears down pool resources; it's a
+// no-op for the JSONL repo.
+func newCropsRepo(cfg config.Config, log *slog.Logger) (crops.Repository, func(), error) {
+	if cfg.DatabaseURL == "" {
+		log.Info("crops repo: using JSONL corpus",
+			slog.String("corpus_path", cfg.CorpusPath),
+		)
+		return crops.NewJSONLRepo(cfg.CorpusPath), func() {}, nil
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
+	if err != nil {
+		return nil, nil, fmt.Errorf("pgx pool: %w", err)
+	}
+	if err := pool.Ping(ctx); err != nil {
+		pool.Close()
+		return nil, nil, fmt.Errorf("ping db: %w", err)
+	}
+	log.Info("crops repo: using Postgres")
+	return crops.NewPgxRepo(pool), pool.Close, nil
+}
+
+func buildRouter(cfg config.Config, log *slog.Logger, cropsRepo crops.Repository) http.Handler {
 	r := chi.NewRouter()
 
 	r.Use(middleware.Recoverer)
@@ -103,7 +135,6 @@ func buildRouter(cfg config.Config, log *slog.Logger) http.Handler {
 	}))
 
 	healthH := health.New(version)
-	cropsRepo := crops.NewJSONLRepo(cfg.CorpusPath)
 	cropsH := crops.NewHandler(cropsRepo)
 
 	r.Route("/v1", func(r chi.Router) {
