@@ -1,0 +1,61 @@
+{
+  "slug": "capsicum-01-nursery",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "capsicum",
+  "season": "year_round",
+  "stage": "nursery",
+  "order_idx": 1,
+  "day_after_planting": {"min": -21, "max": -8, "unit": "days before transplanting"},
+  "title": {
+    "en": "Nursery sowing",
+    "si": "බීජ ක්‍යාර ස්ථාපනය",
+    "ta": "நாற்றுப் பாத்தி விதைப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Prepare nursery beds 3 m × 90 cm at 15 cm height. Apply compost or cow dung at 3–4 kg per square metre. Put seeds in rows 10–15 cm apart and less than 1 cm depth. Seeds germinate in 8–10 days; seedlings are ready to plant in 21 days. Seed rate is 1 kg/ha for CA 8 and 1.75 kg/ha for HYW and LYW varieties.",
+    "si": "3 m × 90 cm, 15 cm උසකින් බීජ ක්‍යාර සකස් කරන්න. චරක මීටරයකට කොම්පෝස්ට් හෝ ගොම පොහොර 3–4 kg යොදන්න. බීජ 10–15 cm පරතරයෙන් පේළිවලට, 1 cm නොඉක්මවන ගැඹුරකට වපුරන්න. දින 8–10 කින් බීජ පැලවේ; දින 21 කින් පැළ සිටුවිය හැකියි. CA 8 සඳහා හෙක්ටයාරයට 1 kg සහ HYW/LYW ප්‍රභේද සඳහා 1.75 kg බීජ අනුපාතය වේ.",
+    "ta": "3 m × 90 cm, 15 cm உயரமுள்ள நாற்றுப் பாத்திகளைத் தயாரிக்கவும். சதுர மீட்டருக்கு கம்போஸ்ட் அல்லது பசுந்தாழ்வு 3–4 kg வழங்கவும். விதைகளை 10–15 cm இடைவெளியில் வரிசைகளில், 1 cm ஆழத்திற்கும் குறைவாக விதைக்கவும். 8–10 நாட்களில் விதைகள் முளைக்கும்; 21 நாட்களில் நாற்றுகள் நடவு செய்ய தயாராகும். CA 8 க்கு ஹெக்டேருக்கு 1 kg, HYW/LYW வகைகளுக்கு 1.75 kg விதை அளவு.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Capsicum seed (CA 8 OP variety)", "si": "මාළු මිරිස් බීජ (CA 8)", "ta": "குடமிளகாய் விதை (CA 8)", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 1,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    },
+    {
+      "type": "amendment",
+      "name": {"en": "Compost or cow dung", "si": "කොම්පෝස්ට් හෝ ගොම", "ta": "கம்போஸ்ட் அல்லது பசுந்தாழ்வு", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 3.5,
+      "unit": "kg",
+      "per_unit_area": "square_meter",
+      "notes": {
+        "en": "Nursery bed amendment, 3–4 kg/m² range.",
+        "si": "බීජ ක්‍යාර සංශෝධනය, 3–4 kg/m² පරාසය.",
+        "ta": "நாற்றுப் பாத்தி திருத்தம், 3–4 kg/m² வரம்பு.",
+        "si_status": "machine_draft",
+        "ta_status": "machine_draft"
+      }
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "3m x 90 cm and 15 cm height beds are prepared. Apply compost or cow dung 3-4 kg per square meter. Put seeds in rows 10-15 cm apart and less than to 1 cm depth. Seed germinate in 8-10 days. Seedlings are ready to plant in 21 days."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "CA 8 – 1 kg/ha. HYW and LYW- 1.75 kg/ha."
+    }
+  }
+}

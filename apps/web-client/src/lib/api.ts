@@ -35,6 +35,48 @@ export interface Range {
   unit?: string;
 }
 
+export interface CultivationStepInput {
+  type:
+    | 'seed'
+    | 'fertilizer'
+    | 'pesticide'
+    | 'herbicide'
+    | 'fungicide'
+    | 'water'
+    | 'labor'
+    | 'mulch'
+    | 'amendment'
+    | 'tool';
+  name: Record<string, string>;
+  amount?: number;
+  unit?: string;
+  per_unit_area?: 'acre' | 'hectare' | 'perch' | 'square_meter';
+  notes?: Record<string, string>;
+}
+
+export interface CultivationStep {
+  slug: string;
+  crop_slug: string;
+  variety_slug?: string;
+  aez_code?: string;
+  season?: string;
+  stage: string;
+  order_idx: number;
+  day_after_planting?: Range;
+  title?: Record<string, string>;
+  body?: Record<string, string>;
+  inputs?: CultivationStepInput[];
+  media_slugs?: string[];
+  status?: string;
+  field_provenance?: Record<string, unknown>;
+}
+
+export interface CultivationStepsResponse {
+  crop_slug: string;
+  items: CultivationStep[];
+  count: number;
+}
+
 export interface CropListResponse {
   items: CropSummary[];
   count: number;
@@ -97,4 +139,8 @@ export const api = {
     return request<CropListResponse>(`/v1/crops${suffix}`);
   },
   getCrop: (slug: string) => request<CropDetail>(`/v1/crops/${encodeURIComponent(slug)}`),
+  listCultivationSteps: (slug: string) =>
+    request<CultivationStepsResponse>(
+      `/v1/crops/${encodeURIComponent(slug)}/cultivation-steps`,
+    ),
 };

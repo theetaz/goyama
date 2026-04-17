@@ -1,0 +1,32 @@
+{
+  "slug": "brinjal-05-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "brinjal",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 5,
+  "day_after_planting": {"min": 70, "max": 154, "unit": "days (first pick at ~10 weeks, picking continues for 10–12 rounds)"},
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Harvesting can start 10–12 weeks after transplanting. Fruits can be picked at 7-day intervals for 10–12 rounds. Expected yield is 18–20 t/ha for open-pollinated varieties and 30–40 t/ha for hybrids.",
+    "si": "සිටුවා සති 10–12 කට පසු අස්වනු නෙලීම ආරම්භ කළ හැකිය. දින 7 පරතර වලින් 10–12 වාරයක් ගෙඩි නෙලිය හැකිය. අපේක්ෂිත අස්වැන්න OP ප්‍රභේද සඳහා හෙක්ටයාරයට ටොන් 18–20 ක් ද, මිශ්‍ර ප්‍රභේද සඳහා ටොන් 30–40 ක් ද වේ.",
+    "ta": "நடவுக்குப் பின் 10–12 வாரங்களில் அறுவடை தொடங்கலாம். 7 நாள் இடைவெளியில் 10–12 சுற்றுக்கு காய்களை அறுவடை செய்யலாம். எதிர்பார்க்கப்படும் விளைச்சல் OP வகைகளுக்கு ஹெக்டேருக்கு 18–20 டன், கலப்பின வகைகளுக்கு 30–40 டன்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-brinjal/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Harvesting can be started 10-12 weeks after transplanting. Fruit can be harvested 7 days intervals up to 10-12 picks. OPV gives 18-20 t/ha and hybrids give 30-40 t/ha"
+    }
+  }
+}

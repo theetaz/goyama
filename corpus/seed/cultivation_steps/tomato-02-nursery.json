@@ -1,0 +1,47 @@
+{
+  "slug": "tomato-02-nursery",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "stage": "nursery",
+  "order_idx": 2,
+  "day_after_planting": {"min": -18, "max": -14, "unit": "days before transplanting"},
+  "title": {
+    "en": "Nursery sowing",
+    "si": "බීජ ක්‍යාර ස්ථාපනය",
+    "ta": "நாற்றுப் பாத்தி விதைப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Sow 200–250 g/ha of seed in raised nursery beds. Seedlings are ready to transplant to the field 14–18 days after sowing.",
+    "si": "හෙක්ටයාරයකට 200–250 ග්‍රෑම් බීජ ඔසවන ලද බීජ ක්‍යාරවල වපුරන්න. වපුරා දින 14–18 කදී පැළ ගොවිපලට සිටුවිය හැකි වෙයි.",
+    "ta": "ஹெக்டேருக்கு 200–250 கிராம் விதைகளை உயர்த்திய நாற்றுப் பாத்திகளில் விதைக்கவும். விதைத்து 14–18 நாட்களில் நாற்றுகள் வயலில் நடவு செய்ய தயாராகும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Tomato seed", "si": "තක්කාලි බීජ", "ta": "தக்காளி விதை", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 225,
+      "unit": "g",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Transplant the seedling to the field 14-18 days after sowing."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "200-250 g/ha"
+    }
+  }
+}

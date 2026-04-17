@@ -61,6 +61,38 @@ type Summary struct {
 type Repository interface {
 	List(ctx context.Context, filter ListFilter) ([]Summary, error)
 	Get(ctx context.Context, slug string) (Crop, error)
+	// ListCultivationSteps returns the ordered step-by-step cultivation
+	// guide for a crop. Returns an empty slice when the repo has no step
+	// data (e.g. the JSONL fallback).
+	ListCultivationSteps(ctx context.Context, cropSlug string) ([]CultivationStep, error)
+}
+
+// CultivationStep is one entry in a crop's cultivation guide. Title and body
+// are delivered as locale -> string maps so the client renders the current
+// i18n locale without a second round-trip.
+type CultivationStep struct {
+	Slug             string            `json:"slug"`
+	CropSlug         string            `json:"crop_slug"`
+	VarietySlug      string            `json:"variety_slug,omitempty"`
+	AEZCode          string            `json:"aez_code,omitempty"`
+	Season           string            `json:"season,omitempty"`
+	Stage            string            `json:"stage"`
+	OrderIdx         int               `json:"order_idx"`
+	DayAfterPlanting *IntRange         `json:"day_after_planting,omitempty"`
+	Title            map[string]string `json:"title,omitempty"`
+	Body             map[string]string `json:"body,omitempty"`
+	Inputs           []map[string]any  `json:"inputs,omitempty"`
+	MediaSlugs       []string          `json:"media_slugs,omitempty"`
+	Status           string            `json:"status,omitempty"`
+	FieldProvenance  map[string]any    `json:"field_provenance,omitempty"`
+}
+
+// IntRange matches the corpus schema IntRange object — integer min/max with
+// an optional free-text unit.
+type IntRange struct {
+	Min  *int   `json:"min,omitempty"`
+	Max  *int   `json:"max,omitempty"`
+	Unit string `json:"unit,omitempty"`
 }
 
 // ListFilter is a minimal filter set used by the list endpoint.
@@ -183,6 +215,13 @@ func (r *JSONLRepo) Get(_ context.Context, slug string) (Crop, error) {
 		return Crop{}, ErrNotFound
 	}
 	return c, nil
+}
+
+// ListCultivationSteps returns an empty slice for the JSONL fallback — the
+// released JSONL bundle doesn't carry cultivation steps yet. Postgres mode
+// serves the real data.
+func (r *JSONLRepo) ListCultivationSteps(_ context.Context, _ string) ([]CultivationStep, error) {
+	return []CultivationStep{}, nil
 }
 
 func matches(c Crop, q string) bool {

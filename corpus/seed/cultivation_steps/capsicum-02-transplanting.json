@@ -1,0 +1,61 @@
+{
+  "slug": "capsicum-02-transplanting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "capsicum",
+  "season": "year_round",
+  "stage": "transplanting",
+  "order_idx": 2,
+  "day_after_planting": {"min": 0, "max": 0, "unit": "days"},
+  "title": {
+    "en": "Transplanting and basal fertiliser",
+    "si": "සිටුවීම සහ මුල් පොහොර යෙදීම",
+    "ta": "நடவு மற்றும் அடிப்படை உர வழங்கல்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Transplant 21-day-old seedlings. Spacing is 15 × 30 cm (HYW, LYW OP varieties) or 40 × 40 cm (CA-8 and Gannoruwa Prarthana). Apply the basal fertiliser mix at planting: Urea 100 kg/ha, TSP 215 kg/ha, MOP 65 kg/ha.",
+    "si": "දින 21 ක් වයසැති පැළ සිටුවන්න. පරතරය HYW සහ LYW සඳහා 15 × 30 cm ද, CA-8 සහ ගන්නෝරුව ප්‍රාර්ථනා සඳහා 40 × 40 cm ද වේ. සිටුවන විට මුල් පොහොර මිශ්‍රණය යොදන්න: යූරියා හෙක්ටයාරයට 100 kg, TSP 215 kg, MOP 65 kg.",
+    "ta": "21 நாட்கள் வயதான நாற்றுகளை நடவு செய்யவும். இடைவெளி HYW, LYW பரம்பரைகளுக்கு 15 × 30 cm, CA-8 மற்றும் கன்னோருவ பிரார்த்தனாவுக்கு 40 × 40 cm. நடவு நேரத்தில் அடிப்படை உரக் கலவை வழங்கவும்: யூரியா ஹெக்டேருக்கு 100 kg, TSP 215 kg, MOP 65 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "fertilizer",
+      "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 100,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    },
+    {
+      "type": "fertilizer",
+      "name": {"en": "Triple Super Phosphate (TSP)", "si": "TSP පොස්පේට්", "ta": "டிரிப்பிள் சூப்பர் பாஸ்பேட் (TSP)", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 215,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    },
+    {
+      "type": "fertilizer",
+      "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 65,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "HYW and LYW – 15 x 30 cm between plants and rows. CA-8 and Gannoruwa Prarthana – 40 x 40 cm between plants and rows"
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-capsicum/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Basal: Urea 100 kg/ha, TSP 215 kg/ha, MOP 65 kg/ha"
+    }
+  }
+}

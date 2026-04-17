@@ -1,0 +1,47 @@
+{
+  "slug": "brinjal-01-nursery",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "brinjal",
+  "season": "year_round",
+  "stage": "nursery",
+  "order_idx": 1,
+  "day_after_planting": {"min": -30, "max": -25, "unit": "days before transplanting"},
+  "title": {
+    "en": "Nursery preparation",
+    "si": "බීජ ක්‍යාර සකස් කිරීම",
+    "ta": "நாற்றுப் பாத்தி தயாரிப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Prepare 3 m × 1 m beds in a well-lit area. Sterilise the beds and mix surface soil with cow dung at a 1:1 ratio. Place seeds in rows at 6-inch (≈15 cm) spacing. Seed rate is 350 g/ha. Seedlings are ready for transplanting at 25–30 days old.",
+    "si": "හොඳින් එළිය වැටෙන තැනක 3 m × 1 m ක්‍යාර සකස් කරන්න. ක්‍යාර ස්ටෙරිල් කර, මතුපිට පස සහ ගොම පොහොර 1:1 අනුපාතයෙන් මිශ්‍ර කරන්න. බීජ අඟල් 6 (≈15 cm) පරතරයෙන් පේළිවලට තබන්න. බීජ අනුපාතය හෙක්ටයාරයට 350 g වේ. දින 25–30 ක් වයසැති විට පැළ සිටුවීමට සූදානම් වේ.",
+    "ta": "நன்கு வெளிச்சம் உள்ள இடத்தில் 3 m × 1 m பாத்திகளைத் தயாரிக்கவும். பாத்திகளை கிருமி நீக்கம் செய்து, மேற்பரப்பு மண்ணையும் பசுந்தாழ்வையும் 1:1 விகிதத்தில் கலக்கவும். விதைகளை 6 அங்குல (≈15 cm) இடைவெளியில் வரிசைகளில் வைக்கவும். விதை அளவு ஹெக்டேருக்கு 350 g. 25–30 நாட்கள் வயதில் நாற்றுகள் நடவு செய்ய தயாராகும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Brinjal seed", "si": "වම්බටු බීජ", "ta": "கத்தரி விதை", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 350,
+      "unit": "g",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-brinjal/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "3m x 1m beds in better sunlight conditions are suitable. Beds should be sterilized. Add 1:1 ratio of surface soil and cow dung. Seeds should be placed in rows in 6 inches spacing. Seedlings reach transplant readiness at 25-30 days old."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-brinjal/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "350g/ha"
+    }
+  }
+}

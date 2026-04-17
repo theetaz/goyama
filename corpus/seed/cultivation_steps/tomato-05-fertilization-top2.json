@@ -1,0 +1,48 @@
+{
+  "slug": "tomato-05-fertilization-top2",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "stage": "fertilization",
+  "order_idx": 5,
+  "day_after_planting": {"min": 42, "max": 42, "unit": "days"},
+  "title": {
+    "en": "2nd top dressing — 6 weeks after planting",
+    "si": "දෙවන අතිරේක පොහොර — සිටුවා සති 6 කට පසු",
+    "ta": "இரண்டாவது மேல் உரம் — நடவுக்குப் பின் 6 வாரங்கள்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Apply Urea 65 kg/ha and MOP 65 kg/ha as the second top dressing at six weeks after planting.",
+    "si": "සිටුවා සති 6 කට පසු යූරියා හෙක්ටයාරයට 65 kg සහ MOP 65 kg දෙවන අතිරේක පොහොර ලෙස යොදන්න.",
+    "ta": "நடவுக்குப் பின் ஆறு வாரங்களில் யூரியா ஹெக்டேருக்கு 65 kg மற்றும் MOP 65 kg இரண்டாவது மேல் உரமாக வழங்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "fertilizer",
+      "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 65,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    },
+    {
+      "type": "fertilizer",
+      "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 65,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "2nd Top Dressing: 65 kg/ha Urea + 65 kg/ha MOP at 06 weeks after planting"
+    }
+  }
+}

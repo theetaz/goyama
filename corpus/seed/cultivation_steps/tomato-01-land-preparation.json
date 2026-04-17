@@ -1,0 +1,32 @@
+{
+  "slug": "tomato-01-land-preparation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "stage": "land_preparation",
+  "order_idx": 1,
+  "day_after_planting": {"min": -14, "max": -1, "unit": "days before transplanting"},
+  "title": {
+    "en": "Land preparation",
+    "si": "ඉඩම සකස් කිරීම",
+    "ta": "நில தயாரிப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Harrow the field deeper and break into a fine soil. Mark planting holes according to the given spacing (80 cm × 50 cm) and fill the holes with decomposed manure or organic matter (6–12 t/ha).",
+    "si": "ඉඩම ගැඹුරට සී සා සිහින් පසක් බවට පත් කරන්න. දී ඇති පැළෑටි පරතරය (80 cm × 50 cm) අනුව සිටුවන කුහර සලකුණු කර, ප්‍රතිසංවිධිත කොම්පෝස්ට් හෝ කාබනික ද්‍රව්‍ය (හෙක්ටයාරයකට 6–12 ටොන්) වලින් කුහර පුරවන්න.",
+    "ta": "நிலத்தை ஆழமாக உழுது மென்மையான மண்ணாக்கவும். தரப்பட்ட இடைவெளியின் (80 cm × 50 cm) படி நடவு குழிகளைக் குறிக்கவும், அழுகிய உரம் அல்லது கரிமப் பொருளால் (ஹெக்டேருக்கு 6–12 டன்) குழிகளை நிரப்பவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Harrow the field deeper and break in to a fine soil. Mark planting holes according to given spacing and fill the holes with decomposed manure or organic matter (6-12 mt/ha)."
+    }
+  }
+}
