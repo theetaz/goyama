@@ -20,6 +20,7 @@ import (
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/diseases"
 	"github.com/goyama/api/internal/pests"
+	"github.com/goyama/api/internal/remedies"
 	"github.com/goyama/api/internal/review"
 )
 
@@ -29,11 +30,22 @@ type Handler struct {
 	steps    crops.CultivationStepRepo
 	diseases diseases.Repository
 	pests    pests.Repository
+	remedies remedies.Repository
 }
 
 // New returns an admin Handler backed by the given repositories.
-func New(stepsRepo crops.CultivationStepRepo, diseasesRepo diseases.Repository, pestsRepo pests.Repository) *Handler {
-	return &Handler{steps: stepsRepo, diseases: diseasesRepo, pests: pestsRepo}
+func New(
+	stepsRepo crops.CultivationStepRepo,
+	diseasesRepo diseases.Repository,
+	pestsRepo pests.Repository,
+	remediesRepo remedies.Repository,
+) *Handler {
+	return &Handler{
+		steps:    stepsRepo,
+		diseases: diseasesRepo,
+		pests:    pestsRepo,
+		remedies: remediesRepo,
+	}
 }
 
 // Routes returns a chi sub-router mounted at /v1/admin.
@@ -63,6 +75,14 @@ func (h *Handler) Routes() chi.Router {
 		StatusFn:      func(p pests.Pest) string { return p.Status },
 		NotFoundErr:   pests.ErrNotFound,
 		RequiresDBErr: pests.ErrRequiresDatabase,
+	}))
+
+	r.Mount("/remedies", review.Routes(review.Entity[remedies.Remedy]{
+		Repo:          h.remedies,
+		Label:         "remedy",
+		StatusFn:      func(rem remedies.Remedy) string { return rem.Status },
+		NotFoundErr:   remedies.ErrNotFound,
+		RequiresDBErr: remedies.ErrRequiresDatabase,
 	}))
 
 	return r

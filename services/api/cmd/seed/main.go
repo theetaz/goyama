@@ -98,6 +98,15 @@ func run() error {
 		}
 	}
 
+	// Remedies reference disease and pest slugs; run after both so
+	// mid-seed inspections see a coherent graph.
+	remediesDir := filepath.Join(*corpusRoot, "remedies")
+	if _, err := os.Stat(remediesDir); err == nil {
+		if err := seedRemedies(ctx, tx, logger, remediesDir); err != nil {
+			return fmt.Errorf("seed remedies: %w", err)
+		}
+	}
+
 	if err := tx.Commit(ctx); err != nil {
 		return fmt.Errorf("commit: %w", err)
 	}
