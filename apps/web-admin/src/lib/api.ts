@@ -218,6 +218,21 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }),
+  listRemediesForReview: (status: RecordStatus = 'draft') =>
+    request<RemedyReviewQueueResponse>(
+      `/v1/admin/remedies?status=${encodeURIComponent(status)}`,
+    ),
+  getRemedy: (slug: string) =>
+    request<Remedy>(`/v1/admin/remedies/${encodeURIComponent(slug)}`),
+  updateRemedyStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<Remedy>(`/v1/admin/remedies/${encodeURIComponent(slug)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
 };
 
 export interface Disease {
@@ -271,5 +286,50 @@ export interface Pest {
 export interface PestReviewQueueResponse {
   status: RecordStatus;
   items: Pest[];
+  count: number;
+}
+
+export type RemedyType =
+  | 'cultural'
+  | 'biological'
+  | 'chemical'
+  | 'resistant_variety'
+  | 'mechanical'
+  | 'integrated';
+
+export interface Remedy {
+  slug: string;
+  type: RemedyType;
+  target_disease_slugs?: string[];
+  target_pest_slugs?: string[];
+  applicable_crop_slugs?: string[];
+  active_ingredient?: string;
+  concentration?: string;
+  formulation?: string;
+  doa_registration_no?: string;
+  dosage?: string;
+  application_method?: string;
+  frequency?: string;
+  pre_harvest_interval_days?: number;
+  re_entry_interval_hours?: number;
+  who_hazard_class?: string;
+  effectiveness?: string;
+  cost_tier?: string;
+  organic_compatible?: boolean;
+  name?: Record<string, string>;
+  description?: Record<string, string>;
+  instructions?: Record<string, string>;
+  safety_notes?: Record<string, string>;
+  attrs?: Record<string, unknown>;
+  status: RecordStatus;
+  field_provenance?: Record<string, FieldProvenance>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface RemedyReviewQueueResponse {
+  status: RecordStatus;
+  items: Remedy[];
   count: number;
 }

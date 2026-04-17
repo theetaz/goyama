@@ -28,6 +28,7 @@ import (
 	"github.com/goyama/api/internal/pests"
 	"github.com/goyama/api/internal/platform/config"
 	"github.com/goyama/api/internal/platform/httpx"
+	"github.com/goyama/api/internal/remedies"
 )
 
 // version is overridden via -ldflags at build time.
@@ -49,13 +50,13 @@ func run() error {
 	log := newLogger(cfg.LogLevel)
 	slog.SetDefault(log)
 
-	cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, closeRepos, err := newRepos(cfg, log)
+	cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo, closeRepos, err := newRepos(cfg, log)
 	if err != nil {
 		return fmt.Errorf("repos: %w", err)
 	}
 	defer closeRepos()
 
-	r := buildRouter(cfg, log, cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo)
+	r := buildRouter(cfg, log, cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.Port),
@@ -110,6 +111,7 @@ func newRepos(
 	crops.CultivationStepRepo,
 	diseases.Repository,
 	pests.Repository,
+	remedies.Repository,
 	func(),
 	error,
 ) {
@@ -121,6 +123,7 @@ func newRepos(
 			crops.NewCultivationStepJSONLRepo(),
 			diseases.NewJSONLRepo(),
 			pests.NewJSONLRepo(),
+			remedies.NewJSONLRepo(),
 			func() {},
 			nil
 	}
@@ -128,17 +131,18 @@ func newRepos(
 	defer cancel()
 	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
 	if err != nil {
-		return nil, nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
+		return nil, nil, nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
 	}
 	if err := pool.Ping(ctx); err != nil {
 		pool.Close()
-		return nil, nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
+		return nil, nil, nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
 	}
 	log.Info("repos: using Postgres")
 	return crops.NewPgxRepo(pool),
 		crops.NewCultivationStepPgxRepo(pool),
 		diseases.NewPgxRepo(pool),
 		pests.NewPgxRepo(pool),
+		remedies.NewPgxRepo(pool),
 		pool.Close,
 		nil
 }
@@ -150,6 +154,7 @@ func buildRouter(
 	stepsAdminRepo crops.CultivationStepRepo,
 	diseasesRepo diseases.Repository,
 	pestsRepo pests.Repository,
+	remediesRepo remedies.Repository,
 ) http.Handler {
 	r := chi.NewRouter()
 
@@ -167,7 +172,7 @@ func buildRouter(
 
 	healthH := health.New(version)
 	cropsH := crops.NewHandler(cropsRepo)
-	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo)
+	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
