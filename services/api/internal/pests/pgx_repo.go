@@ -8,6 +8,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // PgxRepo is the production implementation of pests.Repository.
@@ -181,7 +183,7 @@ func (r *PgxRepo) loadI18n(ctx context.Context, items []Pest) error {
 }
 
 // SetStatus promotes / rejects a pest, stamping the reviewer + notes.
-func (r *PgxRepo) SetStatus(ctx context.Context, slug string, u StatusUpdate) error {
+func (r *PgxRepo) SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error {
 	const sql = `
 UPDATE pest
 SET status       = $2::record_status,

@@ -6,6 +6,8 @@ package pests
 import (
 	"context"
 	"errors"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // ErrNotFound is returned when a pest slug has no record.
@@ -35,18 +37,13 @@ type Pest struct {
 	ReviewNotes       string            `json:"review_notes,omitempty"`
 }
 
-// StatusUpdate captures the fields written when status changes.
-type StatusUpdate struct {
-	Status     string
-	ReviewedBy string
-	Notes      string
-}
-
-// Repository is the read + status-mutation surface for pests.
+// Repository is the read + status-mutation surface for pests. Satisfies
+// review.Repo[Pest] so it can be mounted via the generic review.Routes
+// factory.
 type Repository interface {
 	ListByStatus(ctx context.Context, status string) ([]Pest, error)
 	Get(ctx context.Context, slug string) (Pest, error)
-	SetStatus(ctx context.Context, slug string, update StatusUpdate) error
+	SetStatus(ctx context.Context, slug string, update review.StatusUpdate) error
 }
 
 // JSONLRepo is a no-op placeholder that returns ErrRequiresDatabase for
@@ -67,6 +64,6 @@ func (*JSONLRepo) Get(context.Context, string) (Pest, error) {
 }
 
 // SetStatus always returns ErrRequiresDatabase.
-func (*JSONLRepo) SetStatus(context.Context, string, StatusUpdate) error {
+func (*JSONLRepo) SetStatus(context.Context, string, review.StatusUpdate) error {
 	return ErrRequiresDatabase
 }

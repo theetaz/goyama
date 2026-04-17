@@ -9,6 +9,8 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgxpool"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // PgxRepo serves crops from a Postgres database using pgx. It implements the
@@ -301,8 +303,23 @@ func scanReviewStep(rows interface{ Scan(dest ...any) error }) (CultivationStep,
 	return s, nil
 }
 
-// ListCultivationStepsByStatus powers the admin review queue.
-func (r *PgxRepo) ListCultivationStepsByStatus(ctx context.Context, status string) ([]CultivationStep, error) {
+// CultivationStepPgxRepo serves the admin-facing cultivation-step surface
+// over Postgres. Held as a distinct struct from PgxRepo because the
+// method signatures collide — both have a Get(ctx, slug), but on different
+// return types.
+type CultivationStepPgxRepo struct {
+	pool *pgxpool.Pool
+}
+
+// NewCultivationStepPgxRepo returns a repo over the given pool. The pool
+// lifecycle is owned by the caller.
+func NewCultivationStepPgxRepo(pool *pgxpool.Pool) *CultivationStepPgxRepo {
+	return &CultivationStepPgxRepo{pool: pool}
+}
+
+// ListByStatus powers the admin review queue. Part of the
+// CultivationStepRepo interface used by review.Routes.
+func (r *CultivationStepPgxRepo) ListByStatus(ctx context.Context, status string) ([]CultivationStep, error) {
 	sql := `
 SELECT ` + reviewStepsSelect + `
 FROM cultivation_step cs
@@ -327,9 +344,9 @@ ORDER BY cs.crop_slug, cs.order_idx`
 	return out, nil
 }
 
-// GetCultivationStep returns a single step — title / body translations are
-// joined in so the admin detail panel has the full record in one round-trip.
-func (r *PgxRepo) GetCultivationStep(ctx context.Context, slug string) (CultivationStep, error) {
+// Get returns a single step — title / body translations are joined in so
+// the admin detail panel has the full record in one round-trip.
+func (r *CultivationStepPgxRepo) Get(ctx context.Context, slug string) (CultivationStep, error) {
 	sql := `
 WITH s AS (
 	SELECT * FROM cultivation_step WHERE slug = $1
@@ -384,10 +401,10 @@ FROM s`
 	return s, nil
 }
 
-// SetCultivationStepStatus promotes or rejects a step. The status enum is
-// validated by Postgres itself; an invalid transition will come back as a
-// pg error that the handler maps to a 400.
-func (r *PgxRepo) SetCultivationStepStatus(ctx context.Context, slug string, u StatusUpdate) error {
+// SetStatus promotes or rejects a step. The status enum is validated by
+// Postgres itself; an invalid transition will come back as a pg error
+// that the handler maps to a 400.
+func (r *CultivationStepPgxRepo) SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error {
 	const sql = `
 UPDATE cultivation_step
 SET status       = $2::record_status,
