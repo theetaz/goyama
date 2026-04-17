@@ -1,0 +1,32 @@
+{
+  "slug": "luffa-03-trellis",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "luffa",
+  "season": "year_round",
+  "stage": "training",
+  "order_idx": 3,
+  "day_after_planting": {"min": 14, "max": 21, "unit": "days"},
+  "title": {
+    "en": "Train vines onto a 2 m trellis",
+    "si": "වැල් 2 m උසැති ආධාරකයක් මත පුහුණු කරන්න",
+    "ta": "2 m உயர பந்தலில் கொடிகளைப் பயிற்றுவித்தல்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Once vines start to climb, train them onto a trellis about 2 m high.",
+    "si": "වැල් ගසේ නැඟීමට පටන් ගත් විට, ඒවා උස 2 m පමණ ආධාරක යොදා පුහුණු කරන්න.",
+    "ta": "கொடிகள் ஏற ஆரம்பித்ததும், அவற்றை சுமார் 2 m உயர பந்தலில் பயிற்றுவிக்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-luffa/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Vines should be trained in trellises about 2m high."
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "luffa-02-sowing",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "luffa",
+  "season": "year_round",
+  "stage": "sowing",
+  "order_idx": 2,
+  "day_after_planting": {"min": 0, "max": 0, "unit": "days"},
+  "title": {
+    "en": "Seed soak and direct sowing",
+    "si": "බීජ තෙමා සෘජුව වපුරීම",
+    "ta": "விதை ஊறவைத்து நேரடி விதைப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Soak seeds in water for about 24 hours, then plant 3–4 seeds per pit. Seed rate is 3 kg/ha.",
+    "si": "බීජ ජලයේ පැය 24 ක් පමණ තෙමා, එක් කුහරයකට බීජ 3–4 බැගින් වපුරන්න. බීජ අනුපාතය හෙක්ටයාරයට 3 kg වේ.",
+    "ta": "விதைகளை சுமார் 24 மணி நேரம் தண்ணீரில் ஊறவைத்து, ஒரு குழிக்கு 3–4 விதைகள் வீதம் விதைக்கவும். விதை அளவு ஹெக்டேருக்கு 3 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Luffa (ridge gourd) seed", "si": "වැටකොළු බීජ", "ta": "பீர்க்கங்காய் விதை", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 3,
+      "unit": "kg",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-luffa/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Soak the seeds in water for about 24 hours. Plant about 3-4 seeds per pit."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-luffa/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "3 kg /ha"
+    }
+  }
+}

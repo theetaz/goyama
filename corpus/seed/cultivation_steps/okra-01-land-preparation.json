@@ -1,0 +1,43 @@
+{
+  "slug": "okra-01-land-preparation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "stage": "land_preparation",
+  "order_idx": 1,
+  "day_after_planting": {"min": -3, "max": -2, "unit": "days before planting"},
+  "title": {
+    "en": "Land preparation and basal fertiliser",
+    "si": "ඉඩම සකස් කිරීම සහ මුල් පොහොර යෙදීම",
+    "ta": "நில தயாரிப்பு மற்றும் அடிப்படை உரம்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Prepare planting pits at 90 cm between rows × 60 cm within the row. Apply the basal fertiliser mix 2–3 days before planting: Urea 50 kg/ha, TSP 195 kg/ha, MOP 25 kg/ha.",
+    "si": "පේළි අතර 90 cm සහ පේළිය තුළ 60 cm පරතරයෙන් සිටුවන කුහර සකස් කරන්න. සිටුවීමට දින 2–3 කට පෙර මුල් පොහොර මිශ්‍රණය යොදන්න: යූරියා හෙක්ටයාරයට 50 kg, TSP 195 kg, MOP 25 kg.",
+    "ta": "வரிசைகளுக்கு இடையே 90 cm, வரிசைக்குள் 60 cm இடைவெளியில் நடவுக் குழிகளைத் தயாரிக்கவும். நடவுக்கு 2–3 நாட்களுக்கு முன் அடிப்படை உரக் கலவை வழங்கவும்: யூரியா ஹெக்டேருக்கு 50 kg, TSP 195 kg, MOP 25 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {"type": "fertilizer", "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Triple Super Phosphate (TSP)", "si": "TSP පොස්පේට්", "ta": "டிரிப்பிள் சூப்பர் பாஸ்பேட் (TSP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 195, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Between rows 90 cm. Between plants within the row: 60 cm."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Basal application of 50 kg urea/ha, 195 kg TSP/ha, 25 kg MOP/ha applied 2-3 days before planting."
+    }
+  }
+}

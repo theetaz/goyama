@@ -1,0 +1,31 @@
+{
+  "slug": "kekiri-06-irrigation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "kekiri",
+  "season": "year_round",
+  "stage": "irrigation",
+  "order_idx": 6,
+  "title": {
+    "en": "Irrigation schedule",
+    "si": "ජල සැපයුම් කාල ක්‍රමය",
+    "ta": "நீர்ப்பாசன அட்டவணை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Irrigate daily until the seeds germinate. After germination, watering every 3–4 days is sufficient, depending on the crop's requirement and climatic conditions.",
+    "si": "බීජ පැලවන තෙක් දිනපතා ජල සැපයුම කරන්න. පැලවීමෙන් පසු පයිරේ අවශ්‍යතාව සහ දේශගුණික තත්ත්ව අනුව දින 3–4 කට වරක් ජල සැපයුම ප්‍රමාණවත් වේ.",
+    "ta": "விதைகள் முளைக்கும் வரை தினமும் நீர்ப்பாய்ச்சவும். முளைத்த பிறகு, பயிரின் தேவை மற்றும் காலநிலைக்கு ஏற்ப 3–4 நாட்களுக்கு ஒரு முறை நீர்ப்பாய்ச்சுவது போதுமானது.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "It is necessary to irrigate daily until the seeds germinate. Watering every 3-4 days is sufficient depending on the requirement and climatic conditions."
+    }
+  }
+}

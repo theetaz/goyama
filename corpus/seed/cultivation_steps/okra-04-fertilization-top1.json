@@ -1,0 +1,36 @@
+{
+  "slug": "okra-04-fertilization-top1",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "stage": "fertilization",
+  "order_idx": 4,
+  "day_after_planting": {"min": 14, "max": 14, "unit": "days"},
+  "title": {
+    "en": "1st top dressing — 2 weeks after planting",
+    "si": "පළමු අතිරේක පොහොර — සිටුවා සති 2 කට පසු",
+    "ta": "முதல் மேல் உரம் — நடவுக்குப் பின் 2 வாரங்கள்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Apply Urea 50 kg/ha and MOP 25 kg/ha as the first top dressing at two weeks after planting.",
+    "si": "සිටුවා සති 2 කට පසු යූරියා හෙක්ටයාරයට 50 kg සහ MOP 25 kg පළමු අතිරේක පොහොර ලෙස යොදන්න.",
+    "ta": "நடவுக்குப் பின் இரண்டு வாரங்களில் யூரியா ஹெக்டேருக்கு 50 kg மற்றும் MOP 25 kg முதல் மேல் உரமாக வழங்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {"type": "fertilizer", "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+  ],
+  "field_provenance": {
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Top dressing at 2 weeks: 50 kg urea, 25 kg MOP per hectare."
+    }
+  }
+}

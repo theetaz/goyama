@@ -1,0 +1,32 @@
+{
+  "slug": "okra-03-thinning",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "stage": "weed_management",
+  "order_idx": 3,
+  "day_after_planting": {"min": 14, "max": 14, "unit": "days"},
+  "title": {
+    "en": "Thinning — 2 weeks after emergence",
+    "si": "පැළ තුනී කිරීම — පැළවීමේ සති 2 කට පසු",
+    "ta": "நாற்றுகளை மெலிதாக்குதல் — முளைத்த 2 வாரங்கள்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "At two weeks after emergence, thin the seedlings to leave 2 healthy plants per pit.",
+    "si": "පැළවී සති 2 කට පසු එක් කුහරයකට නීරෝගී පැළ 2 ක් පමණක් ඉතිරි වන පරිදි තුනී කරන්න.",
+    "ta": "முளைத்து இரண்டு வாரங்களுக்குப் பின், ஒரு குழியில் 2 ஆரோக்கியமான நாற்றுகள் மட்டும் இருக்கும்படி மெலிதாக்கவும்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "thinned to 2 healthy plants per pit after 2 weeks"
+    }
+  }
+}

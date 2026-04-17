@@ -1,0 +1,32 @@
+{
+  "slug": "luffa-07-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "luffa",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 7,
+  "day_after_planting": {"min": 60, "max": 130, "unit": "days (first pick at 60–70 days, 10–15 picks over 1½–2 months)"},
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "First harvest can be taken 60–70 days after planting. Expect 10–15 picks over a period of 1½–2 months.",
+    "si": "සිටුවා දින 60–70 කින් පළමු අස්වනු නෙලා ගත හැකිය. මාස 1½–2 ක කාලය තුළ 10–15 වාරයක් අස්වනු නෙලිය හැකිය.",
+    "ta": "நடவுக்குப் பின் 60–70 நாட்களில் முதல் அறுவடை செய்யலாம். 1½–2 மாத காலத்தில் 10–15 சுற்று அறுவடை எதிர்பார்க்கலாம்.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-luffa/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "First harvesting can be taken around 60-70 days after planting. 10-15 harvesting can be done over a period of 1 ½ – 2 months."
+    }
+  }
+}

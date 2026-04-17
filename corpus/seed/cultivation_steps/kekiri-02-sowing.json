@@ -1,0 +1,47 @@
+{
+  "slug": "kekiri-02-sowing",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "kekiri",
+  "season": "year_round",
+  "stage": "sowing",
+  "order_idx": 2,
+  "day_after_planting": {"min": 0, "max": 0, "unit": "days"},
+  "title": {
+    "en": "Direct sowing",
+    "si": "සෘජු වපුරීම",
+    "ta": "நேரடி விதைப்பு",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Plant 3–4 seeds in each prepared pit. Seed requirement is 500 g per hectare.",
+    "si": "එක් සකස් කළ කුහරයකට බීජ 3–4 බැගින් වපුරන්න. බීජ අවශ්‍යතාව හෙක්ටයාරයට 500 g වේ.",
+    "ta": "தயாரிக்கப்பட்ட ஒவ்வொரு குழியிலும் 3–4 விதைகளை விதைக்கவும். விதை தேவை ஹெக்டேருக்கு 500 g.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {
+      "type": "seed",
+      "name": {"en": "Kekiri (snap melon) seed", "si": "කැකිරි බීජ", "ta": "கெக்கிரி விதை", "si_status": "machine_draft", "ta_status": "machine_draft"},
+      "amount": 500,
+      "unit": "g",
+      "per_unit_area": "hectare"
+    }
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Plant about 3-4 seeds in prepared pits."
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "500g of seeds is sufficient for one hectare of land."
+    }
+  }
+}

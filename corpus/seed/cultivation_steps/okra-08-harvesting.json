@@ -1,0 +1,32 @@
+{
+  "slug": "okra-08-harvesting",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "stage": "harvesting",
+  "order_idx": 8,
+  "day_after_planting": {"min": 50, "max": 100, "unit": "days (picking every 2 days for up to 25 rounds)"},
+  "title": {
+    "en": "Harvesting",
+    "si": "අස්වනු නෙලීම",
+    "ta": "அறுவடை",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Pods can be harvested every 2 days for up to 25 picks over 50–100 days after planting. Average yield is 10–15 t/ha; the OKH1 hybrid averages 30 t/ha.",
+    "si": "සිටුවා දින 50–100 ක කාලය තුළ දින 2 පරතරයෙන් 25 වාරයක් දක්වා කරල් නෙලා ගත හැකිය. සාමාන්‍ය අස්වැන්න හෙක්ටයාරයට ටොන් 10–15 ක් ද, OKH1 මිශ්‍ර ප්‍රභේදයෙන් සාමාන්‍යයෙන් ටොන් 30 ක් ද ලැබේ.",
+    "ta": "நடவுக்குப் பின் 50–100 நாட்களில் 2 நாள் இடைவெளியில் 25 சுற்றுக்கு வரை காய்களை அறுவடை செய்யலாம். சராசரி விளைச்சல் ஹெக்டேருக்கு 10–15 டன்; OKH1 கலப்பினம் சராசரி 30 டன் ஹெக்டேருக்கு.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Can be harvested every 2 days up to 25 times over 50-100 days after planting. Average yield is about 10-15 metric tons per hectare. OKH1 (Hybrid) gives an average yield of 30 t/ha"
+    }
+  }
+}

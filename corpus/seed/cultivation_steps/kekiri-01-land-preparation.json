@@ -1,0 +1,43 @@
+{
+  "slug": "kekiri-01-land-preparation",
+  "version": 1,
+  "status": "draft",
+  "crop_slug": "kekiri",
+  "season": "year_round",
+  "stage": "land_preparation",
+  "order_idx": 1,
+  "day_after_planting": {"min": -3, "max": -2, "unit": "days before planting"},
+  "title": {
+    "en": "Land preparation and basal fertiliser",
+    "si": "ඉඩම සකස් කිරීම සහ මුල් පොහොර යෙදීම",
+    "ta": "நில தயாரிப்பு மற்றும் அடிப்படை உரம்",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "body": {
+    "en": "Prepare planting pits at 1.0 m × 1.0 m (between rows and within the row). Apply the basal fertiliser mix: Urea 75 kg/ha, TSP 200 kg/ha, MOP 60 kg/ha.",
+    "si": "පේළි අතර සහ පේළිය තුළ 1.0 m × 1.0 m පරතරයෙන් සිටුවන කුහර සකස් කරන්න. මුල් පොහොර මිශ්‍රණය යොදන්න: යූරියා හෙක්ටයාරයට 75 kg, TSP 200 kg, MOP 60 kg.",
+    "ta": "வரிசைகளுக்கு இடையேயும் வரிசைக்குள்ளும் 1.0 m × 1.0 m இடைவெளியில் நடவுக் குழிகளைத் தயாரிக்கவும். அடிப்படை உரக் கலவையை வழங்கவும்: யூரியா ஹெக்டேருக்கு 75 kg, TSP 200 kg, MOP 60 kg.",
+    "si_status": "machine_draft",
+    "ta_status": "machine_draft"
+  },
+  "inputs": [
+    {"type": "fertilizer", "name": {"en": "Urea", "si": "යූරියා", "ta": "யூரியா", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Triple Super Phosphate (TSP)", "si": "TSP පොස්පේට්", "ta": "டிரிப்பிள் சூப்பர் பாஸ்பேட் (TSP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 200, "unit": "kg", "per_unit_area": "hectare"},
+    {"type": "fertilizer", "name": {"en": "Muriate of Potash (MOP)", "si": "පොටෑෂ් මියුරියේට්", "ta": "மியூரியேட் ஆஃப் பொட்டாஷ் (MOP)", "si_status": "machine_draft", "ta_status": "machine_draft"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+  ],
+  "field_provenance": {
+    "body": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Inter row spacing and the intra row spacing is 1.0m"
+    },
+    "inputs": {
+      "source_id": "doa",
+      "source_url": "https://doa.gov.lk/hordi-crop-kekiri/",
+      "fetched_at": "2026-04-17T00:00:00Z",
+      "quote": "Basal: Urea 75 kg/ha, TSP 200 kg/ha, MOP 60 kg/ha"
+    }
+  }
+}
