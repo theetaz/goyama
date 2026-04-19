@@ -19,6 +19,7 @@ import (
 
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/diseases"
+	"github.com/goyama/api/internal/media"
 	"github.com/goyama/api/internal/pests"
 	"github.com/goyama/api/internal/remedies"
 	"github.com/goyama/api/internal/review"
@@ -31,6 +32,7 @@ type Handler struct {
 	diseases diseases.Repository
 	pests    pests.Repository
 	remedies remedies.Repository
+	media    *media.Handler
 }
 
 // New returns an admin Handler backed by the given repositories.
@@ -39,12 +41,14 @@ func New(
 	diseasesRepo diseases.Repository,
 	pestsRepo pests.Repository,
 	remediesRepo remedies.Repository,
+	mediaH *media.Handler,
 ) *Handler {
 	return &Handler{
 		steps:    stepsRepo,
 		diseases: diseasesRepo,
 		pests:    pestsRepo,
 		remedies: remediesRepo,
+		media:    mediaH,
 	}
 }
 
@@ -84,6 +88,11 @@ func (h *Handler) Routes() chi.Router {
 		NotFoundErr:   remedies.ErrNotFound,
 		RequiresDBErr: remedies.ErrRequiresDatabase,
 	}))
+
+	// Media doesn't fit the generic review.Routes shape — its admin
+	// surface adds an attach endpoint and is queried per-entity rather
+	// than by status. Mount the bespoke handler instead.
+	r.Mount("/media", h.media.AdminRoutes())
 
 	return r
 }

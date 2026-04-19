@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "name": "sl-districts-dev",
+  "_note": "Simplified rectangular dev fixtures — NOT real district boundaries. Use only for local smoke-tests of /v1/geo/lookup. Replace with real Sri Lanka admin polygons (see pipelines/geo/README.md) before publishing anything geo-derived.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "LK-11",
+        "name_en": "Colombo",
+        "name_si": "කොළඹ",
+        "name_ta": "கொழும்பு",
+        "province_code": "LK-1",
+        "province_name": "Western",
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.82, 6.70], [80.10, 6.70], [80.10, 7.05], [79.82, 7.05], [79.82, 6.70]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "LK-21",
+        "name_en": "Kandy",
+        "name_si": "මහනුවර",
+        "name_ta": "கண்டி",
+        "province_code": "LK-2",
+        "province_name": "Central",
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.45, 7.05], [80.95, 7.05], [80.95, 7.55], [80.45, 7.55], [80.45, 7.05]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "LK-71",
+        "name_en": "Anuradhapura",
+        "name_si": "අනුරාධපුර",
+        "name_ta": "அனுராதபுரம்",
+        "province_code": "LK-7",
+        "province_name": "North Central",
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.10, 8.05], [80.80, 8.05], [80.80, 8.75], [80.10, 8.75], [80.10, 8.05]]]
+      }
+    }
+  ]
+}

@@ -233,7 +233,67 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }),
+  listMediaForEntity: (entityType: string, entitySlug: string) =>
+    request<MediaListResponse>(
+      `/v1/admin/media/by-entity/${encodeURIComponent(entityType)}/${encodeURIComponent(entitySlug)}`,
+    ),
+  attachMediaToEntity: (
+    entityType: string,
+    entitySlug: string,
+    body: AttachMediaInput,
+  ) =>
+    request<Media>(
+      `/v1/admin/media/by-entity/${encodeURIComponent(entityType)}/${encodeURIComponent(entitySlug)}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      },
+    ),
+  updateMediaStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<Media>(`/v1/admin/media/${encodeURIComponent(slug)}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
 };
+
+export interface Media {
+  slug: string;
+  type: string;
+  hosting: 'own' | 'external_link';
+  url?: string;
+  external_url?: string;
+  credit?: string;
+  licence: string;
+  caption?: Record<string, string>;
+  entity_type?: string;
+  entity_slug?: string;
+  tags?: string[];
+  status: RecordStatus;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface MediaListResponse {
+  entity_type: string;
+  entity_slug: string;
+  status: string;
+  items: Media[];
+  count: number;
+}
+
+export interface AttachMediaInput {
+  external_url: string;
+  licence: string;
+  credit?: string;
+  tags?: string[];
+  type?: string;
+}
 
 export interface Disease {
   slug: string;

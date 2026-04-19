@@ -11,7 +11,8 @@
     "profile": "Profile",
     "diseases": "Diseases",
     "pests": "Pests",
-    "remedies": "Remedies"
+    "remedies": "Remedies",
+    "markets": "Markets"
   },
   "home": {
     "welcome": "Welcome, grower",
@@ -42,7 +43,8 @@
     "soil_ph": "Soil pH",
     "duration": "Duration",
     "yield": "Expected yield",
-    "also_known_as": "Also known as"
+    "also_known_as": "Also known as",
+    "reference_images": "Reference images"
   },
   "map": {
     "title": "Sri Lanka on one map",
@@ -54,6 +56,13 @@
     "popup_sample_crops": "Crops grown here",
     "popup_off_zone": "You tapped outside the agro-ecological zones.",
     "popup_placeholder_note": "Approximate boundaries — NRMC polygons coming soon.",
+    "geo_district": "District",
+    "geo_dsd": "DS Division",
+    "geo_aez": "AEZ",
+    "geo_rainfall": "Avg rainfall",
+    "geo_soil": "Soil",
+    "geo_no_coverage": "No administrative layer loaded for this point yet.",
+    "geo_disabled": "Geo lookup is offline (server is in JSONL mode).",
     "disclaimer": "Zone boundaries on this map are sketchy hand-drawn approximations for the first UX pass. The canonical NRMC polygon dataset replaces them when the geospatial vectorisation workstream lands."
   },
   "pathology": {
@@ -103,6 +112,22 @@
   },
   "locale_picker": {
     "label": "Language"
+  },
+  "markets": {
+    "title": "Wholesale prices",
+    "subtitle": "Daily commodity prices from Sri Lanka's Dedicated Economic Centres. Trend compares the latest observation to the day before.",
+    "market_label": "Market",
+    "observed_on": "as of",
+    "loading": "Loading prices…",
+    "empty": "No price observations have been imported yet for this market.",
+    "disabled": "Market price service is offline (server is in JSONL mode).",
+    "col_commodity": "Commodity",
+    "col_grade": "Grade",
+    "col_min": "Low",
+    "col_avg": "Average",
+    "col_max": "High",
+    "col_trend": "Trend",
+    "disclaimer": "Prices in LKR per kg. Source: HARTI Daily Wholesale Vegetable Price Bulletin. Verify against the source before using for transactions."
   },
   "errors": {
     "api_unreachable": "Can't reach the Goyama service. Is it running on :8080?",

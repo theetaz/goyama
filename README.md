@@ -38,6 +38,50 @@ Each published record carries:
 - **Versioning**: append-only history with a public changelog.
 - **Licence**: per record, honoring upstream terms.
 
+## Geo lookup (Phase 0 exit endpoint)
+
+`GET /v1/geo/lookup?lat=<float>&lng=<float>` resolves any Sri Lanka
+coordinate into its administrative + agro-ecological envelope:
+
+```jsonc
+{
+  "location":   { "lat": 7.2906, "lng": 80.6337 },
+  "district":   { "code": "LK-21", "name_en": "Kandy",  "province_name": "Central" },
+  "ds_division":{ "code": "21-12", "name_en": "Kandy Four Gravets" },
+  "aez":        { "code": "WM3", "zone_group": "wet", "elevation_class": "mid_country",
+                  "avg_rainfall_mm": 2100, "dominant_soil_groups": ["red_yellow_podzolic"] }
+}
+```
+
+Local dev:
+
+```bash
+make db-up
+make db-migrate
+make db-load-geo-fixtures   # loads simplified dev polygons (NOT real boundaries)
+cd services/api && DATABASE_URL='postgres://goyama:goyama@localhost:54320/goyama?sslmode=disable' make run
+
+curl 'http://localhost:8080/v1/geo/lookup?lat=7.29&lng=80.63'
+```
+
+For real Sri Lanka boundary data and the canonical AEZ map, see
+[pipelines/geo/README.md](pipelines/geo/README.md).
+
+## Market prices (Phase 1 deliverable)
+
+`GET /v1/market-prices?market=<code>&since=<date>` returns daily wholesale
+or retail price observations from Sri Lanka's Dedicated Economic Centres,
+starting with Dambulla. `GET /v1/market-prices/latest/{market}` returns
+every commodity from the most recent observation date.
+
+```bash
+make db-load-market-prices-fixtures
+curl 'http://localhost:8080/v1/market-prices/latest/dambulla-dec'
+```
+
+CSV importer + sourcing notes for HARTI bulletins:
+[pipelines/sources/market_prices/README.md](pipelines/sources/market_prices/README.md).
+
 ## Quick links
 
 - [Vision & scope](docs/01-vision-and-scope.md)

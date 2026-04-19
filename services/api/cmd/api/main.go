@@ -24,7 +24,10 @@ import (
 	"github.com/goyama/api/internal/admin"
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/diseases"
+	"github.com/goyama/api/internal/geo"
 	"github.com/goyama/api/internal/health"
+	"github.com/goyama/api/internal/markets"
+	"github.com/goyama/api/internal/media"
 	"github.com/goyama/api/internal/pests"
 	"github.com/goyama/api/internal/platform/config"
 	"github.com/goyama/api/internal/platform/httpx"
@@ -50,13 +53,13 @@ func run() error {
 	log := newLogger(cfg.LogLevel)
 	slog.SetDefault(log)
 
-	cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo, closeRepos, err := newRepos(cfg, log)
+	cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo, geoRepo, marketsRepo, mediaRepo, closeRepos, err := newRepos(cfg, log)
 	if err != nil {
 		return fmt.Errorf("repos: %w", err)
 	}
 	defer closeRepos()
 
-	r := buildRouter(cfg, log, cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo)
+	r := buildRouter(cfg, log, cropsRepo, stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo, geoRepo, marketsRepo, mediaRepo)
 
 	srv := &http.Server{
 		Addr:         fmt.Sprintf(":%d", cfg.Port),
@@ -112,11 +115,14 @@ func newRepos(
 	diseases.Repository,
 	pests.Repository,
 	remedies.Repository,
+	geo.Repository,
+	markets.Repository,
+	media.Repository,
 	func(),
 	error,
 ) {
 	if cfg.DatabaseURL == "" {
-		log.Info("repos: using JSONL corpus (admin review queues disabled)",
+		log.Info("repos: using JSONL corpus (admin review queues, geo lookup, market prices, media disabled)",
 			slog.String("corpus_path", cfg.CorpusPath),
 		)
 		return crops.NewJSONLRepo(cfg.CorpusPath),
@@ -124,6 +130,9 @@ func newRepos(
 			diseases.NewJSONLRepo(),
 			pests.NewJSONLRepo(),
 			remedies.NewJSONLRepo(),
+			geo.NewStubRepo(),
+			markets.NewStubRepo(),
+			media.NewStubRepo(),
 			func() {},
 			nil
 	}
@@ -131,11 +140,11 @@ func newRepos(
 	defer cancel()
 	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
 	if err != nil {
-		return nil, nil, nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
+		return nil, nil, nil, nil, nil, nil, nil, nil, nil, fmt.Errorf("pgx pool: %w", err)
 	}
 	if err := pool.Ping(ctx); err != nil {
 		pool.Close()
-		return nil, nil, nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
+		return nil, nil, nil, nil, nil, nil, nil, nil, nil, fmt.Errorf("ping db: %w", err)
 	}
 	log.Info("repos: using Postgres")
 	return crops.NewPgxRepo(pool),
@@ -143,6 +152,9 @@ func newRepos(
 		diseases.NewPgxRepo(pool),
 		pests.NewPgxRepo(pool),
 		remedies.NewPgxRepo(pool),
+		geo.NewPgxRepo(pool),
+		markets.NewPgxRepo(pool),
+		media.NewPgxRepo(pool),
 		pool.Close,
 		nil
 }
@@ -155,6 +167,9 @@ func buildRouter(
 	diseasesRepo diseases.Repository,
 	pestsRepo pests.Repository,
 	remediesRepo remedies.Repository,
+	geoRepo geo.Repository,
+	marketsRepo markets.Repository,
+	mediaRepo media.Repository,
 ) http.Handler {
 	r := chi.NewRouter()
 
@@ -175,14 +190,21 @@ func buildRouter(
 	diseasesH := diseases.NewHandler(diseasesRepo)
 	pestsH := pests.NewHandler(pestsRepo)
 	remediesH := remedies.NewHandler(remediesRepo)
-	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo)
+	geoH := geo.NewHandler(geoRepo)
+	marketsH := markets.NewHandler(marketsRepo)
+	mediaH := media.New(mediaRepo)
+	adminH := admin.New(stepsAdminRepo, diseasesRepo, pestsRepo, remediesRepo, mediaH)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)
 		r.Mount("/crops", cropsH.Routes())
 		r.Mount("/diseases", diseasesH.Routes())
+		r.Get("/diseases/{slug}/images", mediaH.PublicGalleryHandler("disease"))
 		r.Mount("/pests", pestsH.Routes())
+		r.Get("/pests/{slug}/images", mediaH.PublicGalleryHandler("pest"))
 		r.Mount("/remedies", remediesH.Routes())
+		r.Mount("/geo", geoH.Routes())
+		r.Mount("/market-prices", marketsH.Routes())
 		r.Mount("/admin", adminH.Routes())
 	})
 
