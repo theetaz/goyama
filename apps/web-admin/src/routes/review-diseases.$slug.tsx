@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, createFileRoute } from '@tanstack/react-router';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
-import { ChevronLeft, ExternalLink, ShieldAlert } from 'lucide-react';
+import { Check, ChevronLeft, ExternalLink, ImagePlus, ShieldAlert, X } from 'lucide-react';
 
 import {
   ApiError,
@@ -9,6 +9,7 @@ import {
   getReviewer,
   type Disease,
   type FieldProvenance,
+  type Media,
   type RecordStatus,
 } from '@/lib/api';
 
@@ -80,6 +81,7 @@ function DiseaseReviewDetailPage() {
         <article className="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_340px]">
           <div className="space-y-4">
             <DiseaseCard disease={disease.data} />
+            <ImageGallery diseaseSlug={disease.data.slug} />
             {disease.data.field_provenance && Object.keys(disease.data.field_provenance).length > 0 && (
               <ProvenancePanel provenance={disease.data.field_provenance} />
             )}
@@ -304,6 +306,235 @@ function ProvenancePanel({
         })}
       </dl>
     </section>
+  );
+}
+
+function ImageGallery({ diseaseSlug }: { diseaseSlug: string }) {
+  const qc = useQueryClient();
+  const reviewer = getReviewer();
+
+  const images = useQuery({
+    queryKey: ['disease-images', diseaseSlug],
+    queryFn: () => api.listMediaForEntity('disease', diseaseSlug),
+    retry: false,
+  });
+
+  const reviewedCount = (images.data?.items ?? []).filter(
+    (m) => m.status === 'published',
+  ).length;
+
+  return (
+    <section className="rounded-xl border bg-card p-5">
+      <header className="flex items-center justify-between gap-2">
+        <div>
+          <h2 className="text-sm font-semibold">Reference images</h2>
+          <p className="mt-0.5 text-xs text-muted-foreground">
+            Phase-1 publish gate: ≥ 3 reviewed images per disease.{' '}
+            <strong className={reviewedCount >= 3 ? 'text-primary' : 'text-destructive'}>
+              {reviewedCount}/3 reviewed
+            </strong>
+          </p>
+        </div>
+      </header>
+
+      <AttachImageForm diseaseSlug={diseaseSlug} disabled={!reviewer} />
+
+      {images.isLoading && <p className="mt-3 text-sm">Loading images…</p>}
+      {images.error instanceof ApiError && images.error.status === 503 && (
+        <p className="mt-3 rounded-md border bg-muted/30 p-3 text-xs text-muted-foreground">
+          Image storage requires DATABASE_URL on the API.
+        </p>
+      )}
+
+      {images.data && images.data.items.length === 0 && (
+        <p className="mt-3 rounded-md border border-dashed bg-background p-3 text-center text-xs text-muted-foreground">
+          No images attached yet. Paste an external URL above (Wikimedia, DOA gallery, agronomist upload to a public host).
+        </p>
+      )}
+
+      {images.data && images.data.items.length > 0 && (
+        <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+          {images.data.items.map((m) => (
+            <ImageTile
+              key={m.slug}
+              media={m}
+              onUpdated={() =>
+                qc.invalidateQueries({ queryKey: ['disease-images', diseaseSlug] })
+              }
+              disabled={!reviewer}
+            />
+          ))}
+        </ul>
+      )}
+    </section>
+  );
+}
+
+function AttachImageForm({
+  diseaseSlug,
+  disabled,
+}: {
+  diseaseSlug: string;
+  disabled: boolean;
+}) {
+  const qc = useQueryClient();
+  const [url, setUrl] = useState('');
+  const [credit, setCredit] = useState('');
+  const [licence, setLicence] = useState('CC-BY-SA 4.0');
+
+  const mutation = useMutation({
+    mutationFn: () =>
+      api.attachMediaToEntity('disease', diseaseSlug, {
+        external_url: url.trim(),
+        credit: credit.trim() || undefined,
+        licence: licence.trim(),
+        type: 'image',
+      }),
+    onSuccess: () => {
+      setUrl('');
+      setCredit('');
+      qc.invalidateQueries({ queryKey: ['disease-images', diseaseSlug] });
+    },
+  });
+
+  return (
+    <form
+      className="mt-3 grid grid-cols-1 gap-2 rounded-md border bg-background p-3 sm:grid-cols-[1fr_180px_120px_auto]"
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (url.trim()) mutation.mutate();
+      }}
+    >
+      <input
+        value={url}
+        onChange={(e) => setUrl(e.target.value)}
+        placeholder="https://commons.wikimedia.org/wiki/File:Rice_blast.jpg"
+        type="url"
+        required
+        className="rounded-md border bg-background px-2 py-1.5 text-sm"
+      />
+      <input
+        value={credit}
+        onChange={(e) => setCredit(e.target.value)}
+        placeholder="Credit (optional)"
+        className="rounded-md border bg-background px-2 py-1.5 text-sm"
+      />
+      <input
+        value={licence}
+        onChange={(e) => setLicence(e.target.value)}
+        placeholder="Licence"
+        required
+        className="rounded-md border bg-background px-2 py-1.5 text-sm"
+      />
+      <button
+        type="submit"
+        disabled={disabled || mutation.isPending || !url.trim()}
+        className="inline-flex items-center justify-center gap-1 rounded-md bg-primary px-3 py-1.5 text-sm font-medium text-primary-foreground disabled:opacity-50"
+      >
+        <ImagePlus className="h-4 w-4" aria-hidden />
+        {mutation.isPending ? 'Attaching…' : 'Attach'}
+      </button>
+      {mutation.isError && (
+        <p className="col-span-full text-xs text-destructive" role="alert">
+          {mutation.error instanceof ApiError ? mutation.error.problem.detail : 'Attach failed'}
+        </p>
+      )}
+    </form>
+  );
+}
+
+function ImageTile({
+  media,
+  onUpdated,
+  disabled,
+}: {
+  media: Media;
+  onUpdated: () => void;
+  disabled: boolean;
+}) {
+  const mutation = useMutation({
+    mutationFn: (status: RecordStatus) =>
+      api.updateMediaStatus(media.slug, { status }),
+    onSuccess: onUpdated,
+  });
+
+  const src = media.external_url || media.url;
+  const isPublished = media.status === 'published';
+  const isRejected = media.status === 'rejected';
+
+  return (
+    <li className="flex flex-col overflow-hidden rounded-md border bg-background">
+      <a
+        href={src}
+        target="_blank"
+        rel="noreferrer"
+        className="relative block aspect-video bg-muted/30"
+      >
+        {src && (
+          <img
+            src={src}
+            alt={media.credit || media.slug}
+            className="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+          />
+        )}
+        <span
+          className={
+            'absolute right-2 top-2 rounded-full px-2 py-0.5 text-[10px] capitalize ' +
+            (isPublished
+              ? 'bg-primary text-primary-foreground'
+              : isRejected
+                ? 'bg-destructive/80 text-destructive-foreground'
+                : 'bg-card text-muted-foreground')
+          }
+        >
+          {media.status.replace('_', ' ')}
+        </span>
+      </a>
+      <div className="flex flex-1 flex-col gap-1 p-2 text-xs">
+        {media.credit && <span className="text-muted-foreground">{media.credit}</span>}
+        <span className="text-[10px] text-muted-foreground">{media.licence}</span>
+        <div className="mt-auto flex gap-1.5 pt-2">
+          {!isPublished && (
+            <button
+              type="button"
+              disabled={disabled || mutation.isPending}
+              onClick={() => mutation.mutate('published')}
+              className="inline-flex flex-1 items-center justify-center gap-1 rounded-md bg-primary px-2 py-1 text-xs font-medium text-primary-foreground disabled:opacity-50"
+            >
+              <Check className="h-3 w-3" aria-hidden />
+              Approve
+            </button>
+          )}
+          {!isRejected && media.status !== 'published' && (
+            <button
+              type="button"
+              disabled={disabled || mutation.isPending}
+              onClick={() => mutation.mutate('rejected')}
+              className="inline-flex flex-1 items-center justify-center gap-1 rounded-md border border-destructive/40 px-2 py-1 text-xs text-destructive disabled:opacity-50"
+            >
+              <X className="h-3 w-3" aria-hidden />
+              Reject
+            </button>
+          )}
+          {isPublished && (
+            <button
+              type="button"
+              disabled={disabled || mutation.isPending}
+              onClick={() => mutation.mutate('deprecated')}
+              className="inline-flex flex-1 items-center justify-center rounded-md border px-2 py-1 text-xs text-muted-foreground disabled:opacity-50"
+            >
+              Deprecate
+            </button>
+          )}
+        </div>
+        {mutation.isError && (
+          <p className="text-[11px] text-destructive" role="alert">
+            {mutation.error instanceof ApiError ? mutation.error.problem.detail : 'Update failed'}
+          </p>
+        )}
+      </div>
+    </li>
   );
 }
 

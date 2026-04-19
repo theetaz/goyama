@@ -1,0 +1,55 @@
+{
+  "type": "FeatureCollection",
+  "name": "sl-aez-dev",
+  "_note": "Simplified rectangular dev fixtures covering 3 zones — NOT the real 46-AEZ map. Use only for local smoke-tests. Replace with the canonical NRMC AEZ shapefile (see pipelines/geo/README.md) before publishing anything AEZ-derived.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WL3",
+        "zone_group": "wet",
+        "elevation_class": "low_country",
+        "avg_rainfall_mm": 2400,
+        "avg_temperature_c": 27,
+        "dominant_soil_groups": ["red_yellow_podzolic", "low_humic_gley"],
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[79.82, 6.70], [80.20, 6.70], [80.20, 7.10], [79.82, 7.10], [79.82, 6.70]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "WM3",
+        "zone_group": "wet",
+        "elevation_class": "mid_country",
+        "avg_rainfall_mm": 2100,
+        "avg_temperature_c": 22,
+        "dominant_soil_groups": ["red_yellow_podzolic"],
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.45, 7.05], [80.95, 7.05], [80.95, 7.55], [80.45, 7.55], [80.45, 7.05]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "code": "DL1",
+        "zone_group": "dry",
+        "elevation_class": "low_country",
+        "avg_rainfall_mm": 1300,
+        "avg_temperature_c": 28,
+        "dominant_soil_groups": ["reddish_brown_earth", "low_humic_gley"],
+        "field_provenance": {"source": "dev-fixture"}
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[80.10, 8.05], [80.80, 8.05], [80.80, 8.75], [80.10, 8.75], [80.10, 8.05]]]
+      }
+    }
+  ]
+}

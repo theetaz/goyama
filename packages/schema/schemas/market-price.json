@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goyama.lk/schemas/market-price.json",
+  "title": "MarketPrice",
+  "description": "One daily wholesale-or-retail price observation for a single commodity at a single market.",
+  "type": "object",
+  "required": [
+    "market_code",
+    "commodity_label",
+    "observed_on"
+  ],
+  "properties": {
+    "market_code": {
+      "type": "string",
+      "description": "References the market table; e.g. 'dambulla-dec', 'meegoda-dec'."
+    },
+    "crop_slug": {
+      "type": "string",
+      "description": "Canonical crop slug if the source commodity has been mapped; otherwise omit."
+    },
+    "commodity_label": {
+      "type": "string",
+      "description": "Raw commodity string from the source bulletin, kept verbatim for provenance."
+    },
+    "grade": {
+      "type": "string",
+      "description": "Grade or sub-variety string from the source ('A', 'long', 'small', 'red', etc.)."
+    },
+    "observed_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "price_lkr_per_kg_min": { "type": "number", "minimum": 0 },
+    "price_lkr_per_kg_max": { "type": "number", "minimum": 0 },
+    "price_lkr_per_kg_avg": { "type": "number", "minimum": 0 },
+    "unit": {
+      "type": "string",
+      "enum": ["kg", "100g", "bunch", "each"],
+      "default": "kg"
+    },
+    "currency": {
+      "type": "string",
+      "enum": ["LKR"],
+      "default": "LKR"
+    },
+    "sample_size": { "type": "integer", "minimum": 0 },
+    "source_url": { "type": "string", "format": "uri" },
+    "field_provenance": { "$ref": "provenance.json#/$defs/FieldProvenance" }
+  },
+  "additionalProperties": false
+}

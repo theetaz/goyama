@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ExternalLink } from 'lucide-react';
 
-import { api } from '@/lib/api';
+import { api, type MediaItem } from '@/lib/api';
 import { pickLocalised, type Locale } from '@/i18n';
 
 export const Route = createFileRoute('/diseases/$slug')({
@@ -27,6 +27,12 @@ function DiseaseDetailPage() {
   const disease = useQuery({
     queryKey: ['disease', slug],
     queryFn: () => api.getDisease(slug),
+  });
+
+  const images = useQuery({
+    queryKey: ['disease-images', slug],
+    queryFn: () => api.listDiseaseImages(slug),
+    retry: false,
   });
 
   return (
@@ -91,6 +97,10 @@ function DiseaseDetailPage() {
             </section>
           )}
 
+          {images.data && images.data.items.length > 0 && (
+            <ImageStrip items={images.data.items} />
+          )}
+
           <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
             <Facts label={t('pathology.affected_crops')} items={disease.data.affected_crop_slugs} />
             <Facts label={t('pathology.affected_parts')} items={disease.data.affected_parts} />
@@ -122,6 +132,42 @@ function DiseaseDetailPage() {
         </article>
       )}
     </div>
+  );
+}
+
+function ImageStrip({ items }: { items: MediaItem[] }) {
+  const { t } = useTranslation();
+  return (
+    <section>
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+        {t('pathology.reference_images')}
+      </h2>
+      <ul className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+        {items.map((m) => {
+          const src = m.external_url ?? m.url;
+          if (!src) return null;
+          return (
+            <li key={m.slug} className="overflow-hidden rounded-md border bg-card">
+              <a href={src} target="_blank" rel="noreferrer" className="group block">
+                <div className="relative aspect-square bg-muted/30">
+                  <img
+                    src={src}
+                    alt={m.credit ?? m.slug}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform group-hover:scale-105"
+                  />
+                </div>
+                {m.credit && (
+                  <p className="truncate p-1.5 text-[10px] text-muted-foreground">
+                    {m.credit}
+                  </p>
+                )}
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 }
 

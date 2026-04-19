@@ -174,6 +174,44 @@ export interface CropListResponse {
   count: number;
 }
 
+export interface GeoLookupRequest {
+  lat: number;
+  lng: number;
+}
+
+export interface GeoAdminDistrict {
+  code: string;
+  name_en: string;
+  name_si?: string;
+  name_ta?: string;
+  province_code?: string;
+  province_name?: string;
+}
+
+export interface GeoDSDivision {
+  code: string;
+  district_code?: string;
+  name_en: string;
+  name_si?: string;
+  name_ta?: string;
+}
+
+export interface GeoAez {
+  code: string;
+  zone_group: 'wet' | 'intermediate' | 'dry';
+  elevation_class: 'low_country' | 'mid_country' | 'up_country';
+  avg_rainfall_mm?: number;
+  avg_temperature_c?: number;
+  dominant_soil_groups?: string[];
+}
+
+export interface GeoLookupResponse {
+  location: { lat: number; lng: number };
+  district?: GeoAdminDistrict;
+  ds_division?: GeoDSDivision;
+  aez?: GeoAez;
+}
+
 export interface ApiProblem {
   type: string;
   title: string;
@@ -243,4 +281,77 @@ export const api = {
   listRemedies: () => request<RemedyListResponse>('/v1/remedies'),
   getRemedy: (slug: string) =>
     request<RemedyDetail>(`/v1/remedies/${encodeURIComponent(slug)}`),
+  geoLookup: ({ lat, lng }: GeoLookupRequest) => {
+    const qs = new URLSearchParams({ lat: String(lat), lng: String(lng) });
+    return request<GeoLookupResponse>(`/v1/geo/lookup?${qs}`);
+  },
+  listMarketPrices: (params: {
+    market?: string;
+    crop?: string;
+    since?: string;
+    until?: string;
+    limit?: number;
+    offset?: number;
+  } = {}) => {
+    const qs = new URLSearchParams();
+    if (params.market) qs.set('market', params.market);
+    if (params.crop) qs.set('crop', params.crop);
+    if (params.since) qs.set('since', params.since);
+    if (params.until) qs.set('until', params.until);
+    if (params.limit != null) qs.set('limit', String(params.limit));
+    if (params.offset != null) qs.set('offset', String(params.offset));
+    const suffix = qs.toString() ? `?${qs}` : '';
+    return request<MarketPriceListResponse>(`/v1/market-prices${suffix}`);
+  },
+  latestMarketPrices: (market: string) =>
+    request<MarketPriceLatestResponse>(
+      `/v1/market-prices/latest/${encodeURIComponent(market)}`,
+    ),
+  listDiseaseImages: (slug: string) =>
+    request<MediaListResponse>(`/v1/diseases/${encodeURIComponent(slug)}/images`),
 };
+
+export interface MediaItem {
+  slug: string;
+  type: string;
+  hosting: 'own' | 'external_link';
+  url?: string;
+  external_url?: string;
+  credit?: string;
+  licence: string;
+  caption?: Record<string, string>;
+  tags?: string[];
+}
+
+export interface MediaListResponse {
+  entity_type: string;
+  entity_slug: string;
+  items: MediaItem[];
+  count: number;
+}
+
+export interface MarketPrice {
+  market_code: string;
+  crop_slug?: string;
+  commodity_label: string;
+  grade?: string;
+  observed_on: string;
+  price_lkr_per_kg_min?: number;
+  price_lkr_per_kg_max?: number;
+  price_lkr_per_kg_avg?: number;
+  unit?: string;
+  currency?: string;
+  sample_size?: number;
+  source_url?: string;
+}
+
+export interface MarketPriceListResponse {
+  items: MarketPrice[];
+  count: number;
+}
+
+export interface MarketPriceLatestResponse {
+  market: string;
+  items: MarketPrice[];
+  count: number;
+}

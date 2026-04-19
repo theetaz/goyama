@@ -1,0 +1,21 @@
+observed_on,market_code,commodity_label,grade,crop_slug,price_lkr_per_kg_min,price_lkr_per_kg_max,price_lkr_per_kg_avg,sample_size,source_url
+2026-04-15,dambulla-dec,Brinjals,long,brinjal,180,240,210,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Brinjals,small,brinjal,160,210,180,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Tomato,A,tomato,140,200,170,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Carrot,,carrot,200,260,230,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Capsicum,green,capsicum,260,320,290,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Bitter Gourd,,bitter-gourd,220,280,250,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Snake Gourd,,snake-gourd,140,180,160,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Okra,,okra,180,240,210,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Cabbage,,cabbage,120,160,140,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Cauliflower,,cauliflower,260,340,300,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Beetroot,,beetroot,180,240,210,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Pumpkin,,pumpkin,80,120,100,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Onion (Red),local,onion,260,320,290,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Garlic,local,garlic,1100,1400,1250,,https://www.harti.gov.lk/
+2026-04-15,dambulla-dec,Chilli (Green),,chilli,500,600,550,,https://www.harti.gov.lk/
+2026-04-16,dambulla-dec,Brinjals,long,brinjal,170,230,200,,https://www.harti.gov.lk/
+2026-04-16,dambulla-dec,Tomato,A,tomato,150,200,175,,https://www.harti.gov.lk/
+2026-04-16,dambulla-dec,Carrot,,carrot,210,260,235,,https://www.harti.gov.lk/
+2026-04-16,dambulla-dec,Capsicum,green,capsicum,250,310,280,,https://www.harti.gov.lk/
+2026-04-16,dambulla-dec,Onion (Red),local,onion,260,330,295,,https://www.harti.gov.lk/

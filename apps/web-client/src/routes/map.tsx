@@ -18,7 +18,12 @@ import {
   sriLankaCenter,
   type AezProperties,
 } from '@/data/sri-lanka-aez';
-import { api, type CropSummary } from '@/lib/api';
+import {
+  ApiError,
+  api,
+  type CropSummary,
+  type GeoLookupResponse,
+} from '@/lib/api';
 import { pickLocalised, type Locale } from '@/i18n';
 import { cn } from '@/lib/utils';
 
@@ -44,6 +49,22 @@ function MapPage() {
     queryKey: ['crops-by-aez', selected?.aez?.group],
     queryFn: () => api.listCrops({ category: 'vegetable', limit: 6 }),
     enabled: selected != null,
+  });
+
+  // Live administrative + agro-ecological lookup against the Go API. Decoupled
+  // from the hand-authored AEZ overlay above — this returns the canonical
+  // district / DSD / AEZ envelope from PostGIS once geo layers are loaded
+  // server-side. Falls back to a friendly status when the API is in JSONL
+  // mode (503) or the point falls outside loaded layers (404).
+  const geoLookup = useQuery({
+    queryKey: ['geo-lookup', selected?.point.latitude, selected?.point.longitude],
+    queryFn: () =>
+      api.geoLookup({
+        lat: selected!.point.latitude,
+        lng: selected!.point.longitude,
+      }),
+    enabled: selected != null,
+    retry: false,
   });
 
   // Match zone group to a CSS variable from packages/design-tokens.
@@ -146,6 +167,9 @@ function MapPage() {
                 locale={locale}
                 crops={aezCrops.data?.items}
                 loading={aezCrops.isLoading}
+                geo={geoLookup.data}
+                geoLoading={geoLookup.isLoading}
+                geoError={geoLookup.error}
               />
             </Popup>
           )}
@@ -175,11 +199,17 @@ function PopupContent({
   locale,
   crops,
   loading,
+  geo,
+  geoLoading,
+  geoError,
 }: {
   aez: AezProperties | null;
   locale: Locale;
   crops: CropSummary[] | undefined;
   loading: boolean;
+  geo: GeoLookupResponse | undefined;
+  geoLoading: boolean;
+  geoError: unknown;
 }) {
   const { t } = useTranslation();
 
@@ -187,6 +217,7 @@ function PopupContent({
     return (
       <div className="p-2 text-sm">
         <p>{t('map.popup_off_zone')}</p>
+        <GeoEnvelope geo={geo} loading={geoLoading} error={geoError} locale={locale} />
       </div>
     );
   }
@@ -208,6 +239,9 @@ function PopupContent({
         <strong className="text-base">{name}</strong>
       </div>
       <p className="text-xs text-muted-foreground">{aez.summary}</p>
+
+      <GeoEnvelope geo={geo} loading={geoLoading} error={geoError} locale={locale} />
+
       <hr className="my-2" />
       <div className="text-xs font-medium uppercase tracking-wide text-muted-foreground">
         {t('map.popup_sample_crops')}
@@ -235,5 +269,99 @@ function PopupContent({
         {t('map.popup_placeholder_note')}
       </p>
     </div>
+  );
+}
+
+/**
+ * Renders the live `/v1/geo/lookup` envelope: district, DS division, and the
+ * canonical AEZ from PostGIS. Stays out of the way until the lookup
+ * resolves so the popup feels instant from the cached overlay; then folds
+ * the authoritative envelope in. Soft-fails on 404 + 503 — the popup is
+ * still useful with just the hand-authored zone.
+ */
+function GeoEnvelope({
+  geo,
+  loading,
+  error,
+  locale,
+}: {
+  geo: GeoLookupResponse | undefined;
+  loading: boolean;
+  error: unknown;
+  locale: Locale;
+}) {
+  const { t } = useTranslation();
+
+  if (loading) return null;
+
+  if (error instanceof ApiError) {
+    if (error.status === 404) {
+      return (
+        <p className="mt-2 text-[11px] italic text-muted-foreground">
+          {t('map.geo_no_coverage')}
+        </p>
+      );
+    }
+    if (error.status === 503) {
+      return (
+        <p className="mt-2 text-[11px] italic text-muted-foreground">
+          {t('map.geo_disabled')}
+        </p>
+      );
+    }
+  }
+
+  if (!geo || (!geo.district && !geo.ds_division && !geo.aez)) return null;
+
+  const districtName = geo.district
+    ? (locale === 'si' && geo.district.name_si) ||
+      (locale === 'ta' && geo.district.name_ta) ||
+      geo.district.name_en
+    : null;
+
+  const dsdName = geo.ds_division
+    ? (locale === 'si' && geo.ds_division.name_si) ||
+      (locale === 'ta' && geo.ds_division.name_ta) ||
+      geo.ds_division.name_en
+    : null;
+
+  return (
+    <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-xs">
+      {districtName && (
+        <>
+          <dt className="font-medium text-muted-foreground">{t('map.geo_district')}</dt>
+          <dd>
+            {districtName}
+            {geo.district?.province_name ? ` · ${geo.district.province_name}` : ''}
+          </dd>
+        </>
+      )}
+      {dsdName && (
+        <>
+          <dt className="font-medium text-muted-foreground">{t('map.geo_dsd')}</dt>
+          <dd>{dsdName}</dd>
+        </>
+      )}
+      {geo.aez && (
+        <>
+          <dt className="font-medium text-muted-foreground">{t('map.geo_aez')}</dt>
+          <dd>
+            {geo.aez.code} · {geo.aez.zone_group} · {geo.aez.elevation_class.replace('_', ' ')}
+          </dd>
+        </>
+      )}
+      {geo.aez?.avg_rainfall_mm != null && (
+        <>
+          <dt className="font-medium text-muted-foreground">{t('map.geo_rainfall')}</dt>
+          <dd>{Math.round(geo.aez.avg_rainfall_mm)} mm/yr</dd>
+        </>
+      )}
+      {geo.aez?.dominant_soil_groups?.length ? (
+        <>
+          <dt className="font-medium text-muted-foreground">{t('map.geo_soil')}</dt>
+          <dd>{geo.aez.dominant_soil_groups.join(', ').replaceAll('_', ' ')}</dd>
+        </>
+      ) : null}
+    </dl>
   );
 }
