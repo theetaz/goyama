@@ -13,11 +13,11 @@ import (
 )
 
 type fakeRepo struct {
-	listRes []Media
-	listErr error
-	getRes  Media
-	getErr  error
-	attached AttachInput
+	listRes   []Media
+	listErr   error
+	getRes    Media
+	getErr    error
+	attached  AttachInput
 	attachErr error
 
 	lastSetSlug string

@@ -21,18 +21,18 @@ var ErrRequiresDatabase = errors.New("market prices require Postgres (set DATABA
 // Price is one (market, commodity, date) observation, returned by both
 // the list and latest endpoints.
 type Price struct {
-	MarketCode      string   `json:"market_code"`
-	CropSlug        string   `json:"crop_slug,omitempty"`
-	CommodityLabel  string   `json:"commodity_label"`
-	Grade           string   `json:"grade,omitempty"`
-	ObservedOn      string   `json:"observed_on"` // ISO date
-	PriceLKRMin     *float64 `json:"price_lkr_per_kg_min,omitempty"`
-	PriceLKRMax     *float64 `json:"price_lkr_per_kg_max,omitempty"`
-	PriceLKRAvg     *float64 `json:"price_lkr_per_kg_avg,omitempty"`
-	Unit            string   `json:"unit,omitempty"`
-	Currency        string   `json:"currency,omitempty"`
-	SampleSize      *int     `json:"sample_size,omitempty"`
-	SourceURL       string   `json:"source_url,omitempty"`
+	MarketCode     string   `json:"market_code"`
+	CropSlug       string   `json:"crop_slug,omitempty"`
+	CommodityLabel string   `json:"commodity_label"`
+	Grade          string   `json:"grade,omitempty"`
+	ObservedOn     string   `json:"observed_on"` // ISO date
+	PriceLKRMin    *float64 `json:"price_lkr_per_kg_min,omitempty"`
+	PriceLKRMax    *float64 `json:"price_lkr_per_kg_max,omitempty"`
+	PriceLKRAvg    *float64 `json:"price_lkr_per_kg_avg,omitempty"`
+	Unit           string   `json:"unit,omitempty"`
+	Currency       string   `json:"currency,omitempty"`
+	SampleSize     *int     `json:"sample_size,omitempty"`
+	SourceURL      string   `json:"source_url,omitempty"`
 }
 
 // ListFilter captures the query-string knobs supported by /v1/market-prices.

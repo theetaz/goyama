@@ -9,8 +9,8 @@ import (
 )
 
 type fakeRepo struct {
-	listRes  []Price
-	listErr  error
+	listRes   []Price
+	listErr   error
 	latestRes []Price
 	latestErr error
 

@@ -37,7 +37,7 @@ FROM media
 `
 
 // ListByEntity returns every media record attached to the given entity.
-// status='' returns all statuses; otherwise filters to that one. Most
+// status=” returns all statuses; otherwise filters to that one. Most
 // recent first.
 func (r *PgxRepo) ListByEntity(ctx context.Context, entityType, entitySlug, status string) ([]Media, error) {
 	sql := baseSelect + `

@@ -124,10 +124,10 @@ func (r *PgxRepo) Latest(ctx context.Context, marketCode string) ([]Price, error
 
 func scanPrice(rows interface{ Scan(dest ...any) error }) (Price, error) {
 	var (
-		p          Price
-		observed   time.Time
+		p                Price
+		observed         time.Time
 		minP, maxP, avgP *float64
-		sampleSize *int
+		sampleSize       *int
 	)
 	if err := rows.Scan(
 		&p.MarketCode, &p.CropSlug, &p.CommodityLabel,

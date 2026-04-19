@@ -50,11 +50,11 @@ type DSDivision struct {
 // Lanka's AEZ dataset is the canonical resolution at which those normals
 // are published.
 type AEZ struct {
-	Code             string   `json:"code"`
-	ZoneGroup        string   `json:"zone_group"`        // 'wet' | 'intermediate' | 'dry'
-	ElevationClass   string   `json:"elevation_class"`   // 'low_country' | 'mid_country' | 'up_country'
-	AvgRainfallMM    *float32 `json:"avg_rainfall_mm,omitempty"`
-	AvgTemperatureC  *float32 `json:"avg_temperature_c,omitempty"`
+	Code               string   `json:"code"`
+	ZoneGroup          string   `json:"zone_group"`      // 'wet' | 'intermediate' | 'dry'
+	ElevationClass     string   `json:"elevation_class"` // 'low_country' | 'mid_country' | 'up_country'
+	AvgRainfallMM      *float32 `json:"avg_rainfall_mm,omitempty"`
+	AvgTemperatureC    *float32 `json:"avg_temperature_c,omitempty"`
 	DominantSoilGroups []string `json:"dominant_soil_groups,omitempty"`
 }
 

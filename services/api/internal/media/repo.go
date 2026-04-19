@@ -26,21 +26,21 @@ var ErrRequiresDatabase = errors.New("media operations require Postgres (set DAT
 
 // Media is the public + admin shape returned by every endpoint.
 type Media struct {
-	Slug         string            `json:"slug"`
-	Type         string            `json:"type"`             // 'image' | 'video' | 'pdf' | 'audio' | 'transcript'
-	Hosting      string            `json:"hosting"`          // 'own' | 'external_link'
-	URL          string            `json:"url,omitempty"`    // populated when hosting='own'
-	ExternalURL  string            `json:"external_url,omitempty"`
-	Credit       string            `json:"credit,omitempty"`
-	Licence      string            `json:"licence"`
-	Caption      map[string]string `json:"caption,omitempty"`
-	EntityType   string            `json:"entity_type,omitempty"`
-	EntitySlug   string            `json:"entity_slug,omitempty"`
-	Tags         []string          `json:"tags,omitempty"`
-	Status       string            `json:"status"`
-	ReviewedBy   string            `json:"reviewed_by,omitempty"`
-	ReviewedAt   string            `json:"reviewed_at,omitempty"`
-	ReviewNotes  string            `json:"review_notes,omitempty"`
+	Slug        string            `json:"slug"`
+	Type        string            `json:"type"`          // 'image' | 'video' | 'pdf' | 'audio' | 'transcript'
+	Hosting     string            `json:"hosting"`       // 'own' | 'external_link'
+	URL         string            `json:"url,omitempty"` // populated when hosting='own'
+	ExternalURL string            `json:"external_url,omitempty"`
+	Credit      string            `json:"credit,omitempty"`
+	Licence     string            `json:"licence"`
+	Caption     map[string]string `json:"caption,omitempty"`
+	EntityType  string            `json:"entity_type,omitempty"`
+	EntitySlug  string            `json:"entity_slug,omitempty"`
+	Tags        []string          `json:"tags,omitempty"`
+	Status      string            `json:"status"`
+	ReviewedBy  string            `json:"reviewed_by,omitempty"`
+	ReviewedAt  string            `json:"reviewed_at,omitempty"`
+	ReviewNotes string            `json:"review_notes,omitempty"`
 }
 
 // AttachInput captures everything the admin needs to attach a new
