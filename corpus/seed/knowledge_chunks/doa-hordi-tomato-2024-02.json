@@ -1,0 +1,24 @@
+{
+  "slug": "doa-hordi-tomato-2024-02",
+  "source_slug": "doa-hordi-tomato-2024",
+  "chunk_idx": 1,
+  "language": "en",
+  "title": "Tomato bacterial wilt + virus complex — no chemical control",
+  "body": "For tomato bacterial wilt (Ralstonia solanacearum), bacterial canker (Clavibacter michiganensis subsp. michiganensis), and the four important virus complexes — TYLCV (whitefly-transmitted), Curly Top Virus (leafhopper), Tomato Spotted Wilt Virus (thrips), and Cucumber Mosaic Virus (aphid) — HORDI confirms there is no direct chemical control. Management is consolidated: use resistant / disease-free varieties, rotate with non-solanaceous crops, keep the field weed-free, practice field sanitation, and suppress insect vectors with DOA-approved insecticides.",
+  "entity_refs": [
+    { "type": "crop", "slug": "tomato" },
+    { "type": "disease", "slug": "tomato-bacterial-wilt" },
+    { "type": "disease", "slug": "tomato-yellow-leaf-curl-virus" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["tomato", "ipm", "virus", "bacterial_wilt", "cultural_control"],
+  "confidence": 0.97,
+  "quote": "Use disease free seeds; Weed free field and field sanitation; Reduce vector population (By insecticides).",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-tomato/"
+  }
+}

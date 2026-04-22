@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-bitter-gourd-2024-01",
+  "source_slug": "doa-hordi-bitter-gourd-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Bitter gourd — seasons, spacing, and trellising",
+  "body": "HORDI recommends planting bitter gourd in two main windows: Maha (October–November) and Yala (April–May), with year-round production viable in favourable dry-zone locations. Direct-seed three seeds per hill at 2–3 cm depth with 1.5 m between rows and 1 m within row; seed rate 6 kg/ha. Install trellis (mesh or stakes) three weeks after planting — delaying trellising past the third true-leaf stage causes vine tangling and crop loss from stem damage. Yield: 20 t/ha for OPVs, 20–30 t/ha for hybrids.",
+  "entity_refs": [
+    { "type": "crop", "slug": "bitter-gourd" },
+    { "type": "cultivation_plan", "slug": "bitter-gourd-all-zones" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["bitter_gourd", "spacing", "trellising", "seasons"],
+  "confidence": 0.95,
+  "quote": "Seed Rate: 6 kg/ha; Spacing: 1.5 m x 1 m; 3 seeds per hill; Trellising three weeks post-planting on mesh or stakes.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-bitter-gourd/"
+  }
+}

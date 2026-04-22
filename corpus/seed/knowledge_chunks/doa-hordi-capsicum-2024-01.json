@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-capsicum-2024-01",
+  "source_slug": "doa-hordi-capsicum-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Capsicum — variety-specific spacing and seed rate",
+  "body": "HORDI prescribes variety-specific planting geometry for capsicum, because HYW / LYW are smaller plants than CA-8 and Gannoruwa Prarthana F1. HYW and Lanka Yellow Wax plant at 15 × 30 cm with 1.75 kg seed per hectare, giving roughly 220,000 plants/ha. CA-8 and Gannoruwa Prarthana F1 plant at 40 × 40 cm with 1 kg seed/ha, giving 62,500 plants/ha. Using one spacing for the wrong variety either leaves yield on the table or promotes canopy disease pressure.",
+  "entity_refs": [
+    { "type": "crop", "slug": "capsicum" },
+    { "type": "cultivation_plan", "slug": "capsicum-low-mid-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["capsicum", "variety_selection", "spacing", "seed_rate"],
+  "confidence": 0.97,
+  "quote": "HYW and LYW: 15 × 30 cm (plants × rows); CA-8 and Gannoruwa Prarthana: 40 × 40 cm. CA 8: 1 kg/ha; HYW and LYW: 1.75 kg/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-capsicum/"
+  }
+}

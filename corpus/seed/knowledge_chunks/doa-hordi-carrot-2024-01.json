@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-carrot-2024-01",
+  "source_slug": "doa-hordi-carrot-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Carrot four-stage top-dressing — tight N + K schedule for 100-day cycle",
+  "body": "HORDI runs carrot on a notably dense top-dressing schedule: Urea + MOP at 3, 6, 8 and 9 weeks after sowing (55 + 43, 82.5 + 63.5, 82.5 + 63.5, 110 + 85 kg/ha respectively). TSP is front-loaded basally at 270 kg/ha with 10 t/ha organic manure. The tight late-season N + K stack is driven by the crop's bulking phase; splitting doses prevents root cracking and bolting, which are the two yield-killers in the up-country crop. Target root diameter at harvest is 5 cm.",
+  "entity_refs": [
+    { "type": "crop", "slug": "carrot" },
+    { "type": "cultivation_plan", "slug": "carrot-all-zones" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["carrot", "fertilizer", "top_dressing", "urea", "mop"],
+  "confidence": 0.97,
+  "quote": "Urea: 55 (3 weeks), 82.5 (6 weeks), 82.5 (8 weeks), 110 (9 weeks). MOP: 43 (3 weeks), 63.5 (6 weeks), 63.5 (8 weeks), 85 (9 weeks).",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-carrot/"
+  }
+}

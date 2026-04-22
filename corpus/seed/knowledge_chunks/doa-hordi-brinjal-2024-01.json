@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-brinjal-2024-01",
+  "source_slug": "doa-hordi-brinjal-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Brinjal variety selection for disease and yield",
+  "body": "HORDI's released brinjal portfolio covers three yield/resistance profiles: hybrid F1s Amanda and Anjalee deliver 30–40 t/ha with stronger tolerance to bacterial wilt when rotated correctly; HORDI Lenairi 1 is an OP selection bred for dry-zone adaptation; Thinnaweli Purple, Padagoda, and SM 164 are OP / heirloom lines that yield 18–20 t/ha but carry farmer-preferred flavour and storage traits. Variety choice should anchor on the AEZ (dry-zone farmers see less Ralstonia pressure on OPs) and on whether the buyer premium is worth the hybrid seed cost.",
+  "entity_refs": [
+    { "type": "crop", "slug": "brinjal" },
+    { "type": "cultivation_plan", "slug": "brinjal-low-mid-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["brinjal", "variety_selection", "bacterial_wilt", "yield"],
+  "confidence": 0.9,
+  "quote": "Released varieties: Amanda F1, Anjalee-F1, HORDI Lenairi 1, Thinnaweli purple, Padagoda, SM 164. OPV gives 18-20 t/ha and hybrids give 30-40 t/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-brinjal/"
+  }
+}

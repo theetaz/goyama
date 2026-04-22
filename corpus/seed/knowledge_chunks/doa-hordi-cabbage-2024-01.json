@@ -1,0 +1,25 @@
+{
+  "slug": "doa-hordi-cabbage-2024-01",
+  "source_slug": "doa-hordi-cabbage-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "HORDI diamondback moth + looper control regime for cabbage",
+  "body": "HORDI's recommended rotation for the two dominant lepidopteran pests on Sri Lankan cabbage is: for diamondback moth (Plutella xylostella) — Emamectin benzoate 5% SG at 8 g per 16 L water, or Chlorantraniliprole 200 g/L SC at 6 ml per 16 L; for cabbage looper (Trichoplusia ni) — Spinosad 25 g/L SC at 16 ml per 16 L, or Tebufenozide 200 g/L SC at 24 ml per 16 L. Alternating modes of action between applications is essential because diamondback moth develops resistance extremely quickly to single-MOA spray programmes.",
+  "entity_refs": [
+    { "type": "crop", "slug": "cabbage" },
+    { "type": "pest", "slug": "diamondback-moth" },
+    { "type": "pest", "slug": "cabbage-looper" },
+    { "type": "cultivation_plan", "slug": "cabbage-up-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["cabbage", "diamondback_moth", "cabbage_looper", "insecticide_resistance", "dosage"],
+  "confidence": 0.98,
+  "quote": "Diamond back moth – Emamectin benzoate 5% SG: 8g/16L; Chlorantraniliprole 200g/L SC: 6ml/16L. Cabbage looper – Spinosad 25g/L SC: 16ml/16L; Tebufenozide 200g/L SC: 24ml/16L.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-cabbage/"
+  }
+}
