@@ -1,15 +1,21 @@
+import { useState } from 'react';
 import { Link, createFileRoute } from '@tanstack/react-router';
 import { useQuery } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, Sprout } from 'lucide-react';
+import { CalendarRange, ChevronLeft, Sprout } from 'lucide-react';
 
 import {
   api,
+  type CultivationPlanSummary,
   type CultivationStep,
   type CultivationStepInput,
   type Range,
 } from '@/lib/api';
+import { AuthorityChip } from '@/components/cultivation/authority-chip';
+import { CultivationPlanView } from '@/components/cultivation/cultivation-plan-view';
+import { KnowledgeChunks } from '@/components/cultivation/knowledge-chunks';
 import { pickLocalised, type Locale } from '@/i18n';
+import { cn } from '@/lib/utils';
 
 export const Route = createFileRoute('/crops/$slug')({
   component: CropDetailPage,
@@ -31,6 +37,20 @@ function CropDetailPage() {
     // Only fetch steps for a crop we actually loaded, so a 404 detail doesn't
     // trigger a second loading spinner on the timeline.
     enabled: !!data,
+  });
+
+  const plans = useQuery({
+    queryKey: ['crop-cultivation-plans', slug],
+    queryFn: () => api.listCropCultivationPlans(slug),
+    enabled: !!data,
+    retry: false,
+  });
+
+  const knowledge = useQuery({
+    queryKey: ['crop-knowledge', slug],
+    queryFn: () => api.listCropKnowledge(slug),
+    enabled: !!data,
+    retry: false,
   });
 
   return (
@@ -99,12 +119,81 @@ function CropDetailPage() {
             </section>
           )}
 
+          {plans.data && plans.data.items.length > 0 && (
+            <CultivationPlans items={plans.data.items} locale={locale} />
+          )}
+
           {steps.data && steps.data.items.length > 0 && (
             <CultivationTimeline items={steps.data.items} locale={locale} />
+          )}
+
+          {knowledge.data && knowledge.data.chunks.length > 0 && (
+            <KnowledgeChunks data={knowledge.data} />
           )}
         </article>
       )}
     </div>
+  );
+}
+
+/**
+ * Renders the cultivation plans attached to a crop as a tab group.
+ * Defaults to the first plan; each tab carries its authority chip so
+ * the picker itself is honest about which plans are DOA-validated.
+ */
+function CultivationPlans({
+  items,
+  locale,
+}: {
+  items: CultivationPlanSummary[];
+  locale: Locale;
+}) {
+  const { t } = useTranslation();
+  const [active, setActive] = useState(items[0].slug);
+
+  const detail = useQuery({
+    queryKey: ['cultivation-plan', active],
+    queryFn: () => api.getCultivationPlan(active),
+  });
+
+  return (
+    <section aria-labelledby="plans-heading" className="space-y-4">
+      <header className="flex items-center gap-2">
+        <CalendarRange className="h-5 w-5 text-primary" aria-hidden />
+        <h2 id="plans-heading" className="text-xl font-semibold">
+          {t('plan.heading')}
+        </h2>
+      </header>
+
+      {items.length > 1 && (
+        <nav aria-label={t('plan.picker_label')} className="flex flex-wrap gap-2">
+          {items.map((p) => {
+            const title = pickLocalised(p.title, locale) ?? p.slug;
+            const isActive = p.slug === active;
+            return (
+              <button
+                key={p.slug}
+                type="button"
+                onClick={() => setActive(p.slug)}
+                className={cn(
+                  'inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors',
+                  isActive
+                    ? 'border-primary bg-primary/10 text-primary'
+                    : 'bg-background text-muted-foreground hover:bg-muted',
+                )}
+              >
+                <span className="font-medium capitalize">{p.season.replace('_', ' ')}</span>
+                <span className="opacity-70">{title}</span>
+                <AuthorityChip authority={p.authority} />
+              </button>
+            );
+          })}
+        </nav>
+      )}
+
+      {detail.isLoading && <p className="text-sm text-muted-foreground">{t('plan.loading')}</p>}
+      {detail.data && <CultivationPlanView plan={detail.data} locale={locale} />}
+    </section>
   );
 }
 

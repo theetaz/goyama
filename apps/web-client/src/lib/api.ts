@@ -309,7 +309,161 @@ export const api = {
     ),
   listDiseaseImages: (slug: string) =>
     request<MediaListResponse>(`/v1/diseases/${encodeURIComponent(slug)}/images`),
+  listCropCultivationPlans: (cropSlug: string) =>
+    request<CultivationPlanListResponse>(
+      `/v1/crops/${encodeURIComponent(cropSlug)}/cultivation-plans`,
+    ),
+  getCultivationPlan: (slug: string) =>
+    request<CultivationPlan>(`/v1/cultivation-plans/${encodeURIComponent(slug)}`),
+  listCropKnowledge: (cropSlug: string) =>
+    request<KnowledgeResponse>(
+      `/v1/crops/${encodeURIComponent(cropSlug)}/knowledge`,
+    ),
+  listDiseaseKnowledge: (slug: string) =>
+    request<KnowledgeResponse>(
+      `/v1/diseases/${encodeURIComponent(slug)}/knowledge`,
+    ),
+  listPestKnowledge: (slug: string) =>
+    request<KnowledgeResponse>(
+      `/v1/pests/${encodeURIComponent(slug)}/knowledge`,
+    ),
 };
+
+// ─── cultivation plans ────────────────────────────────────────────────────
+
+export type AuthorityLevel =
+  | 'doa_official'
+  | 'peer_reviewed'
+  | 'regional_authority'
+  | 'practitioner_report'
+  | 'inferred_by_analogy'
+  | 'agent_synthesis';
+
+export interface CultivationPlanSummary {
+  slug: string;
+  crop_slug: string;
+  season: string;
+  authority: AuthorityLevel;
+  aez_codes?: string[];
+  title?: Record<string, string>;
+  summary?: Record<string, string>;
+  duration_weeks?: number;
+  expected_yield_kg_per_acre?: Range;
+  source_document_title?: string;
+}
+
+export interface CultivationActivityInput {
+  type: string;
+  name?: Record<string, string>;
+  amount?: number;
+  unit?: string;
+  per_unit_area?: string;
+  notes?: Record<string, string>;
+}
+
+export interface CultivationActivity {
+  week_idx: number;
+  order_in_week?: number;
+  activity: string;
+  dap_min?: number;
+  dap_max?: number;
+  title?: Record<string, string>;
+  body?: Record<string, string>;
+  inputs?: CultivationActivityInput[];
+  weather_hint?: string;
+  media_slugs?: string[];
+}
+
+export interface CultivationPestRisk {
+  week_idx: number;
+  disease_slug?: string;
+  pest_slug?: string;
+  risk: 'low' | 'moderate' | 'high';
+  recommended_remedy_slugs?: string[];
+  notes?: Record<string, string>;
+}
+
+export interface CultivationEconomicsCost {
+  category: string;
+  label?: Record<string, string>;
+  amount: number;
+  notes?: string;
+}
+
+export interface CultivationEconomics {
+  reference_year: number;
+  unit_area: string;
+  currency: string;
+  cost_lines?: CultivationEconomicsCost[];
+  total_cost_without_family_labour?: number;
+  total_cost_with_family_labour?: number;
+  yield_kg?: number;
+  unit_price?: number;
+  gross_revenue?: number;
+  net_revenue_without_family_labour?: number;
+  net_revenue_with_family_labour?: number;
+}
+
+export interface CultivationPlan extends CultivationPlanSummary {
+  variety_slug?: string;
+  start_month?: number;
+  status?: string;
+  source_document_url?: string;
+  activities: CultivationActivity[];
+  pest_risks: CultivationPestRisk[];
+  economics: CultivationEconomics[];
+  field_provenance?: Record<string, unknown>;
+}
+
+export interface CultivationPlanListResponse {
+  crop_slug: string;
+  items: CultivationPlanSummary[];
+  count: number;
+}
+
+// ─── knowledge graph ──────────────────────────────────────────────────────
+
+export interface KnowledgeEntityRef {
+  type: string;
+  slug: string;
+}
+
+export interface KnowledgeChunk {
+  slug: string;
+  source_slug: string;
+  chunk_idx?: number;
+  language: string;
+  title?: string;
+  body: string;
+  entity_refs?: KnowledgeEntityRef[];
+  authority: AuthorityLevel;
+  applies_to_aez_codes?: string[];
+  applies_to_countries?: string[];
+  topic_tags?: string[];
+  confidence?: number;
+  quote?: string;
+  status: string;
+}
+
+export interface KnowledgeSource {
+  slug: string;
+  display_name: string;
+  medium: string;
+  publisher?: string;
+  authority: AuthorityLevel;
+  url?: string;
+  language?: string;
+  licence?: string;
+  published_at?: string;
+}
+
+export interface KnowledgeResponse {
+  entity_type: string;
+  entity_slug: string;
+  chunks: KnowledgeChunk[];
+  sources: KnowledgeSource[];
+  count: number;
+}
 
 export interface MediaItem {
   slug: string;
