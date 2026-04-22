@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goyama.lk/schemas/cultivation-plan.json",
+  "title": "CultivationPlan",
+  "description": "A versioned cultivation calendar aggregate for a (crop × AEZ × season) tuple, derived from a single source document (DOA infographic, research paper, agronomist note). Children — activities, pest risks, economics — hang off (slug, version).",
+  "type": "object",
+  "required": ["slug", "version", "status", "authority", "crop_slug", "season", "aez_codes", "title"],
+  "properties": {
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "version": { "type": "integer", "minimum": 1 },
+    "status": { "$ref": "common.json#/$defs/Status" },
+    "authority": { "$ref": "common.json#/$defs/AuthorityLevel" },
+    "crop_slug": { "$ref": "common.json#/$defs/Slug" },
+    "variety_slug": { "$ref": "common.json#/$defs/Slug" },
+    "season": { "$ref": "common.json#/$defs/Season" },
+    "aez_codes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "description": "AEZ codes this plan applies to — e.g. ['DL-1','DL-1c','DL-2']."
+    },
+    "title": { "$ref": "common.json#/$defs/I18nString" },
+    "summary": { "$ref": "common.json#/$defs/I18nString" },
+    "start_month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "duration_weeks": { "type": "integer", "minimum": 1, "maximum": 104 },
+    "expected_yield_kg_per_acre": { "$ref": "common.json#/$defs/Range" },
+    "source_document_url": { "type": "string", "format": "uri" },
+    "source_document_title": { "type": "string" },
+    "activities": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Activity" }
+    },
+    "pest_risks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/PestRisk" }
+    },
+    "economics": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Economics" }
+    },
+    "field_provenance": {
+      "type": "object",
+      "description": "Free-form authoring provenance for the whole aggregate. Per-field provenance for individual activities / pest risks lives on those child objects."
+    }
+  },
+  "$defs": {
+    "Activity": {
+      "type": "object",
+      "required": ["week_idx", "activity"],
+      "properties": {
+        "week_idx": { "type": "integer", "minimum": 1 },
+        "order_in_week": { "type": "integer", "minimum": 0, "default": 0 },
+        "activity": {
+          "type": "string",
+          "enum": [
+            "land_prep", "basal_fertilizer", "seed_sowing", "transplanting",
+            "herbicide_pre", "herbicide_post",
+            "top_dressing", "irrigation", "weed_control",
+            "pest_monitoring", "pollination_support",
+            "seed_harvest", "harvest", "post_harvest"
+          ]
+        },
+        "dap_min": { "type": "integer" },
+        "dap_max": { "type": "integer" },
+        "title": { "$ref": "common.json#/$defs/I18nString" },
+        "body": { "$ref": "common.json#/$defs/I18nString" },
+        "inputs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Input" }
+        },
+        "weather_hint": {
+          "type": "string",
+          "enum": ["dry", "mixed", "rainy"]
+        },
+        "media_slugs": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "Input": {
+      "type": "object",
+      "required": ["type", "name"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "seed", "fertilizer", "pesticide", "herbicide", "fungicide",
+            "water", "labor", "mulch", "amendment", "tool"
+          ]
+        },
+        "name": { "$ref": "common.json#/$defs/I18nString" },
+        "amount": { "type": "number", "minimum": 0 },
+        "unit": { "type": "string" },
+        "per_unit_area": {
+          "type": "string",
+          "enum": ["acre", "hectare", "perch", "square_meter"]
+        },
+        "notes": { "$ref": "common.json#/$defs/I18nString" }
+      }
+    },
+    "PestRisk": {
+      "type": "object",
+      "required": ["week_idx", "risk"],
+      "properties": {
+        "week_idx": { "type": "integer", "minimum": 1 },
+        "disease_slug": { "$ref": "common.json#/$defs/Slug" },
+        "pest_slug": { "$ref": "common.json#/$defs/Slug" },
+        "risk": {
+          "type": "string",
+          "enum": ["low", "moderate", "high"]
+        },
+        "recommended_remedy_slugs": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "notes": { "$ref": "common.json#/$defs/I18nString" }
+      },
+      "anyOf": [
+        { "required": ["disease_slug"] },
+        { "required": ["pest_slug"] }
+      ]
+    },
+    "Economics": {
+      "type": "object",
+      "required": ["reference_year", "unit_area", "currency"],
+      "properties": {
+        "reference_year": { "type": "integer", "minimum": 1900, "maximum": 2200 },
+        "unit_area": {
+          "type": "string",
+          "enum": ["acre", "hectare", "perch"]
+        },
+        "currency": { "type": "string", "const": "LKR" },
+        "cost_lines": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["category", "amount"],
+            "properties": {
+              "category": { "type": "string" },
+              "label": { "$ref": "common.json#/$defs/I18nString" },
+              "amount": { "type": "number", "minimum": 0 },
+              "notes": { "type": "string" }
+            }
+          }
+        },
+        "total_cost_without_family_labour": { "type": "number", "minimum": 0 },
+        "total_cost_with_family_labour":    { "type": "number", "minimum": 0 },
+        "yield_kg": { "type": "number", "minimum": 0 },
+        "unit_price": { "type": "number", "minimum": 0 },
+        "gross_revenue": { "type": "number", "minimum": 0 },
+        "net_revenue_without_family_labour": { "type": "number" },
+        "net_revenue_with_family_labour":    { "type": "number" }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "slug": "tnau-onion-thrips-ipm-01",
+  "source_slug": "tnau-onion-thrips-ipm",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Reflective mulch + soap spray for onion thrips — Tamil Nadu practice",
+  "body": "In Tamil Nadu onion plots, thrips (Thrips tabaci) populations are suppressed with a two-layer IPM approach: silvered reflective polythene mulch between rows disorients incoming adults, and a fortnightly foliar spray of 1% neem-oil plus 0.1% insecticidal soap targets nymphs in the leaf axils. This keeps thrips below economic threshold without relying on broad-spectrum pesticides that kill Orius predators. The practice is most cost-effective when adopted before flowering initiation and is paired with drip irrigation to keep foliage dry.",
+  "entity_refs": [
+    { "type": "crop",  "slug": "red-onion" },
+    { "type": "pest",  "slug": "onion-thrips" }
+  ],
+  "authority": "inferred_by_analogy",
+  "applies_to_aez_codes": ["DL-1", "DL-1c", "DL-1d", "DL-2", "DL-3"],
+  "applies_to_countries": ["IN-TN", "LK"],
+  "topic_tags": ["ipm", "thrips", "mulch", "cross-regional"],
+  "confidence": 0.7,
+  "quote": "Silvered plastic mulch reduces thrips colonization by up to 60% in onion plots; weekly neem+soap sprays complement the cultural barrier.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "source_url": "https://agritech.tnau.ac.in/",
+    "caveat": "Tamil Nadu practice; not yet validated on Sri Lanka dry-zone soils or against local thrips races. Render as 'promising practice' with the regional badge; do not use for chemical dosing without a DOA agronomist sign-off."
+  }
+}

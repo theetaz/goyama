@@ -1,0 +1,11 @@
+{
+  "slug": "tnau-onion-thrips-ipm",
+  "display_name": "TNAU Agritech Portal — Onion Thrips IPM advisory",
+  "medium": "web_article",
+  "publisher": "Tamil Nadu Agricultural University",
+  "authority": "regional_authority",
+  "url": "https://agritech.tnau.ac.in/",
+  "language": "en",
+  "licence": "attribution required; government publication",
+  "notes": "Referenced for cross-application to Sri Lanka dry-zone red onion. Any recommendation derived from this source on the Sri Lanka surface must be labelled inferred_by_analogy and gated on agronomist review before it drives dosing or timing."
+}

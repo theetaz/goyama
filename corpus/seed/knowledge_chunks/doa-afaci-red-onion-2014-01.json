@@ -1,0 +1,23 @@
+{
+  "slug": "doa-afaci-red-onion-2014-01",
+  "source_slug": "doa-afaci-red-onion-2014",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "DOA spacing and bed layout for dry-zone red onion",
+  "body": "For commercial dry-zone red-onion beds, the DOA calendar specifies raised beds 90 × 800 cm with a 15 × 15 cm plant spacing, giving roughly 320 plants per bed. For bulb-seed production the tighter 60 × 800 cm beds with 10 × 10 cm spacing are preferred because closer spacing produces the small 20–30 g bulbs ideal for vernalization. A third polythene cover over the bed centres protects seedlings from intense sun during the first 3 weeks after sowing.",
+  "entity_refs": [
+    { "type": "crop", "slug": "red-onion" },
+    { "type": "cultivation_plan", "slug": "red-onion-dry-zone-maha" }
+  ],
+  "authority": "doa_official",
+  "applies_to_aez_codes": ["DL-1", "DL-1c", "DL-1d", "DL-2", "DL-2a", "DL-3", "DL-4", "DL-5"],
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["spacing", "bed_layout", "vernalization"],
+  "confidence": 0.95,
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "source_url": "https://www.doa.gov.lk/",
+    "source_document_title": "DOA/AFACI Red Onion Cultivation Calendar (Dry Zone), 2014"
+  }
+}
