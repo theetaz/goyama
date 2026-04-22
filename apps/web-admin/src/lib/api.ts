@@ -259,7 +259,162 @@ export const api = {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     }),
+  listCultivationPlansForReview: (status: RecordStatus = 'draft') =>
+    request<CultivationPlanReviewQueueResponse>(
+      `/v1/admin/cultivation-plans?status=${encodeURIComponent(status)}`,
+    ),
+  getCultivationPlanForReview: (slug: string) =>
+    request<CultivationPlanReview>(
+      `/v1/admin/cultivation-plans/${encodeURIComponent(slug)}`,
+    ),
+  updateCultivationPlanStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<CultivationPlanReview>(
+      `/v1/admin/cultivation-plans/${encodeURIComponent(slug)}`,
+      {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      },
+    ),
+  listKnowledgeChunksForReview: (status: RecordStatus = 'draft') =>
+    request<KnowledgeChunkReviewQueueResponse>(
+      `/v1/admin/knowledge-chunks?status=${encodeURIComponent(status)}`,
+    ),
+  getKnowledgeChunkForReview: (slug: string) =>
+    request<KnowledgeChunkReview>(
+      `/v1/admin/knowledge-chunks/${encodeURIComponent(slug)}`,
+    ),
+  updateKnowledgeChunkStatus: (
+    slug: string,
+    body: { status: RecordStatus; review_notes?: string },
+  ) =>
+    request<KnowledgeChunkReview>(
+      `/v1/admin/knowledge-chunks/${encodeURIComponent(slug)}`,
+      {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      },
+    ),
 };
+
+export type AuthorityLevel =
+  | 'doa_official'
+  | 'peer_reviewed'
+  | 'regional_authority'
+  | 'practitioner_report'
+  | 'inferred_by_analogy'
+  | 'agent_synthesis';
+
+export interface CultivationActivityInput {
+  type: string;
+  name?: Record<string, string>;
+  amount?: number;
+  unit?: string;
+  per_unit_area?: string;
+  notes?: Record<string, string>;
+}
+
+export interface CultivationActivity {
+  week_idx: number;
+  order_in_week?: number;
+  activity: string;
+  dap_min?: number;
+  dap_max?: number;
+  title?: Record<string, string>;
+  body?: Record<string, string>;
+  inputs?: CultivationActivityInput[];
+  weather_hint?: string;
+}
+
+export interface CultivationPestRisk {
+  week_idx: number;
+  disease_slug?: string;
+  pest_slug?: string;
+  risk: 'low' | 'moderate' | 'high';
+  recommended_remedy_slugs?: string[];
+  notes?: Record<string, string>;
+}
+
+export interface CultivationEconomics {
+  reference_year: number;
+  unit_area: string;
+  currency: string;
+  cost_lines?: Array<{
+    category: string;
+    label?: Record<string, string>;
+    amount: number;
+    notes?: string;
+  }>;
+  total_cost_without_family_labour?: number;
+  total_cost_with_family_labour?: number;
+  yield_kg?: number;
+  unit_price?: number;
+  gross_revenue?: number;
+  net_revenue_without_family_labour?: number;
+  net_revenue_with_family_labour?: number;
+}
+
+export interface CultivationPlanReview {
+  slug: string;
+  crop_slug: string;
+  variety_slug?: string;
+  season: string;
+  aez_codes?: string[];
+  authority: AuthorityLevel;
+  title?: Record<string, string>;
+  summary?: Record<string, string>;
+  start_month?: number;
+  duration_weeks?: number;
+  expected_yield_kg_per_acre?: { min?: number; max?: number; unit?: string };
+  source_document_url?: string;
+  source_document_title?: string;
+  status: RecordStatus;
+  activities: CultivationActivity[];
+  pest_risks: CultivationPestRisk[];
+  economics: CultivationEconomics[];
+  field_provenance?: Record<string, unknown>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface CultivationPlanReviewQueueResponse {
+  status: RecordStatus;
+  items: CultivationPlanReview[];
+  count: number;
+}
+
+export interface KnowledgeChunkReview {
+  slug: string;
+  source_slug: string;
+  chunk_idx?: number;
+  language: string;
+  title?: string;
+  body: string;
+  body_translated?: Record<string, string>;
+  entity_refs?: Array<{ type: string; slug: string }>;
+  authority: AuthorityLevel;
+  applies_to_aez_codes?: string[];
+  applies_to_countries?: string[];
+  topic_tags?: string[];
+  confidence?: number;
+  quote?: string;
+  status: RecordStatus;
+  field_provenance?: Record<string, unknown>;
+  reviewed_by?: string;
+  reviewed_at?: string;
+  review_notes?: string;
+}
+
+export interface KnowledgeChunkReviewQueueResponse {
+  status: RecordStatus;
+  items: KnowledgeChunkReview[];
+  count: number;
+}
 
 export interface Media {
   slug: string;

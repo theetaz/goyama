@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, Outlet, createRootRouteWithContext } from '@tanstack/react-router';
 import type { QueryClient } from '@tanstack/react-query';
-import { Bug, ClipboardCheck, FlaskConical, LayoutDashboard, Leaf, Shell, UserCircle2 } from 'lucide-react';
+import { Bug, CalendarRange, ClipboardCheck, FlaskConical, LayoutDashboard, Leaf, Shell, Sparkles, UserCircle2 } from 'lucide-react';
 
 import { getReviewer, setReviewer } from '@/lib/api';
 
@@ -18,6 +18,8 @@ const nav = [
   { to: '/review-diseases', label: 'Disease review', icon: Bug, exact: false },
   { to: '/review-pests', label: 'Pest review', icon: Shell, exact: false },
   { to: '/review-remedies', label: 'Remedy review', icon: FlaskConical, exact: false },
+  { to: '/review-plans', label: 'Plan review', icon: CalendarRange, exact: false },
+  { to: '/review-knowledge', label: 'Knowledge review', icon: Sparkles, exact: false },
 ] as const;
 
 function AdminLayout() {
