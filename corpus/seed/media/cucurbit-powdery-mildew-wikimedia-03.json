@@ -1,0 +1,19 @@
+{
+  "slug": "cucurbit-powdery-mildew-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/4/43/Sphaerotheca_fusca_on_Cucurbita_pepo_closeup.jpg",
+  "credit": "Rasbak (via Wikimedia Commons)",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2009-09-20T00:00:00Z",
+  "caption": {
+    "en": "Podosphaera fusca fruiting bodies on a zucchini (Cucurbita pepo) leaf at close range — the raised white mycelium mat and emerging cleistothecia are diagnostic. This view trains the scanner on macro-lens captures that smallholders produce with mid-range Android phones."
+  },
+  "related": {
+    "disease_slug": "cucurbit-powdery-mildew"
+  },
+  "language": "en",
+  "tags": ["powdery_mildew", "podosphaera_fusca", "zucchini", "close_up", "wikimedia_commons"]
+}

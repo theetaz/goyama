@@ -1,0 +1,20 @@
+{
+  "slug": "tomato-bacterial-wilt-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Tomato_Bacterial_wilt_%28Pathogen_Ralstonia_solanacearum%29_%2812091835495%29.jpg",
+  "credit": "Scot Nelson (via Wikimedia Commons, from Flickr)",
+  "licence": "CC0-1.0",
+  "captured_at": "2014-01-22T00:00:00Z",
+  "caption": {
+    "en": "Tomato plant collapsing under Ralstonia solanacearum bacterial wilt — rapid one-sided wilt with leaves still green. In Sri Lanka's mid-country wet zone this pathogen is the leading cause of tomato stand loss during Yala."
+  },
+  "related": {
+    "disease_slug": "tomato-bacterial-wilt",
+    "crop_slug": "tomato"
+  },
+  "language": "en",
+  "tags": ["bacterial_wilt", "ralstonia_solanacearum", "whole_plant_symptoms", "tomato", "wikimedia_commons"]
+}

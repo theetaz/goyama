@@ -1,0 +1,20 @@
+{
+  "slug": "tea-blister-blight-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Exobasidium_vexans_3.jpg",
+  "credit": "Jürgen Kranz (courtesy of EcoPort, via Wikimedia Commons)",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2012-11-03T00:00:00Z",
+  "caption": {
+    "en": "Advanced blister-blight lesions on a tea leaf showing the concave blister with a silvery-white sporulating underside — the stage at which spores aerosolise and seed neighbouring bushes. Pluckers trained to recognise this stage can trigger a selective spray rather than a blanket round."
+  },
+  "related": {
+    "disease_slug": "tea-blister-blight",
+    "crop_slug": "tea"
+  },
+  "language": "en",
+  "tags": ["tea_blister_blight", "exobasidium_vexans", "sporulation", "late_stage", "wikimedia_commons"]
+}
