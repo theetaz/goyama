@@ -1,0 +1,84 @@
+{
+  "slug": "cucumber-low-mid-country",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "cucumber",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3",
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
+    "DM1","DM2"
+  ],
+  "title": {
+    "en": "Cucumber cultivation — DOA / HORDI recommendation",
+    "si": "කැකිරි වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය",
+    "ta": "வெள்ளரி பயிர்ச்செய்கை — வேளாண் திணைக்களம் / HORDI பரிந்துரை"
+  },
+  "summary": {
+    "en": "HORDI recommendation for cucumber (Cucumis sativus) up to 1000 m elevation. Released varieties: HORDI Green, HORDI White, Kalpitiya White, Champion, Gannoruwa White, LY 58. Various soil types with good drainage; pH 5.5–7.5. Spacing 1 × 1 m monoculture; seed rate 1 kg/ha. Three-stage fertilizer. Yield: OPV 15–20 t/ha; hybrid 25–30 t/ha.",
+    "si": "1000 m දක්වා උන්නතාංශයේ කැකිරි (Cucumis sativus) සඳහා HORDI නිර්දේශය. පරතරය 1 × 1 m; බීජ මාත්‍රාව 1 kg/ha. තුන් අදියර පොහොර. අස්වැන්න: OPV ටොන් 15-20/හෙ; හයිබ්‍රිඩ් ටොන් 25-30/හෙ.",
+    "ta": "1000 m உயரம் வரை வெள்ளரி (Cucumis sativus) பயிர்ச்செய்கைக்கான HORDI பரிந்துரை. இடைவெளி 1 × 1 m; விதை அளவு 1 kg/ha. மூன்று கட்ட உரம். மகசூல்: OPV 15-20 டன்/ஹெக்டேர்; ஹைப்ரிட் 25-30 டன்/ஹெக்டேர்."
+  },
+  "start_month": 4,
+  "duration_weeks": 14,
+  "expected_yield_kg_per_acre_min": 6000,
+  "expected_yield_kg_per_acre_max": 12000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-cucumber/",
+  "source_document_title": "HORDI — Cucumber cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-cucumber/",
+    "notes": "Source lists fertilizer timings 'after 4 weeks' and 'after 5 weeks' back-to-back, which appears to be a typo (most cucurbit schedules have wider spacing). We transcribed both rates verbatim with the suspicion flagged; a DOA agronomist should re-confirm the second application window before the plan promotes from draft."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Well-drained soil with good organic matter; pH 5.5–7.5. Works on multiple soil types."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount":  75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 200, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed at 1 × 1 m spacing for monoculture. Seed rate 1 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Cucumber seed (HORDI Green / HORDI White / Kalpitiya White / Champion / Gannoruwa White / LY 58)"}, "amount": 1, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 6, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 4 weeks after sowing"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 28, "dap_max": 28 },
+    { "week_idx": 7, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 5 weeks after sowing"},
+      "body": {"en": "Source lists this as a separate dressing despite the 1-week gap from week-4. Verify with DOA agronomist before applying."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 35, "dap_max": 35 },
+    { "week_idx": 9, "activity": "harvest",
+      "title": {"en": "Fruit harvest"},
+      "body": {"en": "Pick fruits at marketable size; continue every 2–3 days. Yield: OPV 15–20 t/ha; hybrid 25–30 t/ha."},
+      "dap_min": 55, "dap_max": 90 }
+  ],
+  "pest_risks": [
+    { "week_idx": 6, "disease_slug": "cucurbit-powdery-mildew",
+      "risk": "moderate",
+      "notes": {"en": "Powdery mildew and downy mildew. Apply recommended fungicides at first lesions per DOA 2019 pesticide recommendation."} },
+    { "week_idx": 5, "disease_slug": "cucurbit-leaf-curl-virus",
+      "risk": "high",
+      "notes": {"en": "Cucumber mosaic virus / zucchini yellow mosaic virus — vectored by aphids and whiteflies. Control vectors early; remove and destroy infected plants."} }
+  ],
+  "economics": []
+}

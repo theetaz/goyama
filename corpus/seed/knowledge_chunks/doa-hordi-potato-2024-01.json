@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-potato-2024-01",
+  "source_slug": "doa-hordi-potato-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Potato site-specific fertilizer schedules — upland vs Jaffna vs rice-based vs Kalpitiya",
+  "body": "HORDI publishes four distinct potato fertilizer schedules calibrated by soil type and cropping system. (1) Upland (Nuwara Eliya, Badulla) + Jaffna calcic red latosols: Basal Urea 55 + TSP 270 + MOP 125 kg/ha, then Urea 110 at 2 weeks, then Urea 165 + MOP 125 at 3–4 weeks. (2) Rice-based cropping system (rice+potato rotation in Polonnaruwa / Ampara): same Urea schedule but MOP is lower — 85 kg/ha basal and 85 kg/ha at 3–4 weeks, because the rice-paddy soils already carry residual K. (3) Kalpitiya regosols: TSP 270 kg/ha basal only, skip MOP basal because regosols leach K too fast; top-dressing varies by week. Picking the wrong schedule costs 20–30% yield — ask the local DS officer for a soil test before starting a commercial 2,000 kg/ha seed-tuber plot.",
+  "entity_refs": [
+    { "type": "crop", "slug": "potato" },
+    { "type": "cultivation_plan", "slug": "potato-up-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["potato", "fertilizer", "site_specific_nutrition", "soil_type"],
+  "confidence": 0.95,
+  "quote": "Uplands (Nuwara Eliya, Badulla) & Jaffna calcic red latosols: Basal 55/270/125; 2 weeks 110/–/–; 3–4 weeks 165/–/125. Rice-based cropping system: MOP adjusted to 85 kg/ha (basal) and 85 kg/ha (3–4 weeks). Kalpitiya regosols: Basal TSP 270 kg/ha only.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-potato/"
+  }
+}
