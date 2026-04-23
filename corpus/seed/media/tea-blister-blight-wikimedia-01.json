@@ -1,0 +1,20 @@
+{
+  "slug": "tea-blister-blight-wikimedia-01",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Exobasidium_vexans_on_Camellia_sinens.jpg",
+  "credit": "Jürgen Kranz (courtesy of EcoPort, via Wikimedia Commons)",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2012-11-03T00:00:00Z",
+  "caption": {
+    "en": "Tea blister blight (Exobasidium vexans) on Camellia sinensis — translucent spots on the young flush that develop into the characteristic blister and sporulating underside. Tea blister blight is the most important foliar disease of tea in Sri Lanka's wet zone and the TRI calendar schedules copper sprays around monsoon onset to protect the flush."
+  },
+  "related": {
+    "disease_slug": "tea-blister-blight",
+    "crop_slug": "tea"
+  },
+  "language": "en",
+  "tags": ["tea_blister_blight", "exobasidium_vexans", "camellia_sinensis", "leaf_symptoms", "wikimedia_commons"]
+}

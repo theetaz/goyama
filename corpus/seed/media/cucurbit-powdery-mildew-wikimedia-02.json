@@ -1,0 +1,19 @@
+{
+  "slug": "cucurbit-powdery-mildew-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Sphaerotheca_fusca_on_Cucumber_leaves.jpg",
+  "credit": "Rasbak (via Wikimedia Commons)",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2009-09-16T00:00:00Z",
+  "caption": {
+    "en": "Powdery mildew (Podosphaera fusca, syn. Sphaerotheca fusca) on cucumber leaves — whole-plant view. Note the chlorotic halos where mildew colonies have coalesced; at this stage yield loss is already locked in, so scouting should trigger the first spray well before this density."
+  },
+  "related": {
+    "disease_slug": "cucurbit-powdery-mildew"
+  },
+  "language": "en",
+  "tags": ["powdery_mildew", "podosphaera_fusca", "cucumber", "leaf_symptoms", "wikimedia_commons"]
+}

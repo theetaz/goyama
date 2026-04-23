@@ -1,0 +1,20 @@
+{
+  "slug": "tea-blister-blight-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Exobasidium_vexans2.jpg",
+  "credit": "Jürgen Kranz (courtesy of EcoPort, via Wikimedia Commons)",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2012-11-03T00:00:00Z",
+  "caption": {
+    "en": "Multiple Exobasidium vexans blisters along a single tea leaf showing the typical pale-green to brown transition — a mid-stage infection with sporulating and spent lesions side-by-side. Useful for training identification across lesion ages in a single frame."
+  },
+  "related": {
+    "disease_slug": "tea-blister-blight",
+    "crop_slug": "tea"
+  },
+  "language": "en",
+  "tags": ["tea_blister_blight", "exobasidium_vexans", "multi_stage", "leaf_symptoms", "wikimedia_commons"]
+}

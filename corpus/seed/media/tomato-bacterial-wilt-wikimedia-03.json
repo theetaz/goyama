@@ -1,0 +1,19 @@
+{
+  "slug": "tomato-bacterial-wilt-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Ginger_bacterial_wilt_13.jpg",
+  "credit": "\"Plant pests and diseases\" (via Wikimedia Commons, from Flickr)",
+  "licence": "CC0-1.0",
+  "captured_at": "2011-05-04T00:00:00Z",
+  "caption": {
+    "en": "Ralstonia solanacearum bacterial-wilt rot in a ginger rhizome. Same pathogen complex as tomato bacterial wilt — included for cross-host recognition because the bacterium attacks ginger, chilli, brinjal, and potato on Sri Lankan smallholdings, and infected neighbouring crops can re-seed tomato beds."
+  },
+  "related": {
+    "disease_slug": "tomato-bacterial-wilt"
+  },
+  "language": "en",
+  "tags": ["bacterial_wilt", "ralstonia_solanacearum", "ginger", "cross_host_context", "wikimedia_commons"]
+}
