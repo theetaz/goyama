@@ -5,6 +5,11 @@
   "language": "en",
   "title": "Carrot four-stage top-dressing — tight N + K schedule for 100-day cycle",
   "body": "HORDI runs carrot on a notably dense top-dressing schedule: Urea + MOP at 3, 6, 8 and 9 weeks after sowing (55 + 43, 82.5 + 63.5, 82.5 + 63.5, 110 + 85 kg/ha respectively). TSP is front-loaded basally at 270 kg/ha with 10 t/ha organic manure. The tight late-season N + K stack is driven by the crop's bulking phase; splitting doses prevents root cracking and bolting, which are the two yield-killers in the up-country crop. Target root diameter at harvest is 5 cm.",
+  "body_translated": {
+    "en": "HORDI runs carrot on a notably dense top-dressing schedule: Urea + MOP at 3, 6, 8 and 9 weeks after sowing (55 + 43, 82.5 + 63.5, 82.5 + 63.5, 110 + 85 kg/ha respectively). TSP is front-loaded basally at 270 kg/ha with 10 t/ha organic manure. The tight late-season N + K stack is driven by the crop's bulking phase; splitting doses prevents root cracking and bolting, which are the two yield-killers in the up-country crop. Target root diameter at harvest is 5 cm.",
+    "si": "HORDI කැරට් සඳහා සැලකිය යුතු ඝන මතුපිට පොහොර වැඩසටහනක් යොදයි: බීජ වැපිරීමෙන් සති 3, 6, 8, 9 දී යූරියා + MOP (පිළිවෙළින් 55 + 43, 82.5 + 63.5, 82.5 + 63.5, 110 + 85 kg/ha). TSP කි.ග්‍රෑ. 270/හෙක් මූලික වශයෙන් ඉදිරිපසට දමා ඇත; කාබනික පොහොර 10 t/ha ද දමයි. ප්‍රාග් අස්වනු N + K සංයෝජනය කඳ වර්ධනය කරන අවධියෙන් ගෙන වල් අතර වැඩෙයි; මාත්‍රා බෙදීම මුල් දුරුවීම සහ අගට සුළු වීම වළක්වයි, මේවා උඩරට බෝගයේ අස්වැන්න-නසන කරන ප්‍රධාන දේවල් දෙකයි. අස්වනු කරන විට මුල් ව්‍යාසය 5 cm වීම ඉලක්කයයි.",
+    "ta": "HORDI கேரட்டிற்கு குறிப்பிடத்தக்க அடர்த்தியான மேல் உர அட்டவணையை பின்பற்றுகிறது: விதைத்த 3, 6, 8, 9 வாரங்களில் யூரியா + MOP (முறையே 55 + 43, 82.5 + 63.5, 82.5 + 63.5, 110 + 85 kg/ha). TSP 270 kg/ha அடிப்படையில் முன்-நிரப்பப்படுகிறது மற்றும் 10 t/ha கரிம உரம். இறுதி பருவ N + K அடுக்கு பயிரின் கிழங்கு வளர்ச்சி கட்டத்தால் இயக்கப்படுகிறது; பிளவு மருந்துகள் வேர் விரிசல் மற்றும் பூத்தல் ஆகியவற்றைத் தடுக்கின்றன, இவை மலைநாட்டு பயிரில் இரண்டு மகசூல்-கொலை செய்பவர்கள். அறுவடை செய்யும்போது வேர் விட்டம் 5 cm இலக்கு."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "carrot" },
     { "type": "cultivation_plan", "slug": "carrot-all-zones" }

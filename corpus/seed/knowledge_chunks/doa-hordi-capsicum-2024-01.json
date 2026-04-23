@@ -5,6 +5,11 @@
   "language": "en",
   "title": "Capsicum — variety-specific spacing and seed rate",
   "body": "HORDI prescribes variety-specific planting geometry for capsicum, because HYW / LYW are smaller plants than CA-8 and Gannoruwa Prarthana F1. HYW and Lanka Yellow Wax plant at 15 × 30 cm with 1.75 kg seed per hectare, giving roughly 220,000 plants/ha. CA-8 and Gannoruwa Prarthana F1 plant at 40 × 40 cm with 1 kg seed/ha, giving 62,500 plants/ha. Using one spacing for the wrong variety either leaves yield on the table or promotes canopy disease pressure.",
+  "body_translated": {
+    "en": "HORDI prescribes variety-specific planting geometry for capsicum, because HYW / LYW are smaller plants than CA-8 and Gannoruwa Prarthana F1. HYW and Lanka Yellow Wax plant at 15 × 30 cm with 1.75 kg seed per hectare, giving roughly 220,000 plants/ha. CA-8 and Gannoruwa Prarthana F1 plant at 40 × 40 cm with 1 kg seed/ha, giving 62,500 plants/ha. Using one spacing for the wrong variety either leaves yield on the table or promotes canopy disease pressure.",
+    "si": "HYW / LYW CA-8 සහ ගන්නෝරුව ප්‍රාර්ථනා F1 හා සැසඳීමේදී කුඩා ශාක වන නිසා HORDI මාලු මිරිස් සඳහා ප්‍රභේදයට විශේෂිත රෝපණ ජ්‍යාමිතිය නිර්දේශ කරයි. HYW සහ ලංකා කහ වැක්ස් 15 × 30 cm පරතරයේ හෙක්ටයාරයකට 1.75 kg බීජ යොදයි, ශාක 220,000/හෙක් ලබා දෙයි. CA-8 සහ ගන්නෝරුව ප්‍රාර්ථනා F1 40 × 40 cm, හෙක්ටයාරයකට 1 kg බීජ, ශාක 62,500/හෙක් දෙයි. වැරදි ප්‍රභේදයට එක පරතරයක් භාවිතා කිරීමෙන් අස්වැන්න පහළ යෑම හෝ වැලි අතර රෝග පීඩනය වැඩි කිරීම සිදු වේ.",
+    "ta": "HYW / LYW CA-8 மற்றும் கன்னோருவ பிரார்த்தனா F1 ஐ விட சிறிய செடிகள் என்பதால் HORDI குடைமிளகாய்க்கு வகை-குறிப்பிட்ட நடவு வடிவவியலை பரிந்துரைக்கிறது. HYW மற்றும் லங்கா யெல்லோ வாக்ஸ் 15 × 30 cm இல் ஒரு ஹெக்டேருக்கு 1.75 kg விதையுடன் நடப்படுகிறது, தோராயமாக 220,000 செடிகள்/ha அளிக்கிறது. CA-8 மற்றும் கன்னோருவ பிரார்த்தனா F1 40 × 40 cm இல் 1 kg விதை/ha உடன், 62,500 செடிகள்/ha அளிக்கிறது. தவறான வகைக்கு ஒரு இடைவெளியைப் பயன்படுத்துதல் மகசூலை மேசையில் விட்டுவிடுகிறது அல்லது இலை-மூட்டம் நோய் அழுத்தத்தை ஊக்குவிக்கிறது."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "capsicum" },
     { "type": "cultivation_plan", "slug": "capsicum-low-mid-country" }
