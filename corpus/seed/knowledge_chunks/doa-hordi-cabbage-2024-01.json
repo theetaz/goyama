@@ -5,6 +5,10 @@
   "language": "en",
   "title": "HORDI diamondback moth + looper control regime for cabbage",
   "body": "HORDI's recommended rotation for the two dominant lepidopteran pests on Sri Lankan cabbage is: for diamondback moth (Plutella xylostella) — Emamectin benzoate 5% SG at 8 g per 16 L water, or Chlorantraniliprole 200 g/L SC at 6 ml per 16 L; for cabbage looper (Trichoplusia ni) — Spinosad 25 g/L SC at 16 ml per 16 L, or Tebufenozide 200 g/L SC at 24 ml per 16 L. Alternating modes of action between applications is essential because diamondback moth develops resistance extremely quickly to single-MOA spray programmes.",
+  "body_translated": {
+    "en": "HORDI's recommended rotation for the two dominant lepidopteran pests on Sri Lankan cabbage is: for diamondback moth (Plutella xylostella) — Emamectin benzoate 5% SG at 8 g per 16 L water, or Chlorantraniliprole 200 g/L SC at 6 ml per 16 L; for cabbage looper (Trichoplusia ni) — Spinosad 25 g/L SC at 16 ml per 16 L, or Tebufenozide 200 g/L SC at 24 ml per 16 L. Alternating modes of action between applications is essential because diamondback moth develops resistance extremely quickly to single-MOA spray programmes.",
+    "si": "ශ්‍රී ලංකාවේ ගෝවාවල ප්‍රධාන ලෙපිඩොප්ටෙරා පළිබෝධ දෙක සඳහා HORDI නිර්දේශිත ක්‍රියා මාරු කිරීම: දියමන්ති පිටි පූ (Plutella xylostella) — එමමෙක්ටින් බෙන්සොයේට් 5% SG ලී 16 කට ග්‍රෑම් 8, හෝ ක්ලෝරන්ට්‍රානිලිප්‍රෝල් 200 g/L SC ලී 16 කට මිලී ලී 6; ගෝවා ලූපර් (Trichoplusia ni) — ස්පිනොසැඩ් 25 g/L SC ලී 16 කට මිලී ලී 16, හෝ ටෙබුෆෙනොසයිඩ් 200 g/L SC ලී 16 කට මිලී ලී 24. දියමන්ති පිටි පූ කෙටි කාලයකින් ප්‍රතිරෝධතාව ගොඩනැගෙන නිසා, එක එක යෙදුමේදී ක්‍රියාකාරී ක්‍රමය මාරු කිරීම අත්‍යවශ්‍යයි."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "cabbage" },
     { "type": "pest", "slug": "diamondback-moth" },

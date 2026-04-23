@@ -10,9 +10,13 @@
     "IL1","IL2","IL3",
     "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5"
   ],
-  "title": {"en": "Snake gourd cultivation — low country"},
+  "title": {
+    "en": "Snake gourd cultivation — low country",
+    "si": "පතෝළ වගාව — පහත රට"
+  },
   "summary": {
-    "en": "HORDI recommendation for snake gourd (Trichosanthes cucumerina L) up to 500 m elevation. Soil pH 5.5–7.5 with high organic matter. Spacing 1.5 × 1.5 m, seed rate 4 kg/ha. Three-stage fertilizer schedule. Harvest from 60–75 days after planting at 4-day intervals. Yield 20 t/ha."
+    "en": "HORDI recommendation for snake gourd (Trichosanthes cucumerina L) up to 500 m elevation. Soil pH 5.5–7.5 with high organic matter. Spacing 1.5 × 1.5 m, seed rate 4 kg/ha. Three-stage fertilizer schedule. Harvest from 60–75 days after planting at 4-day intervals. Yield 20 t/ha.",
+    "si": "500 m දක්වා උන්නතාංශයේ පතෝළ (Trichosanthes cucumerina L) සඳහා HORDI නිර්දේශය. pH 5.5-7.5 ඇති කාබනික ද්‍රව්‍ය වැඩි පස. පරතරය 1.5 × 1.5 m, බීජ මාත්‍රාව 4 kg/හෙ. තුන් අදියර පොහොර. රෝපණයෙන් දින 60-75 කින් දින 4 අතරින් නෙළීම. අස්වැන්න ටොන් 20/හෙ."
   },
   "start_month": 4,
   "duration_weeks": 16,

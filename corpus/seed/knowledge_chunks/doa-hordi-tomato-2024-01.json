@@ -5,6 +5,10 @@
   "language": "en",
   "title": "HORDI pesticide regimen for tomato early + late blight",
   "body": "HORDI recommends three fungicide options for tomato early blight (Alternaria solani) and late blight (Phytophthora infestans): Mancozeb 80% WP at 20 g per 10 L water; Metalaxyl 8% + Mancozeb 64% WP at 12.5 g per 10 L; or Metiram 55% + Pyraclostrobin 5% WG at 8 ml per 10 L. Rotate products across applications to slow resistance build-up, and only apply at first lesion appearance. These dosages trace back to the DOA 2019 pesticide recommendation.",
+  "body_translated": {
+    "en": "HORDI recommends three fungicide options for tomato early blight (Alternaria solani) and late blight (Phytophthora infestans): Mancozeb 80% WP at 20 g per 10 L water; Metalaxyl 8% + Mancozeb 64% WP at 12.5 g per 10 L; or Metiram 55% + Pyraclostrobin 5% WG at 8 ml per 10 L. Rotate products across applications to slow resistance build-up, and only apply at first lesion appearance. These dosages trace back to the DOA 2019 pesticide recommendation.",
+    "si": "තක්කාලි මුල් අළු රෝගය (Alternaria solani) සහ අවසන් අළු රෝගය (Phytophthora infestans) සඳහා HORDI විසින් දිලීර නාශක විකල්ප තුනක් නිර්දේශ කරයි: මැන්කොසෙබ් 80% WP ජලය ලීටර 10 කට ග්‍රෑම් 20; මෙටලක්සයිල් 8% + මැන්කොසෙබ් 64% WP ලී 10 කට ග්‍රෑම් 12.5; හෝ මෙටිරම් 55% + පයිරක්ලොස්ට්‍රොබින් 5% WG ලී 10 කට මිලී ලී 8. ප්‍රතිරෝධය ඉක්මනින් ඇති නොවන ලෙස යෙදුම්වලදී නිෂ්පාදන මාරු කරන්න; ප්‍රථම පැල්ලම් පෙනෙන විටම පමණක් යොදන්න. මේ මාත්‍රා DOA 2019 පළිබෝධ නාශක නිර්දේශයට අනුකූලයි."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "tomato" },
     { "type": "disease", "slug": "tomato-early-blight" },

@@ -6,9 +6,13 @@
   "crop_slug": "cabbage",
   "season": "year_round",
   "aez_codes": ["WU1","WU2","WU3","IU1","IU2","IU3","WM1","WM2","IM1","IM2","DM1","DM2"],
-  "title": {"en": "Cabbage cultivation — cool upland recommendation"},
+  "title": {
+    "en": "Cabbage cultivation — cool upland recommendation",
+    "si": "ගෝවා වගාව — සිසිල් උඩරට නිර්දේශය"
+  },
   "summary": {
-    "en": "HORDI recommendation for cabbage (Brassica oleracea Capitata) in cool upland regions. Variety: Green Coronet. Spacing 40 × 50 cm; three-stage fertilizer schedule; 90–110 days to harvest; yield 40–45 t/ha. Heat-tolerant varieties can be grown in dry zone."
+    "en": "HORDI recommendation for cabbage (Brassica oleracea Capitata) in cool upland regions. Variety: Green Coronet. Spacing 40 × 50 cm; three-stage fertilizer schedule; 90–110 days to harvest; yield 40–45 t/ha. Heat-tolerant varieties can be grown in dry zone.",
+    "si": "සිසිල් උඩරට ප්‍රදේශ සඳහා HORDI ගෝවා (Brassica oleracea Capitata) වගා නිර්දේශය. ප්‍රභේදය: Green Coronet. පරතරය 40 × 50 cm; තුන් අදියර පොහොර වැඩසටහන; අස්වනු දින 90-110; අස්වැන්න ටොන් 40-45/හෙ. වියළි කලාපයේ තාපය ඉවසන ප්‍රභේද වගා කළ හැකිය."
   },
   "start_month": 1,
   "duration_weeks": 18,
