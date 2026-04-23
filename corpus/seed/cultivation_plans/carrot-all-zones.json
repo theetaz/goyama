@@ -13,11 +13,13 @@
   ],
   "title": {
     "en": "Carrot cultivation — DOA / HORDI recommendation",
-    "si": "කැරට් වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය"
+    "si": "කැරට් වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය",
+    "ta": "கேரட் பயிர்ச்செய்கை — வேளாண் திணைக்களம் / HORDI பரிந்துரை"
   },
   "summary": {
     "en": "HORDI recommendation for carrot (Daucus carota). Grows in all agro-ecological zones with best performance in cool upland regions. Row spacing 25 cm, thinned to 5 cm. Four top-dressings spread across 3–9 weeks. Yield 30–40 t/ha.",
-    "si": "කැරට් (Daucus carota) සඳහා HORDI නිර්දේශය. සියලු කෘෂි-පරිසර කලාපවල වැඩේ; සිසිල් උඩරට ප්‍රදේශවල වඩාත් හොඳින් කරයි. පේළි පරතරය 25 cm, 5 cm වේගෙන් තුනීකරන්න. සති 3-9 අතර පොහොර යෙදීම් හතරක්. අස්වැන්න ටොන් 30-40/හෙ."
+    "si": "කැරට් (Daucus carota) සඳහා HORDI නිර්දේශය. සියලු කෘෂි-පරිසර කලාපවල වැඩේ; සිසිල් උඩරට ප්‍රදේශවල වඩාත් හොඳින් කරයි. පේළි පරතරය 25 cm, 5 cm වේගෙන් තුනීකරන්න. සති 3-9 අතර පොහොර යෙදීම් හතරක්. අස්වැන්න ටොන් 30-40/හෙ.",
+    "ta": "கேரட் (Daucus carota) பயிர்ச்செய்கைக்கான HORDI பரிந்துரை. அனைத்து வேளாண்-சூழல் வலயங்களிலும் வளரும்; குளிர்ந்த மலைநாட்டு பகுதிகளில் சிறப்பான விளைச்சல். வரிசை இடைவெளி 25 cm, 5 cm க்கு மெலிதாக்கவும். 3-9 வாரங்களுக்கு இடையில் நான்கு மேல் உர வேளைகள். மகசூல் 30-40 டன்/ஹெக்டேர்."
   },
   "start_month": 1,
   "duration_weeks": 16,

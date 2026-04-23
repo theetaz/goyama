@@ -8,11 +8,13 @@
   "aez_codes": ["DL-1", "DL-1c", "DL-1d", "DL-2", "DL-2a", "DL-3", "DL-4", "DL-5"],
   "title": {
     "en": "Red onion — dry zone Maha cultivation calendar",
-    "si": "රතු ලූනු වගා කාල සටහන — වියළි කලාපය"
+    "si": "රතු ලූනු වගා කාල සටහන — වියළි කලාපය",
+    "ta": "சிவப்பு வெங்காயம் — வறண்ட வலய மஹா பயிர் அட்டவணை"
   },
   "summary": {
     "en": "A 48-week plan covering commercial red-onion cultivation in Sri Lanka's dry zone during the Maha season (Dec–May), followed by a seed-bulb production cycle (Jun–Nov). Inputs, pest calendar, and economics are from the DOA / AFACI 2014 bulletin; districts in scope: Anuradhapura, Puttalam, Kurunegala, Polonnaruwa, Matale, Monaragala, Vavuniya, Mannar, Mullaitivu, Kilinochchi, Trincomalee, Hambantota, Ampara, Badulla (low-country portions).",
-    "si": "වියළි කලාපයේ මහ කන්නයේදී (දෙසැම්බර්–මැයි) රතු ලූනු වාණිජ වගාවෙන් ආරම්භ වී, යාල කන්නයේදී (ජූනි–නොවැම්බර්) බීජ බල්බ නිෂ්පාදනය දක්වා දිවෙන සති 48ක සම්පූර්ණ කාල සටහන."
+    "si": "වියළි කලාපයේ මහ කන්නයේදී (දෙසැම්බර්–මැයි) රතු ලූනු වාණිජ වගාවෙන් ආරම්භ වී, යාල කන්නයේදී (ජූනි–නොවැම්බර්) බීජ බල්බ නිෂ්පාදනය දක්වා දිවෙන සති 48ක සම්පූර්ණ කාල සටහන.",
+    "ta": "இலங்கையின் வறண்ட வலயத்தில் மஹா பருவத்தில் (டிச-மே) வணிக ரீதியாக சிவப்பு வெங்காய பயிர்ச்செய்கை, அதைத் தொடர்ந்து யலா பருவத்தில் (ஜூன்-நவ) விதை-கிழங்கு உற்பத்தி சுழற்சியை உள்ளடக்கிய 48 வார திட்டம். உள்ளீடுகள், பூச்சி அட்டவணை, பொருளாதாரம் DOA / AFACI 2014 செய்தித்தாளில் இருந்து; உள்ளடக்கிய மாவட்டங்கள்: அனுராதபுரம், புத்தளம், குருநாகல், பொலன்னறுவை, மாத்தளை, மொனராகலை, வவுனியா, மன்னார், முல்லைத்தீவு, கிளிநொச்சி, திருகோணமலை, அம்பாந்தோட்டை, அம்பாறை, பதுளை (தாழ்நாடு பகுதிகள்)."
   },
   "start_month": 12,
   "duration_weeks": 48,
