@@ -11,9 +11,13 @@
     "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
     "DM1","DM2"
   ],
-  "title": {"en": "Bitter gourd cultivation — DOA / HORDI recommendation"},
+  "title": {
+    "en": "Bitter gourd cultivation — DOA / HORDI recommendation",
+    "si": "කරවිල වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය"
+  },
   "summary": {
-    "en": "HORDI recommendation for bitter gourd (Momordica charantia) up to 1200 m. Planting seasons: Maha (Oct–Nov), Yala (Apr–May); year-round in favourable areas. Spacing 1.5 × 1 m, 3 seeds per hill, 6 kg seed/ha. Trellis three weeks post-planting. Yield 20–30 t/ha (OPV 20 t/ha, hybrid 20–30 t/ha)."
+    "en": "HORDI recommendation for bitter gourd (Momordica charantia) up to 1200 m. Planting seasons: Maha (Oct–Nov), Yala (Apr–May); year-round in favourable areas. Spacing 1.5 × 1 m, 3 seeds per hill, 6 kg seed/ha. Trellis three weeks post-planting. Yield 20–30 t/ha (OPV 20 t/ha, hybrid 20–30 t/ha).",
+    "si": "1200 m දක්වා උන්නතාංශයේ කරවිල (Momordica charantia) සඳහා HORDI නිර්දේශය. වගා කන්නයන්: මහ (ඔක්-නොවැ), යල (අප්‍රේ-මැයි); හිතකර ප්‍රදේශවල අවුරුද්දම. පරතරය 1.5 × 1 m, සිදුරකට බීජ 3 ක්, හෙක්ටයාරයට 6 kg. රෝපණයෙන් සති තුනකින් ආධාරක දමන්න. අස්වැන්න ටොන් 20-30/හෙ."
   },
   "start_month": 4,
   "duration_weeks": 16,

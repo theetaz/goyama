@@ -5,6 +5,10 @@
   "language": "en",
   "title": "Brinjal variety selection for disease and yield",
   "body": "HORDI's released brinjal portfolio covers three yield/resistance profiles: hybrid F1s Amanda and Anjalee deliver 30–40 t/ha with stronger tolerance to bacterial wilt when rotated correctly; HORDI Lenairi 1 is an OP selection bred for dry-zone adaptation; Thinnaweli Purple, Padagoda, and SM 164 are OP / heirloom lines that yield 18–20 t/ha but carry farmer-preferred flavour and storage traits. Variety choice should anchor on the AEZ (dry-zone farmers see less Ralstonia pressure on OPs) and on whether the buyer premium is worth the hybrid seed cost.",
+  "body_translated": {
+    "en": "HORDI's released brinjal portfolio covers three yield/resistance profiles: hybrid F1s Amanda and Anjalee deliver 30–40 t/ha with stronger tolerance to bacterial wilt when rotated correctly; HORDI Lenairi 1 is an OP selection bred for dry-zone adaptation; Thinnaweli Purple, Padagoda, and SM 164 are OP / heirloom lines that yield 18–20 t/ha but carry farmer-preferred flavour and storage traits. Variety choice should anchor on the AEZ (dry-zone farmers see less Ralstonia pressure on OPs) and on whether the buyer premium is worth the hybrid seed cost.",
+    "si": "HORDI නිකුත් කළ වම්බටු පවුල අස්වැන්න/ප්‍රතිරෝධය අනුව වර්ග තුනක් ආවරණය කරයි: හයිබ්‍රිඩ් F1 ප්‍රභේද වන අමන්දා සහ අන්ජලී ටොන් 30-40/හෙක්. ලබා දෙයි, නිවැරදිව මාරු කළ විට බැක්ටීරියා ගහනය දරා ගැනීම වැඩි; HORDI ලෙනේරි 1 වියළි කලාපයට ගළපා ඇති OP ප්‍රභේදයකි; තින්නෙවෙලි දම්, පදගොඩ, සහ SM 164 OP / පාරම්පරික ප්‍රභේද ටොන් 18-20/හෙක්. ලබා දෙන අතර ගොවියාගේ රසය සහ ගබඩා කිරීමේ ලක්ෂණ තිබේ. ප්‍රභේද තේරීමේදී AEZ (වියළි කලාප ගොවීන්ට Ralstonia පීඩනය අඩුයි OP සඳහා) සහ හයිබ්‍රිඩ් බීජ පිරිවැය මිලදී ගැනීමේ වටිනාකම විශ්ලේෂණය කරන්න."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "brinjal" },
     { "type": "cultivation_plan", "slug": "brinjal-low-mid-country" }

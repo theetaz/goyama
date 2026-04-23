@@ -11,9 +11,13 @@
     "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
     "DM1","DM2"
   ],
-  "title": {"en": "Brinjal cultivation — DOA / HORDI recommendation"},
+  "title": {
+    "en": "Brinjal cultivation — DOA / HORDI recommendation",
+    "si": "වම්බටු වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය"
+  },
   "summary": {
-    "en": "HORDI recommendation for brinjal / eggplant (Solanum melongena) up to 1300 m elevation. Well-drained soil at pH 5.5–5.8. Spacing 90 × 60 cm, seed rate 350 g/ha. Three-stage fertilizer. First harvest 10–12 weeks after transplanting; 7-day picking intervals; OPV 18–20 t/ha, hybrids 30–40 t/ha."
+    "en": "HORDI recommendation for brinjal / eggplant (Solanum melongena) up to 1300 m elevation. Well-drained soil at pH 5.5–5.8. Spacing 90 × 60 cm, seed rate 350 g/ha. Three-stage fertilizer. First harvest 10–12 weeks after transplanting; 7-day picking intervals; OPV 18–20 t/ha, hybrids 30–40 t/ha.",
+    "si": "මුහුදු මට්ටමේ සිට 1300 m දක්වා උන්නතාංශයේ වම්බටු (Solanum melongena) සඳහා HORDI නිර්දේශය. pH 5.5-5.8 ඇති හොඳින් ජලය බැස යන පස. පරතරය 90 × 60 cm, බීජ මාත්‍රාව 350 g/හෙ. තුන් අදියර පොහොර. රෝපණයෙන් සති 10-12 කින් ප්‍රථම අස්වැන්න; දින 7 අතරින් නෙළීම; OPV ටොන් 18-20/හෙ, හයිබ්‍රිඩ් ටොන් 30-40/හෙ."
   },
   "start_month": 1,
   "duration_weeks": 22,

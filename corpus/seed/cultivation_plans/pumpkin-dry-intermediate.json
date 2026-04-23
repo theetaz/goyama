@@ -10,9 +10,13 @@
     "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
     "DM1","DM2"
   ],
-  "title": {"en": "Pumpkin cultivation — dry + intermediate zones, Yala"},
+  "title": {
+    "en": "Pumpkin cultivation — dry + intermediate zones, Yala",
+    "si": "වට්ටක්කා වගාව — වියළි හා අතරමැදි කලාප, යල"
+  },
   "summary": {
-    "en": "HORDI recommendation for pumpkin (Cucurbita maxima) up to 500 m elevation in dry and intermediate zones. Grown as Yala crop. Spacing varies by variety: Local strain 3 × 3 m, A.N.K. 2.5 × 2.5 m, Butternut 50 × 100 cm. Soil pH 5.5–7.5. Seed rate 1 kg/ha. Harvest 20–60 days after flowering depending on variety. Yield 15–20 t/ha."
+    "en": "HORDI recommendation for pumpkin (Cucurbita maxima) up to 500 m elevation in dry and intermediate zones. Grown as Yala crop. Spacing varies by variety: Local strain 3 × 3 m, A.N.K. 2.5 × 2.5 m, Butternut 50 × 100 cm. Soil pH 5.5–7.5. Seed rate 1 kg/ha. Harvest 20–60 days after flowering depending on variety. Yield 15–20 t/ha.",
+    "si": "වියළි හා අතරමැදි කලාපවල 500 m දක්වා උන්නතාංශයේ වට්ටක්කා (Cucurbita maxima) සඳහා HORDI නිර්දේශය. යල කන්නයේ වගාකරයි. පරතරය ප්‍රභේදය අනුව: දේශීය 3 × 3 m, A.N.K. 2.5 × 2.5 m, Butternut 50 × 100 cm. පස් pH 5.5-7.5. බීජ මාත්‍රාව 1 kg/හෙ. ප්‍රභේදය අනුව පිපීමෙන් දින 20-60 කින් අස්වනු. අස්වැන්න ටොන් 15-20/හෙ."
   },
   "start_month": 4,
   "duration_weeks": 20,

@@ -11,9 +11,13 @@
     "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
     "DM1","DM2"
   ],
-  "title": {"en": "Okra cultivation — DOA / HORDI recommendation"},
+  "title": {
+    "en": "Okra cultivation — DOA / HORDI recommendation",
+    "si": "බණ්ඩක්කා වගාව — කෘෂිකර්ම දෙපාර්තමේන්තුව / HORDI නිර්දේශය"
+  },
   "summary": {
-    "en": "HORDI recommendation for okra (Abelmoschus esculentus). Grows in every agro-climatic zone except up-country wet. Yala planting early April to early May; Maha planting early September to early October. Spacing 90 × 60 cm, 4.5 kg seed/ha. Four-stage fertilizer schedule; harvest every 2 days for 50–100 days. Yield 10–15 t/ha OPV, up to 30 t/ha for OKH1 hybrid."
+    "en": "HORDI recommendation for okra (Abelmoschus esculentus). Grows in every agro-climatic zone except up-country wet. Yala planting early April to early May; Maha planting early September to early October. Spacing 90 × 60 cm, 4.5 kg seed/ha. Four-stage fertilizer schedule; harvest every 2 days for 50–100 days. Yield 10–15 t/ha OPV, up to 30 t/ha for OKH1 hybrid.",
+    "si": "බණ්ඩක්කා (Abelmoschus esculentus) සඳහා HORDI නිර්දේශය. උඩරට තෙත් කලාපය හැර සියලු කාලගුණ කලාපවල වැඩේ. යල: අප්‍රේල් මස මුල සිට මැයි මස මුල දක්වා; මහ: සැප්තැම්බර් මුල සිට ඔක්තෝබර් මුල දක්වා. පරතරය 90 × 60 cm, හෙක්ටයාරයකට බීජ 4.5 kg. අදියර හතරක පොහොර; දින 50-100 පුරා දින 2 කට වරක් නෙළීම. අස්වැන්න OPV ටොන් 10-15/හෙ, OKH1 හයිබ්‍රිඩ් ටොන් 30 දක්වා."
   },
   "start_month": 4,
   "duration_weeks": 18,

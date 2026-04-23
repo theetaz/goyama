@@ -6,9 +6,13 @@
   "crop_slug": "beans",
   "season": "year_round",
   "aez_codes": ["WU1","WU2","WU3","IU1","IU2","IU3"],
-  "title": {"en": "Pole bean cultivation — up-country intermediate + wet zones"},
+  "title": {
+    "en": "Pole bean cultivation — up-country intermediate + wet zones",
+    "si": "පොල්ල බෝංචි වගාව — උඩරට අතරමැදි + තෙත් කලාප"
+  },
   "summary": {
-    "en": "HORDI recommendation for pole bean (Phaseolus vulgaris L.) in up-country intermediate and wet zones — Badulla, Nuwara Eliya, Matale, Kandy districts. Soil pH 5.5–6.5; flowering temperature below 30 °C. Spacing 50 × 40 cm, 50 kg seed/ha. Two-stage fertilizer schedule. First harvest 60+ days after planting. Yield: standard bush 5–10 t/ha; Gannoruwa BIL 20 t/ha; Kekulu Bonchi 25 t/ha."
+    "en": "HORDI recommendation for pole bean (Phaseolus vulgaris L.) in up-country intermediate and wet zones — Badulla, Nuwara Eliya, Matale, Kandy districts. Soil pH 5.5–6.5; flowering temperature below 30 °C. Spacing 50 × 40 cm, 50 kg seed/ha. Two-stage fertilizer schedule. First harvest 60+ days after planting. Yield: standard bush 5–10 t/ha; Gannoruwa BIL 20 t/ha; Kekulu Bonchi 25 t/ha.",
+    "si": "උඩරට අතරමැදි හා තෙත් කලාපවල (බදුල්ල, නුවරඑළිය, මාතලේ, මහනුවර දිස්ත්‍රික්ක) පොල්ල බෝංචි (Phaseolus vulgaris L.) සඳහා HORDI නිර්දේශය. පස් pH 5.5-6.5; පිපීමේදී උෂ්ණත්වය 30 °C ට අඩු විය යුතුය. පරතරය 50 × 40 cm, හෙක්ටයාරයකට බීජ 50 kg. අදියර දෙකක පොහොර. රෝපණයෙන් දින 60+ කින් ප්‍රථම අස්වැන්න. අස්වැන්න: සාමාන්‍ය පඳුරු බෝංචි ටොන් 5-10/හෙ; ගන්නෝරුව BIL ටොන් 20/හෙ; කැකුළු බෝංචි ටොන් 25/හෙ."
   },
   "start_month": 2,
   "duration_weeks": 14,
