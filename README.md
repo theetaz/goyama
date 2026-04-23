@@ -103,6 +103,35 @@ Admins review drafts at `/review-plans` and `/review-knowledge` on the
 web-admin app; promoting to `published` is what surfaces them on the
 farmer crop detail page.
 
+## Chat-agent retrieval (`POST /v1/ask`)
+
+Hybrid retrieval over the published knowledge corpus. The endpoint
+embeds the question, runs a pgvector cosine search, and returns the
+top-k chunks with source metadata + authority chips. **No
+LLM-generated synthesis** — the chunks themselves carry verbatim
+quotes that farmers can trust (per CLAUDE.md's "never let the LLM
+invent dosages" rule).
+
+```bash
+make db-embed-knowledge          # backfills content_embedding (dev: hash; prod: VOYAGE_API_KEY)
+curl -X POST http://localhost:8080/v1/ask \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "question": "How do I treat tomato early blight?",
+    "crop": "tomato",
+    "lat": 8.3, "lng": 80.4,
+    "k": 5
+  }'
+```
+
+The lat/lng narrows the search to chunks tagged for that AEZ. Returned
+hits include `score` (cosine similarity), `authority` (which the UI
+renders as a chip), `quote` (verbatim from source), and the full
+`source` block (publisher / URL / licence). Production embedder
+defaults to Voyage AI (`voyage-3-lite`, 1024 dims) when
+`VOYAGE_API_KEY` is set; dev falls back to a deterministic
+feature-hashing embedder so CI works offline.
+
 ## Quick links
 
 - [Vision & scope](docs/01-vision-and-scope.md)
