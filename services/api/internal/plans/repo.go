@@ -54,7 +54,7 @@ type Range struct {
 }
 
 // Plan is the detail payload — summary fields plus the three child
-// collections.
+// collections + reviewer audit fields used by the admin queue.
 type Plan struct {
 	Summary
 	VarietySlug       string         `json:"variety_slug,omitempty"`
@@ -65,6 +65,9 @@ type Plan struct {
 	Activities        []Activity     `json:"activities"`
 	PestRisks         []PestRisk     `json:"pest_risks"`
 	Economics         []Economics    `json:"economics"`
+	ReviewedBy        string         `json:"reviewed_by,omitempty"`
+	ReviewedAt        string         `json:"reviewed_at,omitempty"`
+	ReviewNotes       string         `json:"review_notes,omitempty"`
 }
 
 // Activity is one row of the week-by-week cultivation timeline.
