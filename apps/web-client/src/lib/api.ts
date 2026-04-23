@@ -309,6 +309,12 @@ export const api = {
     ),
   listDiseaseImages: (slug: string) =>
     request<MediaListResponse>(`/v1/diseases/${encodeURIComponent(slug)}/images`),
+  ask: (body: AskRequest) =>
+    request<AskResponse>('/v1/ask', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    }),
   listCropCultivationPlans: (cropSlug: string) =>
     request<CultivationPlanListResponse>(
       `/v1/crops/${encodeURIComponent(cropSlug)}/cultivation-plans`,
@@ -463,6 +469,42 @@ export interface KnowledgeResponse {
   chunks: KnowledgeChunk[];
   sources: KnowledgeSource[];
   count: number;
+}
+
+// ─── chat-agent retrieval ────────────────────────────────────────────────
+
+export interface AskRequest {
+  question: string;
+  crop?: string;
+  lat?: number;
+  lng?: number;
+  country?: string;
+  k?: number;
+}
+
+export interface AskHit {
+  slug: string;
+  title?: string;
+  body: string;
+  quote?: string;
+  authority: AuthorityLevel;
+  confidence?: number;
+  score: number;
+  source?: KnowledgeSource;
+  entity_refs?: KnowledgeEntityRef[];
+  topic_tags?: string[];
+  applies_to_aez_codes?: string[];
+}
+
+export interface AskResponse {
+  question: string;
+  hits: AskHit[];
+  used_crop?: string;
+  used_aez_codes?: string[];
+  used_district?: string;
+  embedder: string;
+  count: number;
+  disclaimer: string;
 }
 
 export interface MediaItem {
