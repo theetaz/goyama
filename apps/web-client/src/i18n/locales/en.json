@@ -12,7 +12,8 @@
     "diseases": "Diseases",
     "pests": "Pests",
     "remedies": "Remedies",
-    "markets": "Markets"
+    "markets": "Markets",
+    "ask": "Ask"
   },
   "home": {
     "welcome": "Welcome, grower",
@@ -179,6 +180,28 @@
     "inferred_by_analogy_tooltip": "Cross-applied from another region. Not yet validated locally — pilot before scaling.",
     "agent_synthesis": "Agent synthesis",
     "agent_synthesis_tooltip": "Multi-source synthesis; triage only — not a recommendation."
+  },
+  "ask": {
+    "title": "Ask the knowledge base",
+    "subtitle": "Describe what's happening on your plot. We return published extracts from DOA, peer-reviewed research, and regional agronomists — verbatim, with source citations. No AI-generated dosages.",
+    "question_label": "Your question",
+    "question_placeholder": "Example: my tomato leaves have brown spots with concentric rings — what should I spray?",
+    "crop_label": "Crop (optional)",
+    "crop_any": "Any crop",
+    "location_label": "Your location (optional)",
+    "location_share": "Share my location",
+    "location_clear": "Clear",
+    "location_unsupported": "Your browser doesn't support geolocation.",
+    "submit": "Search the knowledge base",
+    "searching": "Searching…",
+    "tip": "Sharing your location narrows results to your agro-ecological zone.",
+    "disabled_title": "Ask is temporarily unavailable",
+    "error_title": "Something went wrong",
+    "empty": "No matches in the published corpus yet. Try rephrasing or removing the crop filter.",
+    "results_count_one": "{{count}} result",
+    "results_count_other": "{{count}} results",
+    "results_count": "{{count}} results",
+    "embedder": "model:"
   },
   "errors": {
     "api_unreachable": "Can't reach the Goyama service. Is it running on :8080?",

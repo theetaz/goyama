@@ -2,7 +2,7 @@ import { Link, Outlet, createRootRouteWithContext } from '@tanstack/react-router
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import type { QueryClient } from '@tanstack/react-query';
 import { useTranslation } from 'react-i18next';
-import { Bug, Coins, FlaskConical, Leaf, Map as MapIcon, ShieldAlert } from 'lucide-react';
+import { Bug, Coins, FlaskConical, Leaf, Map as MapIcon, MessageCircleQuestion, ShieldAlert } from 'lucide-react';
 
 import { supportedLocales, setLocale, type Locale } from '@/i18n';
 
@@ -68,6 +68,14 @@ function RootLayout() {
             >
               <Coins className="h-4 w-4" aria-hidden />
               {t('nav.markets')}
+            </Link>
+            <Link
+              to="/ask"
+              activeProps={{ className: 'font-semibold text-primary' }}
+              className="flex items-center gap-1 rounded-md px-3 py-2 hover:bg-muted"
+            >
+              <MessageCircleQuestion className="h-4 w-4" aria-hidden />
+              {t('nav.ask')}
             </Link>
             <LocalePicker current={i18n.language as Locale} />
           </nav>
