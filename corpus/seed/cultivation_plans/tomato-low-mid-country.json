@@ -1,0 +1,96 @@
+{
+  "slug": "tomato-low-mid-country",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "tomato",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3","WM4",
+    "IL1","IL2","IL3","IM1","IM2","IM3","IU1","IU2","IU3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
+    "DM1","DM2"
+  ],
+  "title": {
+    "en": "Tomato cultivation — DOA / HORDI recommendation"
+  },
+  "summary": {
+    "en": "HORDI recommendation for tomato (Solanum lycopersicon) across almost all Sri Lankan agro-ecological zones except up-country wet zone. Nursery establishment mid-March or end-August; transplant 14–18 days after sowing at 80 × 50 cm. Three-stage fertilizer schedule. Yield 20–30 t/ha."
+  },
+  "start_month": 3,
+  "duration_weeks": 16,
+  "expected_yield_kg_per_acre_min": 8000,
+  "expected_yield_kg_per_acre_max": 12000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-tomato/",
+  "source_document_title": "HORDI — Tomato cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-tomato/",
+    "notes": "Transcribed from HORDI public cultivation page. Yield converted from DOA's t/ha (20–30) to kg/acre (approx 8,000–12,000). Badulla district exception for TSP rate (215 kg/ha) noted in provenance on the basal-fertilizer activity."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation and nursery"},
+      "body": {"en": "Prepare the nursery in mid-March or end-August. Well-drained loamy soil with pH 5.5–7.5; add organic matter."},
+      "weather_hint": "mixed" },
+    { "week_idx": 3, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer — 1–2 days before planting"},
+      "body": {"en": "Apply basal fertilizer 1–2 days before planting. Incorporate 10 t/ha of well-decomposed organic matter plus 6–12 t/ha decomposed manure in planting holes."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 325, "unit": "kg", "per_unit_area": "hectare", "notes": {"en": "Badulla district: apply at 215 kg/ha instead."}},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "amendment", "name": {"en": "Well-decomposed organic matter"}, "amount": 10, "unit": "t", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -2, "dap_max": -1 },
+    { "week_idx": 3, "activity": "transplanting", "order_in_week": 1,
+      "title": {"en": "Transplanting"},
+      "body": {"en": "Transplant seedlings with 3–5 true leaves, 14–18 days after sowing. Spacing 80 × 50 cm. Seed requirement 200–250 g/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Tomato seed (HORDI Tomato hybrid 03 / Thilina / Maheshi / KC-1 / Lanka Cherry)"}, "amount": 225, "unit": "g", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 6, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 3 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 21, "dap_max": 21 },
+    { "week_idx": 9, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 6 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 65, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 42, "dap_max": 42 },
+    { "week_idx": 14, "activity": "harvest",
+      "title": {"en": "Fruit harvest"},
+      "body": {"en": "Harvest when fruits reach green-yellow stage. Expected yield 20–30 t/ha."},
+      "dap_min": 90, "dap_max": 110 }
+  ],
+  "pest_risks": [
+    { "week_idx": 3, "disease_slug": "tomato-damping-off",
+      "risk": "high",
+      "notes": {"en": "Damping-off (Pythium / Phytophthora / Fusarium / Rhizoctonia / Sclerotium / Colletotrichum spp.) at nursery stage. Seed treatment: Thiram 80 WP 5 g/kg seed or Homai 4 g/kg. Soil drench: Thiram 80 WP 7 g per 5 L per m², or Homai 5 g per 5 L per m²."} },
+    { "week_idx": 6, "disease_slug": "tomato-early-blight",
+      "risk": "high",
+      "notes": {"en": "Early blight (Alternaria solani). Spray Mancozeb 80% WP 20 g/10 L; or Metalaxyl 8% + Mancozeb 64% WP 12.5 g/10 L; or Metiram 55% + Pyraclostrobin 5% WG 8 ml/10 L."} },
+    { "week_idx": 8, "disease_slug": "tomato-late-blight",
+      "risk": "high",
+      "notes": {"en": "Late blight (Phytophthora infestans). Same fungicide rotation as early blight — Mancozeb / Metalaxyl-Mancozeb / Metiram-Pyraclostrobin."} },
+    { "week_idx": 10, "disease_slug": "tomato-powdery-mildew",
+      "risk": "moderate",
+      "notes": {"en": "Powdery mildew (Oidium lycopersicum). Apply sulfur 80% WG 50 g/10 L; or Chlorothalonil 500 g/L SC 30 ml/10 L; or Carbendazim 50% WP 7 g/10 L."} },
+    { "week_idx": 11, "disease_slug": "tomato-septoria-leaf-spot",
+      "risk": "moderate",
+      "notes": {"en": "Septoria leaf spot (Septoria lycopersici). Daconil 15–30 ml/10 L; Mancozeb 20 ml/10 L; Topsin 6 g/10 L; Carbendazim 7 g/10 L."} },
+    { "week_idx": 8, "disease_slug": "tomato-bacterial-wilt",
+      "risk": "high",
+      "notes": {"en": "Bacterial wilt (Ralstonia solanacearum). No chemical control — use wilt-resistant varieties, rotate with non-solanaceous crops, and practice field sanitation."} },
+    { "week_idx": 9, "disease_slug": "tomato-yellow-leaf-curl-virus",
+      "risk": "high",
+      "notes": {"en": "TYLCV transmitted by whiteflies. Use disease-free seed, keep fields weed-free, and suppress whitefly vectors with insecticides approved in DOA 2019 recommendation."} }
+  ],
+  "economics": []
+}

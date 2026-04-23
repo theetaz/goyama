@@ -1,0 +1,27 @@
+{
+  "slug": "icar-solanum-torvum-grafting-01",
+  "source_slug": "icar-solanum-torvum-grafting",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Grafting onto wild Solanum torvum gives complete bacterial-wilt protection",
+  "body": "A peer-reviewed ICAR field trial found that brinjal grafted onto wild Solanum torvum rootstock showed complete protection against bacterial wilt (Ralstonia solanacearum), versus 60–74% wilt incidence in non-grafted seedlings of the same scion. The same grafting principle extends to tomato, where susceptible commercial varieties can be grafted onto wilt-resistant solanaceous rootstocks. For Sri Lanka's dry zone — where bacterial wilt is the single biggest uncontrolled disease constraint on tomato and brinjal (HORDI offers no chemical cure) — introducing nursery-level grafting on Solanum torvum is a promising intervention. The limiting factor is rootstock seed availability and grafting skill in local nurseries, not the biology.",
+  "entity_refs": [
+    { "type": "crop", "slug": "tomato" },
+    { "type": "crop", "slug": "brinjal" },
+    { "type": "disease", "slug": "tomato-bacterial-wilt" },
+    { "type": "disease", "slug": "brinjal-bacterial-wilt" }
+  ],
+  "authority": "peer_reviewed",
+  "applies_to_aez_codes": ["DL1","DL2","DL3","DL4","DL5","IL1","IL2","IL3"],
+  "applies_to_countries": ["IN", "LK"],
+  "topic_tags": ["tomato", "brinjal", "grafting", "solanum_torvum", "bacterial_wilt", "resistant_rootstock"],
+  "confidence": 0.85,
+  "quote": "Grafts on wild type Solanum torvum showed complete protection from bacterial wilt whereas the seedlings recorded 60 to 74 per cent wilt in field trials.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://epubs.icar.org.in/index.php/IPPJ/article/view/60167",
+    "caveat": "ICAR peer-reviewed trial, different soils. Introducing Solanum torvum into Sri Lankan nurseries needs DOA / NPQS approval on the import/propagation pathway; render as 'promising practice, pilot recommended'."
+  }
+}

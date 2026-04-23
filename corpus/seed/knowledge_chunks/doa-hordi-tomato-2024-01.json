@@ -1,0 +1,25 @@
+{
+  "slug": "doa-hordi-tomato-2024-01",
+  "source_slug": "doa-hordi-tomato-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "HORDI pesticide regimen for tomato early + late blight",
+  "body": "HORDI recommends three fungicide options for tomato early blight (Alternaria solani) and late blight (Phytophthora infestans): Mancozeb 80% WP at 20 g per 10 L water; Metalaxyl 8% + Mancozeb 64% WP at 12.5 g per 10 L; or Metiram 55% + Pyraclostrobin 5% WG at 8 ml per 10 L. Rotate products across applications to slow resistance build-up, and only apply at first lesion appearance. These dosages trace back to the DOA 2019 pesticide recommendation.",
+  "entity_refs": [
+    { "type": "crop", "slug": "tomato" },
+    { "type": "disease", "slug": "tomato-early-blight" },
+    { "type": "disease", "slug": "tomato-late-blight" },
+    { "type": "cultivation_plan", "slug": "tomato-low-mid-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["tomato", "fungicide", "early_blight", "late_blight", "dosage"],
+  "confidence": 0.98,
+  "quote": "Mancozeb 80% WP – 20g/10l; Metelaxyl 8%+ Mancozeb 64% WP -12.5g/10l; Metiram 55% + Pyraclostrobin 5% WG – 8ml/10l.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-tomato/"
+  }
+}

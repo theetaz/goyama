@@ -1,0 +1,25 @@
+{
+  "slug": "tnau-tomato-bacterial-wilt-01",
+  "source_slug": "tnau-tomato-bacterial-wilt",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "TNAU neem-cake + bleaching-powder drench for tomato bacterial wilt",
+  "body": "Where Sri Lanka's HORDI recommendation offers no chemical control for bacterial wilt (Ralstonia solanacearum) on tomato, Tamil Nadu Agricultural University prescribes a soil-amendment pathway: apply neem cake at 100 kg/acre as a basal soil amendment, drench with bleaching powder (calcium hypochlorite) at 4 kg/acre at early wilt symptoms, and tighten irrigation to keep the rhizosphere from staying saturated. This is a promising IPM layer for Sri Lanka dry-zone farms — cheap, soil-compatible, and attacking the same pathogen — but the rates were calibrated on Tamil Nadu laterite soils and should be validated by a DOA agronomist on DL1/DL2 soils before being used on-farm. Pair with resistant / wilt-tolerant varieties and crop rotation per DOA guidance.",
+  "entity_refs": [
+    { "type": "crop", "slug": "tomato" },
+    { "type": "disease", "slug": "tomato-bacterial-wilt" }
+  ],
+  "authority": "inferred_by_analogy",
+  "applies_to_aez_codes": ["DL1","DL2","DL3","DL4","IL1","IL2","IL3"],
+  "applies_to_countries": ["IN-TN", "LK"],
+  "topic_tags": ["tomato", "bacterial_wilt", "ipm", "neem_cake", "cross-regional"],
+  "confidence": 0.65,
+  "quote": "Cultural practices: crop rotation; Disease free seedlings; Restriction of irrigation. Soil application of neem cake @ 100 kg/acre. Drenching with bleaching powder @ 4 kg/ac.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://agritech.tnau.ac.in/crop_protection/tomato_diseases_5.html",
+    "caveat": "Tamil Nadu recommendation. Rates must be validated by a DOA agronomist on Sri Lankan soils before being used for farmer-facing advice. Render with an analogy badge."
+  }
+}

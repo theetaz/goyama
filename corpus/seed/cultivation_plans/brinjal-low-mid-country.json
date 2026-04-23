@@ -1,0 +1,79 @@
+{
+  "slug": "brinjal-low-mid-country",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "brinjal",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3","WM4",
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
+    "DM1","DM2"
+  ],
+  "title": {"en": "Brinjal cultivation — DOA / HORDI recommendation"},
+  "summary": {
+    "en": "HORDI recommendation for brinjal / eggplant (Solanum melongena) up to 1300 m elevation. Well-drained soil at pH 5.5–5.8. Spacing 90 × 60 cm, seed rate 350 g/ha. Three-stage fertilizer. First harvest 10–12 weeks after transplanting; 7-day picking intervals; OPV 18–20 t/ha, hybrids 30–40 t/ha."
+  },
+  "start_month": 1,
+  "duration_weeks": 22,
+  "expected_yield_kg_per_acre_min": 7200,
+  "expected_yield_kg_per_acre_max": 16000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-brinjal/",
+  "source_document_title": "HORDI — Brinjal cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-brinjal/",
+    "notes": "Yield range spans OPV (18–20 t/ha ≈ 7,200–8,000 kg/acre) and hybrids (30–40 t/ha ≈ 12,000–16,000 kg/acre)."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Well-drained soil at pH 5.5–5.8. Prepare planting holes for 90 × 60 cm spacing."} },
+    { "week_idx": 3, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"},              "amount":  75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},               "amount": 325, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount":  85, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 3, "activity": "transplanting", "order_in_week": 1,
+      "title": {"en": "Transplanting 25–30 day seedlings"},
+      "body": {"en": "Transplant 25–30-day-old plants, one per hole, at 90 × 60 cm spacing. Seed rate 350 g/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Brinjal seed (Amanda F1 / Anjalee F1 / HORDI Lenairi 1 / Thinnaweli Purple / Padagoda / SM 164)"}, "amount": 350, "unit": "g", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 7, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 4 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 28, "dap_max": 28 },
+    { "week_idx": 11, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 8 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 85, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 56, "dap_max": 56 },
+    { "week_idx": 13, "activity": "harvest",
+      "title": {"en": "First harvest"},
+      "body": {"en": "Begin picking 10–12 weeks after transplanting; harvest at 7-day intervals for up to 10–12 picks."},
+      "dap_min": 70, "dap_max": 84 }
+  ],
+  "pest_risks": [
+    { "week_idx": 9, "disease_slug": "powdery-mildew",
+      "risk": "moderate",
+      "notes": {"en": "Powdery mildew (Podosphaera xanthii). Apply sulfur 80% WG 50 g/10 L, or Chlorothalonil 500 g/L SC 30 ml/10 L."} },
+    { "week_idx": 10, "disease_slug": "brinjal-anthracnose",
+      "risk": "moderate",
+      "notes": {"en": "Anthracnose (Colletotrichum gloeosporioides). Seed treatment: Thiram 80% WP 5 g/kg."} },
+    { "week_idx": 8, "disease_slug": "brinjal-bacterial-wilt",
+      "risk": "high",
+      "notes": {"en": "Bacterial wilt (Ralstonia solanacearum). No chemical control — use resistant varieties, crop rotation with non-solanaceous crops, and field sanitation."} }
+  ],
+  "economics": []
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-cabbage-2024-02",
+  "source_slug": "doa-hordi-cabbage-2024",
+  "chunk_idx": 1,
+  "language": "en",
+  "title": "Club root control — lime + rotation, not fungicides",
+  "body": "Club root (Plasmodiophora brassicae) has no registered chemical cure on Sri Lankan cabbage. HORDI's protocol is strictly cultural: raise soil pH with lime application, rotate on a minimum 3-year cycle with non-brassica crops, and plant only disease-free seedlings. The pathogen survives 7–10 years as resting spores, so a single infected cycle compromises the field for years. Heat-tolerant varieties planted into the dry zone see lower club-root pressure than up-country plots.",
+  "entity_refs": [
+    { "type": "crop", "slug": "cabbage" },
+    { "type": "disease", "slug": "cabbage-club-root" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["cabbage", "club_root", "crop_rotation", "liming", "cultural_control"],
+  "confidence": 0.95,
+  "quote": "Club root: Lime application; crop rotation; disease-free materials.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-22T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-cabbage/"
+  }
+}
