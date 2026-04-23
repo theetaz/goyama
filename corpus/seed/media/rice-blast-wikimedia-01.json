@@ -1,0 +1,19 @@
+{
+  "slug": "rice-blast-wikimedia-01",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Rice_blast_Magnaporthe_grisea.jpg",
+  "credit": "Yulin Jia — USDA Agricultural Research Service (Image D542-1)",
+  "licence": "public-domain",
+  "caption": {
+    "en": "Typical eye-shaped lesion of rice blast disease on rice cultivar 'Katy', inoculated with Magnaporthe grisea (now Magnaporthe oryzae)."
+  },
+  "related": {
+    "disease_slug": "rice-blast",
+    "crop_slug": "rice"
+  },
+  "language": "en",
+  "tags": ["rice_blast", "magnaporthe_oryzae", "leaf_lesion", "usda_ars", "public_domain"]
+}

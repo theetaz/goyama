@@ -1,0 +1,19 @@
+{
+  "slug": "tomato-early-blight-wikimedia-01",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Alternaria_solani_IMG_1661.jpg",
+  "credit": "Linnea Stridh (via Wikimedia Commons)",
+  "licence": "CC-BY-SA-4.0",
+  "captured_at": "2016-09-06T00:00:00Z",
+  "caption": {
+    "en": "Early blight (Alternaria solani) infection showing characteristic concentric rings on a potato leaf — same pathogen and symptoms on tomato."
+  },
+  "related": {
+    "disease_slug": "tomato-early-blight"
+  },
+  "language": "en",
+  "tags": ["early_blight", "alternaria_solani", "leaf_symptoms", "wikimedia_commons"]
+}

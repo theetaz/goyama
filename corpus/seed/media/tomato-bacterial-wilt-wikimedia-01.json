@@ -1,0 +1,20 @@
+{
+  "slug": "tomato-bacterial-wilt-wikimedia-01",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Ralstonia_solanacearum_symptoms.jpg",
+  "credit": "Clemson University — USDA Cooperative Extension Slide Series, Bugwood.org",
+  "licence": "public-domain",
+  "captured_at": "2003-08-19T00:00:00Z",
+  "caption": {
+    "en": "Southern bacterial wilt in tomato caused by Ralstonia solanacearum. Shows sudden wilting on a single side of the plant without yellowing — characteristic early diagnostic sign."
+  },
+  "related": {
+    "disease_slug": "tomato-bacterial-wilt",
+    "crop_slug": "tomato"
+  },
+  "language": "en",
+  "tags": ["bacterial_wilt", "ralstonia_solanacearum", "whole_plant_symptoms", "usda_extension"]
+}

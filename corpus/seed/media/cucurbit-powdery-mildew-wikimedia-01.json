@@ -1,0 +1,19 @@
+{
+  "slug": "cucurbit-powdery-mildew-wikimedia-01",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Powdery_mildew.JPG",
+  "credit": "Pollinator at English Wikipedia",
+  "licence": "CC-BY-SA-3.0",
+  "captured_at": "2004-08-20T00:00:00Z",
+  "caption": {
+    "en": "Powdery mildew caused by Podosphaera fusca on a cucurbit leaf — diagnostic white-grey powdery coating starting on the upper leaf surface. Same genus (Podosphaera) attacks okra and several HORDI-listed cucurbits; spray thresholds apply similarly."
+  },
+  "related": {
+    "disease_slug": "cucurbit-powdery-mildew"
+  },
+  "language": "en",
+  "tags": ["powdery_mildew", "podosphaera", "leaf_symptoms", "wikimedia_commons"]
+}
