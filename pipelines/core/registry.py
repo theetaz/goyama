@@ -42,5 +42,14 @@ def make_crawler(source_id: str, fetcher, store):
 
 def make_extractor(source_id: str):
     cfg = load_source_config(source_id)
-    klass = _import(source_id, "extractor", cfg["extractor_class"])
+    extractor_class = cfg.get("extractor_class")
+    if not extractor_class:
+        # Some sources (e.g. market_prices) skip the generic extract step
+        # because they emit non-schema payloads (CSV) via a source-specific
+        # CLI command. Surface a readable error rather than a KeyError.
+        raise ValueError(
+            f"source '{source_id}' declares no extractor_class; "
+            "this source does not use the generic `goyama extract` pipeline"
+        )
+    klass = _import(source_id, "extractor", extractor_class)
     return klass()
