@@ -49,6 +49,9 @@ type Chunk struct {
 	Quote              string            `json:"quote,omitempty"`
 	Status             string            `json:"status"`
 	FieldProvenance    map[string]any    `json:"field_provenance,omitempty"`
+	ReviewedBy         string            `json:"reviewed_by,omitempty"`
+	ReviewedAt         string            `json:"reviewed_at,omitempty"`
+	ReviewNotes        string            `json:"review_notes,omitempty"`
 }
 
 // EntityRef is the bridge back to canonical records — `{type, slug}`.

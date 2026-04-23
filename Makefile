@@ -6,7 +6,7 @@ DB_PORT ?= 54320
 DB_URL  ?= postgres://goyama:goyama@$(DB_HOST):$(DB_PORT)/goyama?sslmode=disable
 COMPOSE = docker compose
 
-.PHONY: db-up db-down db-reset db-migrate db-seed db-psql db-logs db-load-geo-fixtures db-load-market-prices-fixtures help
+.PHONY: db-up db-down db-reset db-migrate db-seed db-psql db-logs db-load-geo-fixtures db-load-market-prices-fixtures db-load-cultivation-plans db-load-knowledge help
 
 help:
 	@echo "Goyama make targets:"
@@ -17,6 +17,8 @@ help:
 	@echo "  db-seed                            Load crops from corpus/seed/ into the local DB"
 	@echo "  db-load-geo-fixtures               Load dev geo fixtures (districts + AEZ) for /v1/geo/lookup"
 	@echo "  db-load-market-prices-fixtures     Load sample Dambulla DEC prices for /v1/market-prices"
+	@echo "  db-load-cultivation-plans          Load cultivation_plan fixtures into Postgres"
+	@echo "  db-load-knowledge                  Load knowledge_source + knowledge_chunk fixtures"
 	@echo "  db-psql                            Open a psql shell against the local DB"
 	@echo "  db-logs                            Tail the DB container logs"
 
@@ -62,6 +64,20 @@ db-load-geo-fixtures:
 db-load-market-prices-fixtures:
 	cd services/api && DATABASE_URL='$(DB_URL)' go run ./cmd/marketload \
 		--file=../../pipelines/sources/market_prices/fixtures/dambulla-2026-04-15.csv
+
+# Load every cultivation_plan fixture from corpus/seed/ into Postgres.
+# Transactional per plan — a failed fixture rolls back its children,
+# so the review queue never sees half-loaded data. Idempotent: children
+# are wiped and re-inserted on re-run.
+db-load-cultivation-plans:
+	cd services/api && DATABASE_URL='$(DB_URL)' go run ./cmd/planload \
+		--dir=../../corpus/seed/cultivation_plans
+
+# Load every knowledge_source + knowledge_chunk fixture. Sources are
+# loaded first so the chunk FK always resolves.
+db-load-knowledge:
+	cd services/api && DATABASE_URL='$(DB_URL)' go run ./cmd/knowledgeload \
+		--dir=../../corpus/seed
 
 db-psql:
 	PGPASSWORD=goyama psql -h $(DB_HOST) -p $(DB_PORT) -U goyama -d goyama

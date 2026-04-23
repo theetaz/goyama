@@ -167,23 +167,21 @@ func newRepos(cfg config.Config, log *slog.Logger) (repos, func(), error) {
 		return repos{}, nil, fmt.Errorf("ping db: %w", err)
 	}
 	log.Info("repos: using Postgres")
+	plansPgx := plans.NewPgxRepo(pool)
+	knowledgePgx := knowledge.NewPgxRepo(pool)
 	return repos{
-		crops:    crops.NewPgxRepo(pool),
-		steps:    crops.NewCultivationStepPgxRepo(pool),
-		diseases: diseases.NewPgxRepo(pool),
-		pests:    pests.NewPgxRepo(pool),
-		remedies: remedies.NewPgxRepo(pool),
-		geo:      geo.NewPgxRepo(pool),
-		markets:  markets.NewPgxRepo(pool),
-		media:    media.NewPgxRepo(pool),
-		// Plans + knowledge stay on the JSONL repo for both the public
-		// and admin surfaces until their Postgres loader lands. The
-		// admin queue will list drafts but refuse promotions (503)
-		// with a clear ErrRequiresDatabase message.
-		plans:          plansRepo,
-		plansAdmin:     plansRepo,
-		knowledge:      knowledgeRepo,
-		knowledgeAdmin: knowledgeRepo,
+		crops:          crops.NewPgxRepo(pool),
+		steps:          crops.NewCultivationStepPgxRepo(pool),
+		diseases:       diseases.NewPgxRepo(pool),
+		pests:          pests.NewPgxRepo(pool),
+		remedies:       remedies.NewPgxRepo(pool),
+		geo:            geo.NewPgxRepo(pool),
+		markets:        markets.NewPgxRepo(pool),
+		media:          media.NewPgxRepo(pool),
+		plans:          plansPgx,
+		plansAdmin:     plansPgx,
+		knowledge:      knowledgePgx,
+		knowledgeAdmin: knowledgePgx,
 	}, pool.Close, nil
 }
 

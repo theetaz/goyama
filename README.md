@@ -82,6 +82,27 @@ curl 'http://localhost:8080/v1/market-prices/latest/dambulla-dec'
 CSV importer + sourcing notes for HARTI bulletins:
 [pipelines/sources/market_prices/README.md](pipelines/sources/market_prices/README.md).
 
+## Cultivation plans + knowledge graph
+
+The corpus carries a versioned knowledge graph: structured `cultivation_plan`
+aggregates (per crop × AEZ × season) with child activities / pest risks /
+economics, plus unstructured `knowledge_chunk` rows (for video transcripts,
+cross-regional advisory notes, research-paper excerpts). Every record
+carries an `authority_level` so DOA-validated guidance renders distinctly
+from "promising practice from Tamil Nadu, not yet locally validated".
+
+```bash
+make db-load-cultivation-plans   # upserts every JSON fixture under corpus/seed/cultivation_plans/
+make db-load-knowledge           # upserts knowledge_source + knowledge_chunk fixtures
+curl 'http://localhost:8080/v1/crops/red-onion/cultivation-plans'
+curl 'http://localhost:8080/v1/cultivation-plans/red-onion-dry-zone-maha'
+curl 'http://localhost:8080/v1/crops/tomato/knowledge'
+```
+
+Admins review drafts at `/review-plans` and `/review-knowledge` on the
+web-admin app; promoting to `published` is what surfaces them on the
+farmer crop detail page.
+
 ## Quick links
 
 - [Vision & scope](docs/01-vision-and-scope.md)
