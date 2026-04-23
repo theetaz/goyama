@@ -1,0 +1,24 @@
+{
+  "slug": "doa-hordi-sweet-potato-2024-01",
+  "source_slug": "doa-hordi-sweet-potato-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Sweet potato — 12 released varieties + the weevil problem nobody has solved",
+  "body": "Sri Lanka's sweet potato portfolio is unusually broad — HORDI lists 12 released varieties: Wariyapola Red, CARI-9, CARI 273, CARI 426, Wariyapola White, Shanthi, Chithra, Gannoruwa White, Ama, Dawala, HORDI Malee, and Ranabima. Each tunes for a slightly different taste / skin-colour / drought-tolerance niche, but there's no variety with meaningful resistance to the #1 constraint: sweet potato weevil (Cylas formicarius). The weevil's larvae tunnel into tubers, rendering them unmarketable and making even good-yield fields commercially worthless. No fully effective chemical cure exists. HORDI's management bundle is: plant weevil-free vine cuttings, hill soil around stems as vines grow, rotate away from Ipomoea for 2+ years, collect and destroy infested tubers at harvest — and pick a variety that matures within 90 days so the weevil has less time to catch up. Yield target across all varieties: 15–25 t/ha with 55,000–60,000 cuttings per hectare.",
+  "entity_refs": [
+    { "type": "crop", "slug": "sweet-potato" },
+    { "type": "cultivation_plan", "slug": "sweet-potato-non-arid" },
+    { "type": "pest", "slug": "sweet-potato-weevil" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["sweet_potato", "variety_selection", "weevil", "cultural_control"],
+  "confidence": 0.93,
+  "quote": "Released Varieties: Wariyapola Red, CARI-9, CARI 273, CARI 426, Wariyapola White, Shanthi, Chithra, Gannoruwa White, Ama, Dawala, HORDI Malee, and Ranabima. Sweet potato weevil is the most harmful pest. For 1 ha – 55,000 – 60,000 cuttings needed. Yield: 15-25 t/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/"
+  }
+}

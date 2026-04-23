@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-radish-2024-01",
+  "source_slug": "doa-hordi-radish-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Radish — 2x yield gap between Japanese Ball and Beeralu Rabu",
+  "body": "HORDI's two released radish varieties deliver very different commercial returns: Japanese Ball yields 40–50 t/ha; Beeralu Rabu yields 20–30 t/ha. That's a 1.6-2.5x gap for essentially the same input cost — same spacing (25–30 × 10 cm), same seed rate (5 kg/ha), same two-stage fertilizer schedule (basal 125 Urea + 200 TSP + 75 MOP, then 125 Urea + 75 MOP at week 3), same 40–55 day cycle. The trade-off isn't yield vs. yield — it's uniformity vs. local taste. Japanese Ball produces uniform globe-shaped roots that grade reliably for urban markets; Beeralu Rabu is the traditional Sri Lankan cultivar with the flavour home kitchens prefer but variable root size that marginal smallholders can still sell at the pola. Commercial growers plant Japanese Ball; home gardens and short-supply-chain operators plant Beeralu. Radish is the fastest-turnover root crop HORDI publishes — it's in and out of the bed before most vegetable-crop pests even notice it's there.",
+  "entity_refs": [
+    { "type": "crop", "slug": "radish" },
+    { "type": "cultivation_plan", "slug": "radish-all-zones" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["radish", "variety_selection", "yield_gap", "commercial_vs_traditional"],
+  "confidence": 0.93,
+  "quote": "Released Varieties: Japanese Ball, Beeralu Rabu. Spacing: 25-30 cm between rows; 10 cm between plants. Seed Rate: 5 kg/ha. Japanese Ball: 40-50 t/ha; Beeralu Radish: 20-30 t/ha. Delayed harvesting reduces quality.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-raddish/"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "sweet-potato-non-arid",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "sweet-potato",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3","WM4",
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3"
+  ],
+  "title": {
+    "en": "Sweet potato cultivation — all zones except arid",
+    "si": "බතල වගාව — වියළිතම කලාප හැර සියල්ල",
+    "ta": "சர்க்கரை வள்ளிக்கிழங்கு பயிர்ச்செய்கை — வறட்சி வலயம் தவிர்த்த அனைத்தும்"
+  },
+  "summary": {
+    "en": "HORDI recommendation for sweet potato (Ipomoea batatas). 12 released varieties including Wariyapola Red, CARI-9, Wariyapola White, Shanthi, Chithra, Gannoruwa White, Ama, Dawala, HORDI Malee, Ranabima. Temperature 20–40 °C; sandy loam with good drainage. Two spacing options: ridge-and-furrow 90 × 20 cm (55,000–60,000 cuttings/ha) or bed system 60 cm wide × 20 cm plant spacing. Two-stage fertilizer. Harvest 3–4 months. Yield 15–25 t/ha. Sweet potato weevil is the dominant pest.",
+    "si": "බතල (Ipomoea batatas) සඳහා HORDI නිර්දේශය. වාරියපොල රතු, CARI-9, වාරියපොල සුදු, ශාන්ති ආදී ප්‍රභේද 12ක්. තාපය 20-40 °C; හොඳ ජල බැස යෑමක් ඇති වැලි ලෝම. හෙක්ටයාරයකට කැපුම් 55,000-60,000. මාස 3-4 කින් අස්වනු. අස්වැන්න ටොන් 15-25/හෙ.",
+    "ta": "சர்க்கரை வள்ளிக்கிழங்கு (Ipomoea batatas) பயிர்ச்செய்கைக்கான HORDI பரிந்துரை. வாரியபொல சிவப்பு, CARI-9, வாரியபொல வெள்ளை, சாந்தி உள்ளிட்ட 12 வகைகள். வெப்பநிலை 20-40 °C; நல்ல வடிகால் கொண்ட மணல் களிமண். ஹெக்டேருக்கு 55,000-60,000 வெட்டுக்கள். 3-4 மாதங்களில் அறுவடை. மகசூல் 15-25 டன்/ஹெக்டேர்."
+  },
+  "start_month": 4,
+  "duration_weeks": 16,
+  "expected_yield_kg_per_acre_min": 6000,
+  "expected_yield_kg_per_acre_max": 10000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-sweet-potato/",
+  "source_document_title": "HORDI — Sweet potato cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-sweet-potato/"
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation — ridge or bed"},
+      "body": {"en": "Sandy loam with good drainage. Temperature range 20–40 °C — grows everywhere except arid zone. Prepare either ridge-and-furrow (90 cm between ridges) or bed system (60 cm bed width)."} },
+    { "week_idx": 2, "activity": "transplanting",
+      "title": {"en": "Vine cutting establishment"},
+      "body": {"en": "Plant 55,000–60,000 cuttings/ha. Ridge+furrow spacing: 90 cm between rows × 20 cm between plants. Bed system: 20 cm between plants on the 60 cm bed."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Sweet potato vine cuttings (one of 12 released varieties)"}, "amount": 57500, "unit": "cuttings", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 4, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer — 2 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount":  60, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 120, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 120, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 14, "dap_max": 14 },
+    { "week_idx": 8, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — 6 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 42, "dap_max": 42 },
+    { "week_idx": 14, "activity": "harvest",
+      "title": {"en": "Tuber harvest"},
+      "body": {"en": "Harvest 3–4 months after planting. Yield 15–25 t/ha. Cure tubers in shade 5–7 days before grading."},
+      "dap_min": 90, "dap_max": 120 }
+  ],
+  "pest_risks": [
+    { "week_idx": 6, "pest_slug": "sweet-potato-weevil",
+      "risk": "high",
+      "notes": {"en": "Sweet potato weevil (Cylas formicarius) is the dominant pest — larvae tunnel into tubers rendering them unmarketable. Management: plant weevil-free vine cuttings; hill soil around stems; crop rotation 2+ years; collect and destroy infested tubers. No fully effective chemical cure; focus on cultural + sanitation."} },
+    { "week_idx": 10, "disease_slug": "sweet-potato-collar-rot",
+      "risk": "moderate",
+      "notes": {"en": "Collar rot / root rot caused by Fusarium species. Remove diseased plants; avoid waterlogging; rotate away from sweet potato + other Ipomoea for 2+ years."} }
+  ],
+  "economics": []
+}

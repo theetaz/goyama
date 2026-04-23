@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-cauliflower-2024-01",
+  "source_slug": "doa-hordi-cauliflower-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Cauliflower — Nuwara Eliya skips basal urea (soil-chemistry rule)",
+  "body": "HORDI publishes two cauliflower fertilizer schedules with a clean agronomic reason behind the split. Nuwara Eliya district skips basal urea entirely — basal is TSP 270 + MOP 75 kg/ha only, then urea 110 kg/ha at weeks 2, 5, and 8. Other districts (up-country outside Nuwara Eliya, and lower elevations) use the standard basal Urea 110 + TSP 270 + MOP 75, then urea 110 at week 3, then urea 110 + MOP 75 at week 6. The reason: Nuwara Eliya's organic-rich soils already mineralise enough N to cover the first 2 weeks; adding basal urea there causes excessive vegetative growth, delays curd initiation, and pushes yield down by 15–25%. Elsewhere the soils need the basal kick-start. Variety choice (Early Phenomenal or Early Patna) is the same across districts; the fertilizer difference is what matters.",
+  "entity_refs": [
+    { "type": "crop", "slug": "cauliflower" },
+    { "type": "cultivation_plan", "slug": "cauliflower-up-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["cauliflower", "fertilizer", "site_specific_nutrition", "nuwara_eliya"],
+  "confidence": 0.93,
+  "quote": "Fertilizer Schedule (Nuwara Eliya District): Basal: TSP 270 kg/ha, MOP 75 kg/ha; 2 weeks post-transplant: Urea 110 kg/ha; 5 weeks post-transplant: Urea 110 kg/ha, MOP 75 kg/ha; 8 weeks post-transplant: Urea 110 kg/ha. Fertilizer Schedule (Other Districts): Basal: Urea 110 kg/ha, TSP 270 kg/ha, MOP 75 kg/ha; 3 weeks post-transplant: Urea 110 kg/ha; 6 weeks post-transplant: Urea 110 kg/ha, MOP 75 kg/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-cauliflower/"
+  }
+}
