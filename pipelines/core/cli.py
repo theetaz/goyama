@@ -19,6 +19,8 @@ from .storage import RawStore, StagingStore
 app = typer.Typer(help="Goyama data pipelines", no_args_is_help=True)
 sources_app = typer.Typer(help="Source registry operations")
 app.add_typer(sources_app, name="sources")
+market_prices_app = typer.Typer(help="HARTI bulletin normalisation (market-prices source)")
+app.add_typer(market_prices_app, name="market-prices")
 console = Console()
 log = get_logger(__name__)
 
@@ -111,6 +113,63 @@ def validate(entity_type: str, path: Path) -> None:
             console.print(f"  - {e}")
         raise typer.Exit(1)
     console.print("[green]ok[/]")
+
+
+@market_prices_app.command("normalize")
+def market_prices_normalize(
+    pdf_path: Path = typer.Argument(..., help="Downloaded HARTI bulletin PDF (absolute or relative)."),
+    observed_on: str = typer.Option(
+        ...,
+        "--observed-on",
+        help="Bulletin date (YYYY-MM-DD) — used as the observation date on every row.",
+    ),
+    out: Path = typer.Option(
+        None,
+        "--out",
+        help="CSV output path. Defaults to data/staging/market_prices/<observed_on>.csv.",
+    ),
+    source_url: str = typer.Option(
+        "",
+        "--source-url",
+        help="Override source_url column (falls back to the bulletin's file URL if known).",
+    ),
+) -> None:
+    """Parse a HARTI daily bulletin PDF into a CSV consumable by ``marketload``."""
+    from datetime import date as _date
+
+    # Lazy-import so the CLI stays usable when the market_prices package isn't
+    # installed (e.g. during DOA-only operations). Raises a readable error if
+    # the package is missing rather than a cryptic import trace.
+    try:
+        from sources.market_prices.normalizer import HartiBulletinNormalizer
+    except ImportError as e:  # noqa: BLE001
+        console.print(f"[red]market_prices package not importable:[/] {e}")
+        raise typer.Exit(1) from e
+
+    if not pdf_path.exists():
+        console.print(f"[red]no such file:[/] {pdf_path}")
+        raise typer.Exit(1)
+
+    observed = _date.fromisoformat(observed_on)
+    target = out or (settings.staging_dir / "market_prices" / f"{observed_on}.csv")
+    target.parent.mkdir(parents=True, exist_ok=True)
+
+    normaliser = HartiBulletinNormalizer(source_url=source_url)
+    try:
+        rows = normaliser.normalize(
+            pdf_path.read_bytes(),
+            observed_on=observed,
+            source_url=source_url or None,
+        )
+    except ValueError as e:
+        console.print(f"[red]normalize failed:[/] {e}")
+        raise typer.Exit(2) from e
+
+    target.write_text(HartiBulletinNormalizer.to_csv(rows))
+    console.print(
+        f"[green]wrote[/] {target} [dim]({len(rows)} rows, "
+        f"{len({r.market_code for r in rows})} markets)[/]"
+    )
 
 
 @app.command()

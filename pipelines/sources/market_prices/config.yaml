@@ -1,0 +1,42 @@
+source_id: market_prices
+display_name: "HARTI — Daily Food Commodities Bulletin (Dambulla DEC)"
+homepage: "https://www.harti.gov.lk/"
+licence: "Public sector (Government of Sri Lanka) — confirm redistribution per bulletin"
+# Set this to the ISO date (YYYY-MM-DD) on which robots.txt was last reviewed.
+# HARTI serves robots.txt as 404 at the time of writing; treat the whole site
+# as implicitly crawlable but re-confirm on each commit that touches the
+# crawler.
+robots_checked_at: "2026-04-23"
+# HARTI is a small public-sector site; stay well below 1 req/sec.
+rate_per_sec: 0.5
+# Cap a full index crawl so accidental --limit omissions don't hammer the
+# site. One index page plus ~400 bulletin PDFs (daily × ~13 months) fits
+# comfortably under this.
+max_pages: 500
+
+crawler_class: HartiDailyPricesCrawler
+# Market prices normalise to CSV rows, not schema JSON records, so the
+# "extract" pipeline step is skipped for this source. Use the
+# `goyama market-prices normalize` command instead.
+extractor_class: null
+
+seed_urls:
+  - "https://www.harti.gov.lk/daily-price.php"
+
+allow_patterns:
+  # Index pages (any ?date=... or paginated views) and the bulletin PDFs
+  # themselves. The bulletin URLs currently live under /images/download/
+  # but HARTI has moved this directory in the past; keep the pattern loose
+  # enough that a benign directory rename doesn't silently black-hole us.
+  - "^https?://(www\\.)?harti\\.gov\\.lk/.*daily[_-]?price"
+  - "^https?://(www\\.)?harti\\.gov\\.lk/images/.+\\.pdf$"
+
+deny_patterns:
+  # Everything non-English (we take the Sinhala/Tamil cut after the English
+  # parser has stabilised) and any non-bulletin directory under /images/.
+  - "/(sinhala|tamil|si|ta)/"
+  - "/images/(?!download/).+\\.(jpg|jpeg|png|gif|webp)(\\?|$)"
+
+freshness_days:
+  default: 1          # bulletins are daily; re-crawl the index every day
+  bulletin_pdf: 30    # once fetched, a dated bulletin never changes
