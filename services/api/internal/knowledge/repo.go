@@ -88,6 +88,72 @@ type AdminRepo interface {
 	SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error
 }
 
+// ChunkBody is the lean projection used by the embedding worker:
+// just enough to feed an embedder, not the full Chunk object.
+type ChunkBody struct {
+	Slug  string
+	Title string
+	Body  string
+}
+
+// EmbeddingRepo is the write surface used by cmd/embedchunks to
+// backfill the content_embedding column on draft + published rows.
+type EmbeddingRepo interface {
+	ListUnembedded(ctx context.Context, limit int) ([]ChunkBody, error)
+	UpdateEmbedding(ctx context.Context, slug string, vec []float32) error
+}
+
+// SearchQuery captures the knobs for one hybrid retrieval pass over
+// the chunks. QueryVector is the only required field; the others
+// narrow the result set with structured filters before the cosine
+// rank.
+type SearchQuery struct {
+	QueryVector []float32
+	CropSlug    string
+	AEZCodes    []string
+	Countries   []string
+	Limit       int
+}
+
+// SearchHit is one chunk returned by retrieval, annotated with its
+// cosine-similarity score so the UI can render confidence.
+type SearchHit struct {
+	Chunk Chunk
+	Score float64
+}
+
+// SearchRepo is the read surface used by the /v1/ask endpoint.
+type SearchRepo interface {
+	Search(ctx context.Context, q SearchQuery) ([]SearchHit, error)
+	GetSource(ctx context.Context, slug string) (Source, error)
+}
+
+// ErrSearchRequiresDatabase is returned by the search stub when the
+// API runs in JSONL mode. Callers map this to HTTP 503 so a missing
+// embedding stack never silently returns "no answer".
+var ErrSearchRequiresDatabase = errors.New("knowledge search requires Postgres + embedded chunks (set DATABASE_URL and run cmd/embedchunks)")
+
+// SearchStub implements SearchRepo for the JSONL fallback. Always
+// returns ErrSearchRequiresDatabase so the chat surface honestly says
+// "the retrieval pipe needs Postgres" instead of pretending the
+// corpus is empty.
+type SearchStub struct{}
+
+// NewSearchStub returns the JSONL-mode search placeholder.
+func NewSearchStub() *SearchStub { return &SearchStub{} }
+
+// Search always returns ErrSearchRequiresDatabase.
+func (*SearchStub) Search(context.Context, SearchQuery) ([]SearchHit, error) {
+	return nil, ErrSearchRequiresDatabase
+}
+
+// GetSource on the stub returns ErrNotFound; the handler uses the
+// SearchRepo's GetSource only after Search returns hits, so this is
+// never reached in practice.
+func (*SearchStub) GetSource(context.Context, string) (Source, error) {
+	return Source{}, ErrNotFound
+}
+
 // JSONLRepo loads chunk and source fixtures from disk so the dev API
 // has knowledge data with no DB. Two sibling directories:
 //

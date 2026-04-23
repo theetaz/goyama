@@ -6,7 +6,7 @@ DB_PORT ?= 54320
 DB_URL  ?= postgres://goyama:goyama@$(DB_HOST):$(DB_PORT)/goyama?sslmode=disable
 COMPOSE = docker compose
 
-.PHONY: db-up db-down db-reset db-migrate db-seed db-psql db-logs db-load-geo-fixtures db-load-market-prices-fixtures db-load-cultivation-plans db-load-knowledge help
+.PHONY: db-up db-down db-reset db-migrate db-seed db-psql db-logs db-load-geo-fixtures db-load-market-prices-fixtures db-load-cultivation-plans db-load-knowledge db-embed-knowledge help
 
 help:
 	@echo "Goyama make targets:"
@@ -19,6 +19,7 @@ help:
 	@echo "  db-load-market-prices-fixtures     Load sample Dambulla DEC prices for /v1/market-prices"
 	@echo "  db-load-cultivation-plans          Load cultivation_plan fixtures into Postgres"
 	@echo "  db-load-knowledge                  Load knowledge_source + knowledge_chunk fixtures"
+	@echo "  db-embed-knowledge                 Backfill content_embedding for all chunks (powers /v1/ask)"
 	@echo "  db-psql                            Open a psql shell against the local DB"
 	@echo "  db-logs                            Tail the DB container logs"
 
@@ -78,6 +79,12 @@ db-load-cultivation-plans:
 db-load-knowledge:
 	cd services/api && DATABASE_URL='$(DB_URL)' go run ./cmd/knowledgeload \
 		--dir=../../corpus/seed
+
+# Backfill content_embedding for chunks that don't have one. Defaults
+# to the dev hash embedder; set VOYAGE_API_KEY to use Voyage AI in
+# production. Idempotent — re-running only embeds new chunks.
+db-embed-knowledge:
+	cd services/api && DATABASE_URL='$(DB_URL)' go run ./cmd/embedchunks --limit=500
 
 db-psql:
 	PGPASSWORD=goyama psql -h $(DB_HOST) -p $(DB_PORT) -U goyama -d goyama
