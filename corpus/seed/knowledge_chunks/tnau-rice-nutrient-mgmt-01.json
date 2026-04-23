@@ -1,0 +1,24 @@
+{
+  "slug": "tnau-rice-nutrient-mgmt-01",
+  "source_slug": "tnau-rice-nutrient-mgmt",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "TNAU rice NPK blanket rates by duration — for cross-checking Sri Lanka dry-zone programs",
+  "body": "Tamil Nadu Agricultural University's NPK blanket rates for transplanted puddled lowland rice, in kg/ha of N / P₂O₅ / K₂O: short-duration dry-season (150 / 50 / 50 for Cauvery Delta; 120 / 40 / 40 for other tracts), medium-long-duration wet-season (150 / 50 / 50), hybrid rice (175 / 60 / 60), and low-N-responsive Improved White Ponni (75 / 50 / 50, with N split three ways instead of four). N and K are split in four equal applications across basal, active tillering, panicle initiation, and heading. Converting to Sri Lankan fertilizer inventory — 150 kg N/ha ≈ 325 kg urea, 50 kg P₂O₅/ha ≈ 110 kg TSP, 50 kg K₂O/ha ≈ 85 kg MOP — which is meaningfully heavier than RRDI's published Sri Lankan schedules for similar durations. The rates can inform dry-zone tank cultivations where soils are similar to Cauvery Delta alluviums, but apply the Sri Lankan rate as a floor + soil-test-adjust upward rather than copying TNAU's ceiling. The split-application rhythm (four splits for N+K, not a single basal + one top-dress) is the most transferable practice.",
+  "entity_refs": [
+    { "type": "crop", "slug": "rice" }
+  ],
+  "authority": "inferred_by_analogy",
+  "applies_to_aez_codes": ["DL1","DL1b","DL1c","DL2","DL3","DL4","DL5","IL1","IL2"],
+  "applies_to_countries": ["IN-TN", "LK"],
+  "topic_tags": ["rice", "fertilizer", "npk", "cross-regional", "split_application"],
+  "confidence": 0.7,
+  "quote": "Short duration (dry season) - Cauvery delta & Coimbatore: N 150, P2O5 50, K2O 50. Short duration (dry season) - Other tracts: 120 / 40 / 40. Medium/long duration (wet season): 150 / 50 / 50. Hybrid rice: 175 / 60 / 60. Apply N and K in four equal splits viz., basal, tillering, panicle initiation and heading stages.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://agritech.tnau.ac.in/agriculture/agri_cropproduction_cereals_rice_tranpudlow_mainfield_nutrient_mgmt_inorganic.html",
+    "caveat": "Tamil Nadu recommendation. The split-application rhythm is agronomically transferable; the rates must be validated by an RRDI agronomist on Sri Lanka tank-fed alluvium soils before being used for farmer-facing advice."
+  }
+}

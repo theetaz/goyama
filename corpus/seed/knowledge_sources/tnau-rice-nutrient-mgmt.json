@@ -1,0 +1,11 @@
+{
+  "slug": "tnau-rice-nutrient-mgmt",
+  "display_name": "TNAU — Rice nutrient management (transplanted puddled lowland)",
+  "medium": "web_article",
+  "publisher": "Tamil Nadu Agricultural University",
+  "authority": "regional_authority",
+  "url": "https://agritech.tnau.ac.in/agriculture/agri_cropproduction_cereals_rice_tranpudlow_mainfield_nutrient_mgmt_inorganic.html",
+  "language": "en",
+  "licence": "Government of India / state university — attribution required",
+  "notes": "TNAU's blanket NPK schedule for transplanted rice. Rates given as N/P2O5/K2O (not urea/TSP/MOP), matching Indian agricultural convention. Useful cross-reference for Sri Lankan tank-fed systems but must be calibrated against DOA/RRDI's 2013 fertilizer booklet before driving farmer recommendations."
+}

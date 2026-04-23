@@ -1,0 +1,64 @@
+{
+  "slug": "beans-pole-up-country",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "beans",
+  "season": "year_round",
+  "aez_codes": ["WU1","WU2","WU3","IU1","IU2","IU3"],
+  "title": {"en": "Pole bean cultivation — up-country intermediate + wet zones"},
+  "summary": {
+    "en": "HORDI recommendation for pole bean (Phaseolus vulgaris L.) in up-country intermediate and wet zones — Badulla, Nuwara Eliya, Matale, Kandy districts. Soil pH 5.5–6.5; flowering temperature below 30 °C. Spacing 50 × 40 cm, 50 kg seed/ha. Two-stage fertilizer schedule. First harvest 60+ days after planting. Yield: standard bush 5–10 t/ha; Gannoruwa BIL 20 t/ha; Kekulu Bonchi 25 t/ha."
+  },
+  "start_month": 2,
+  "duration_weeks": 14,
+  "expected_yield_kg_per_acre_min": 2000,
+  "expected_yield_kg_per_acre_max": 10000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-bean/",
+  "source_document_title": "HORDI — Bean cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-bean/",
+    "notes": "Yield range spans standard bush bean (5–10 t/ha ≈ 2,000–4,000 kg/acre) to the high-yield Kekulu Bonchi pole bean (25 t/ha ≈ 10,000 kg/acre)."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Soil pH 5.5–6.5. Target flowering-stage temperature under 30 °C — Badulla, Nuwara Eliya, Matale, Kandy areas are ideal."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer (pole bean)"},
+      "body": {"en": "TSP and MOP rates shown are 'after soil test' — adjust downward on soils testing high for P or K."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 110, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 270, "unit": "kg", "per_unit_area": "hectare", "notes": {"en": "After soil test"}},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare", "notes": {"en": "After soil test"}}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed at 50 cm row × 40 cm within-row. Pole bean seed rate 50 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Pole bean seed (Balangoda Nil / Bandarawela Green / Gannoruwa BIL / Kekulu Bonchi / Gannoruwa Green / Kappetipola Nil / HORDI Green / Kentucky Wonder Green / Lanka Butter / HORDI Bean-03)"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 5, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — 3 weeks after sowing"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 110, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 21, "dap_max": 21 },
+    { "week_idx": 9, "activity": "harvest",
+      "title": {"en": "First harvest"},
+      "body": {"en": "Pole beans start producing 60+ days after planting; bush types 45+ days. Pick every 2–3 days at marketable pod length."},
+      "dap_min": 60, "dap_max": 80 }
+  ],
+  "pest_risks": [
+    { "week_idx": 6, "disease_slug": "bean-rust", "risk": "moderate",
+      "notes": {"en": "Bean rust and anthracnose risk rises under cool wet up-country conditions. Rotate fungicides per DOA 2019 pesticide recommendation; avoid overhead irrigation."} },
+    { "week_idx": 5, "pest_slug": "bean-fly", "risk": "moderate",
+      "notes": {"en": "Bean fly (Ophiomyia phaseoli) bores in young stems. Protect seedlings with a registered systemic insecticide within the first 3 weeks."} }
+  ],
+  "economics": []
+}

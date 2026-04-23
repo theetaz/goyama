@@ -1,0 +1,77 @@
+{
+  "slug": "pumpkin-dry-intermediate",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "pumpkin",
+  "season": "yala",
+  "aez_codes": [
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
+    "DM1","DM2"
+  ],
+  "title": {"en": "Pumpkin cultivation — dry + intermediate zones, Yala"},
+  "summary": {
+    "en": "HORDI recommendation for pumpkin (Cucurbita maxima) up to 500 m elevation in dry and intermediate zones. Grown as Yala crop. Spacing varies by variety: Local strain 3 × 3 m, A.N.K. 2.5 × 2.5 m, Butternut 50 × 100 cm. Soil pH 5.5–7.5. Seed rate 1 kg/ha. Harvest 20–60 days after flowering depending on variety. Yield 15–20 t/ha."
+  },
+  "start_month": 4,
+  "duration_weeks": 20,
+  "expected_yield_kg_per_acre_min": 6000,
+  "expected_yield_kg_per_acre_max": 8000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-pumpkin/",
+  "source_document_title": "HORDI — Pumpkin cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/"
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Well-drained soil at pH 5.5–7.5 up to 500 m elevation. Prepare planting pits to the variety-specific spacing: Local strain 3 × 3 m, A.N.K. 2.5 × 2.5 m, Butternut 50 × 100 cm."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 220, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 380, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 125, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed at the variety-specific spacing. Seed rate 1 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Pumpkin seed (Pathma / A.N.K. / Butternut / Local Strain)"}, "amount": 1, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 6, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 4 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 45, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 28, "dap_max": 28 },
+    { "week_idx": 10, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 8 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 45, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 56, "dap_max": 56 },
+    { "week_idx": 14, "activity": "harvest",
+      "title": {"en": "Fruit harvest"},
+      "body": {"en": "Butternut 20 days after flowering; A.N.K. 40 days after flowering; local varieties 60 days after flowering. Yield 15–20 t/ha."},
+      "dap_min": 85, "dap_max": 140 }
+  ],
+  "pest_risks": [
+    { "week_idx":  6, "disease_slug": "cucurbit-powdery-mildew", "risk": "moderate",
+      "notes": {"en": "Powdery mildew and downy mildew. Apply recommended fungicides at first lesions per DOA 2019 pesticide recommendation."} },
+    { "week_idx":  8, "disease_slug": "cucurbit-collar-rot", "risk": "moderate",
+      "notes": {"en": "Collar rot / root rot and gummy stem blight. Avoid waterlogging; fungicide soil drench at first symptoms."} },
+    { "week_idx":  5, "disease_slug": "cucurbit-leaf-curl-virus", "risk": "high",
+      "notes": {"en": "Leaf curl virus / papaya ring spot virus / cucumber mosaic virus / zucchini yellow mosaic virus — vectored by whiteflies and aphids. Control vectors early; remove infected plants."} },
+    { "week_idx": 10, "disease_slug": "cucurbit-bacterial-wilt", "risk": "moderate",
+      "notes": {"en": "Bacterial wilt (Erwinia tracheiphila) — no chemical control. Use resistant varieties, rotate with non-cucurbits, control cucumber beetles."} }
+  ],
+  "economics": []
+}

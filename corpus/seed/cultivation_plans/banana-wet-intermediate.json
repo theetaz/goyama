@@ -1,0 +1,76 @@
+{
+  "slug": "banana-wet-intermediate",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "banana",
+  "season": "perennial",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3","WM4",
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a"
+  ],
+  "title": {"en": "Banana cultivation — wet + intermediate zones"},
+  "summary": {
+    "en": "FRDI recommendation for banana (Musa spp.). Successful cultivation from sea level to 1500 m in zones receiving 1250–1900 mm rainfall at 27–30 °C. Dessert varieties for wet + intermediate zones include Ambul (AAA), Kolikuttu (AAB), Anamalu (AAA), Cavendish (AAA). Cooking types include Alu Kesel and Mondan (ABB). Traditional 3 × 3 m or 3.5 × 3.5 m spacing; dense 3 × 1 m for commercial blocks. Per-plant fertilizer program. First bunch 12 weeks after flowering."
+  },
+  "start_month": 10,
+  "duration_weeks": 52,
+  "source_document_url": "https://doa.gov.lk/fruit-crops-banana-e/",
+  "source_document_title": "DOA / FRDI — Banana cultivation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/fruit-crops-banana-e/",
+    "notes": "FRDI English page is partially under construction; this fixture captures the cultivation-critical fields published as of April 2026. Yield is not published in standard t/ha form on the source, so the yield range fields are omitted — bunch-weight-based yield lands in a follow-up pass."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Site selection + pit preparation"},
+      "body": {"en": "Select sites with 1250–1900 mm rainfall at 27–30 °C; sea level to 1500 m. Dig 60 × 60 × 60 cm pits at 3 × 3 m or 3.5 × 3.5 m (traditional) or 3 × 1 m (dense commercial)."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Pre-plant basal — 2 weeks before planting"},
+      "body": {"en": "Mix basal fertilizer into each pit 2 weeks before planting the sucker. In wet zone add dolomite 500 g per pit for pH adjustment; add Kieserite where Mg is deficient."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea (per plant)"}, "amount":  60, "unit": "g", "per_unit_area": "perch", "notes": {"en": "Applied per pit, not per area"}},
+        {"type": "fertilizer", "name": {"en": "TSP (per plant)"},  "amount":  40, "unit": "g", "per_unit_area": "perch", "notes": {"en": "Applied per pit"}},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash (per plant)"}, "amount": 125, "unit": "g", "per_unit_area": "perch", "notes": {"en": "Applied per pit"}}
+      ],
+      "dap_min": -14, "dap_max": -7 },
+    { "week_idx": 4, "activity": "transplanting",
+      "title": {"en": "Transplanting suckers"},
+      "body": {"en": "Plant sword suckers 70–80 cm tall at the prepared pit. Sword > maiden > water shoots for vigour. Tissue-culture plants are also acceptable."},
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 12, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — 2 months after planting (dry/intermediate, rainfed)"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea (per plant)"}, "amount": 120, "unit": "g", "per_unit_area": "perch"},
+        {"type": "fertilizer", "name": {"en": "TSP (per plant)"},  "amount":  80, "unit": "g", "per_unit_area": "perch"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash (per plant)"}, "amount": 250, "unit": "g", "per_unit_area": "perch"}
+      ],
+      "dap_min": 60, "dap_max": 60 },
+    { "week_idx": 28, "activity": "top_dressing",
+      "title": {"en": "Maintenance dressing — every 6 months"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea (per plant)"}, "amount": 180, "unit": "g", "per_unit_area": "perch"},
+        {"type": "fertilizer", "name": {"en": "TSP (per plant)"},  "amount": 120, "unit": "g", "per_unit_area": "perch"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash (per plant)"}, "amount": 375, "unit": "g", "per_unit_area": "perch"}
+      ],
+      "dap_min": 180, "dap_max": 180 },
+    { "week_idx": 48, "activity": "harvest",
+      "title": {"en": "Bunch harvest"},
+      "body": {"en": "Harvest 12 weeks after flowering. Anamalu/Ambul 3 months; Kolikuttu 4 months; Bing Cavendish at 1.5–1.7 m pseudostem height. Cut the whole bunch at the peduncle; avoid bruising."},
+      "dap_min": 336, "dap_max": 365 }
+  ],
+  "pest_risks": [
+    { "week_idx": 20, "disease_slug": "banana-panama-disease", "risk": "high",
+      "notes": {"en": "Panama disease (Fusarium oxysporum f. sp. cubense). Soil-borne; chemical control ineffective. Management: improve drainage, plant resistant varieties (Ambul is the only recommended-resistant variety in Sri Lanka), use clean propagation material, avoid replanting on infected land for 5+ years."} },
+    { "week_idx": 12, "disease_slug": "banana-bunchy-top-virus", "risk": "high",
+      "notes": {"en": "Bunchy top virus — transmitted by the banana aphid (Pentalonia nigronervosa). No chemical cure. Rogue and destroy infected plants immediately; control aphid vectors; source tissue-culture or certified clean suckers."} },
+    { "week_idx": 16, "disease_slug": "banana-sigatoka-yellow", "risk": "moderate",
+      "notes": {"en": "Yellow Sigatoka (Mycosphaerella musicola). Spray chlorothalonil or mancozeb at 2-week intervals on susceptible black-bunch cultivars."} },
+    { "week_idx": 24, "disease_slug": "banana-anthracnose", "risk": "moderate",
+      "notes": {"en": "Anthracnose is severe on Alu Kesel. Spray mancozeb or chlorothalonil at 2-week intervals; bag the bunches after flowering to reduce infection."} }
+  ],
+  "economics": []
+}

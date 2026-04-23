@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-okra-2024-01",
+  "source_slug": "doa-hordi-okra-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Okra — four-stage urea + MOP ramp for a 50–100-day harvest window",
+  "body": "HORDI runs okra on a notably aggressive top-dressing schedule compared to other vegetables: Urea + MOP at basal (50 + 25 kg/ha), 2 weeks (50 + 25), 5 weeks (100 + 50), and 8 weeks (100 + 50) — with TSP only at basal (195 kg/ha). The front-loaded N drives the continuous pod-set window: picking begins at ~50 days and runs every 2 days for up to 25 picks across 50–100 days after planting. OKH1 hybrid can reach 30 t/ha at this rate; OPVs like MI5, MI7, and Haritha yield 10–15 t/ha. The 5-week and 8-week dressings are the high-leverage ones — missing them sheds pod count sharply.",
+  "entity_refs": [
+    { "type": "crop", "slug": "okra" },
+    { "type": "cultivation_plan", "slug": "okra-all-zones" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["okra", "fertilizer", "top_dressing", "urea", "mop"],
+  "confidence": 0.97,
+  "quote": "Basal: Urea 50, TSP 195, MOP 25. Top dressing (2 weeks): Urea 50, MOP 25. Top dressing (5 weeks): Urea 100, MOP 50. Top dressing (8 weeks): Urea 100, MOP 50.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-okra/"
+  }
+}

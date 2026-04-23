@@ -1,0 +1,23 @@
+{
+  "slug": "doa-frdi-banana-2024-02",
+  "source_slug": "doa-frdi-banana-2024",
+  "chunk_idx": 1,
+  "language": "en",
+  "title": "Sucker selection rules and wet-zone soil chemistry",
+  "body": "Planting material quality sets banana yield ceiling more than any other input. FRDI ranks suckers by vigour: sword suckers (narrow leaves, pointed tip, 70–80 cm height) are best; maiden suckers (broader leaves, already flowered once) come second; water shoots (broad flat leaves from overwatered mats) should be rejected. Tissue-culture plants are acceptable and avoid systemic virus carry-over. In the wet zone, FRDI specifies Dolomite 500 g per pit at planting to raise pH, plus Kieserite for magnesium correction — a soil-chemistry adjustment that the dry zone doesn't need because its reddish-brown earth soils are already near-neutral. The per-pit / per-plant fertilizer ramp goes from 60 g Urea + 40 g TSP + 125 g MOP at pre-plant, to 120 / 80 / 250 at 2 months, to 180 / 120 / 375 every 6 months thereafter across the perennial cycle.",
+  "entity_refs": [
+    { "type": "crop", "slug": "banana" },
+    { "type": "cultivation_plan", "slug": "banana-wet-intermediate" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["banana", "suckers", "planting_material", "soil_chemistry", "wet_zone"],
+  "confidence": 0.92,
+  "quote": "Three sucker types exist: sword (best), maiden, and water shoots. Minimum 70-80cm height suitable for planting. Wet zone: Dolomite 500g per pit for pH adjustment; Kieserite added for Mg.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/fruit-crops-banana-e/"
+  }
+}
