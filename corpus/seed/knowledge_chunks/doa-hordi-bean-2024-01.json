@@ -1,0 +1,24 @@
+{
+  "slug": "doa-hordi-bean-2024-01",
+  "source_slug": "doa-hordi-bean-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Bean variety ladder — pole vs bush, and when Kekulu Bonchi beats them both",
+  "body": "HORDI's bean portfolio is split into two architectures. Pole-climbing types (Balangoda Nil, Bandarawela Green, Gannoruwa BIL, Kekulu Bonchi, Gannoruwa Green, Kappetipola Nil, HORDI Green, Kentucky Wonder Green, Lanka Butter, HORDI Bean-03) plant at 50 × 40 cm with 50 kg seed/ha and start producing after day 60; bush types (Cherokee Wax, Sanjaya, Wade, Top Crop) plant tighter at 50 × 15 cm with 75 kg seed/ha and start after day 45. Standard bush types yield 5–10 t/ha; Gannoruwa BIL pole bean reaches 20 t/ha; Kekulu Bonchi peaks at 25 t/ha. The catch: all varieties need flowering-stage temperatures under 30 °C, so commercial production concentrates in Badulla, Nuwara Eliya, Matale, and Kandy districts — the up-country wet and intermediate zones.",
+  "entity_refs": [
+    { "type": "crop", "slug": "beans" },
+    { "type": "cultivation_plan", "slug": "beans-pole-up-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_aez_codes": ["WU1","WU2","WU3","IU1","IU2","IU3"],
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["beans", "variety_selection", "spacing", "up_country", "temperature"],
+  "confidence": 0.95,
+  "quote": "Up Country Intermediate Zone and Up-Country Wet Zone (Badulla, Nuwara Eliya, Matale, Kandy); temperature <30°C during flowering. Bush 5-10 t/ha; Gannoruwa BIL 20 t/ha; Kekulu Bonchi 25 t/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-bean/"
+  }
+}

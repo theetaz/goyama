@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-pumpkin-2024-01",
+  "source_slug": "doa-hordi-pumpkin-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Pumpkin — variety-driven spacing and harvest timing",
+  "body": "HORDI prescribes variety-specific spacing for pumpkin because days-to-harvest differs dramatically between types. Local strains plant at 3 × 3 m and are harvested 60 days after flowering. A.N.K. plants tighter at 2.5 × 2.5 m and is picked 40 days after flowering. Butternut is essentially a trellis / dense-bed crop at 50 × 100 cm and is ready 20 days after flowering. All three share the same basal of 220 Urea + 380 TSP + 125 MOP (kg/ha) plus two light top-dressings of 45 Urea + 25 MOP at 4 and 8 weeks. Planting at the wrong spacing for the variety halves effective yield because competition for light and moisture pulls down fruit set.",
+  "entity_refs": [
+    { "type": "crop", "slug": "pumpkin" },
+    { "type": "cultivation_plan", "slug": "pumpkin-dry-intermediate" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["pumpkin", "spacing", "variety_selection", "harvest_timing"],
+  "confidence": 0.95,
+  "quote": "Local Strain: 3 × 3m; A.N.K.: 2.5 × 2.5m; Butternut: 50 × 100cm. Harvest Timing — A.N.K.: 40 days after flowering; Local Variety: 60 days after flowering; Butternut: 20 days after flowering.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-pumpkin/"
+  }
+}

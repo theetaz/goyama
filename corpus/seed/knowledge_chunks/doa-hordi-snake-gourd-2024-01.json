@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-snake-gourd-2024-01",
+  "source_slug": "doa-hordi-snake-gourd-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Snake gourd — wide spacing + organic-rich soil for a 4-month 20 t/ha crop",
+  "body": "HORDI plants snake gourd (Trichosanthes cucumerina L.) at 1.5 × 1.5 m — noticeably wider than most vining cucurbits — because the pendant fruit needs drop space and the vine is aggressive. Soil pH 5.5–7.5 with 10 t/ha of well-decomposed organic matter incorporated pre-plant; seed rate 4 kg/ha. Basal fertilizer is 75 Urea + 200 TSP + 60 MOP (kg/ha), then two symmetric top-dressings of 75 Urea + 60 MOP at 4 and 8 weeks. Harvest starts 60–75 days after planting and continues every 4 days. Released varieties (TA-2, MI-Short, Thinnaweli) all target a 20 t/ha commercial yield.",
+  "entity_refs": [
+    { "type": "crop", "slug": "snake-gourd" },
+    { "type": "cultivation_plan", "slug": "snake-gourd-low-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["snake_gourd", "spacing", "organic_matter", "fertilizer"],
+  "confidence": 0.97,
+  "quote": "Spacing: 1.5 m x 1.5 m. Seed Rate: 4kg/ha. Basal: Urea 75, TSP 200, MOP 60. Top Dressing (4 weeks): Urea 75, MOP 60. Top Dressing (8 weeks): Urea 75, MOP 60. Add 10 t/ha of organic matters.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/"
+  }
+}

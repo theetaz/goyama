@@ -1,0 +1,22 @@
+{
+  "slug": "doa-rrdi-rice-varieties-2024-01",
+  "source_slug": "doa-rrdi-rice-varieties-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "RRDI rice variety ladder — picking by maturity, not just yield",
+  "body": "Sri Lanka's DOA/RRDI recommended rice portfolio is organised by maturity period, not by absolute yield — because the right variety depends on how many months of water a farmer reliably has. The 2.5-month group (Bg 750, Bg 250, Bg 251 GSR, Bg 252, Ld 253, At 313) is the short-duration ladder for tail-end irrigation blocks and late-Yala conditions. The 3-month group (H 10, Bg 300s + At 300s families, Bw 302) is the default for most irrigated tanks. The 3.5-month group is the largest and includes the popular Bg 352, At 353, Bg 357–360 (Nadu grain family), and Bg 366/369/370 — good for reservoir-fed mainland production. The 4–4.5-month group (Bg 379-2, Bg 400-1, At 405, Bg 450, Bg 454/455) is for lower-elevation long-season fields. Two-letter prefixes encode the breeding station: Bg = Batalagoda, At = Ambalantota, Bw = Bombuwela, Ld = Labuduwa, H = hybrid, MI = Maha Illuppallama. Choose by irrigation timeline first, grain market second.",
+  "entity_refs": [
+    { "type": "crop", "slug": "rice" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["rice", "variety_selection", "maturity_groups", "irrigation"],
+  "confidence": 0.9,
+  "quote": "2.5 Months: Bg 750, Bg 250, Bg 251 (GSR), Bg 252, Ld 253, At 313. 3 Months: H 10, 62-355, Bg-34-8, Bg 276-5, Bw 272-6b, Bg 300, Bg 301, Bw 302, At 303, Bg 304, Bg 305, At 306, At 307, At 308, At 309, Bg 310, At 311, Bg 314. 3.5 Months: H 7, At 16, Bw 266-7, Bg 94-1, Bg 94-2, Bg 350, Bw 351, Bg 352, At 353, At 354, Ld 355, Ld 356, Bg 357-360, Bw 361, At 362, Bg 366, Bw 367, Bg 369-370, Bg 374-375, Bg 377, Bg 381 IP. 4-4.5 Months: Bg 379-2, Bg 400-1, Bg 380, MI 273, Bw 400, At 401-402, At 405, Bg 406-407H, Bg 450, Bw 451-453, Bg 454-455, Bg 409.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/rrdi_rice_varities/"
+  }
+}

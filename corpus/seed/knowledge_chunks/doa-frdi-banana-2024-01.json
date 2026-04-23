@@ -1,0 +1,24 @@
+{
+  "slug": "doa-frdi-banana-2024-01",
+  "source_slug": "doa-frdi-banana-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Banana variety groups — genome decides consumption and disease resistance",
+  "body": "Sri Lanka's recommended banana varieties fall into several genome groups — AAA, AAB, AAAB, ABB, AABB — and the group determines both end use and disease profile. Dessert AAA types for the wet + intermediate zones are Ambul, Anamalu, Rathabala, and Bing Cavendish (Dwarf Cavendish); AAB dessert types include Rath Ambul, Kolikuttu, and Nadi; AAAB includes Kandul. Cooking types are almost all ABB — Prasad, Mondan, Mati Kithal, Atamuru, Alu Kesel, Puwaalu — plus the AABB Pulatisi. The practical rule: Ambul (AAA) is the only variety with meaningful tolerance to Panama disease (Fusarium oxysporum f. sp. cubense), which is the single biggest uncontrolled constraint on Sri Lanka's banana industry. All other varieties require clean land + disease-free planting material + aphid control (against Bunchy Top virus) to stay productive across a 5-year cycle.",
+  "entity_refs": [
+    { "type": "crop", "slug": "banana" },
+    { "type": "disease", "slug": "banana-panama-disease" },
+    { "type": "cultivation_plan", "slug": "banana-wet-intermediate" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["banana", "variety_selection", "panama_disease", "genome_groups"],
+  "confidence": 0.9,
+  "quote": "For Fresh Consumption (Wet & Intermediate Zones): Ambul (AAA), Anamalu (AAA), Rath Ambul (AAB), Kolikuttu (AAB), Rathabala (AAA), Kandul (AAAB), Nadi (AAB), Bing Cavendish (AAA). For Cooking: Pulatisi (AABB), Prasad (ABB), Mondan (ABB), Mati Kithal (ABB), Atamuru (ABB), Alu Kesel (ABB), Puwaalu (ABB). Panama Disease most severe fungal disease affecting all varieties except Ambul.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/fruit-crops-banana-e/"
+  }
+}

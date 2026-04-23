@@ -1,0 +1,11 @@
+{
+  "slug": "irri-rice-blast-knowledgebank",
+  "display_name": "IRRI Rice Knowledge Bank — Blast (leaf, collar, node, neck)",
+  "medium": "web_article",
+  "publisher": "International Rice Research Institute",
+  "authority": "regional_authority",
+  "url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/blast-leaf-collar",
+  "language": "en",
+  "licence": "IRRI — attribution required for non-commercial use",
+  "notes": "IRRI is the world authority on rice pathology. Fact-sheet covers Magnaporthe oryzae symptoms, favourable conditions, and cultural + chemical management. Directly relevant to Sri Lankan rice production in irrigated tank systems; render with regional_authority badge and require DOA agronomist sign-off before driving local spray recommendations."
+}

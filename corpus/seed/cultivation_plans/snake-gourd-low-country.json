@@ -1,0 +1,76 @@
+{
+  "slug": "snake-gourd-low-country",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "snake-gourd",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4",
+    "IL1","IL2","IL3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5"
+  ],
+  "title": {"en": "Snake gourd cultivation — low country"},
+  "summary": {
+    "en": "HORDI recommendation for snake gourd (Trichosanthes cucumerina L) up to 500 m elevation. Soil pH 5.5–7.5 with high organic matter. Spacing 1.5 × 1.5 m, seed rate 4 kg/ha. Three-stage fertilizer schedule. Harvest from 60–75 days after planting at 4-day intervals. Yield 20 t/ha."
+  },
+  "start_month": 4,
+  "duration_weeks": 16,
+  "expected_yield_kg_per_acre_min": 7500,
+  "expected_yield_kg_per_acre_max": 8500,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-snake-gourd/",
+  "source_document_title": "HORDI — Snake gourd cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-snake-gourd/"
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "High-organic-matter soil with good drainage, pH 5.5–7.5. Incorporate 10 t/ha well-decomposed organic matter before planting."},
+      "inputs": [
+        {"type": "amendment", "name": {"en": "Well-decomposed organic matter"}, "amount": 10, "unit": "t", "per_unit_area": "hectare"}
+      ] },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount":  75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 200, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed at 1.5 × 1.5 m spacing; 4 kg seed/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Snake gourd seed (TA-2 / MI-Short / Thinnaweli)"}, "amount": 4, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 6, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 4 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 28, "dap_max": 28 },
+    { "week_idx": 10, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 8 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 60, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 56, "dap_max": 56 },
+    { "week_idx": 10, "activity": "harvest", "order_in_week": 1,
+      "title": {"en": "Fruit harvest"},
+      "body": {"en": "Begin harvest 60–75 days after planting; pick every 4 days at marketable length. Yield 20 t/ha."},
+      "dap_min": 60, "dap_max": 105 }
+  ],
+  "pest_risks": [
+    { "week_idx": 7, "disease_slug": "cucurbit-powdery-mildew", "risk": "moderate",
+      "notes": {"en": "Powdery and downy mildew. Apply recommended fungicides per DOA 2019 pesticide recommendation."} },
+    { "week_idx": 6, "disease_slug": "cucurbit-leaf-curl-virus", "risk": "high",
+      "notes": {"en": "Leaf curl virus and cucurbit mosaic viruses — control whitefly/aphid vectors and remove infected plants."} }
+  ],
+  "economics": []
+}

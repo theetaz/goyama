@@ -1,0 +1,84 @@
+{
+  "slug": "okra-all-zones",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "okra",
+  "season": "year_round",
+  "aez_codes": [
+    "WL1","WL2","WL3","WL4","WM1","WM2","WM3","WM4",
+    "IL1","IL2","IL3","IM1","IM2","IM3",
+    "DL1","DL1b","DL1c","DL1d","DL1e","DL1f","DL2","DL2a","DL3","DL4","DL5",
+    "DM1","DM2"
+  ],
+  "title": {"en": "Okra cultivation — DOA / HORDI recommendation"},
+  "summary": {
+    "en": "HORDI recommendation for okra (Abelmoschus esculentus). Grows in every agro-climatic zone except up-country wet. Yala planting early April to early May; Maha planting early September to early October. Spacing 90 × 60 cm, 4.5 kg seed/ha. Four-stage fertilizer schedule; harvest every 2 days for 50–100 days. Yield 10–15 t/ha OPV, up to 30 t/ha for OKH1 hybrid."
+  },
+  "start_month": 4,
+  "duration_weeks": 18,
+  "expected_yield_kg_per_acre_min": 4000,
+  "expected_yield_kg_per_acre_max": 12000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-okra/",
+  "source_document_title": "HORDI — Okra cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-okra/",
+    "notes": "Yield range spans OPV (10–15 t/ha ≈ 4,000–6,000 kg/acre) and OKH1 hybrid (≈ 30 t/ha ≈ 12,000 kg/acre)."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Well-drained soil, neither acidic nor alkaline. Plan Yala planting for early April to early May; Maha planting for early September to early October."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 195, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed at 90 cm row spacing × 60 cm within-row. Seed rate 4.5 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Okra seed (MI5 / MI7 / OKH1 / Haritha)"}, "amount": 4.5, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 4, "activity": "top_dressing",
+      "title": {"en": "First top-dressing — 2 weeks after sowing"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 25, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 14, "dap_max": 14 },
+    { "week_idx": 7, "activity": "top_dressing",
+      "title": {"en": "Second top-dressing — 5 weeks after sowing"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 100, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 35, "dap_max": 35 },
+    { "week_idx": 10, "activity": "top_dressing",
+      "title": {"en": "Third top-dressing — 8 weeks after sowing"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 100, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 50, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 56, "dap_max": 56 },
+    { "week_idx": 8, "activity": "harvest", "order_in_week": 1,
+      "title": {"en": "First harvest"},
+      "body": {"en": "Harvest every 2 days; up to 25 picks over 50–100 days after planting. Pick at 5–7 cm pod length for best market price."},
+      "dap_min": 50, "dap_max": 100 }
+  ],
+  "pest_risks": [
+    { "week_idx": 7, "disease_slug": "okra-powdery-mildew",
+      "risk": "moderate",
+      "notes": {"en": "Powdery mildew (Podosphaera spp.). Apply recommended sulphur-based or triazole fungicide at first lesions per DOA 2019 pesticide recommendation."} },
+    { "week_idx": 5, "disease_slug": "okra-mosaic-virus",
+      "risk": "high",
+      "notes": {"en": "Okra yellow vein mosaic virus (Begomovirus) — whitefly-transmitted. Use virus-free seed, keep fields weed-free, remove infected plants, and suppress whitefly early with DOA-approved insecticides."} }
+  ],
+  "economics": []
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "irri-rice-blast-knowledgebank-01",
+  "source_slug": "irri-rice-blast-knowledgebank",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Rice blast (Magnaporthe oryzae) — integrated management stack",
+  "body": "Rice blast is the single highest-impact disease on the global rice crop; IRRI estimates ~30% of global production losses trace to it. Integrated management combines four layers. (1) Host resistance is the most practical and cost-efficient control; over 100 R-genes are known, but single-gene varieties collapse under virulent races, so rotate resistance sources across seasons. (2) Fungicide rotation: the ICAR-verified spray stack for field protection is Prochloraz 23.5% + Tricyclazole 20% SE at 2 ml/L (65% disease reduction, 6,026 kg/ha grain) or Tricyclazole 75% WP at 0.6 g/L (52% reduction); copper oxychloride 0.25% or copper hydroxide 0.25% add a second line. (3) Biocontrol: Pseudomonas fluorescens gives measurable disease reduction with a yield bump. (4) Botanicals: 3% garlic-bulb extract and 3% neem oil are the best-performing organic sprays. Practical rule for Sri Lankan tank-fed fields: pair a resistant variety (from the RRDI recommended list) with a Tricyclazole spray at boot stage, and rotate to copper hydroxide if panicle-stage neck blast starts appearing.",
+  "entity_refs": [
+    { "type": "crop", "slug": "rice" }
+  ],
+  "authority": "regional_authority",
+  "applies_to_countries": ["LK", "IN", "PH"],
+  "topic_tags": ["rice", "blast", "ipm", "tricyclazole", "resistance"],
+  "confidence": 0.8,
+  "quote": "Prochloraz 23.5% + tricyclazole 20% SE @ 2 ml/l was found effective with 64.78% reduction of the disease and highest grain yield of 6026 kg ha-1. Tricyclazole 75% wp @ 0.6 g/l managed the disease with 52.35% reduction. Among the biocontrol agents Pseudomonas fluorescens showed maximum disease reduction. Garlic bulb extract and neem oil @ 3% were found effective.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "http://www.knowledgebank.irri.org/training/fact-sheets/pest-management/diseases/item/blast-leaf-collar",
+    "caveat": "IRRI + ICAR pooled evidence. Sri Lankan DOA has its own 2019 pesticide recommendation — agronomist must cross-check these dosages against the Sri Lankan register before they drive a farmer-facing spray recommendation."
+  }
+}
