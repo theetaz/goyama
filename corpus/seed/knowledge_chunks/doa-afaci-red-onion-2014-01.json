@@ -5,6 +5,11 @@
   "language": "en",
   "title": "DOA spacing and bed layout for dry-zone red onion",
   "body": "For commercial dry-zone red-onion beds, the DOA calendar specifies raised beds 90 × 800 cm with a 15 × 15 cm plant spacing, giving roughly 320 plants per bed. For bulb-seed production the tighter 60 × 800 cm beds with 10 × 10 cm spacing are preferred because closer spacing produces the small 20–30 g bulbs ideal for vernalization. A third polythene cover over the bed centres protects seedlings from intense sun during the first 3 weeks after sowing.",
+  "body_translated": {
+    "en": "For commercial dry-zone red-onion beds, the DOA calendar specifies raised beds 90 × 800 cm with a 15 × 15 cm plant spacing, giving roughly 320 plants per bed. For bulb-seed production the tighter 60 × 800 cm beds with 10 × 10 cm spacing are preferred because closer spacing produces the small 20–30 g bulbs ideal for vernalization. A third polythene cover over the bed centres protects seedlings from intense sun during the first 3 weeks after sowing.",
+    "si": "වාණිජ වියළි කලාපයේ රතු ලූණු වගාව සඳහා DOA දින දර්ශනය 90 × 800 cm උස් ඇඳන් සහ 15 × 15 cm පැළ පරතරය නියම කරන අතර, එක් ඇඳකට පැළ 320 ක් පමණ ලැබේ. ලූණු බීජ නිෂ්පාදනය සඳහා 60 × 800 cm වඩා කුඩා ඇඳන් සහ 10 × 10 cm පරතරය වඩා සුදුසු වේ — මෙම ඉතා කුඩා පරතරය vernalization සඳහා සුදුසු 20–30 g කුඩා බල්බ නිෂ්පාදනය කරන නිසාය. වපුරා පළමු සති 3 තුළ තද හිරු එළියෙන් පැළ ආරක්ෂා කිරීමට ඇඳේ මැදට තුන්වන පොලිතීන් ආවරණයක් යොදන්න.",
+    "ta": "வணிக வறண்ட வலய சிவப்பு வெங்காய பாத்திகளுக்கு, DOA காலண்டர் 90 × 800 செ.மீ. உயரிய பாத்திகள் மற்றும் 15 × 15 செ.மீ. செடி இடைவெளியை குறிப்பிடுகிறது; இது பாத்திக்கு சுமார் 320 செடிகளைத் தரும். குமிழ்-விதை உற்பத்திக்கு 60 × 800 செ.மீ. இறுக்கமான பாத்திகள் மற்றும் 10 × 10 செ.மீ. இடைவெளி விரும்பப்படுகிறது — நெருக்கமான இடைவெளி vernalization-க்கு ஏற்ற 20–30 g சிறிய குமிழ்களை உருவாக்குகிறது. விதைத்த முதல் 3 வாரங்களில் கடுமையான வெயிலில் இருந்து நாற்றுகளைப் பாதுகாக்க பாத்தியின் நடுவில் மூன்றாவது பாலிதீன் மூடியை போடவும்."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "red-onion" },
     { "type": "cultivation_plan", "slug": "red-onion-dry-zone-maha" }

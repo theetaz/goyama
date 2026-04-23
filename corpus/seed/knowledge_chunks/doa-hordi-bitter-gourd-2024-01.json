@@ -5,6 +5,11 @@
   "language": "en",
   "title": "Bitter gourd — seasons, spacing, and trellising",
   "body": "HORDI recommends planting bitter gourd in two main windows: Maha (October–November) and Yala (April–May), with year-round production viable in favourable dry-zone locations. Direct-seed three seeds per hill at 2–3 cm depth with 1.5 m between rows and 1 m within row; seed rate 6 kg/ha. Install trellis (mesh or stakes) three weeks after planting — delaying trellising past the third true-leaf stage causes vine tangling and crop loss from stem damage. Yield: 20 t/ha for OPVs, 20–30 t/ha for hybrids.",
+  "body_translated": {
+    "en": "HORDI recommends planting bitter gourd in two main windows: Maha (October–November) and Yala (April–May), with year-round production viable in favourable dry-zone locations. Direct-seed three seeds per hill at 2–3 cm depth with 1.5 m between rows and 1 m within row; seed rate 6 kg/ha. Install trellis (mesh or stakes) three weeks after planting — delaying trellising past the third true-leaf stage causes vine tangling and crop loss from stem damage. Yield: 20 t/ha for OPVs, 20–30 t/ha for hybrids.",
+    "si": "HORDI කරවිල වගාවට ප්‍රධාන වාර දෙකක් නිර්දේශ කරයි: මහ (ඔක්තෝබර්–නොවැම්බර්) සහ යල (අප්‍රේල්–මැයි); සුදුසු වියළි කලාප ස්ථානවල වර්ෂ පුරා නිෂ්පාදනය කළ හැකිය. පේළි අතර 1.5 m, පේළියක් තුළ 1 m පරතරයෙන් එක් වළකට බීජ 3 බැගින් 2–3 cm ගැඹුරකට සෘජුවම වපුරන්න; බීජ අනුපාතය 6 kg/ha. රෝපණයෙන් සති තුනකට පසු ත්‍රෙලිස් (දැල් හෝ කණු) යොදන්න — තෙවන සැබෑ පත්‍ර අදියර පසු කිරීම ලතා පැටලීම සහ කඳ හානියෙන් බෝග පාඩුවට තුඩු දෙයි. අස්වැන්න: OPV සඳහා 20 t/ha, හයිබ්‍රිඩ් සඳහා 20–30 t/ha.",
+    "ta": "HORDI பாகற்காய் நடவுக்கு இரண்டு முக்கிய காலங்களை பரிந்துரைக்கிறது: மஹா (அக்டோபர்–நவம்பர்) மற்றும் யாலா (ஏப்ரல்–மே); சாதகமான வறண்ட வலய இடங்களில் வருடம் முழுவதும் உற்பத்தி சாத்தியமாகும். வரிசைகளுக்கு இடையே 1.5 m, வரிசைக்குள் 1 m இடைவெளியில் ஒரு குழிக்கு 3 விதைகள் வீதம் 2–3 செ.மீ. ஆழத்தில் நேரடியாக விதைக்கவும்; விதை விகிதம் 6 kg/ha. நடவு செய்த மூன்று வாரங்களுக்குப் பிறகு டிரெல்லிஸ் (வலை அல்லது கம்பம்) அமைக்கவும் — மூன்றாவது உண்மையான இலை நிலையைக் கடந்து தாமதப்படுத்துவது கொடி சிக்கல் மற்றும் தண்டு சேதத்தால் பயிர் இழப்பை ஏற்படுத்தும். மகசூல்: OPV-களுக்கு 20 t/ha, ஹைப்ரிட்டுகளுக்கு 20–30 t/ha."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "bitter-gourd" },
     { "type": "cultivation_plan", "slug": "bitter-gourd-all-zones" }

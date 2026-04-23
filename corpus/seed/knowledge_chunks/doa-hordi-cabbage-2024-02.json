@@ -5,6 +5,11 @@
   "language": "en",
   "title": "Club root control — lime + rotation, not fungicides",
   "body": "Club root (Plasmodiophora brassicae) has no registered chemical cure on Sri Lankan cabbage. HORDI's protocol is strictly cultural: raise soil pH with lime application, rotate on a minimum 3-year cycle with non-brassica crops, and plant only disease-free seedlings. The pathogen survives 7–10 years as resting spores, so a single infected cycle compromises the field for years. Heat-tolerant varieties planted into the dry zone see lower club-root pressure than up-country plots.",
+  "body_translated": {
+    "en": "Club root (Plasmodiophora brassicae) has no registered chemical cure on Sri Lankan cabbage. HORDI's protocol is strictly cultural: raise soil pH with lime application, rotate on a minimum 3-year cycle with non-brassica crops, and plant only disease-free seedlings. The pathogen survives 7–10 years as resting spores, so a single infected cycle compromises the field for years. Heat-tolerant varieties planted into the dry zone see lower club-root pressure than up-country plots.",
+    "si": "ක්ලබ් රූට් රෝගයට (Plasmodiophora brassicae) ශ්‍රී ලංකාවේ ගෝවා මත ලියාපදිංචි රසායනික ප්‍රතිකාරයක් නැත. HORDI ප්‍රොටොකෝලය සම්පූර්ණයෙන්ම සංස්කෘතිකයි: හුණු යොදා පස pH ඉහළ නංවන්න, බ්‍රැසිකා නොවන බෝග සමඟ අවම වශයෙන් වසර 3ක චක්‍රයකින් භෝග මාරුව කරන්න, සහ රෝග රහිත පැළ පමණක් රෝපණය කරන්න. රෝගකාරකය නිශ්චල ඇට ලෙස වසර 7–10ක් පැවතෙන බැවින්, එක් ආසාදිත චක්‍රයක් ගොයම් ක්ෂේත්‍රය වසර ගණනාවක් නරක් කරයි. වියළි කලාපයට වගාකරන උෂ්ණත්ව ඉවසන ප්‍රභේද උඩරට ගොවි බිම්වලට වඩා ක්ලබ් රූට් පීඩනය අඩුවෙන් අත්විඳියි.",
+    "ta": "இலங்கையில் முட்டைக்கோஸ் மீது கிளப் ரூட் (Plasmodiophora brassicae) நோய்க்கு பதிவு செய்யப்பட்ட இரசாயன மருந்து எதுவும் இல்லை. HORDI-யின் நெறிமுறை முற்றிலும் கலாச்சார பாதை: சுண்ணாம்பு இட்டு மண் pH-ஐ உயர்த்துங்கள், பிராசிக்கா அல்லாத பயிர்களுடன் குறைந்தபட்சம் 3 வருட சுழற்சியில் பயிர் சுழற்சி செய்யுங்கள், நோய்-இல்லாத நாற்றுகளை மட்டும் நடவு செய்யுங்கள். நோய்க்காரணி 7–10 வருடங்கள் உறங்கும் வித்துகளாக உயிர்வாழும், எனவே ஒரு தொற்று சுழற்சி வயலை ஆண்டுகளுக்கு கெடுக்கும். வெப்ப-தாங்கும் வகைகள் வறண்ட வலயத்தில் மலைநாட்டு தோட்டங்களை விட குறைவான கிளப் ரூட் அழுத்தத்தை சந்திக்கின்றன."
+  },
   "entity_refs": [
     { "type": "crop", "slug": "cabbage" },
     { "type": "disease", "slug": "cabbage-club-root" }
