@@ -1,0 +1,157 @@
+{
+  "slug": "red-onion-dry-zone-maha",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "red-onion",
+  "season": "maha",
+  "aez_codes": ["DL-1", "DL-1c", "DL-1d", "DL-2", "DL-2a", "DL-3", "DL-4", "DL-5"],
+  "title": {
+    "en": "Red onion — dry zone Maha cultivation calendar",
+    "si": "රතු ලූනු වගා කාල සටහන — වියළි කලාපය"
+  },
+  "summary": {
+    "en": "A 48-week plan covering commercial red-onion cultivation in Sri Lanka's dry zone during the Maha season (Dec–May), followed by a seed-bulb production cycle (Jun–Nov). Inputs, pest calendar, and economics are from the DOA / AFACI 2014 bulletin; districts in scope: Anuradhapura, Puttalam, Kurunegala, Polonnaruwa, Matale, Monaragala, Vavuniya, Mannar, Mullaitivu, Kilinochchi, Trincomalee, Hambantota, Ampara, Badulla (low-country portions).",
+    "si": "වියළි කලාපයේ මහ කන්නයේදී (දෙසැම්බර්–මැයි) රතු ලූනු වාණිජ වගාවෙන් ආරම්භ වී, යාල කන්නයේදී (ජූනි–නොවැම්බර්) බීජ බල්බ නිෂ්පාදනය දක්වා දිවෙන සති 48ක සම්පූර්ණ කාල සටහන."
+  },
+  "start_month": 12,
+  "duration_weeks": 48,
+  "expected_yield_kg_per_acre_min": 3000,
+  "expected_yield_kg_per_acre_max": 3800,
+  "source_document_url": "https://www.doa.gov.lk/",
+  "source_document_title": "DOA / AFACI — Red Onion Cultivation Calendar, Dry Zone (2014)",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "source": "hand-transcribed from DOA / AFACI infographic provided by the maintainer",
+    "notes": "Sinhala text on the source is the canonical authoring locale; English summary added by the ingestion agent. Tamil translation pending agronomist review."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation", "si": "බිම් සැකසීම"},
+      "weather_hint": "rainy",
+      "body": {"en": "Deep ploughing and secondary tillage. Prepare raised beds 90 × 800 cm with 60 cm paths between beds; finer beds 60 × 800 cm where transplanting spacing is 10 × 10 cm."} },
+    { "week_idx": 2, "activity": "basal_fertilizer", "order_in_week": 0,
+      "title": {"en": "Organic amendment", "si": "කාබනික පොහොර යෙදීම"},
+      "body": {"en": "Incorporate well-decomposed compost 10–15 t/ha at least 1–2 weeks before sowing."},
+      "inputs": [
+        {"type": "amendment", "name": {"en": "Well-decomposed compost"}, "amount": 10, "unit": "t", "per_unit_area": "hectare"}
+      ],
+      "weather_hint": "rainy" },
+    { "week_idx": 3, "activity": "basal_fertilizer", "order_in_week": 0,
+      "title": {"en": "Basal inorganic fertilizer", "si": "මූලික පොහොර"},
+      "body": {"en": "Apply basal dose 1–2 weeks before sowing: Urea 27, TSP 40, MOP 20 kg/acre. Ammonium sulphate 40 kg/acre as supplemental sulphur on sandy soils."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"},             "amount": 27, "unit": "kg", "per_unit_area": "acre"},
+        {"type": "fertilizer", "name": {"en": "TSP"},              "amount": 40, "unit": "kg", "per_unit_area": "acre"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"},"amount": 20, "unit": "kg", "per_unit_area": "acre"},
+        {"type": "fertilizer", "name": {"en": "Ammonium sulphate"},"amount": 40, "unit": "kg", "per_unit_area": "acre"}
+      ],
+      "dap_min": -14, "dap_max": -7,
+      "weather_hint": "mixed" },
+    { "week_idx": 4, "activity": "seed_sowing",
+      "title": {"en": "Seed sowing / transplanting", "si": "බීජ සිටුවීම"},
+      "body": {"en": "Sow direct seed or transplant 25–30-day seedlings. Row × plant spacing 15 × 15 cm for commercial beds; 10 × 10 cm for seed-production beds."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Red onion seed"}, "amount": 4, "unit": "kg", "per_unit_area": "acre"}
+      ],
+      "dap_min": 0, "dap_max": 0,
+      "weather_hint": "dry" },
+    { "week_idx": 5, "activity": "herbicide_pre",
+      "title": {"en": "Pre-emergence herbicide", "si": "පූර්ව නිර්ගමන වල් නාශක"},
+      "body": {"en": "Apply pre-emergence herbicide (oxyfluorfen 23.5 EC 500 ml/ha) within 3 days of sowing, before weed emergence."},
+      "inputs": [
+        {"type": "herbicide", "name": {"en": "Oxyfluorfen 23.5 EC"}, "amount": 500, "unit": "ml", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 1, "dap_max": 3,
+      "weather_hint": "dry" },
+    { "week_idx": 9, "activity": "top_dressing", "order_in_week": 0,
+      "title": {"en": "Top-dressing — week 6", "si": "මතුපිට පොහොර (සති 6)"},
+      "body": {"en": "First top-dressing 6 weeks after sowing."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"},             "amount": 26, "unit": "kg", "per_unit_area": "acre"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"},"amount": 15, "unit": "kg", "per_unit_area": "acre"}
+      ],
+      "dap_min": 42, "dap_max": 45,
+      "weather_hint": "mixed" },
+    { "week_idx": 9, "activity": "weed_control", "order_in_week": 1,
+      "title": {"en": "Manual weeding", "si": "වල් මර්ධනය"},
+      "body": {"en": "Hand-weed between rows; avoid disturbing shallow bulb roots."},
+      "weather_hint": "mixed" },
+    { "week_idx": 10, "activity": "irrigation",
+      "title": {"en": "Irrigation", "si": "ජල සම්පාදනය"},
+      "body": {"en": "Weekly irrigation to field capacity; avoid waterlogging. Reduce 10–14 days before harvest to promote bulb curing."},
+      "weather_hint": "mixed" },
+    { "week_idx": 13, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — week 10 (30 days in Sinhala convention)", "si": "මතුපිට පොහොර (සිටුවා දින 30 පසු)"},
+      "body": {"en": "Second top-dressing approximately 10 weeks after sowing."},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"},              "amount": 26, "unit": "kg", "per_unit_area": "acre"},
+        {"type": "fertilizer", "name": {"en": "Ammonium sulphate"}, "amount": 40, "unit": "kg", "per_unit_area": "acre"}
+      ],
+      "dap_min": 70, "dap_max": 77,
+      "weather_hint": "dry" },
+    { "week_idx": 21, "activity": "harvest",
+      "title": {"en": "Bulb harvest", "si": "අස්වනු නෙලීම"},
+      "body": {"en": "Harvest when 75–80% of tops have fallen over. Cure in shade 7–10 days before grading. Expected yield: 3,000–3,800 kg/acre."},
+      "dap_min": 120, "dap_max": 140,
+      "weather_hint": "dry" },
+    { "week_idx": 26, "activity": "seed_harvest",
+      "title": {"en": "Seed bulb selection & vernalization", "si": "බල්බ තෝරා ගැනීම සහ වසන්තීකරණය"},
+      "body": {"en": "Select medium-sized (20–30 g) disease-free bulbs; cure and hold 8–10 weeks for vernalization before the seed-production planting."},
+      "weather_hint": "dry" }
+  ],
+  "pest_risks": [
+    { "week_idx":  8, "disease_slug": "onion-purple-blotch",
+      "risk": "moderate",
+      "recommended_remedy_slugs": ["mancozeb-75wp", "tebuconazole-25ec"],
+      "notes": {"en": "Purple blotch (Alternaria porri). Small purple lesions with concentric rings on older leaves — favoured by high humidity and dew. Spray at first lesions."} },
+    { "week_idx":  9, "disease_slug": "onion-anthracnose",
+      "risk": "moderate",
+      "recommended_remedy_slugs": ["captan-50wp"],
+      "notes": {"en": "Anthracnose (Colletotrichum). Twisting of leaves with orange fruiting bodies; worse with overhead irrigation. Treatment per DOA bulletin: Captan 50% WP, 6 g per 10 L water."} },
+    { "week_idx": 11, "disease_slug": "onion-downy-mildew",
+      "risk": "high",
+      "recommended_remedy_slugs": ["metalaxyl-mz-72wp"],
+      "notes": {"en": "Downy mildew (Peronospora destructor). Pale-yellow oval lesions with violet sporulation in dew. Treatment: Metalaxyl+Mancozeb 72 WP 20 g/10 L; second spray 10 days later if damp weather continues."} },
+    { "week_idx": 12, "disease_slug": "onion-bulb-rot-fungal",
+      "risk": "moderate",
+      "recommended_remedy_slugs": ["mancozeb-75wp"],
+      "notes": {"en": "Fungal bulb rot complex (Fusarium / Sclerotium). Drench neck and basal plate: Mancozeb 75 WP 15 g/10 L at first symptom. Avoid mechanical injury at weeding."} },
+    { "week_idx": 13, "disease_slug": "onion-bulb-rot-bacterial",
+      "risk": "moderate",
+      "recommended_remedy_slugs": ["copper-oxychloride-50wp"],
+      "notes": {"en": "Bacterial bulb rot (Burkholderia cepacia). Soft watery rot with foul smell, typically after heavy rain. Treatment per DOA: Copper oxychloride 50% WP, 5 g / 4 g per 10 L water. Cull and destroy infected plants."} },
+    { "week_idx": 10, "pest_slug": "onion-stem-fly",
+      "risk": "high",
+      "recommended_remedy_slugs": ["profenofos-50ec"],
+      "notes": {"en": "Onion stem fly (Delia antiqua) — Sinhala: පැලමැත්කා. Wilting central leaves and tunnelling in the neck. DOA spray: Profenofos 50 EC 10 ml per 10 L water, two applications 7 days apart."} },
+    { "week_idx": 14, "pest_slug": "onion-armyworm",
+      "risk": "high",
+      "recommended_remedy_slugs": ["emamectin-benzoate-5sg"],
+      "notes": {"en": "Onion armyworm (Spodoptera litura / S. exigua) — Sinhala: ලූනු දළඹුවා. Defoliation and bulb scarring. DOA spray: Emamectin benzoate 5 SG 4 g per 10 L water; scout at dusk."} }
+  ],
+  "economics": [
+    {
+      "reference_year": 2013,
+      "unit_area": "acre",
+      "currency": "LKR",
+      "cost_lines": [
+        {"category": "seed",     "label": {"en": "Seed — 575 g × 120 packs"}, "amount": 69000},
+        {"category": "fertilizer","label": {"en": "Fertilizer"},                "amount": 10500},
+        {"category": "pesticide","label": {"en": "Agrochemicals"},             "amount":  2000},
+        {"category": "labour",   "label": {"en": "Labour — spacing 90 × 800 (no family labour)"}, "amount": 72000, "notes": "commercial bed layout"},
+        {"category": "labour",   "label": {"en": "Labour — spacing 60 × 800 (with family labour)"}, "amount": 48000, "notes": "tighter spacing with family participation"}
+      ],
+      "total_cost_without_family_labour": 153500,
+      "total_cost_with_family_labour":    129500,
+      "yield_kg": 3400,
+      "unit_price": 90,
+      "gross_revenue": 306000,
+      "net_revenue_without_family_labour": 152500,
+      "net_revenue_with_family_labour":    176500,
+      "field_provenance": {
+        "source_note": "DOA/AFACI 2014 bulletin, 2013 reference-year estimates. Figures are LKR per acre; adjust for current year before using in planning tools."
+      }
+    }
+  ]
+}

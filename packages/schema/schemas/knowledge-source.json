@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goyama.lk/schemas/knowledge-source.json",
+  "title": "KnowledgeSource",
+  "description": "A single upstream document (web page, PDF, YouTube video, paper, field note) that we extracted knowledge chunks from. The canonical attribution anchor for every quote.",
+  "type": "object",
+  "required": ["slug", "display_name", "medium", "authority"],
+  "properties": {
+    "slug": { "$ref": "common.json#/$defs/Slug" },
+    "display_name": { "type": "string" },
+    "medium": {
+      "type": "string",
+      "enum": [
+        "web_article", "pdf", "video_transcript", "audio_transcript",
+        "social_post", "field_note", "research_paper", "book", "image_caption"
+      ]
+    },
+    "publisher": { "type": "string" },
+    "authority": { "$ref": "common.json#/$defs/AuthorityLevel" },
+    "url": { "type": "string", "format": "uri" },
+    "language": { "$ref": "common.json#/$defs/Locale" },
+    "licence": { "type": "string" },
+    "published_at": { "type": "string", "format": "date" },
+    "fetched_at": { "$ref": "common.json#/$defs/Timestamp" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

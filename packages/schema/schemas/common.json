@@ -125,6 +125,18 @@
         }
       },
       "required": ["type", "coordinates"]
+    },
+    "AuthorityLevel": {
+      "type": "string",
+      "enum": [
+        "doa_official",
+        "peer_reviewed",
+        "regional_authority",
+        "practitioner_report",
+        "inferred_by_analogy",
+        "agent_synthesis"
+      ],
+      "description": "Authority of a published claim. Only 'doa_official' and 'peer_reviewed' may drive farmer-facing recommendations; the rest render as advisory / exploratory."
     }
   }
 }
