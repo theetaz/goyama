@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-cucumber-2024-01",
+  "source_slug": "doa-hordi-cucumber-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Cucumber variety ladder — OPV vs hybrid yield gap",
+  "body": "HORDI's released cucumber portfolio includes six named varieties: HORDI Green, HORDI White, Kalpitiya White, Champion, Gannoruwa White, and LY 58. The practical rule is that OPV types yield 15–20 t/ha while hybrid types reach 25–30 t/ha — a 50–100% premium for the hybrid seed cost. All plant at 1 × 1 m monoculture with a 1 kg/ha seed rate, and all share the same basal fertilizer (75 Urea + 200 TSP + 60 MOP kg/ha). Cucumber grows up to 1000 m elevation on multiple soil types with pH 5.5–7.5 — it's one of the most forgiving cucurbits for beginner farmers. Main watch-outs: cucumber mosaic virus (vectored by aphids) and powdery mildew on shaded leaves; both controlled per DOA 2019 recommendations.",
+  "entity_refs": [
+    { "type": "crop", "slug": "cucumber" },
+    { "type": "cultivation_plan", "slug": "cucumber-low-mid-country" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["cucumber", "variety_selection", "yield", "hybrid_vs_opv"],
+  "confidence": 0.93,
+  "quote": "Released Varieties: HORDI Green, HORDI White, Kalpitiya White, Champion, Gannoruwa White, LY 58. Yield: 15-20 t/ha OP varieties; 25-30 t/ha Hybrid varieties. Spacing: 1m x 1m as a spacing for mono culture. Seed Rate: 1 kg/ha. Can be cultivated up to above 1000 m sea level.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-cucumber/"
+  }
+}
