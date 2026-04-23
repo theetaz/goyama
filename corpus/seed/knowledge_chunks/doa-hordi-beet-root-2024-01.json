@@ -1,0 +1,23 @@
+{
+  "slug": "doa-hordi-beet-root-2024-01",
+  "source_slug": "doa-hordi-beet-root-2024",
+  "chunk_idx": 0,
+  "language": "en",
+  "title": "Beet root — heavy basal + a single top-dressing for root bulking",
+  "body": "HORDI runs beet root on a notably front-loaded fertilizer schedule: basal Urea 165 + TSP 270 + MOP 125 kg/ha plus 10 t/ha organic manure, then a single top-dressing at week 3 (Urea 165 + MOP 125). This is heavier than most root crops HORDI publishes, because beet's 75–90 day root-bulking window needs sustained N+K to reach the 12–20 t/ha target yield. Crimson Globe and Detroit Dark Red are the two released varieties — both work in all AEZs but up-country cool climate gives the best pigment development (deeper red hypocotyl). Soil pH 6.3–7.3 is tighter than most HORDI crops; below 6.3 the roots go corky, above 7.3 boron becomes unavailable and hollow-heart develops. Test soil pH before a commercial 5–6 kg/ha planting.",
+  "entity_refs": [
+    { "type": "crop", "slug": "beet-root" },
+    { "type": "cultivation_plan", "slug": "beet-root-all-zones" }
+  ],
+  "authority": "doa_official",
+  "applies_to_countries": ["LK"],
+  "topic_tags": ["beet_root", "fertilizer", "soil_ph", "root_bulking"],
+  "confidence": 0.95,
+  "quote": "Basal: Urea 165, TSP 270, MOP 125. Top dressing (3 weeks post-planting): Urea 165, MOP 125. Organic manure requirement: 10 t/ha. pH 6.3-7.3. Harvest: 75-90 days after transplanting. Yield: 12-20 t/ha.",
+  "status": "draft",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-beet-root/"
+  }
+}

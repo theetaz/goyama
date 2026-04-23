@@ -1,0 +1,76 @@
+{
+  "slug": "radish-all-zones",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "radish",
+  "season": "year_round",
+  "aez_codes": [
+    "WU1","WU2","WU3","IU1","IU2","IU3",
+    "WM1","WM2","WM3","IM1","IM2","IM3",
+    "WL1","WL2","WL3","IL1","IL2","IL3",
+    "DL1","DL2","DL3","DM1","DM2"
+  ],
+  "title": {
+    "en": "Radish cultivation — all-zones recommendation",
+    "si": "රාබු වගාව — සියලු කලාප",
+    "ta": "முள்ளங்கி பயிர்ச்செய்கை — அனைத்து வலயங்களும்"
+  },
+  "summary": {
+    "en": "HORDI recommendation for radish (Raphanus sativus L.). Varieties: Japanese Ball (40–50 t/ha), Beeralu Rabu (20–30 t/ha). Grows in all agro-ecological regions. Well-drained soil, pH 6.0–7.5. Spacing 25–30 × 10 cm on raised beds; seed rate 5 kg/ha. Two-stage fertilizer: heavy basal (125 Urea + 200 TSP + 75 MOP) then one top-dressing at 3 weeks. Fast-turnover crop — don't delay harvest or quality drops sharply.",
+    "si": "රාබු (Raphanus sativus L.) සඳහා HORDI නිර්දේශය. ප්‍රභේද: Japanese Ball (40-50 t/ha), බීරාලු රාබු (20-30 t/ha). සියලු කෘෂි-පරිසර කලාපවල වැඩේ. පස් pH 6.0-7.5. පරතරය 25-30 × 10 cm; බීජ මාත්‍රාව 5 kg/ha. අස්වැන්න ටොන් 40-50/හෙ (ජපන්); ටොන් 20-30/හෙ (බීරාලු).",
+    "ta": "முள்ளங்கி (Raphanus sativus L.) பயிர்ச்செய்கைக்கான HORDI பரிந்துரை. வகைகள்: Japanese Ball (40-50 டன்/ஹெக்டேர்), Beeralu Rabu (20-30 டன்/ஹெக்டேர்). அனைத்து வேளாண்-சூழல் வலயங்களிலும் வளரும். மண் pH 6.0-7.5. இடைவெளி 25-30 × 10 cm; விதை அளவு 5 kg/ha. மகசூல் 40-50 டன்/ஹெக்டேர் (ஜப்பானிஸ் பால்); 20-30 டன்/ஹெக்டேர் (பீராலு)."
+  },
+  "start_month": 1,
+  "duration_weeks": 8,
+  "expected_yield_kg_per_acre_min": 8000,
+  "expected_yield_kg_per_acre_max": 20000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-raddish/",
+  "source_document_title": "HORDI — Radish cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-raddish/",
+    "notes": "Yield range spans Beeralu Rabu (20-30 t/ha ≈ 8,000–12,000 kg/acre) to Japanese Ball (40-50 t/ha ≈ 16,000–20,000 kg/acre)."
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Raised-bed preparation"},
+      "body": {"en": "Well-drained soil at pH 6.0–7.5. Prepare raised beds to enable proper root development."} },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 125, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 200, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding"},
+      "body": {"en": "Direct seed on raised beds at 25–30 cm between rows × 10 cm within row. Seed rate 5 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Radish seed (Japanese Ball / Beeralu Rabu)"}, "amount": 5, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 5, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — 3 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 125, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 75, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 21, "dap_max": 21 },
+    { "week_idx": 7, "activity": "harvest",
+      "title": {"en": "Root harvest"},
+      "body": {"en": "Harvest at maturity — pulling early gives soft roots; delaying sharply reduces eating quality. Yield 40–50 t/ha for Japanese Ball, 20–30 t/ha for Beeralu Rabu."},
+      "dap_min": 40, "dap_max": 55 }
+  ],
+  "pest_risks": [
+    { "week_idx": 4, "pest_slug": "radish-leaf-eating-caterpillar",
+      "risk": "moderate",
+      "notes": {"en": "For severe leaf-eating caterpillar damage, apply DOA-recommended insecticides. Monitor weekly; threshold at 10% leaf damage."} },
+    { "week_idx": 5, "disease_slug": "radish-club-root",
+      "risk": "moderate",
+      "notes": {"en": "Club root (Plasmodiophora brassicae). Apply lime to raise soil pH above 7.0; uproot and burn infected plants. Rotate with non-brassicas 3+ years."} }
+  ],
+  "economics": []
+}

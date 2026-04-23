@@ -1,0 +1,78 @@
+{
+  "slug": "beet-root-all-zones",
+  "version": 1,
+  "status": "draft",
+  "authority": "doa_official",
+  "crop_slug": "beet-root",
+  "season": "year_round",
+  "aez_codes": [
+    "WU1","WU2","WU3","IU1","IU2","IU3",
+    "WM1","WM2","WM3","IM1","IM2","IM3",
+    "WL1","WL2","WL3","IL1","IL2","IL3",
+    "DL1","DL2","DL3","DM1","DM2"
+  ],
+  "title": {
+    "en": "Beet root cultivation — all-zones recommendation",
+    "si": "බීට්රූට් වගාව — සියලු කලාප",
+    "ta": "பீட்ரூட் பயிர்ச்செய்கை — அனைத்து வலயங்களும்"
+  },
+  "summary": {
+    "en": "HORDI recommendation for beet root (Beta vulgaris). Varieties: Crimson Globe, Detroit Dark Red. Grows across all agro-ecological zones with best yield in cool up-country. Spacing 30 × 10 cm; seed rate 5–6 kg/ha; soil pH 6.3–7.3; incorporate 10 t/ha organic manure. Two-stage fertilizer: heavy basal (165 Urea + 270 TSP + 125 MOP) then one top-dressing at 3 weeks (165 Urea + 125 MOP). Harvest 75–90 days post-transplant. Yield 12–20 t/ha.",
+    "si": "බීට්රූට් (Beta vulgaris) සඳහා HORDI නිර්දේශය. ප්‍රභේද: Crimson Globe, Detroit Dark Red. සියලු කෘෂි-පරිසර කලාපවල වැඩේ, සිසිල් උඩරට වඩා හොඳින්. පරතරය 30 × 10 cm; පස් pH 6.3-7.3. දින 75-90 කින් අස්වනු. අස්වැන්න ටොන් 12-20/හෙ.",
+    "ta": "பீட்ரூட் (Beta vulgaris) பயிர்ச்செய்கைக்கான HORDI பரிந்துரை. வகைகள்: Crimson Globe, Detroit Dark Red. அனைத்து வேளாண்-சூழல் வலயங்களிலும் வளரும், குளிர்ந்த மலைநாட்டில் சிறப்பாக. இடைவெளி 30 × 10 cm; மண் pH 6.3-7.3. 75-90 நாட்களில் அறுவடை. மகசூல் 12-20 டன்/ஹெக்டேர்."
+  },
+  "start_month": 1,
+  "duration_weeks": 14,
+  "expected_yield_kg_per_acre_min": 4800,
+  "expected_yield_kg_per_acre_max": 8000,
+  "source_document_url": "https://doa.gov.lk/hordi-crop-beet-root/",
+  "source_document_title": "HORDI — Beet root cultivation recommendation",
+  "field_provenance": {
+    "authored_by": "ingestion-agent",
+    "fetched_at": "2026-04-23T00:00:00Z",
+    "source_url": "https://doa.gov.lk/hordi-crop-beet-root/"
+  },
+  "activities": [
+    { "week_idx": 1, "activity": "land_prep",
+      "title": {"en": "Land preparation"},
+      "body": {"en": "Soil pH 6.3–7.3. Incorporate 10 t/ha well-decomposed organic manure before sowing."},
+      "inputs": [
+        {"type": "amendment", "name": {"en": "Organic manure"}, "amount": 10, "unit": "t", "per_unit_area": "hectare"}
+      ] },
+    { "week_idx": 2, "activity": "basal_fertilizer",
+      "title": {"en": "Basal fertilizer"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 165, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "TSP"},  "amount": 270, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 125, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": -1, "dap_max": 0 },
+    { "week_idx": 2, "activity": "seed_sowing", "order_in_week": 1,
+      "title": {"en": "Direct seeding / transplanting"},
+      "body": {"en": "Sow seed or transplant at 30 × 10 cm spacing. Seed rate 5–6 kg/ha."},
+      "inputs": [
+        {"type": "seed", "name": {"en": "Beet root seed (Crimson Globe / Detroit Dark Red)"}, "amount": 5.5, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 0, "dap_max": 0 },
+    { "week_idx": 5, "activity": "top_dressing",
+      "title": {"en": "Top-dressing — 3 weeks after planting"},
+      "inputs": [
+        {"type": "fertilizer", "name": {"en": "Urea"}, "amount": 165, "unit": "kg", "per_unit_area": "hectare"},
+        {"type": "fertilizer", "name": {"en": "Muriate of Potash"}, "amount": 125, "unit": "kg", "per_unit_area": "hectare"}
+      ],
+      "dap_min": 21, "dap_max": 21 },
+    { "week_idx": 13, "activity": "harvest",
+      "title": {"en": "Root harvest"},
+      "body": {"en": "Harvest when roots reach marketable size. 75–90 days after transplant. Yield 12–20 t/ha."},
+      "dap_min": 75, "dap_max": 90 }
+  ],
+  "pest_risks": [
+    { "week_idx": 5, "pest_slug": "beet-leaf-miner",
+      "risk": "moderate",
+      "notes": {"en": "Leaf miner. Azadirachtin 1% EC 16 ml/16 L or Abamectin 18 g/L EC 9.6 ml/16 L."} },
+    { "week_idx": 4, "pest_slug": "black-cutworm",
+      "risk": "moderate",
+      "notes": {"en": "Black cutworm. Profenophos 500 g/L EC 32 ml/16 L or Etofenprox 100 g/L EC 24 ml/16 L at establishment stage."} }
+  ],
+  "economics": []
+}
