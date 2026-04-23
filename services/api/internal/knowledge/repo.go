@@ -19,10 +19,17 @@ import (
 	"sort"
 	"strings"
 	"sync"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // ErrNotFound is returned when a chunk slug has no record.
 var ErrNotFound = errors.New("knowledge chunk not found")
+
+// ErrRequiresDatabase is returned by JSONL admin writes. Knowledge
+// chunk status changes only persist once the Postgres-backed admin
+// repo is wired in.
+var ErrRequiresDatabase = errors.New("knowledge chunk status changes require Postgres (set DATABASE_URL)")
 
 // Chunk is one retrievable unit of unstructured agronomic signal.
 type Chunk struct {
@@ -63,10 +70,19 @@ type Source struct {
 	PublishedAt string `json:"published_at,omitempty"`
 }
 
-// Repository is the read-only knowledge surface.
+// Repository is the read-only knowledge surface used by the farmer-
+// facing endpoints.
 type Repository interface {
 	ListByEntity(ctx context.Context, entityType, entitySlug string) ([]Chunk, error)
 	GetSource(ctx context.Context, slug string) (Source, error)
+}
+
+// AdminRepo is the admin review-queue surface. Same shape as the other
+// reviewable entities — ListByStatus + Get + SetStatus.
+type AdminRepo interface {
+	ListByStatus(ctx context.Context, status string) ([]Chunk, error)
+	Get(ctx context.Context, slug string) (Chunk, error)
+	SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error
 }
 
 // JSONLRepo loads chunk and source fixtures from disk so the dev API
@@ -181,4 +197,37 @@ func (r *JSONLRepo) GetSource(_ context.Context, slug string) (Source, error) {
 		return Source{}, ErrNotFound
 	}
 	return s, nil
+}
+
+// ListByStatus powers the admin review queue.
+func (r *JSONLRepo) ListByStatus(_ context.Context, status string) ([]Chunk, error) {
+	if err := r.load(); err != nil {
+		return nil, err
+	}
+	s := strings.TrimSpace(status)
+	out := make([]Chunk, 0, 8)
+	for _, c := range r.chunks {
+		if s == "" || c.Status == s {
+			out = append(out, c)
+		}
+	}
+	return out, nil
+}
+
+// Get returns a chunk by slug.
+func (r *JSONLRepo) Get(_ context.Context, slug string) (Chunk, error) {
+	if err := r.load(); err != nil {
+		return Chunk{}, err
+	}
+	for _, c := range r.chunks {
+		if c.Slug == slug {
+			return c, nil
+		}
+	}
+	return Chunk{}, ErrNotFound
+}
+
+// SetStatus returns ErrRequiresDatabase — JSONL mode is read-only.
+func (*JSONLRepo) SetStatus(context.Context, string, review.StatusUpdate) error {
+	return ErrRequiresDatabase
 }

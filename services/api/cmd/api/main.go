@@ -41,16 +41,18 @@ import (
 // tractable as the surface grows. Filled by newRepos, consumed by
 // buildRouter.
 type repos struct {
-	crops     crops.Repository
-	steps     crops.CultivationStepRepo
-	diseases  diseases.Repository
-	pests     pests.Repository
-	remedies  remedies.Repository
-	geo       geo.Repository
-	markets   markets.Repository
-	media     media.Repository
-	plans     plans.Repository
-	knowledge knowledge.Repository
+	crops          crops.Repository
+	steps          crops.CultivationStepRepo
+	diseases       diseases.Repository
+	pests          pests.Repository
+	remedies       remedies.Repository
+	geo            geo.Repository
+	markets        markets.Repository
+	media          media.Repository
+	plans          plans.Repository
+	plansAdmin     plans.AdminRepo
+	knowledge      knowledge.Repository
+	knowledgeAdmin knowledge.AdminRepo
 }
 
 // version is overridden via -ldflags at build time.
@@ -140,16 +142,18 @@ func newRepos(cfg config.Config, log *slog.Logger) (repos, func(), error) {
 			slog.String("corpus_path", cfg.CorpusPath),
 		)
 		return repos{
-			crops:     crops.NewJSONLRepo(cfg.CorpusPath),
-			steps:     crops.NewCultivationStepJSONLRepo(),
-			diseases:  diseases.NewJSONLRepo(),
-			pests:     pests.NewJSONLRepo(),
-			remedies:  remedies.NewJSONLRepo(),
-			geo:       geo.NewStubRepo(),
-			markets:   markets.NewStubRepo(),
-			media:     media.NewStubRepo(),
-			plans:     plansRepo,
-			knowledge: knowledgeRepo,
+			crops:          crops.NewJSONLRepo(cfg.CorpusPath),
+			steps:          crops.NewCultivationStepJSONLRepo(),
+			diseases:       diseases.NewJSONLRepo(),
+			pests:          pests.NewJSONLRepo(),
+			remedies:       remedies.NewJSONLRepo(),
+			geo:            geo.NewStubRepo(),
+			markets:        markets.NewStubRepo(),
+			media:          media.NewStubRepo(),
+			plans:          plansRepo,
+			plansAdmin:     plansRepo,
+			knowledge:      knowledgeRepo,
+			knowledgeAdmin: knowledgeRepo,
 		}, func() {}, nil
 	}
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -164,16 +168,22 @@ func newRepos(cfg config.Config, log *slog.Logger) (repos, func(), error) {
 	}
 	log.Info("repos: using Postgres")
 	return repos{
-		crops:     crops.NewPgxRepo(pool),
-		steps:     crops.NewCultivationStepPgxRepo(pool),
-		diseases:  diseases.NewPgxRepo(pool),
-		pests:     pests.NewPgxRepo(pool),
-		remedies:  remedies.NewPgxRepo(pool),
-		geo:       geo.NewPgxRepo(pool),
-		markets:   markets.NewPgxRepo(pool),
-		media:     media.NewPgxRepo(pool),
-		plans:     plansRepo,
-		knowledge: knowledgeRepo,
+		crops:    crops.NewPgxRepo(pool),
+		steps:    crops.NewCultivationStepPgxRepo(pool),
+		diseases: diseases.NewPgxRepo(pool),
+		pests:    pests.NewPgxRepo(pool),
+		remedies: remedies.NewPgxRepo(pool),
+		geo:      geo.NewPgxRepo(pool),
+		markets:  markets.NewPgxRepo(pool),
+		media:    media.NewPgxRepo(pool),
+		// Plans + knowledge stay on the JSONL repo for both the public
+		// and admin surfaces until their Postgres loader lands. The
+		// admin queue will list drafts but refuse promotions (503)
+		// with a clear ErrRequiresDatabase message.
+		plans:          plansRepo,
+		plansAdmin:     plansRepo,
+		knowledge:      knowledgeRepo,
+		knowledgeAdmin: knowledgeRepo,
 	}, pool.Close, nil
 }
 
@@ -202,7 +212,7 @@ func buildRouter(cfg config.Config, log *slog.Logger, rs repos) http.Handler {
 	mediaH := media.New(rs.media)
 	plansH := plans.New(rs.plans)
 	knowledgeH := knowledge.New(rs.knowledge)
-	adminH := admin.New(rs.steps, rs.diseases, rs.pests, rs.remedies, mediaH)
+	adminH := admin.New(rs.steps, rs.diseases, rs.pests, rs.remedies, rs.plansAdmin, rs.knowledgeAdmin, mediaH)
 
 	r.Route("/v1", func(r chi.Router) {
 		r.Get("/health", healthH.Get)

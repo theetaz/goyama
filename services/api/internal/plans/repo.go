@@ -20,10 +20,17 @@ import (
 	"sort"
 	"strings"
 	"sync"
+
+	"github.com/goyama/api/internal/review"
 )
 
 // ErrNotFound is returned when a plan slug has no record.
 var ErrNotFound = errors.New("cultivation plan not found")
+
+// ErrRequiresDatabase is returned by JSONL admin writes — mutating a
+// plan's status in dev mode would require editing a file in version
+// control, so we surface a clear 503 until the Postgres loader lands.
+var ErrRequiresDatabase = errors.New("plan status changes require Postgres (set DATABASE_URL)")
 
 // Summary is the short card representation returned by the list endpoint.
 type Summary struct {
@@ -99,10 +106,20 @@ type Economics struct {
 	NetRevenueWithFamilyLabour    *float64         `json:"net_revenue_with_family_labour,omitempty"`
 }
 
-// Repository is the read-only plans surface.
+// Repository is the farmer-facing plans surface.
 type Repository interface {
 	ListByCrop(ctx context.Context, cropSlug string) ([]Summary, error)
 	Get(ctx context.Context, slug string) (Plan, error)
+}
+
+// AdminRepo is the admin review-queue surface. Mirrors the shape the
+// generic review.Routes factory expects — ListByStatus returns the
+// full Plan rather than a summary so the agronomist can see every
+// activity / pest risk / economics row they're about to promote.
+type AdminRepo interface {
+	ListByStatus(ctx context.Context, status string) ([]Plan, error)
+	Get(ctx context.Context, slug string) (Plan, error)
+	SetStatus(ctx context.Context, slug string, u review.StatusUpdate) error
 }
 
 // JSONLRepo reads cultivation plan fixtures from corpus/seed/cultivation_plans
@@ -189,4 +206,28 @@ func (r *JSONLRepo) Get(_ context.Context, slug string) (Plan, error) {
 		return Plan{}, ErrNotFound
 	}
 	return p, nil
+}
+
+// ListByStatus powers the admin review queue. JSONL mode can filter
+// in-memory plans by the status field authored into the fixture — the
+// agronomist can preview the queue locally even without a database.
+func (r *JSONLRepo) ListByStatus(_ context.Context, status string) ([]Plan, error) {
+	if err := r.load(); err != nil {
+		return nil, err
+	}
+	s := strings.TrimSpace(status)
+	out := make([]Plan, 0, 4)
+	for _, p := range r.loaded {
+		if s == "" || p.Status == s {
+			out = append(out, p)
+		}
+	}
+	return out, nil
+}
+
+// SetStatus returns ErrRequiresDatabase — JSONL mode is read-only.
+// Status promotion will succeed once the Postgres-backed AdminPgxRepo
+// is wired in alongside the plan loader.
+func (*JSONLRepo) SetStatus(context.Context, string, review.StatusUpdate) error {
+	return ErrRequiresDatabase
 }

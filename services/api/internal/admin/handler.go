@@ -19,8 +19,10 @@ import (
 
 	"github.com/goyama/api/internal/crops"
 	"github.com/goyama/api/internal/diseases"
+	"github.com/goyama/api/internal/knowledge"
 	"github.com/goyama/api/internal/media"
 	"github.com/goyama/api/internal/pests"
+	"github.com/goyama/api/internal/plans"
 	"github.com/goyama/api/internal/remedies"
 	"github.com/goyama/api/internal/review"
 )
@@ -28,11 +30,13 @@ import (
 // Handler wires the admin HTTP routes to each per-entity repository via
 // the generic review.Routes factory.
 type Handler struct {
-	steps    crops.CultivationStepRepo
-	diseases diseases.Repository
-	pests    pests.Repository
-	remedies remedies.Repository
-	media    *media.Handler
+	steps     crops.CultivationStepRepo
+	diseases  diseases.Repository
+	pests     pests.Repository
+	remedies  remedies.Repository
+	plans     plans.AdminRepo
+	knowledge knowledge.AdminRepo
+	media     *media.Handler
 }
 
 // New returns an admin Handler backed by the given repositories.
@@ -41,14 +45,18 @@ func New(
 	diseasesRepo diseases.Repository,
 	pestsRepo pests.Repository,
 	remediesRepo remedies.Repository,
+	plansRepo plans.AdminRepo,
+	knowledgeRepo knowledge.AdminRepo,
 	mediaH *media.Handler,
 ) *Handler {
 	return &Handler{
-		steps:    stepsRepo,
-		diseases: diseasesRepo,
-		pests:    pestsRepo,
-		remedies: remediesRepo,
-		media:    mediaH,
+		steps:     stepsRepo,
+		diseases:  diseasesRepo,
+		pests:     pestsRepo,
+		remedies:  remediesRepo,
+		plans:     plansRepo,
+		knowledge: knowledgeRepo,
+		media:     mediaH,
 	}
 }
 
@@ -87,6 +95,22 @@ func (h *Handler) Routes() chi.Router {
 		StatusFn:      func(rem remedies.Remedy) string { return rem.Status },
 		NotFoundErr:   remedies.ErrNotFound,
 		RequiresDBErr: remedies.ErrRequiresDatabase,
+	}))
+
+	r.Mount("/cultivation-plans", review.Routes(review.Entity[plans.Plan]{
+		Repo:          h.plans,
+		Label:         "cultivation-plan",
+		StatusFn:      func(p plans.Plan) string { return p.Status },
+		NotFoundErr:   plans.ErrNotFound,
+		RequiresDBErr: plans.ErrRequiresDatabase,
+	}))
+
+	r.Mount("/knowledge-chunks", review.Routes(review.Entity[knowledge.Chunk]{
+		Repo:          h.knowledge,
+		Label:         "knowledge-chunk",
+		StatusFn:      func(c knowledge.Chunk) string { return c.Status },
+		NotFoundErr:   knowledge.ErrNotFound,
+		RequiresDBErr: knowledge.ErrRequiresDatabase,
 	}))
 
 	// Media doesn't fit the generic review.Routes shape — its admin
