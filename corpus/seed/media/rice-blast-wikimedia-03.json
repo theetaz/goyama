@@ -1,0 +1,19 @@
+{
+  "slug": "rice-blast-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Rice_blast.jpg",
+  "credit": "R.K. Webster, USDA-ARS (via Wikimedia Commons)",
+  "licence": "public-domain",
+  "captured_at": "2004-08-02T00:00:00Z",
+  "caption": {
+    "en": "Leaf blast lesions from Magnaporthe grisea on rice — spindle-shaped grey centres with brown margins. Early leaf-stage diagnosis lets farmers apply tricyclazole or isoprothiolane before the panicle initiates."
+  },
+  "related": {
+    "disease_slug": "rice-blast"
+  },
+  "language": "en",
+  "tags": ["rice_blast", "magnaporthe_grisea", "leaf_blast", "early_symptoms", "wikimedia_commons"]
+}

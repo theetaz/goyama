@@ -1,0 +1,19 @@
+{
+  "slug": "tomato-early-blight-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Early_blight_on_tomato_leaves_%287871930010%29.jpg",
+  "credit": "Dwight Sipler, Stow MA USA (via Wikimedia Commons)",
+  "licence": "CC-BY-2.0",
+  "captured_at": "2012-08-23T00:00:00Z",
+  "caption": {
+    "en": "Early blight lesions on tomato leaves in a home garden — dark concentric-ring spots progressing from lower leaves upward, classic Alternaria solani field symptoms."
+  },
+  "related": {
+    "disease_slug": "tomato-early-blight"
+  },
+  "language": "en",
+  "tags": ["early_blight", "alternaria_solani", "leaf_symptoms", "tomato", "wikimedia_commons"]
+}

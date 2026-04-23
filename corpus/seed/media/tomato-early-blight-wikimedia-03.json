@@ -1,0 +1,18 @@
+{
+  "slug": "tomato-early-blight-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Alternaria_solani_on_Solanum_lycopersicum.jpg",
+  "credit": "Michal Maňas (via Wikimedia Commons)",
+  "licence": "CC-BY-4.0",
+  "caption": {
+    "en": "Eight tomato fruits on a plate showing post-harvest damage from early blight (Alternaria solani) — dark sunken lesions at the stem end, useful for market-grade identification."
+  },
+  "related": {
+    "disease_slug": "tomato-early-blight"
+  },
+  "language": "en",
+  "tags": ["early_blight", "alternaria_solani", "fruit_symptoms", "tomato", "post_harvest", "wikimedia_commons"]
+}

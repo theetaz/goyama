@@ -1,0 +1,18 @@
+{
+  "slug": "tomato-late-blight-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Late_blight_on_potato_leaf_2.jpg",
+  "credit": "Howard F. Schwartz, Colorado State University (via Wikimedia Commons)",
+  "licence": "CC-BY-3.0",
+  "caption": {
+    "en": "Late blight (Phytophthora infestans) on a potato leaf — same pathogen and leaf-level symptoms observed on tomato: water-soaked lesions that expand rapidly under cool wet weather."
+  },
+  "related": {
+    "disease_slug": "tomato-late-blight"
+  },
+  "language": "en",
+  "tags": ["late_blight", "phytophthora_infestans", "leaf_symptoms", "wikimedia_commons"]
+}

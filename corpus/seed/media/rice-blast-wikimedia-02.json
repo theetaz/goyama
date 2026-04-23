@@ -1,0 +1,19 @@
+{
+  "slug": "rice-blast-wikimedia-02",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Rice_blast_symptoms.jpg",
+  "credit": "Donald Groth, Louisiana State University AgCenter, Bugwood.org (via Wikimedia Commons)",
+  "licence": "CC0-1.0",
+  "captured_at": "2009-03-16T00:00:00Z",
+  "caption": {
+    "en": "Rice blast (Magnaporthe oryzae / Pyricularia oryzae) neck-blast symptoms — dark lesions on the panicle neck that cause chaff and yield loss. Neck blast is the most damaging stage of the disease in Sri Lanka's wet zone."
+  },
+  "related": {
+    "disease_slug": "rice-blast"
+  },
+  "language": "en",
+  "tags": ["rice_blast", "magnaporthe_oryzae", "neck_blast", "panicle", "wikimedia_commons"]
+}

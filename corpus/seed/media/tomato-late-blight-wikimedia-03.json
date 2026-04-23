@@ -1,0 +1,19 @@
+{
+  "slug": "tomato-late-blight-wikimedia-03",
+  "version": 1,
+  "status": "draft",
+  "type": "image",
+  "hosting": "external_link",
+  "external_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Tuber_infected_by_P._infestans.jpg",
+  "credit": "Björn Andersson, SLU (via Wikimedia Commons)",
+  "licence": "CC-BY-SA-4.0",
+  "captured_at": "2010-10-14T00:00:00Z",
+  "caption": {
+    "en": "Potato tuber infected with Phytophthora infestans — firm brown rot extending into the flesh. Identifying tuber-stage infection matters because infected seed tubers are the primary vector that re-introduces late blight into new plantings."
+  },
+  "related": {
+    "disease_slug": "tomato-late-blight"
+  },
+  "language": "en",
+  "tags": ["late_blight", "phytophthora_infestans", "tuber_symptoms", "seed_borne", "wikimedia_commons"]
+}
